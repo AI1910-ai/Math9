@@ -1620,16 +1620,16 @@ if(sSouth){
 
 
 // ==========================================
-// BỘ ĐIỀU KHIỂN NHẠC NỀN TẬP TRUNG HỌC TOÁN
-// (Gymnopédie No. 1 - Erik Satie / Kevin MacLeod)
+// BỘ ĐIỀU KHIỂN NHẠC NỀN TƯƠI TẮN, SINH ĐỘNG
+// (Carefree - Kevin MacLeod / Creative Commons BY 3.0)
 // ==========================================
 (function initBackgroundMusic(){
   const soundBtn = document.getElementById('soundBtn');
   const bgMusic = document.getElementById('bgMusic');
   if(!soundBtn || !bgMusic) return;
 
-  // Thiết lập âm lượng êm dịu (khoảng 32%), tối ưu cho sự tập trung học tập
-  bgMusic.volume = 0.32;
+  // Thiết lập âm lượng tươi tắn, vừa vặn (khoảng 22%), tạo cảm hứng học tập
+  bgMusic.volume = 0.22;
 
   // Trạng thái lưu trữ (mặc định mở web là bật nhạc)
   const isMutedPref = localStorage.getItem('mathlab_sound_muted') === '1';
@@ -1644,7 +1644,7 @@ if(sSouth){
     if(iconSpan) iconSpan.textContent = playing ? '🔊' : '🔇';
     if(textSpan) textSpan.textContent = playing ? ' Âm thanh' : ' Tắt tiếng';
     
-    soundBtn.title = playing ? 'Nhấp để tắt nhạc nền học tập' : 'Nhấp để bật nhạc nền học tập';
+    soundBtn.title = playing ? 'Nhấp để tắt nhạc nền vui tươi' : 'Nhấp để bật nhạc nền vui tươi (Carefree)';
     soundBtn.setAttribute('aria-label', playing ? 'Tắt nhạc nền' : 'Bật nhạc nền');
   }
 
