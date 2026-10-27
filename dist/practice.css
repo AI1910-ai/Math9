@@ -1,0 +1,720 @@
+/* ==========================================================================
+   KHÔNG GIAN LUYỆN TẬP & GIAO BÀI TẬP (TOÁN 9 - GDPT 2018)
+   ========================================================================== */
+
+.practice-section {
+  padding: 85px clamp(24px, 7vw, 110px);
+  background: #f7faf8;
+  border-top: 1px solid #e2ece7;
+  border-bottom: 1px solid #e2ece7;
+}
+
+.practice-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 30px;
+  margin-bottom: 35px;
+  flex-wrap: wrap;
+}
+
+.practice-heading h2 {
+  font-size: clamp(28px, 3vw, 42px);
+  letter-spacing: -0.04em;
+  margin: 12px 0 0;
+  color: #0f172a;
+}
+
+.practice-heading p {
+  max-width: 580px;
+  color: var(--muted, #49615b);
+  font-size: 13.5px;
+  line-height: 1.7;
+  margin: 8px 0 0;
+}
+
+.practice-heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.practice-add-btn {
+  background: linear-gradient(135deg, #0c6f61, #084c42) !important;
+  color: #ffffff !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 13.5px;
+  border: 0;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(12, 111, 97, 0.28);
+  transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.practice-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(12, 111, 97, 0.36);
+  background: linear-gradient(135deg, #0f8272, #0c6f61) !important;
+}
+
+.practice-ai-suggest-btn {
+  background: #ffffff;
+  border: 1px solid #cfe7df;
+  color: #0c6f61;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.practice-ai-suggest-btn:hover {
+  background: #eef8f4;
+  border-color: #53c2aa;
+  transform: translateY(-1px);
+}
+
+.practice-export-btn, .practice-import-btn {
+  background: #ffffff;
+  border: 1px solid #cfe7df;
+  color: #1e3a34;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 16px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.practice-export-btn:hover, .practice-import-btn:hover {
+  background: #f8fafc;
+  border-color: #0c6f61;
+  color: #0c6f61;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(12, 111, 97, 0.12);
+}
+
+/* Toolbar: Filters & Progress */
+.practice-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+  background: #ffffff;
+  padding: 14px 20px;
+  border-radius: 16px;
+  border: 1px solid #e2eee8;
+  box-shadow: 0 2px 8px rgba(12, 111, 97, 0.04);
+}
+
+.practice-filter-chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-chip {
+  border: 1px solid #cfe5dd;
+  background: #f5fbf8;
+  color: #334155;
+  font: 600 12.5px 'Be Vietnam Pro', system-ui, sans-serif;
+  padding: 7px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.filter-chip:hover {
+  background: #e6f6f0;
+  border-color: #53c2aa;
+  color: #0c6f61;
+}
+
+.filter-chip.active {
+  background: #0c6f61;
+  color: #ffffff;
+  border-color: #0c6f61;
+  box-shadow: 0 2px 6px rgba(12, 111, 97, 0.25);
+}
+
+.practice-stats-badge {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.practice-stats-badge b {
+  color: #0c6f61;
+}
+
+.text-link-btn {
+  background: none;
+  border: 0;
+  color: #0c6f61;
+  font: 600 12px inherit;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.text-link-btn:hover {
+  color: #084c42;
+}
+
+/* Exercise Grid */
+.exercise-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 24px;
+}
+
+.exercise-empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 60px 20px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1.5px dashed #cbd5e1;
+}
+
+.exercise-empty-state h3 {
+  font-size: 18px;
+  color: #1e293b;
+  margin: 12px 0 6px;
+}
+
+.exercise-empty-state p {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* Exercise Card */
+.exercise-card {
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #e2eee8;
+  box-shadow: 0 4px 16px rgba(12, 111, 97, 0.05);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.exercise-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(12, 111, 97, 0.1);
+  border-color: #a7dfd2;
+}
+
+.exercise-card-head {
+  padding: 16px 20px 12px;
+  border-bottom: 1px solid #f0f7f4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafdfc;
+}
+
+.exercise-cat-tag {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 12px;
+  text-transform: uppercase;
+}
+
+.exercise-cat-tag.cylinder { background: #e0f2fe; color: #0369a1; }
+.exercise-cat-tag.cone { background: #ede9fe; color: #6d28d9; }
+.exercise-cat-tag.sphere { background: #fef3c7; color: #b45309; }
+.exercise-cat-tag.box { background: #ffedd5; color: #c2410c; }
+.exercise-cat-tag.pyramid { background: #fce7f3; color: #be185d; }
+
+.exercise-status-pill {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 10px;
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.exercise-status-pill.completed {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.exercise-card-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.exercise-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 10px;
+  line-height: 1.45;
+}
+
+.exercise-content {
+  font-size: 13.5px;
+  color: #334155;
+  line-height: 1.65;
+  margin-bottom: 16px;
+  white-space: pre-line;
+}
+
+.exercise-img-wrap {
+  margin-bottom: 16px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f8fafc;
+}
+
+.exercise-img-wrap img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.exercise-solve-box {
+  margin-top: auto;
+  background: #f8fbf9;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #e6f2ec;
+}
+
+.exercise-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.exercise-choice-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.15s ease;
+}
+
+.exercise-choice-item:hover {
+  border-color: #0c6f61;
+  background: #f0fdf9;
+}
+
+.exercise-choice-item.selected {
+  border-color: #0c6f61;
+  background: #e6f6f0;
+  font-weight: 600;
+}
+
+.exercise-fill-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.exercise-input {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: 600 13px 'Be Vietnam Pro', system-ui, sans-serif;
+  color: #0f172a;
+  outline: none;
+  background: #ffffff;
+}
+
+.exercise-input:focus {
+  border-color: #0c6f61;
+  box-shadow: 0 0 0 2px rgba(12, 111, 97, 0.15);
+}
+
+.exercise-unit-tag {
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  min-width: 32px;
+}
+
+.exercise-submit-btn {
+  border: 0;
+  background: #0c6f61;
+  color: #ffffff;
+  font: 700 12.5px 'Be Vietnam Pro', system-ui, sans-serif;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.18s ease;
+}
+
+.exercise-submit-btn:hover {
+  background: #084c42;
+}
+
+.exercise-feedback {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 12.5px;
+  line-height: 1.5;
+  margin-top: 10px;
+  display: none;
+}
+
+.exercise-feedback.correct {
+  display: block;
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.exercise-feedback.incorrect {
+  display: block;
+  background: #fef2f2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+.exercise-solution-accordion {
+  margin-top: 14px;
+  border-top: 1px dashed #cfe0d9;
+  padding-top: 10px;
+}
+
+.solution-toggle-btn {
+  background: none;
+  border: 0;
+  color: #0c6f61;
+  font: 700 12px inherit;
+  padding: 4px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.solution-content {
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #d1fae5;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #1e293b;
+  display: none;
+}
+
+.exercise-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid #edf5f1;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.exercise-card-actions button,
+.exercise-card-actions a {
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #dce8e3;
+  background: #ffffff;
+  color: #334155;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: all 0.15s ease;
+}
+
+.exercise-card-actions button:hover,
+.exercise-card-actions a:hover {
+  background: #e6f6f0;
+  border-color: #53c2aa;
+  color: #0c6f61;
+}
+
+.exercise-admin-btns {
+  display: flex;
+  gap: 4px;
+  margin-left: auto;
+}
+
+.exercise-admin-btns button {
+  padding: 4px 7px;
+  font-size: 11px;
+}
+
+.exercise-admin-btns .del-btn:hover {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #b91c1c;
+}
+
+/* ==========================================================================
+   TEACHER EXERCISE DIALOG (MODAL SOẠN BÀI)
+   ========================================================================== */
+
+#teacherExerciseDialog {
+  border: 0;
+  border-radius: 20px;
+  padding: 0;
+  max-width: 680px;
+  width: 92vw;
+  box-shadow: 0 25px 60px rgba(12, 111, 97, 0.25);
+  background: #ffffff;
+  margin: auto;
+}
+
+#teacherExerciseDialog::backdrop {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.teacher-modal-shell {
+  display: flex;
+  flex-direction: column;
+  max-height: 90vh;
+}
+
+.teacher-modal-shell .lab-head {
+  padding: 20px 26px;
+  border-bottom: 1px solid #e2eee8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fafdfc;
+}
+
+.teacher-modal-shell .lab-head h2 {
+  font-size: 20px;
+  margin: 4px 0 0;
+  color: #0f172a;
+}
+
+.teacher-modal-shell .lab-head button {
+  border: 0;
+  background: #f1f5f9;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #475569;
+  transition: all 0.15s ease;
+}
+
+.teacher-modal-shell .lab-head button:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.teacher-form {
+  padding: 22px 26px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.teacher-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.teacher-form label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.teacher-form label small {
+  font-weight: 400;
+  color: #64748b;
+}
+
+.teacher-form .required {
+  color: #dc2626;
+}
+
+.teacher-form input[type="text"],
+.teacher-form input[type="number"],
+.teacher-form select,
+.teacher-form textarea {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: 500 13.5px 'Be Vietnam Pro', system-ui, sans-serif;
+  color: #0f172a;
+  outline: none;
+  background: #ffffff;
+  transition: border-color 0.18s ease;
+}
+
+.teacher-form input:focus,
+.teacher-form select:focus,
+.teacher-form textarea:focus {
+  border-color: #0c6f61;
+  box-shadow: 0 0 0 2px rgba(12, 111, 97, 0.15);
+}
+
+.teacher-form .form-row-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.choice-config-box {
+  background: #f8fafc;
+  padding: 14px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.choice-row span {
+  font-weight: 700;
+  font-size: 13px;
+  color: #0c6f61;
+  width: 20px;
+}
+
+.choice-row input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #0c6f61;
+  cursor: pointer;
+}
+
+.image-upload-row {
+  display: flex;
+  gap: 10px;
+}
+
+.file-input {
+  font-size: 12px;
+}
+
+.image-preview-box {
+  margin-top: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+  max-height: 140px;
+  border: 1px solid #cbd5e1;
+  display: inline-flex;
+}
+
+.image-preview-box img {
+  max-height: 140px;
+  object-fit: contain;
+}
+
+.modal-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+  padding-top: 14px;
+  border-top: 1px solid #e2eee8;
+}
+
+.modal-form-actions .primary-btn {
+  background: #0c6f61;
+  color: #ffffff;
+  border: 0;
+  padding: 10px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+
+.modal-form-actions .primary-btn:hover {
+  background: #084c42;
+}
+
+.modal-form-actions .ghost-btn {
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  color: #475569;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 13.5px;
+  cursor: pointer;
+}
+
+.modal-form-actions .ghost-btn:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+@media (max-width: 900px) {
+  .practice-heading {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .practice-heading-actions {
+    justify-content: flex-start;
+  }
+  .exercise-grid {
+    grid-template-columns: 1fr;
+  }
+  .teacher-form .form-row-2 {
+    grid-template-columns: 1fr;
+  }
+}

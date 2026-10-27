@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7fbfa" />
+  <title>Trợ lý Toán AI & Tra cứu SGK – SGV · MathLab 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- KaTeX for rendering mathematical formulas (Local & Instant offline support) -->
+  <link rel="stylesheet" href="vendor/katex/katex.min.css" />
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/katex/contrib/auto-render.min.js"></script>
+  <style>
+    .ai-page-main {
+      min-height: calc(100vh - 150px);
+      padding: 40px clamp(24px, 6vw, 90px) 70px;
+    }
+    .ai-page-header {
+      margin-bottom: 28px;
+    }
+    .ai-page-header h1 {
+      font-size: clamp(28px, 3.2vw, 42px);
+      letter-spacing: -0.04em;
+      margin: 10px 0 12px;
+    }
+    .ai-page-header p {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 14.5px;
+      line-height: 1.7;
+      margin: 0;
+    }
+    .ai-board-shell {
+      margin-top: 20px;
+    }
+    @media print {
+      .topbar, .ai-input-card, .ai-board-tools, footer {
+        display: none !important;
+      }
+      .ai-page-main {
+        padding: 0 !important;
+      }
+      .ai-board-card {
+        border: 0 !important;
+        box-shadow: none !important;
+      }
+      .ai-board-body {
+        max-height: none !important;
+        overflow: visible !important;
+        padding: 0 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Trang chủ">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span><b>PHÒNG THÍ NGHIỆM HÌNH HỌC ĐỘNG</b><small>TOÁN 9 · HỌC QUA KHÁM PHÁ</small></span>
+    </a>
+    <nav>
+      <a href="index.html">← Về Phòng thí nghiệm 3D</a>
+      <a href="index.html#models">Mô hình 3D</a>
+      <a href="ai-assistant.html" class="active nav-ai-tab"><span class="nav-spark">✦</span> Trợ lý AI</a>
+      <a href="index.html#guide">Hướng dẫn</a>
+    </nav>
+  </header>
+
+  <main class="ai-page-main">
+    <div class="ai-page-header">
+      <span class="eyebrow">TRÍ TUỆ NHÂN TẠO & RAG TOÁN HỌC (KHKT 2026)</span>
+      <h1>Bàn Học Trợ Lý AI: Giải Toán & Tra Cứu SGK – SGV</h1>
+      <p>Không gian học tập chuyên biệt: Giải toán qua ảnh chụp với Gemini Vision, Gia sư Socrate gợi mở tư duy, kết xuất công thức KaTeX sắc nét và đối chiếu chuẩn SGK & SGV Toán 6–9 Kết Nối Tri Thức.</p>
+    </div>
+
+    <div class="ai-board-shell">
+      <!-- Cột trái: Bảng điều khiển & Lịch sử hỏi đáp -->
+      <aside class="ai-input-card">
+        <!-- Tabs chuyển đổi: Đặt câu hỏi vs Lịch sử hỏi đáp -->
+        <div class="ai-sidebar-nav">
+          <button type="button" class="ai-nav-tab active" id="tabAskBtn" data-tab="ask">
+            <span>✏️</span> Đặt câu hỏi
+          </button>
+          <button type="button" class="ai-nav-tab" id="tabHistoryBtn" data-tab="history">
+            <span>📜</span> Lịch sử (<b class="ai-count-pill" id="historyCountPill">0</b>)
+          </button>
+        </div>
+
+        <!-- Panel 1: Đặt câu hỏi & Nhập liệu -->
+        <div id="panelAsk" class="ai-tab-panel active">
+          <div class="ai-card-title">
+            <span class="ai-badge-live">✦ BÀN ĐIỀU KHIỂN AI</span>
+            <h3>Đề bài & Chế độ học tập</h3>
+          </div>
+
+          <!-- Chế độ sư phạm -->
+          <div class="ai-mode-picker">
+            <span class="field-title">CHỌN CHẾ ĐỘ SƯ PHẠM</span>
+            <div class="ai-mode-options" id="aiModeGroup">
+              <button type="button" class="ai-mode-card active" data-mode="detail">
+                <div class="ai-mode-head"><b>💡 Giải chi tiết</b><span>Chuẩn SGK</span></div>
+                <p>Tóm tắt đề, trích định lý, giải từng bước và kết luận đáp số.</p>
+              </button>
+              <button type="button" class="ai-mode-card" data-mode="socratic">
+                <div class="ai-mode-head"><b>🎓 Gia sư Socrate</b><span>Gợi mở</span></div>
+                <p>Không giải sẵn; gợi ý từng bước để học sinh tự tìm ra cách giải.</p>
+              </button>
+              <button type="button" class="ai-mode-card" data-mode="teacher">
+                <div class="ai-mode-head"><b>👨‍🏫 Sách giáo viên</b><span>Dành cho GV</span></div>
+                <p>Mục tiêu cần đạt, phân tích lỗi sai và phương pháp tổ chức dạy học.</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- Tải ảnh đề bài -->
+          <div class="ai-upload-box">
+            <span class="field-title">TẢI ẢNH ĐỀ BÀI (HỖ TRỢ DÁN CTRL + V)</span>
+            <input type="file" id="aiImageInput" accept="image/*" style="display:none;" />
+            <div class="ai-dropzone" id="aiDropzone" tabindex="0" role="button" aria-label="Bấm hoặc kéo thả ảnh đề bài">
+              <div class="ai-dropzone-content" id="aiDropContent">
+                <span class="ai-drop-icon">📷</span>
+                <b>Kéo thả ảnh đề bài vào đây</b>
+                <small>hoặc bấm để chọn ảnh (hỗ trợ dán ảnh chụp màn hình Ctrl + V)</small>
+              </div>
+              <div class="ai-dropzone-preview" id="aiDropPreview" hidden>
+                <img id="aiPreviewImg" src="" alt="Xem trước ảnh đề bài" />
+                <button type="button" id="aiRemoveImg" class="ai-preview-del" title="Bỏ chọn ảnh này">×</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nhập văn bản câu hỏi -->
+          <div class="ai-question-box">
+            <span class="field-title">NỘI DUNG CÂU HỎI HOẶC PHƯƠNG TRÌNH</span>
+            <textarea id="aiQuestion" rows="3" placeholder="Nhập câu hỏi, phương trình hoặc để trống nếu bạn đã gửi ảnh bài tập…"></textarea>
+          </div>
+
+          <!-- Nút gửi -->
+          <button type="button" id="aiSendBtn" class="primary-btn ai-send-btn">
+            <span>✦ Bắt đầu giải toán bằng AI</span>
+            <b>↗</b>
+          </button>
+
+          <!-- Câu hỏi gợi ý nhanh -->
+          <div class="ai-fast-prompts">
+            <span class="field-title">GỢI Ý KHÁM PHÁ THEO CHƯƠNG TRÌNH SGK</span>
+            <div class="ai-prompt-tags" id="aiFastPrompts">
+              <button type="button">Tính diện tích toàn phần hình trụ khi r = 5, h = 10 cm</button>
+              <button type="button">Tính thể tích hình nón khi r = 3, h = 4 cm</button>
+              <button type="button">Giải hệ phương trình bằng phương pháp cộng đại số</button>
+              <button type="button">Chứng minh định lý Pythagore đảo</button>
+              <button type="button">Mục tiêu cần đạt và phân tích lỗi sai bài Hình trụ (SGV 9)</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel 2: Danh sách Lịch sử hỏi đáp -->
+        <div id="panelHistory" class="ai-tab-panel" hidden>
+          <div class="ai-card-title">
+            <span class="ai-badge-live">✦ BỘ NHỚ HỌC TẬP</span>
+            <h3>Lịch sử các bài toán đã hỏi</h3>
+          </div>
+
+          <div class="ai-history-header">
+            <div class="ai-search-wrap">
+              <input type="text" id="aiHistorySearch" placeholder="🔍 Tìm kiếm câu hỏi cũ…" />
+            </div>
+            <div class="ai-history-toolbar">
+              <button type="button" id="aiNewChatSubBtn" class="ai-sub-btn primary">
+                <span>➕</span> Đặt câu hỏi mới
+              </button>
+              <button type="button" id="aiClearAllHistoryBtn" class="ai-sub-btn danger" title="Xóa toàn bộ lịch sử hỏi đáp">
+                <span>🗑️</span> Xóa hết
+              </button>
+            </div>
+          </div>
+
+          <div class="ai-history-list" id="aiHistoryList">
+            <!-- Dynamic history list rendered here -->
+          </div>
+        </div>
+      </aside>
+
+      <!-- Cột phải: Bảng kết quả & Lời giải chuẩn KaTeX -->
+      <section class="ai-board-card">
+        <header class="ai-board-header">
+          <div class="ai-board-meta">
+            <span class="ai-board-indicator"><i></i> Đang kết nối Gemini Multi-Cascade AI</span>
+            <h3 id="aiBoardTitle">Bảng Lời Giải Sư Phạm & KaTeX</h3>
+          </div>
+          <div class="ai-board-tools">
+            <button type="button" id="aiNewChatBtn" class="ai-tool-btn highlight" title="Bắt đầu bài toán mới">
+              <span>➕</span> Bài mới
+            </button>
+            <button type="button" id="aiOpenHistoryBtn" class="ai-tool-btn" title="Xem danh sách lịch sử hỏi đáp">
+              <span>📜</span> Lịch sử (<span id="aiHeaderCount">0</span>)
+            </button>
+            <button type="button" id="aiCopyBtn" class="ai-tool-btn" title="Sao chép toàn bộ lời giải này">
+              <span>📋</span> Sao chép
+            </button>
+            <button type="button" id="aiPrintBtn" class="ai-tool-btn" title="In / Xuất đề bài và lời giải">
+              <span>🖨️</span> In / Xuất
+            </button>
+            <button type="button" id="aiClearBtn" class="ai-tool-btn danger" title="Làm sạch bảng hiện tại">
+              <span>🗑️</span> Làm sạch
+            </button>
+          </div>
+        </header>
+
+        <!-- Khu vực hiển thị lời giải -->
+        <div class="ai-board-body" id="aiBoardBody">
+          <div class="ai-empty-state">
+            <div class="ai-empty-illustration">📐 ✦ 🧮</div>
+            <h4>Bảng Lời Giải Đang Chờ Đề Bài Của Bạn</h4>
+            <p>Hãy tải ảnh bài tập lên hoặc chọn một câu hỏi gợi ý bên trái để quan sát AI phân tích dữ kiện từng bước, trích dẫn kiến thức SGK và kết xuất công thức KaTeX sắc nét.</p>
+            <div class="ai-features-grid">
+              <div><b>100% KaTeX</b><small>Công thức toán sắc nét, chuẩn mực</small></div>
+              <div><b>Đa phương thức</b><small>Nhận diện đề từ ảnh chụp phiếu bài tập</small></div>
+              <div><b>SGK & SGV</b><small>Bộ Kết Nối Tri Thức Toán 6–9</small></div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="ai-board-footer">
+          <span>💾 Toàn bộ kết quả và hình ảnh tự động lưu trên trình duyệt (không mất khi chuyển trang).</span>
+          <span class="ai-version-badge">MathLab AI v2.6 · GDPT 2018</span>
+        </footer>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Phòng thí nghiệm Hình học động Toán 9 & Trợ lý Toán AI</span>
+    <a href="index.html" style="color:var(--green);text-decoration:none;font-weight:700;">← Quay lại Phòng thí nghiệm 3D</a>
+  </footer>
+
+  <script src="ai-assistant.js"></script>
+</body>
+</html>

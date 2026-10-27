@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7fbfa" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Phòng thí nghiệm Hình học động Toán 9</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261027_v5" />
+  <link rel="stylesheet" href="builder.css?v=20261027_v5" />
+  <link rel="stylesheet" href="practice.css?v=20261027_v5" />
+  <!-- KaTeX for rendering mathematical formulas (Local & Instant offline support) -->
+  <link rel="stylesheet" href="vendor/katex/katex.min.css" />
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/katex/contrib/auto-render.min.js"></script>
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Trang chủ">
+      <span class="brand-mark"><i></i><i></i><i></i></span>
+      <span><b>PHÒNG THÍ NGHIỆM HÌNH HỌC ĐỘNG</b><small>TOÁN 9 · HỌC QUA KHÁM PHÁ</small></span>
+    </a>
+    <nav>
+      <a class="active" href="#home">Trang chủ</a>
+      <a href="#models">Mô hình 3D</a>
+      <a href="#practice" class="nav-practice-tab">Luyện tập</a>
+      <a href="ai-assistant.html" class="nav-ai-tab"><span class="nav-spark">✦</span> Trợ lý AI ↗</a>
+      <a href="#guide">Hướng dẫn</a>
+      <button class="sound-btn" id="soundBtn" aria-label="Bật tắt âm thanh" title="Bật/Tắt nhạc nền tập trung học Toán"><span class="sound-icon">🔊</span><span class="sound-text"> Âm thanh</span></button>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">KHÔNG GIAN HÌNH HỌC TƯƠNG TÁC</span>
+        <h1>Chạm để hiểu.<br><em>Xoay để khám phá.</em></h1>
+        <p>Biến những công thức trừu tượng thành mô hình trực quan. Điều chỉnh kích thước, quan sát chuyển động và tự mình kiểm chứng kiến thức Toán 9.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#models">Khám phá mô hình <span>↗</span></a>
+          <a class="ghost-btn ai-hero-btn" href="ai-assistant.html">✦ Không gian Trợ lý AI ↗</a>
+          <button class="ghost-btn" id="randomBtn">Thử một mô hình ngẫu nhiên</button>
+        </div>
+        <div class="stats"><span><b>05</b> mô hình động</span><span><b>100%</b> tương tác trực tiếp</span><span><b>∞</b> góc quan sát</span></div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <canvas id="heroCanvas"></canvas>
+        <span class="orbit orbit-a"></span><span class="orbit orbit-b"></span>
+        <span class="math-tag tag-a">V = πr²h</span><span class="math-tag tag-b">S = 4πr²</span>
+      </div>
+    </section>
+
+    <section class="models-section" id="models">
+      <div class="section-heading">
+        <div><span class="eyebrow">BỘ SƯU TẬP MÔ HÌNH</span><h2>Khám phá hình học không gian</h2></div>
+        <p>Chọn một mô hình để bắt đầu thí nghiệm. Các đại lượng thay đổi sẽ được tính ngay theo thời gian thực.</p>
+      </div>
+      <article class="builder-banner" id="openBuilder" tabindex="0" role="button" aria-label="Mở xưởng dựng hình không gian">
+        <div class="builder-icon">⌁</div>
+        <div><span class="eyebrow">CÔNG CỤ DÀNH CHO GIÁO VIÊN</span><h3>Xưởng dựng hình không gian</h3><p>Tạo nhanh hình vẽ sạch đẹp để soạn đề: đổi tên đỉnh, hiện nét khuất, thêm đường chéo và xuất ảnh PNG.</p></div>
+        <span class="builder-open">MỞ CÔNG CỤ <b>↗</b></span>
+      </article>
+      <div class="model-grid" id="modelGrid"></div>
+    </section>
+
+    <!-- ====================================================================== -->
+    <!-- PHẦN LUYỆN TẬP & BÀI TẬP THỰC TẾ (GDPT 2018)                          -->
+    <!-- ====================================================================== -->
+    <section class="practice-section" id="practice">
+      <div class="section-heading practice-heading">
+        <div>
+          <span class="eyebrow">KHÔNG GIAN HỌC TẬP & ĐÁNH GIÁ (GDPT 2018)</span>
+          <h2>Luyện tập & Bài tập thực tế</h2>
+          <p>Không gian dành cho Giáo viên tự đưa bài tập lên và Học sinh rèn luyện tư duy toán học không gian qua các tình huống thực tiễn sinh động.</p>
+        </div>
+        <div class="practice-heading-actions">
+          <button type="button" id="openTeacherModal" class="primary-btn practice-add-btn">
+            <span>+</span> Giao bài tập mới
+          </button>
+          <button type="button" id="exportExercisesBtn" class="ghost-btn practice-export-btn" title="Xuất toàn bộ ngân hàng bài tập thành file JSON">
+            <span>📤</span> Xuất đề (.json)
+          </button>
+          <button type="button" id="importExercisesBtn" class="ghost-btn practice-import-btn" title="Nhập danh sách bài tập từ file JSON">
+            <span>📥</span> Nhập đề (.json)
+          </button>
+          <input type="file" id="importExercisesInput" accept=".json" style="display:none">
+          <button type="button" id="practiceAiSuggestBtn" class="practice-ai-suggest-btn">
+            ✦ Gợi ý bài bằng AI
+          </button>
+        </div>
+      </div>
+
+      <div class="practice-toolbar">
+        <div class="practice-filter-chips">
+          <button type="button" class="filter-chip active" data-filter="all">Tất cả</button>
+          <button type="button" class="filter-chip" data-filter="cylinder">Hình trụ</button>
+          <button type="button" class="filter-chip" data-filter="cone">Hình nón</button>
+          <button type="button" class="filter-chip" data-filter="sphere">Hình cầu</button>
+          <button type="button" class="filter-chip" data-filter="box">Khối đa diện</button>
+        </div>
+        <div class="practice-stats-badge">
+          <span id="practiceProgress">Đã hoàn thành: <b>0/4</b> bài</span>
+          <button type="button" id="resetDefaultExercises" class="text-link-btn" title="Khôi phục danh sách bài tập mẫu chuẩn SGK">↺ Đặt lại bài mẫu</button>
+        </div>
+      </div>
+
+      <div class="exercise-grid" id="exerciseGrid"></div>
+    </section>
+
+    <section class="guide" id="guide">
+      <div><span class="eyebrow">CÁCH SỬ DỤNG</span><h2>Ba bước để bắt đầu</h2></div>
+      <div class="guide-steps">
+        <article><b>01</b><h3>Chọn mô hình</h3><p>Chọn khối hình bạn muốn khám phá trong bộ sưu tập.</p></article>
+        <article><b>02</b><h3>Kéo và điều chỉnh</h3><p>Kéo trên mô hình để xoay; thay đổi kích thước bằng thanh trượt.</p></article>
+        <article><b>03</b><h3>Quan sát kết quả</h3><p>Đối chiếu hình vẽ, công thức và kết quả tính toán tức thời.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>© 2026 Phòng thí nghiệm Hình học động Toán 9</span><span>Được tạo để biến Toán học thành trải nghiệm ✦</span></footer>
+
+  <dialog id="labDialog">
+    <div class="lab-shell">
+      <header class="lab-head">
+        <div><span class="eyebrow">PHÒNG THÍ NGHIỆM</span><h2 id="labTitle">Hình trụ động</h2></div>
+        <div class="lab-head-actions">
+          <button type="button" id="labAskAiBtn" class="lab-ai-btn" title="Hỏi AI về kiến thức và bài tập mô hình này">✦ Hỏi AI về hình này</button>
+          <button id="closeLab" aria-label="Đóng">×</button>
+        </div>
+      </header>
+      <div class="lab-body">
+        <section class="stage-wrap">
+          <canvas id="labCanvas"></canvas>
+          <div id="cylinderModeTabs" class="cylinder-mode-tabs" hidden>
+            <button type="button" data-mode="solid" class="active">Quan sát khối</button>
+            <button type="button" data-mode="form">Tạo hình (Quay)</button>
+            <button type="button" data-mode="unfold">📜 Trải phẳng</button>
+            <button type="button" data-mode="milk">🥛 Thực tế: Lon sữa</button>
+          </div>
+          <div id="coneModeTabs" class="cylinder-mode-tabs" hidden>
+            <button type="button" data-cone-mode="solid" class="active">Quan sát khối</button>
+            <button type="button" data-cone-mode="form">Tạo hình (Quay)</button>
+            <button type="button" data-cone-mode="unfold">📜 Trải phẳng</button>
+            <button type="button" data-cone-mode="hat">👒 Thực tế: Chiếc nón lá</button>
+          </div>
+          <div id="sphereModeTabs" class="cylinder-mode-tabs" hidden>
+            <button type="button" data-sphere-mode="solid" class="active">Quan sát khối</button>
+            <button type="button" data-sphere-mode="form">Tạo hình (Quay)</button>
+            <button type="button" data-sphere-mode="slice">🔪 Mặt cắt (hc)</button>
+            <button type="button" data-sphere-mode="ball">🏀 Thực tế: Quả bóng rổ</button>
+          </div>
+          <div class="stage-hint">↔ Kéo để xoay · Cuộn để phóng to</div>
+          <button id="autoRotate" class="float-control">Ⅱ Tự động xoay</button>
+        </section>
+        <aside class="control-panel">
+          <div class="formula-card"><span>CÔNG THỨC</span><div id="formula"></div></div>
+          <div id="controls"></div>
+          <section id="formationControls" class="formation-controls" hidden>
+            <div class="formation-title"><span>GÓC QUAY TẠO HÌNH</span><output id="formationAngleOut">0°</output></div>
+            <input id="formationAngle" type="range" min="0" max="360" step="1" value="0">
+            <div class="formation-actions">
+              <button id="formationStart" type="button">▶ Bắt đầu</button>
+              <button id="formationPause" type="button">Ⅱ Tạm dừng</button>
+              <button id="formationReset" type="button">↺ Chạy lại</button>
+            </div>
+            <p id="formationDesc">Hình chữ nhật quay quanh cạnh <b>h</b>; cạnh còn lại tạo nên bán kính <b>r</b>.</p>
+          </section>
+          <section id="unfoldControls" class="formation-controls" hidden>
+            <div class="formation-title"><span>TIẾN TRÌNH TRẢI PHẲNG (NET)</span><output id="unfoldProgressOut">0%</output></div>
+            <input id="unfoldProgress" type="range" min="0" max="100" step="1" value="0">
+            <div class="formation-actions">
+              <button id="unfoldStart" type="button">▶ Mở bung ra</button>
+              <button id="unfoldPause" type="button">Ⅱ Tạm dừng</button>
+              <button id="unfoldReset" type="button">↺ Khép lại</button>
+            </div>
+            <p id="unfoldDesc">Mở mặt xung quanh và các đáy ra thành một mặt phẳng để thấy rõ nguồn gốc diện tích toàn phần.</p>
+          </section>
+          <section id="sliceControls" class="formation-controls" hidden>
+            <div class="formation-title"><span>KHOẢNG CÁCH MẶT PHẲNG CẮT (hc)</span><output id="sliceDistanceOut">2.0 cm</output></div>
+            <input id="sliceDistance" type="range" min="-5.0" max="5.0" step="0.1" value="2.0">
+            <div class="formation-actions" style="grid-template-columns: 1fr 1fr 1fr;">
+              <button id="sliceMoveNorth" type="button">⬆ Bắc (+R)</button>
+              <button id="sliceMoveCenter" type="button">⦿ Tâm (0)</button>
+              <button id="sliceMoveSouth" type="button">⬇ Nam (-R)</button>
+            </div>
+            <p id="sliceDesc">Kéo mặt phẳng cắt từ cực Bắc xuống cực Nam để kiểm chứng bán kính giao tuyến: r' = √(R² - hc²).</p>
+          </section>
+          <div class="result-card"><span>KẾT QUẢ</span><div id="results"></div></div>
+          <div class="note"><b>Gợi ý quan sát</b><p id="labNote"></p></div>
+        </aside>
+      </div>
+    </div>
+  </dialog>
+  <dialog id="builderDialog">
+    <div class="builder-shell">
+      <header class="lab-head">
+        <div><span class="eyebrow">CÔNG CỤ SOẠN ĐỀ</span><h2>Xưởng dựng hình không gian</h2></div>
+        <div class="lab-head-actions">
+          <button type="button" id="builderAskAiBtn" class="lab-ai-btn" title="Nhờ AI gợi ý đề bài và lời giải cho hình này">✦ Hỏi AI gợi ý đề bài</button>
+          <button id="closeBuilder" aria-label="Đóng">×</button>
+        </div>
+      </header>
+      <div class="builder-workspace">
+        <aside class="builder-tools">
+          <label class="field-label" for="shapePreset">Dạng hình không gian</label>
+          <select id="shapePreset">
+            <option value="pyramid">Hình chóp tứ giác</option>
+            <option value="triPyramid">Hình chóp tam giác</option>
+            <option value="prism">Lăng trụ tam giác</option>
+            <option value="cube">Hình lập phương</option>
+            <option value="box">Hình hộp chữ nhật</option>
+            <option value="pentPyramid">Hình chóp ngũ giác</option>
+            <option value="pentPrism">Lăng trụ ngũ giác</option>
+            <option value="frustum">Hình chóp cụt tứ giác</option>
+          </select>
+          <div class="dimension-grid">
+            <label>Cao<input type="number" id="shapeHeight" min="2" max="10" step="0.5" value="6"></label>
+            <label>Đáy<input type="number" id="shapeBase" min="2" max="10" step="0.5" value="6"></label>
+            <label>Độ sâu<input type="number" id="shapeDepth" min="1" max="8" step="0.5" value="3"></label>
+          </div>
+          <button id="generateShape" class="primary-btn full-btn">Tạo hình từ thông số</button>
+          <div class="draw-tools">
+            <div class="draw-tools-title">VẼ BỔ SUNG</div>
+            <div class="point-inputs">
+              <label>Tên điểm<input id="newPointName" maxlength="3" value="M" aria-label="Tên điểm mới"></label>
+              <label>X<input type="number" id="newPointX" step="0.1" value="6.9" aria-label="Tọa độ X"></label>
+              <label>Y<input type="number" id="newPointY" step="0.1" value="4.7" aria-label="Tọa độ Y"></label>
+            </div>
+            <button id="addPoint" class="ghost-btn full-btn">＋ Thêm điểm</button>
+            <div class="edge-inputs">
+              <select id="edgeFrom" aria-label="Điểm đầu"></select><span>→</span><select id="edgeTo" aria-label="Điểm cuối"></select>
+            </div>
+            <select id="edgeStyle" aria-label="Kiểu đoạn thẳng"><option value="visible">Nét liền</option><option value="hidden">Nét khuất</option><option value="diagonal">Đường phụ màu xanh</option></select>
+            <button id="addEdge" class="primary-btn full-btn">Nối hai điểm</button>
+          </div>
+          <label class="toggle-row"><input type="checkbox" id="showLabels" checked><span>Hiển thị tên đỉnh</span></label>
+          <label class="toggle-row"><input type="checkbox" id="showHidden" checked><span>Hiển thị nét khuất</span></label>
+          <label class="toggle-row"><input type="checkbox" id="showDiagonal"><span>Thêm đường chéo</span></label>
+          <label class="toggle-row"><input type="checkbox" id="showDimensions" checked><span>Hiển thị kích thước</span></label>
+          <label class="field-label" for="lineWidth">Độ đậm nét <output id="lineWidthOut">2.0</output></label>
+          <input type="range" id="lineWidth" min="1" max="4" step="0.25" value="2">
+          <div class="object-panel"><div class="object-title">ĐỐI TƯỢNG ĐÃ VẼ <span id="objectCount">0</span></div><div id="objectList"></div></div>
+          <div class="builder-status" id="builderStatus">Sẵn sàng để xuất hình.</div>
+        </aside>
+        <div class="builder-main">
+          <section class="drawing-paper">
+            <div class="paper-toolbar"><span>BẢN VẼ TƯƠNG TÁC 3D</span><div class="motion-tools"><button id="editPointMode" class="active" type="button">Chỉnh điểm</button><button id="moveShapeMode" type="button">Di chuyển</button><button id="rotateShapeMode" type="button">Xoay 3D</button><button id="autoShapeMotion" type="button">▶ Tự xoay 3D</button></div></div>
+            <svg id="builderSvg" viewBox="0 0 760 520" xmlns="http://www.w3.org/2000/svg" aria-label="Bản vẽ hình học không gian"></svg>
+          </section>
+          <section class="code-panel">
+            <div class="code-head"><div><span>MÃ TIKZ</span><small>Có thể sửa tọa độ và lệnh vẽ</small></div><button id="copyTikz" class="mini-btn">Sao chép mã</button></div>
+            <textarea id="tikzCode" spellcheck="false" aria-label="Mã TikZ"></textarea>
+            <div class="compile-bar">
+              <button id="compileTikz" class="primary-btn">▶ Biên dịch</button>
+              <button id="resetCode" class="ghost-btn">Khôi phục mã</button>
+              <span>Hỗ trợ: coordinate, draw, dashed và node</span>
+            </div>
+          </section>
+          <div class="builder-actions horizontal">
+            <button id="downloadPng" class="primary-btn">Tải ảnh PNG</button>
+            <button id="downloadSvg" class="ghost-btn">Tải ảnh SVG</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- DIALOG SOẠN & GIAO BÀI TẬP DÀNH CHO GIÁO VIÊN -->
+  <dialog id="teacherExerciseDialog">
+    <div class="teacher-modal-shell">
+      <header class="lab-head">
+        <div>
+          <span class="eyebrow">KHÔNG GIAN GIÁO VIÊN</span>
+          <h2 id="teacherModalTitle">Soạn & Giao bài tập mới</h2>
+        </div>
+        <button type="button" id="closeTeacherModal" aria-label="Đóng">×</button>
+      </header>
+      <form id="teacherExerciseForm" class="teacher-form">
+        <input type="hidden" id="editExerciseId" value="">
+        <div class="form-group">
+          <label for="exTitle">Tiêu đề bài tập <span class="required">*</span></label>
+          <input type="text" id="exTitle" required placeholder="Ví dụ: Tính diện tích tôn làm lon sữa hình trụ">
+        </div>
+        <div class="form-row-2">
+          <div class="form-group">
+            <label for="exCategory">Chủ đề / Khối hình</label>
+            <select id="exCategory">
+              <option value="cylinder">Hình trụ động</option>
+              <option value="cone">Hình nón động</option>
+              <option value="sphere">Hình cầu động</option>
+              <option value="box">Hình hộp chữ nhật</option>
+              <option value="pyramid">Hình chóp tứ giác</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exType">Hình thức câu hỏi</label>
+            <select id="exType">
+              <option value="fill">Điền đáp số tự luận</option>
+              <option value="choice">Trắc nghiệm 4 đáp án (A, B, C, D)</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exContent">Nội dung đề bài <span class="required">*</span> <small>(Hỗ trợ công thức LaTeX: $r = 4\text{ cm}$, $$V = \pi r^2 h$$)</small></label>
+          <textarea id="exContent" rows="4" required placeholder="Nhập đề bài tại đây..."></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exImageFile">Hình ảnh minh họa đính kèm <small>(tùy chọn)</small></label>
+          <div class="image-upload-row">
+            <input type="file" id="exImageFile" accept="image/*" class="file-input">
+            <input type="text" id="exImageUrl" placeholder="Hoặc dán URL ảnh đề bài...">
+          </div>
+          <div id="exImagePreview" class="image-preview-box" hidden></div>
+        </div>
+        
+        <!-- Cấu hình Trắc nghiệm -->
+        <div id="choiceConfig" class="choice-config-box" hidden>
+          <label>Các phương án lựa chọn & Đánh dấu đáp án đúng:</label>
+          <div class="choice-row"><input type="radio" name="correctChoice" value="A" checked> <span>A:</span> <input type="text" id="choiceA" placeholder="Phương án A"></div>
+          <div class="choice-row"><input type="radio" name="correctChoice" value="B"> <span>B:</span> <input type="text" id="choiceB" placeholder="Phương án B"></div>
+          <div class="choice-row"><input type="radio" name="correctChoice" value="C"> <span>C:</span> <input type="text" id="choiceC" placeholder="Phương án C"></div>
+          <div class="choice-row"><input type="radio" name="correctChoice" value="D"> <span>D:</span> <input type="text" id="choiceD" placeholder="Phương án D"></div>
+        </div>
+
+        <!-- Cấu hình Điền đáp số -->
+        <div id="fillConfig" class="fill-config-box">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="exAnswer">Đáp số chuẩn xác</label>
+              <input type="text" id="exAnswer" placeholder="Ví dụ: 186.0 hoặc 7238">
+            </div>
+            <div class="form-group">
+              <label for="exUnit">Đơn vị đo</label>
+              <input type="text" id="exUnit" placeholder="Ví dụ: cm², cm³, lít, m...">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="exSolution">Hướng dẫn giải chi tiết & Gợi ý <small>(hiển thị khi học sinh cần xem)</small></label>
+          <textarea id="exSolution" rows="3" placeholder="Nhập các bước giải chi tiết hoặc công thức áp dụng..."></textarea>
+        </div>
+
+        <div class="modal-form-actions">
+          <button type="submit" class="primary-btn">Lưu bài tập</button>
+          <button type="button" id="cancelTeacherModal" class="ghost-btn">Hủy bỏ</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+  <a id="ragChatButton" class="rag-chat-button" href="ai-assistant.html" aria-label="Mở Trợ lý Toán AI" style="text-decoration:none;"><span>✦</span><b>Trợ lý AI ↗</b></a>
+    <audio id="bgMusic" loop preload="auto">
+    <source src="assets/audio/math-study-ambient.mp3" type="audio/mpeg">
+    <source src="assets/audio/math-study-ambient.ogg" type="audio/ogg">
+  </audio>
+  <script src="app.js?v=20261027_v5"></script>
+  <script src="builder.js?v=20261027_v5"></script>
+  <script src="practice.js?v=20261027_v5"></script>
+</body>
+</html>
