@@ -82,6 +82,11 @@ def set_cell_margins(cell, top=100, bottom=100, left=150, right=150):
     )
     tcPr.append(tcMar)
 
+def set_outline_level(paragraph, level):
+    pPr = paragraph._p.get_or_add_pPr()
+    outline = parse_xml(f'<w:outlineLvl {nsdecls("w")} w:val="{level}"/>')
+    pPr.append(outline)
+
 def add_inline_runs(paragraph, text, default_bold=False, default_italic=False, font_size=13, font_color=RGBColor(0,0,0)):
     if not text:
         return
@@ -208,13 +213,50 @@ def convert_md_to_docx(md_path, docx_path):
         section.page_height = Cm(29.7)
         section.different_first_page_header_footer = True
         
-        footer = section.footer
-        p_ft = footer.paragraphs[0]
-        p_ft.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        f_run = p_ft.add_run()
-        f_run.font.name = 'Times New Roman'
-        f_run.font.size = Pt(10)
+        section.header_distance = Cm(1.0)
+        section.footer_distance = Cm(1.0)
+        
+        # Đánh số trang ở trên cùng chính giữa (Top Center Header) bắt đầu từ trang 2
+        header = section.header
+        p_head = header.paragraphs[0]
+        p_head.text = ""
+        p_head.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        r_head = p_head.add_run()
+        r_head.font.name = 'Times New Roman'
+        r_head.font.size = Pt(11)
+        r_head._r.append(parse_xml(r'<w:fldChar %s w:fldCharType="begin"/>' % nsdecls('w')))
+        r_head._r.append(parse_xml(r'<w:instrText %s xml:space="preserve"> PAGE </w:instrText>' % nsdecls('w')))
+        r_head._r.append(parse_xml(r'<w:fldChar %s w:fldCharType="separate"/>' % nsdecls('w')))
+        r_head._r.append(parse_xml(r'<w:fldChar %s w:fldCharType="end"/>' % nsdecls('w')))
+        
+        # Trang bìa: Header và Footer để trống hoàn toàn
+        for p in section.first_page_header.paragraphs:
+            p.text = ""
+        for p in section.first_page_footer.paragraphs:
+            p.text = ""
+            
+        # Footer các trang sau: Để trống hoàn toàn (vì số trang đã chuyển lên Header)
+        for p in section.footer.paragraphs:
+            p.text = ""
 
+    # Cấu hình các style Heading để Word tự động nhận diện và cập nhật Mục lục (TOC)
+    heading_configs = [
+        ('Heading 1', Pt(15), RGBColor(15, 60, 110), Pt(16), Pt(6)),
+        ('Heading 2', Pt(14), RGBColor(20, 80, 130), Pt(14), Pt(5)),
+        ('Heading 3', Pt(13.5), RGBColor(30, 41, 59), Pt(10), Pt(4)),
+        ('Heading 4', Pt(13), RGBColor(30, 41, 59), Pt(8), Pt(3)),
+    ]
+    for h_name, size, color, space_b, space_a in heading_configs:
+        if h_name in doc.styles:
+            s = doc.styles[h_name]
+            s.font.name = 'Times New Roman'
+            s.font.size = size
+            s.font.color.rgb = color
+            s.font.bold = True
+            s.paragraph_format.space_before = space_b
+            s.paragraph_format.space_after = space_a
+            s.paragraph_format.line_spacing = 1.25
+            s.paragraph_format.keep_with_next = True
     normal_style = doc.styles['Normal']
     normal_style.font.name = 'Times New Roman'
     normal_style.font.size = Pt(13)
@@ -319,46 +361,59 @@ def convert_md_to_docx(md_path, docx_path):
 
         # Headings
         if stripped.startswith('# '):
-            p = doc.add_paragraph()
             heading_text = stripped[2:].strip()
-            if heading_text == 'MỤC LỤC':
-                p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            if heading_text.upper() in ('MỤC LỤC', 'MUC LUC'):
+                p = doc.add_paragraph()
+                p.alignment = WD_ALIGN_PARAGRAPH.LEFT
                 p.paragraph_format.space_before = Pt(6)
-                p.paragraph_format.space_after = Pt(12)
+                p.paragraph_format.space_after = Pt(14)
                 p.paragraph_format.line_spacing = 1.2
-                add_inline_runs(p, heading_text, default_bold=True, font_size=18, font_color=RGBColor(15, 60, 110))
+                r_title = p.add_run("Mục lục")
+                r_title.font.name = "Times New Roman"
+                r_title.font.size = Pt(18)
+                r_title.bold = True
+                r_title.font.color.rgb = RGBColor(43, 87, 154) # Màu xanh Word chuẩn như hình mẫu
             else:
-                p.paragraph_format.space_before = Pt(14)
+                p = doc.add_paragraph(style='Heading 1')
+                set_outline_level(p, 0)
+                p.paragraph_format.space_before = Pt(16)
                 p.paragraph_format.space_after = Pt(6)
-                p.paragraph_format.line_spacing = 1.2
+                p.paragraph_format.line_spacing = 1.25
+                p.paragraph_format.keep_with_next = True
                 add_inline_runs(p, heading_text, default_bold=True, font_size=15, font_color=RGBColor(15, 60, 110))
             i += 1
             continue
 
         if stripped.startswith('## '):
-            p = doc.add_paragraph()
-            p.paragraph_format.space_before = Pt(12)
+            p = doc.add_paragraph(style='Heading 2')
+            set_outline_level(p, 1)
+            p.paragraph_format.space_before = Pt(14)
             p.paragraph_format.space_after = Pt(5)
             p.paragraph_format.line_spacing = 1.25
-            add_inline_runs(p, stripped[3:], default_bold=True, font_size=14, font_color=RGBColor(20, 80, 130))
+            p.paragraph_format.keep_with_next = True
+            add_inline_runs(p, stripped[3:].strip(), default_bold=True, font_size=14, font_color=RGBColor(20, 80, 130))
             i += 1
             continue
 
         if stripped.startswith('### '):
-            p = doc.add_paragraph()
+            p = doc.add_paragraph(style='Heading 3')
+            set_outline_level(p, 2)
             p.paragraph_format.space_before = Pt(10)
             p.paragraph_format.space_after = Pt(4)
             p.paragraph_format.line_spacing = 1.25
-            add_inline_runs(p, stripped[4:], default_bold=True, font_size=13.5, font_color=RGBColor(30, 41, 59))
+            p.paragraph_format.keep_with_next = True
+            add_inline_runs(p, stripped[4:].strip(), default_bold=True, font_size=13.5, font_color=RGBColor(30, 41, 59))
             i += 1
             continue
 
         if stripped.startswith('#### '):
-            p = doc.add_paragraph()
+            p = doc.add_paragraph(style='Heading 4')
+            set_outline_level(p, 3)
             p.paragraph_format.space_before = Pt(8)
             p.paragraph_format.space_after = Pt(3)
             p.paragraph_format.line_spacing = 1.3
-            add_inline_runs(p, stripped[5:], default_bold=True, default_italic=True, font_size=13)
+            p.paragraph_format.keep_with_next = True
+            add_inline_runs(p, stripped[5:].strip(), default_bold=True, default_italic=True, font_size=13)
             i += 1
             continue
 
@@ -398,19 +453,91 @@ def convert_md_to_docx(md_path, docx_path):
                         r = r + [''] * (num_cols - len(r))
                     norm_rows.append(r[:num_cols])
 
+                is_toc_table = (num_cols == 2 and any('TRANG' in c.upper() for c in norm_rows[0]))
+
+                if is_toc_table:
+                    # Tạo cấu trúc Trường Mục lục chuẩn động Word (Dynamic TOC Field) với dòng chấm (Dot Leader)
+                    p_fld_begin = doc.add_paragraph()
+                    p_fld_begin.paragraph_format.space_before = Pt(0)
+                    p_fld_begin.paragraph_format.space_after = Pt(0)
+                    p_fld_begin.paragraph_format.line_spacing = 1.0
+                    r_begin = p_fld_begin.add_run()
+                    r_begin._r.append(parse_xml(r'<w:fldChar %s w:fldCharType="begin"/>' % nsdecls('w')))
+                    r_begin._r.append(parse_xml(r'<w:instrText %s xml:space="preserve"> TOC \o "1-3" \h \z \u </w:instrText>' % nsdecls('w')))
+                    r_begin._r.append(parse_xml(r'<w:fldChar %s w:fldCharType="separate"/>' % nsdecls('w')))
+
+                    for r_data in norm_rows[1:]:
+                        raw_title = r_data[0].strip()
+                        raw_page = r_data[1].strip() if len(r_data) > 1 else ""
+                        clean_title = re.sub(r'[*_`]', '', raw_title).strip()
+                        clean_page = re.sub(r'[*_`]', '', raw_page).strip()
+                        
+                        if clean_title.upper() in ('MỤC LỤC', 'MUC LUC'):
+                            continue
+
+                        # Phân cấp thụt dòng chính xác như hình mẫu:
+                        # Cấp 1 (Chương / Phần lớn): thụt 0cm, in đậm
+                        # Cấp 2 (Điều / Mục con 1.x, 2.x): thụt 0.6cm, chữ thường
+                        # Cấp 3 (Mục 2.1.1, bảng biểu): thụt 1.2cm
+                        if re.match(r'^(Chương|[123]\.\s+|DANH MỤC|TÀI LIỆU|PHỤ LỤC)', clean_title) and not re.match(r'^[123]\.\d+\.', clean_title):
+                            level = 1
+                            is_bold = True
+                        elif re.match(r'^[123]\.\d+\.\s+', clean_title) or clean_title.startswith('Phụ lục'):
+                            level = 2
+                            is_bold = False
+                        else:
+                            level = 3
+                            is_bold = False
+
+                        p_entry = doc.add_paragraph()
+                        p_entry.paragraph_format.space_before = Pt(1)
+                        p_entry.paragraph_format.space_after = Pt(2)
+                        p_entry.paragraph_format.line_spacing = 1.15
+
+                        if level == 1:
+                            p_entry.paragraph_format.left_indent = Cm(0)
+                        elif level == 2:
+                            p_entry.paragraph_format.left_indent = Cm(0.6)
+                        else:
+                            p_entry.paragraph_format.left_indent = Cm(1.2)
+
+                        # Thiết lập Tab Stop bên phải có đường chấm (Dotted Leader) thẳng hàng mép phải
+                        pPr = p_entry._p.get_or_add_pPr()
+                        tabs_xml = parse_xml(r'<w:tabs %s><w:tab w:val="right" w:leader="dot" w:pos="9355"/></w:tabs>' % nsdecls('w'))
+                        pPr.append(tabs_xml)
+
+                        r_t = p_entry.add_run(clean_title)
+                        r_t.font.name = 'Times New Roman'
+                        r_t.font.size = Pt(12)
+                        r_t.bold = is_bold
+                        if level == 1:
+                            r_t.font.color.rgb = RGBColor(15, 60, 110)
+                        elif level == 3 and ('Bảng' in clean_title or 'Phiếu' in clean_title):
+                            r_t.italic = True
+
+                        p_entry.add_run('\t')
+
+                        r_p = p_entry.add_run(clean_page)
+                        r_p.font.name = 'Times New Roman'
+                        r_p.font.size = Pt(12)
+                        r_p.bold = is_bold
+
+                    # Kết thúc Trường Mục lục
+                    p_fld_end = doc.add_paragraph()
+                    p_fld_end.paragraph_format.space_before = Pt(0)
+                    p_fld_end.paragraph_format.space_after = Pt(4)
+                    p_fld_end.paragraph_format.line_spacing = 1.0
+                    r_end = p_fld_end.add_run()
+                    r_end._r.append(parse_xml(r'<w:fldChar %s w:fldCharType="end"/>' % nsdecls('w')))
+                    continue
+
                 t_elem = doc.add_table(rows=len(norm_rows), cols=num_cols)
                 t_elem.alignment = WD_TABLE_ALIGNMENT.CENTER
                 set_table_borders(t_elem)
-
-                is_toc_table = (num_cols == 2 and any('TRANG' in c.upper() for c in norm_rows[0]))
-
                 for row_idx, r_data in enumerate(norm_rows):
                     is_header = (row_idx == 0)
                     row_obj = t_elem.rows[row_idx]
                     
-                    if is_toc_table:
-                        row_obj.cells[0].width = Cm(14.0)
-                        row_obj.cells[1].width = Cm(2.5)
                     
                     trPr = row_obj._tr.get_or_add_trPr()
                     trPr.append(parse_xml(f'<w:cantSplit {nsdecls("w")}/>'))
@@ -496,6 +623,12 @@ def convert_md_to_docx(md_path, docx_path):
             add_inline_runs(p, stripped, font_size=13)
 
         i += 1
+
+    # Bật tính năng tự động cập nhật trường Mục lục khi mở tệp Word
+    try:
+        doc.settings._element.append(parse_xml(r'<w:updateFields %s w:val="true"/>' % nsdecls('w')))
+    except Exception as _e_set:
+        print(f"Cảnh báo cài đặt updateFields: {_e_set}")
 
     doc.save(docx_path)
     file_size_kb = os.path.getsize(docx_path) / 1024

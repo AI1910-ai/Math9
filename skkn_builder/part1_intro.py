@@ -3,7 +3,7 @@
 Module Part 1: MỤC LỤC (Bắt đầu ngay tại Trang 2 sau Bìa), Danh mục viết tắt, Danh mục bảng biểu, và Phần 1 - ĐẶT VẤN ĐỀ
 """
 
-PART1_CONTENT = """# MỤC LỤC
+PART1_CONTENT = """# Mục lục
 
 | NỘI DUNG SÁNG KIẾN KINH NGHIỆM | TRANG |
 | :--- | :---: |
