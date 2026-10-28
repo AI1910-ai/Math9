@@ -3,7 +3,7 @@
 Module Part 5: Toàn văn 4 Phiếu học tập cá nhân, 2 Phiếu hoạt động nhóm và Bộ bài tập phân hóa 3 mức độ
 """
 
-PART5_CONTENT = """### 2.4.3. Hệ thống Phiếu học tập và Phiếu hoạt động nhóm dự án thực tế
+PART5_CONTENT = r"""### 2.4.3. Hệ thống Phiếu học tập và Phiếu hoạt động nhóm dự án thực tế
 
 Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào từng bài học, chúng tôi đã biên soạn và chuẩn hóa toàn văn **04 Phiếu học tập cá nhân** và **02 Phiếu hoạt động nhóm dự án mini** phục vụ trực tiếp cho quá trình thực nghiệm tại lớp học:
 
@@ -70,18 +70,18 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 ---
 
 #### 3. TOÀN VĂN PHIẾU HỌC TẬP CÁ NHÂN SỐ 3
-**BÀI 32: MẶT CẮT HÌNH CẦU VÀ BÀI TOÁN KINH VĨ TUYẾN ĐỊA CẦU**
+**BÀI 32: CẮT ĐÔI HÌNH CẦU QUA TÂM VÀ ĐƯỜNG TRÒN LỚN ĐỊA CẦU**
 - Họ và tên học sinh: ................................................................. Lớp: 9A... Nhóm: ........
 - Ngày thực hiện: ......./......./2027. Điểm đánh giá (Rubric 1): ...................
 
-**Nhiệm vụ 1: Khám phá định lý mặt cắt trên MathLab**
-- Mở Phân hệ 2 trên MathLab. Đặt bán kính khối cầu $R = 10\\text{ cm}$.
-- Kéo thanh trượt khoảng cách tâm $h_c$ qua các giá trị và ghi lại kết quả hiển thị trên phần mềm:
-  - Khi $h_c = 0\\text{ cm} \\implies$ Bán kính vết cắt $r' = ....................\\text{ cm} \\implies$ Tên gọi đường tròn: ....................
-  - Khi $h_c = 6\\text{ cm} \\implies$ Bán kính vết cắt $r' = \\sqrt{R^2 - h_c^2} = .................... = ....................\\text{ cm}$.
-  - Khi $h_c = 8\\text{ cm} \\implies$ Bán kính vết cắt $r' = \\sqrt{R^2 - h_c^2} = .................... = ....................\\text{ cm}$.
-  - Khi $h_c = 10\\text{ cm} \\implies$ Vết cắt là: .....................................................................................
-  - Khi $h_c = 12\\text{ cm} \\implies$ Nhận xét của phần mềm: .................................................................
+**Nhiệm vụ 1: Khám phá tính năng Cắt đôi hình cầu trên MathLab**
+- Mở chế độ **"🔪 Cắt đôi hình cầu"** trên MathLab. Thiết lập bán kính khối cầu $R = 10\\text{ cm}$.
+- Nhấn nút **`[▶ Bổ đôi]`** hoặc kéo thanh trượt tiến trình từ $0\\%$ đến $100\\%$ và ghi lại kết quả:
+  - Khi bổ đôi hoàn toàn ($100\\%$), khối cầu được chia thành .................... phần bằng nhau gọi là ....................
+  - Thiết diện phẳng ở giữa có dạng hình ...................., có tâm trùng với tâm .................... và bán kính $r = ....................\\text{ cm}$.
+  - Chu vi của hình tròn mặt cắt là: $C = 2\\pi R = ....................\\text{ cm}$.
+  - Diện tích của hình tròn mặt cắt là: $S_{\\text{cắt}} = \\pi R^2 = ....................\\text{ cm}^2$.
+  - Thể tích của mỗi nửa bán cầu là: $V_{\\text{bán cầu}} = \\frac{2}{3}\\pi R^3 = ....................\\text{ cm}^3$.
 
 **Nhiệm vụ 2: Bài toán thực tiễn Vĩ tuyến Trái Đất**
 *Đề bài:* Trái Đất có dạng xấp xỉ một khối cầu bán kính $R \\approx 6371\\text{ km}$.

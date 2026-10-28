@@ -3,7 +3,7 @@
 Module Part 7: Kết luận và Khuyến nghị (Phần 3) và Danh mục Tài liệu tham khảo chuẩn APA 7th
 """
 
-PART7_CONTENT = """# 3. KẾT LUẬN VÀ KHUYẾN NGHỊ
+PART7_CONTENT = r"""# 3. KẾT LUẬN VÀ KHUYẾN NGHỊ
 
 ## 3.1. Kết luận và bài học kinh nghiệm
 

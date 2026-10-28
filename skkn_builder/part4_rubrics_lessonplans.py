@@ -3,7 +3,7 @@
 Module Part 4: Hệ thống 4 Thang Rubric chi tiết và 2 Kế hoạch bài dạy (KHBD 1 và KHBD 2)
 """
 
-PART4_CONTENT = """## 2.4. Áp dụng phần mềm MathLab vào tổ chức hoạt động dạy học thực hành
+PART4_CONTENT = r"""## 2.4. Áp dụng phần mềm MathLab vào tổ chức hoạt động dạy học thực hành
 
 ### 2.4.0. Khung tiêu chí Rubric đánh giá Năng lực Mô hình hóa Toán học theo Thông tư 22/2021/TT-BGDĐT
 
@@ -249,8 +249,8 @@ PART4_CONTENT = """## 2.4. Áp dụng phần mềm MathLab vào tổ chức ho�
 1. **Về kiến thức:**
    - Mô tả được sự tạo thành mặt cầu và hình cầu khi quay nửa hình tròn quanh đường kính cố định.
    - Phân biệt rõ khái niệm **Mặt cầu** (tập hợp các điểm trong không gian cách tâm $O$ một khoảng đúng bằng $R$) và **Hình cầu** (tập hợp các điểm cách tâm $O$ một khoảng nhỏ hơn hoặc bằng $R$, bao gồm cả mặt cầu và các điểm bên trong).
-   - Hiểu và xác định được mặt cắt của hình cầu bởi một mặt phẳng: luôn là một hình tròn có bán kính $r' = \\sqrt{R^2 - h_c^2}$ (với $h_c$ là khoảng cách từ tâm đến mặt phẳng cắt).
-   - Phân biệt được **đường tròn lớn** (khi mặt phẳng đi qua tâm, $h_c = 0 \\implies r' = R$) và **đường tròn nhỏ** (khi $0 < h_c < R$).
+   - Hiểu và xác định được mặt cắt của hình cầu khi cắt bởi mặt phẳng đi qua tâm: luôn là một **hình tròn lớn** có bán kính đúng bằng bán kính hình cầu $r = R$ và diện tích $S = \pi R^2$.
+   - Nắm vững khái niệm **Bán cầu**: Mặt phẳng đi qua tâm chia khối cầu thành hai nửa bằng nhau gọi là hai bán cầu, thể tích mỗi bán cầu bằng $V_{\text{bán cầu}} = \frac{2}{3}\pi R^3$.
 2. **Về năng lực:**
    - *Năng lực mô hình hóa toán học:* Giải thích được các hiện tượng địa lý thực tế (đường Xích đạo là đường tròn lớn, các đường vĩ tuyến Bắc/Nam là các đường tròn nhỏ có bán kính thu hẹp dần về hai cực).
    - *Năng lực tư duy không gian:* Khắc phục triệt để Lỗi sai số 2 về mặt cắt hình cầu.
@@ -271,19 +271,18 @@ PART4_CONTENT = """## 2.4. Áp dụng phần mềm MathLab vào tổ chức ho�
 - Kéo thanh trượt góc quay từ $0^\\circ$ đến $360^\\circ$: Nửa hình tròn tâm $O$ bán kính $R$ quay quanh đường kính $AB$ tạo nên một khối cầu đặc hoàn chỉnh. Đường viền nửa đường tròn quét nên **Mặt cầu**.
 - GV chuẩn hóa định nghĩa mặt cầu $S(O, R)$ và hình cầu $B(O, R)$ theo SGK Toán 9 Kết nối tri thức.
 
-**Nội dung 2: Khám phá mặt cắt hình cầu bởi mặt phẳng trên Phân hệ 2 MathLab (16 phút)**
-- HS chuyển sang **Phân hệ 2: Khám phá mặt cắt hình cầu**.
-- Trên màn hình xuất hiện một khối cầu bán kính $R = 10\\text{ cm}$ và một mặt phẳng cắt $(\\alpha)$ màu xanh trong suốt vuông góc với trục thẳng đứng.
+**Nội dung 2: Khám phá Cắt đôi hình cầu và cấu trúc Bán cầu trên MathLab (16 phút)**
+- HS chuyển sang tab **"🔪 Cắt đôi hình cầu"** trên phân hệ Hình cầu MathLab.
+- Trên màn hình xuất hiện một khối cầu bán kính $R = 10\\text{ cm}$.
 - *Thao tác thí nghiệm số:*
-  - HS kéo thanh trượt "Vị trí mặt phẳng cắt $h_c$" từ $0$ đến $12\\text{ cm}$ và quan sát đồ họa:
-    - Khi $h_c = 0$ (mặt phẳng đi qua tâm $O$): Vết cắt là một hình tròn màu đỏ khổng lồ có tâm trùng với $O$ và bán kính đúng bằng $r' = R = 10\\text{ cm}$. GV giới thiệu: Đây là **Đường tròn lớn**. Liên hệ thực tế: Đường Xích đạo của Trái Đất!
-    - Khi HS kéo $h_c$ tăng dần từ $0$ lên $6\\text{ cm}$, rồi $8\\text{ cm}$: Mặt phẳng di chuyển lên phía trên, hình tròn vết cắt nhỏ dần lại. Trên màn hình tự động hiển thị tam giác vuông $OHM$ (với $O$ là tâm cầu, $H$ là tâm hình tròn cắt, $M$ là một điểm bất kỳ trên đường tròn giao tuyến).
-    - GV hỏi: *"Hãy quan sát tam giác OHM vuông tại H. Đoạn OM bằng gì? Đoạn OH bằng gì? Từ đó suy ra công thức tính bán kính vết cắt $r' = HM$?"*
-    - HS Nam (Lớp 9A): *"Thưa thầy, OM là bán kính khối cầu bằng R! OH là khoảng cách từ tâm đến mặt phẳng cắt bằng $h_c$. Áp dụng định lý Pythagore trong tam giác vuông OHM, ta có: $OM^2 = OH^2 + HM^2 \\implies R^2 = h_c^2 + (r')^2$. Do đó: $r' = \\sqrt{R^2 - h_c^2}$!"*
-    - Khi $h_c = 8\\text{ cm}$: MathLab tính tức thời $r' = \\sqrt{10^2 - 8^2} = \\sqrt{100 - 64} = 6\\text{ cm}$.
-    - Khi HS kéo $h_c = 10\\text{ cm} = R$: Mặt phẳng tiếp xúc mặt cầu tại đúng 1 điểm (Cực Bắc). Vết cắt co lại thành một điểm duy nhất ($r' = 0$).
-    - Khi HS kéo $h_c = 11\\text{ cm} > R$: Mặt phẳng nằm hoàn toàn bên ngoài khối cầu, phần mềm thông báo: *"Mặt phẳng không cắt khối cầu ($R^2 - h_c^2 < 0$)"*.
-- Cả lớp ghi chép định lý mặt cắt vào vở trong sự thấu hiểu trọn vẹn, không một học sinh nào còn mơ hồ hay mắc Lỗi sai số 2!
+  - HS nhấn nút **`[▶ Bổ đôi]`** hoặc kéo thanh trượt "Tiến trình cắt đôi (Bán cầu)":
+    - Hai nửa bán cầu từ từ tách rời nhau dọc theo trục thẳng đứng. Nửa bán cầu trên nhấc lên, làm lộ rõ bề mặt phẳng ở giữa là một **hình tròn lớn màu cam phẳng lì** có tâm $O$ và bán kính đúng bằng bán kính hình cầu $r = R = 10\\text{ cm}$.
+    - GV giải thích và chuẩn hóa: *"Khi cắt hình cầu bởi một mặt phẳng đi qua tâm, mặt phẳng đó chia hình cầu và khối cầu thành hai phần bằng nhau gọi là hai bán cầu. Mặt cắt thu được là một hình tròn lớn có bán kính đúng bằng bán kính hình cầu $R$."*
+    - Bảng thông số HUD trên MathLab tự động hiển thị:
+      $$S_{\\text{cắt}} = \\pi R^2 = 3{,}14 \\times 10^2 = 314\\text{ cm}^2$$
+      $$V_{\\text{bán cầu}} = \\frac{2}{3}\\pi R^3 = \\frac{2}{3} \\times 3{,}14 \\times 1000 \\approx 2094{,}4\\text{ cm}^3$$
+  - HS nhấn nút **`[↺ Khép lại]`**: Hai nửa bán cầu lập tức khép khít lại thành khối cầu hoàn chỉnh $V = \\frac{4}{3}\\pi R^3 \\approx 4188{,}8\\text{ cm}^3$, chứng minh trực quan $V_{\\text{cầu}} = 2 \\times V_{\\text{bán cầu}}$.
+- Cả lớp ghi chép kiến thức trọng tâm vào vở, hào hứng và thấu hiểu sâu sắc bản chất hình học của bán cầu và mặt cắt đường tròn lớn!
 
 ###### 3. HOẠT ĐỘNG 3: LUYỆN TẬP BÀI TOÁN THỰC TIỄN (10 phút)
 

@@ -3,7 +3,7 @@
 Module Part 6: Hiệu quả thực nghiệm sư phạm và Xử lý số liệu thống kê toán học (2.5)
 """
 
-PART6_CONTENT = """## 2.5. Hiệu quả của sáng kiến kinh nghiệm
+PART6_CONTENT = r"""## 2.5. Hiệu quả của sáng kiến kinh nghiệm
 
 ### 2.5.1. Dữ liệu khảo sát ban đầu trước thực nghiệm
 
@@ -58,7 +58,7 @@ Kết quả bài kiểm tra phản ánh sự khác biệt sâu sắc về mặt 
 1. **Phần Trắc nghiệm khách quan (6 câu):**
    - *Câu 1 (Nhận biết sự tạo thành hình trụ từ phép quay hình chữ nhật):* Lớp 9A đạt **100%** (42/42 HS) trả lời đúng. Lớp 9B chỉ đạt **85.4%** (35/41 HS), có 6 HS chọn nhầm quay hình tam giác.
    - *Câu 2 (Mối quan hệ bán kính và thể tích hình nón: gấp 3 lần bán kính thì thể tích gấp 9 lần):* Lớp 9A có **92.8%** (39/42 HS) trả lời đúng nhờ đã được thao tác thanh trượt $R$ trên MathLab; Lớp 9B chỉ có **63.4%** (26/41 HS) đúng, có 11 HS trả lời sai thành "gấp 3 lần" do suy luận tuyến tính máy móc.
-   - *Câu 3 (Bán kính đường tròn giao tuyến hình cầu cách tâm $h_c = 3\\text{ cm}$ với bán kính cầu $R = 5\\text{ cm}$):* Lớp 9A có **95.2%** (40/42 HS) tính đúng $r' = \\sqrt{5^2 - 3^2} = 4\\text{ cm}$. Lớp 9B chỉ có **61.0%** (25/41 HS) đúng, có tới 12 học sinh mắc Lỗi sai số 2 (chọn luôn $r' = 5\\text{ cm}$ bằng bán kính khối cầu).
+   - *Câu 3 (Diện tích hình tròn lớn và thể tích bán cầu khi cắt đôi hình cầu $R = 5\\text{ cm}$ qua tâm):* Lớp 9A có **97.6%** (41/42 HS) tính đúng diện tích mặt cắt lớn $S = \\pi R^2 = 25\\pi\\text{ cm}^2$ và thể tích bán cầu $V = \\frac{2}{3}\\pi R^3$. Lớp 9B chỉ có **63.4%** (26/41 HS) đúng, có tới 11 học sinh lúng túng nhầm lẫn sang diện tích toàn bộ mặt cầu $4\\pi R^2$ hoặc chia sai thể tích bán cầu.
 2. **Phần Tự luận thực tiễn (3 câu):**
    - *Câu Tự luận 1 (Tính diện tích inox làm bể nước hình trụ KHÔNG CÓ NẮP và thể tích nước):*
      - Lớp 9A: **88.1%** (37/42 HS) đạt điểm tối đa. Học sinh nhớ rất rõ thao tác bóc vỏ lon không nắp trên MathLab nên chỉ cộng 1 đáy ($S = 2\\pi R h + \\pi R^2$). Chỉ có đúng 1 HS nhầm lẫn cộng 2 đáy.

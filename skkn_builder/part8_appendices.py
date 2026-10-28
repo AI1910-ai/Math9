@@ -3,7 +3,7 @@
 Module Part 8: Hệ thống toàn văn 6 Phụ lục minh chứng chi tiết
 """
 
-PART8_CONTENT = """# PHỤ LỤC
+PART8_CONTENT = r"""# PHỤ LỤC
 
 ---
 
@@ -111,7 +111,7 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 | :---: | :--- | :--- | :---: | :---: |
 | **TN 1** | Hình trụ | Nhận biết được hình trụ được tạo thành khi quay hình chữ nhật quanh một cạnh cố định. | Nhận biết | 0.5 điểm |
 | **TN 2** | Hình nón | Hiểu mối quan hệ hàm số giữa bán kính và thể tích hình nón ($V \\sim R^2$): khi $R$ tăng 3 lần thì $V$ tăng 9 lần. | Thông hiểu | 0.5 điểm |
-| **TN 3** | Hình cầu | Vận dụng định lý Pythagore tính bán kính đường tròn thiết diện mặt cắt hình cầu: $r' = \\sqrt{R^2 - h_c^2}$. | Thông hiểu | 0.5 điểm |
+| **TN 3** | Hình cầu | Hiểu và vận dụng công thức tính diện tích hình tròn lớn khi cắt đôi hình cầu qua tâm: $S_{\\text{cắt}} = \\pi R^2$. | Thông hiểu | 0.5 điểm |
 | **TN 4** | Hình cầu | Nhận biết công thức diện tích mặt cầu $S = 4\\pi R^2 = \\pi d^2$. | Nhận biết | 0.5 điểm |
 | **TN 5** | Hình nón | Nhận biết hình khai triển mặt xung quanh hình nón là hình quạt tròn bán kính $l$. | Nhận biết | 0.5 điểm |
 | **TN 6** | Hình trụ | Vận dụng công thức tính thể tích hình trụ $V = \\pi R^2 h$. | Thông hiểu | 0.5 điểm |
@@ -139,12 +139,11 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 - C. Gấp 9 lần
 - D. Gấp 27 lần
 
-**Câu 3 (Thông hiểu):** Cắt một hình cầu tâm $O$ bán kính $R = 5\\text{ cm}$ bởi một mặt phẳng $(\\alpha)$ cách tâm một khoảng $h_c = 3\\text{ cm}$. Bán kính $r'$ của đường tròn giao tuyến thu được là:
-- A. $r' = 4\\text{ cm}$
-- B. $r' = 5\\text{ cm}$
-- C. $r' = 2\\text{ cm}$
-- D. $r' = \\sqrt{34}\\text{ cm}$
-
+**Câu 3 (Thông hiểu):** Cắt đôi một khối cầu tâm $O$ bán kính $R = 5\\text{ cm}$ bởi một mặt phẳng đi qua tâm $O$. Diện tích của hình tròn thiết diện thu được là:
+- A. $S = 25\\pi\\text{ cm}^2$
+- B. $S = 10\\pi\\text{ cm}^2$
+- C. $S = 50\\pi\\text{ cm}^2$
+- D. $S = 100\\pi\\text{ cm}^2$
 **Câu 4 (Nhận biết):** Công thức tính diện tích của một mặt cầu bán kính $R$ (đường kính $d = 2R$) là:
 - A. $S = \\frac{4}{3}\\pi R^3$
 - B. $S = 2\\pi R^2$

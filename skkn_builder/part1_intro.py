@@ -3,7 +3,7 @@
 Module Part 1: MỤC LỤC (Bắt đầu ngay tại Trang 2 sau Bìa), Danh mục viết tắt, Danh mục bảng biểu, và Phần 1 - ĐẶT VẤN ĐỀ
 """
 
-PART1_CONTENT = """# Mục lục
+PART1_CONTENT = r"""# Mục lục
 
 | NỘI DUNG SÁNG KIẾN KINH NGHIỆM | TRANG |
 | :--- | :---: |
@@ -40,7 +40,7 @@ PART1_CONTENT = """# Mục lục
 | 2.3.2.2. Cơ sở khoa học toán học và thuật toán đồ họa 3D tương tác | 28 |
 | *1. Phép chiếu phối cảnh 3D Wireframe (Perspective 3D Projection)* | 28 |
 | *2. Phương trình giải tích tham số các mặt cong tròn xoay (Chương X Toán 9)* | 28 |
-| *3. Thuật toán mô phỏng mặt cắt hình cầu bởi mặt phẳng: $r' = \sqrt{R^2 - h_c^2}$* | 29 |
+| *3. Thuật toán mô phỏng cắt đôi hình cầu qua tâm và trực quan hóa hai bán cầu* | 29 |
 | *4. Thuật toán mô phỏng thí nghiệm thể tích hình cầu của Archimedes và Nguyên lý Cavalieri* | 30 |
 | 2.3.2.3. Cấu trúc 4 phân hệ chuyên biệt của phần mềm MathLab (Chỉ tập trung Chương X) | 31 |
 | 2.3.2.4. Kiến trúc mạng LAN Offline-First, kết quả kiểm thử đo tải và giải pháp kỹ thuật phòng học | 33 |
@@ -63,7 +63,7 @@ PART1_CONTENT = """# Mục lục
 | 2.4.3. Hệ thống Phiếu học tập và Phiếu hoạt động nhóm dự án thực tế | 63 |
 | *1. Toàn văn Phiếu học tập cá nhân số 1: Khám phá hình trụ và bài toán đời sống* | 63 |
 | *2. Toàn văn Phiếu học tập cá nhân số 2: Khám phá hình nón và chiếc nón lá truyền thống* | 65 |
-| *3. Toàn văn Phiếu học tập cá nhân số 3: Mặt cắt hình cầu và bài toán kinh vĩ tuyến địa cầu* | 66 |
+| *3. Toàn văn Phiếu học tập cá nhân số 3: Cắt đôi hình cầu và bài toán mặt cắt đường tròn lớn* | 66 |
 | *4. Toàn văn Phiếu học tập cá nhân số 4: Thí nghiệm Archimedes và thể tích khối cầu* | 67 |
 | *5. Toàn văn Phiếu hoạt động nhóm số 1: Thiết kế hộp nhựa đựng 3 quả bóng tennis ITF* | 69 |
 | *6. Toàn văn Phiếu hoạt động nhóm số 2: Tối ưu hóa vỏ lon 500ml bằng bất đẳng thức AM-GM* | 71 |
@@ -167,7 +167,7 @@ Bước vào năm học 2026 – 2027, toàn ngành giáo dục đã hoàn thàn
 
 Tuy nhiên, trong thực tiễn dạy học tại các trường THCS trên địa bàn Thành phố Hồ Chí Minh, mảng kiến thức Hình khối trong thực tiễn (Chương X Toán 9) đang bộc lộ những mâu thuẫn nhận thức và rào cản sư phạm hết sức gay gắt:
 
-1. **Rào cản về tâm lý nhận thức và khả năng biểu diễn trực quan:** Học sinh lứa tuổi 14 – 15 đang trong giai đoạn chuyển tiếp từ tư duy thao tác cụ thể sang tư duy trừu tượng hình thức (theo lý thuyết phát triển nhận thức của Jean Piaget). Hình học không gian nghiên cứu các đối tượng ba chiều (3D), nhưng các phương tiện biểu diễn truyền thống (bảng đen, phấn trắng, hình vẽ phẳng trong sách giáo khoa in ấn) chỉ là các phép chiếu hai chiều (2D). Sự suy giảm một chiều không gian này làm phát sinh các hiệu ứng quang học đánh lừa thị giác (các đường tròn bị méo thành hình elip, các góc vuông bị biến dạng thành góc nhọn hoặc góc tù, các đường sinh và chiều cao bị chồng lấn). Đa số học sinh không thể tưởng tượng được sự tạo thành khối tròn xoay từ phép quay của một hình phẳng, không hình dung được mặt phẳng cắt quả cầu tạo ra thiết diện tròn với bán kính thay đổi theo định lý Pythagore, và lúng túng khi khai triển bề mặt cong của hình trụ, hình nón ra mặt phẳng phẳng.
+1. **Rào cản về tâm lý nhận thức và khả năng biểu diễn trực quan:** Học sinh lứa tuổi 14 – 15 đang trong giai đoạn chuyển tiếp từ tư duy thao tác cụ thể sang tư duy trừu tượng hình thức (theo lý thuyết phát triển nhận thức của Jean Piaget). Hình học không gian nghiên cứu các đối tượng ba chiều (3D), nhưng các phương tiện biểu diễn truyền thống (bảng đen, phấn trắng, hình vẽ phẳng trong sách giáo khoa in ấn) chỉ là các phép chiếu hai chiều (2D). Sự suy giảm một chiều không gian này làm phát sinh các hiệu ứng quang học đánh lừa thị giác (các đường tròn bị méo thành hình elip, các góc vuông bị biến dạng thành góc nhọn hoặc góc tù, các đường sinh và chiều cao bị chồng lấn). Đa số học sinh không thể tưởng tượng được sự tạo thành khối tròn xoay từ phép quay của một hình phẳng, không hình dung được mặt phẳng đi qua tâm cắt đôi quả cầu tạo ra thiết diện hình tròn lớn và chia thành hai bán cầu bằng nhau, và lúng túng khi khai triển bề mặt cong của hình trụ, hình nón ra mặt phẳng phẳng.
 
 2. **Hạn chế của thiết bị dạy học truyền thống:** Bộ đồ dùng dạy học hình khối bằng nhựa hoặc mica được trang bị cho các phòng bộ môn thường tĩnh, có kích thước cố định, dễ hư hỏng, không thể thay đổi thông số kích thước linh hoạt, và đặc biệt không thể tái hiện sinh động quá trình "quay liên tục quanh trục" hay quá trình "mặt phẳng chuyển động cắt qua khối cầu". Việc chuẩn bị mô hình cắt bổ vật thật (như lon sữa, nón lá, quả bóng) vừa tốn kém thời gian của giáo viên vừa chỉ mang tính chất minh họa cục bộ, khó khái quát hóa thành quy luật toán học.
 
@@ -198,7 +198,7 @@ Mục đích bao trùm của sáng kiến kinh nghiệm là:
 
 Để đạt được mục đích trên, sáng kiến kinh nghiệm xác định thực hiện 5 nhiệm vụ cụ thể sau:
 1. **Nghiên cứu cơ sở lý luận và thực tiễn:** Hệ thống hóa lý thuyết về phát triển năng lực mô hình hóa toán học, thuyết nhận thức không gian (Piaget, Bruner EIS, Vygotsky ZPD); khảo sát thực trạng nhận thức, thói quen và các sai lầm phổ biến của giáo viên và học sinh lớp 9 khi dạy học Chương X Toán 9 tại TP. Hồ Chí Minh.
-2. **Nghiên cứu cơ sở giải tích và phát triển kỹ thuật MathLab:** Xây dựng hệ thống giải tích tham số đồ họa 3D Wireframe, thuật toán mô phỏng mặt cắt hình cầu $r' = \\sqrt{R^2 - h_c^2}$, thuật toán mô phỏng thí nghiệm thể tích Archimedes; hoàn thiện kiến trúc mạng LAN máy chủ cục bộ (LAN Local Server) bảo đảm tải trọng cho 40 – 50 máy trạm học sinh kết nối đồng thời với độ trễ dưới 25ms.
+2. **Nghiên cứu cơ sở giải tích và phát triển kỹ thuật MathLab:** Xây dựng hệ thống giải tích tham số đồ họa 3D Wireframe, thuật toán mô phỏng cắt đôi hình cầu qua tâm và trực quan hóa hai bán cầu, thuật toán mô phỏng thí nghiệm thể tích Archimedes; hoàn thiện kiến trúc mạng LAN máy chủ cục bộ (LAN Local Server) bảo đảm tải trọng cho 40 – 50 máy trạm học sinh kết nối đồng thời với độ trễ dưới 25ms.
 3. **Thiết kế Trợ lý sư phạm Socrate và đảm bảo an toàn dữ liệu:** Xây dựng cơ chế truy xuất kiến thức bài học (Socratic Assistant), quy định chặt chẽ về prompt sư phạm ngăn chặn hoàn toàn việc giải hộ bài tập, thiết lập cơ chế ẩn danh hóa hình ảnh học sinh theo đúng quy định tại Nghị định 13/2023/NĐ-CP về bảo vệ dữ liệu cá nhân.
 4. **Xây dựng hệ thống Kế hoạch bài dạy, Rubric và Học liệu số:** Soạn thảo 02 Kế hoạch bài dạy chi tiết (Bài 31 và Bài 32), hệ thống 04 Thang tiêu chí Rubric đánh giá năng lực theo Thông tư 22/2021/TT-BGDĐT, 04 Phiếu học tập cá nhân, 02 Phiếu hoạt động nhóm dự án STEAM và bộ bài tập phân hóa 3 mức độ.
 5. **Tiến hành thực nghiệm sư phạm và xử lý số liệu thống kê:** Tổ chức dạy học thực nghiệm tại lớp 9A (lớp thực nghiệm) và lớp 9B (lớp đối chứng) trong năm học 2026 – 2027; thu thập điểm số, phân tích định lượng (t-test, Cohen's d) và định tính để khẳng định hiệu quả vượt trội của sáng kiến.

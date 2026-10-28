@@ -3,7 +3,7 @@
 Module Part 3: Quy trình thiết kế, xây dựng phần mềm MathLab và Trợ lý sư phạm (2.3)
 """
 
-PART3_CONTENT = """## 2.3. Quy trình thiết kế, xây dựng phần mềm MathLab và Trợ lý sư phạm
+PART3_CONTENT = r"""## 2.3. Quy trình thiết kế, xây dựng phần mềm MathLab và Trợ lý sư phạm
 
 ### 2.3.1. Câu hỏi nghiên cứu
 
@@ -47,18 +47,35 @@ Hệ thống đồ họa của MathLab dựng nên các khối tròn xoay thông
 - **Mặt cầu (Sphere):** Tạo thành khi quay nửa hình tròn bán kính $R$ quanh đường kính của nó. Phương trình tham số với góc vĩ độ $u \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ và kinh độ $v \\in [0, 2\\pi]$:
   $$\\begin{cases} X(u, v) = R \\cos u \\cos v \\\\ Y(u, v) = R \\sin u \\\\ Z(u, v) = R \\cos u \\sin v \\end{cases}$$
 
-##### 3. Thuật toán mô phỏng mặt cắt hình cầu bởi mặt phẳng
+##### 3. Thuật toán mô phỏng cắt đôi hình cầu qua tâm và trực quan hóa hai bán cầu
 
-Xét mặt cầu tâm $O(0, 0, 0)$ bán kính $R$. Một mặt phẳng $(\\alpha)$ vuông góc với trục $Oy$ tại vị trí có tung độ $y = h_c$ (khoảng cách từ tâm mặt cầu đến mặt phẳng cắt là $|h_c|$).
+Trọng tâm chuẩn kiến thức của chương trình Hình học 9 (Bài 32: Hình cầu - Bộ sách Kết nối tri thức với cuộc sống) là trường hợp mặt phẳng đi qua tâm $O$ cắt đôi khối cầu thành hai phần bằng nhau gọi là **hai bán cầu**. Giao tuyến của mặt phẳng đi qua tâm và mặt cầu là **đường tròn lớn (Great Circle)** có tâm trùng với tâm hình cầu $O$ và bán kính đúng bằng bán kính hình cầu $r = R$.
 
-Giao tuyến của mặt phẳng $(\\alpha)$ và mặt cầu là tập hợp các điểm thỏa mãn hệ phương trình:
-$$\\begin{cases} X^2 + Y^2 + Z^2 = R^2 \\\\ Y = h_c \\end{cases} \\implies X^2 + Z^2 = R^2 - h_c^2$$
+Nhằm đáp ứng yêu cầu sư phạm tinh gọn, giúp học sinh nắm vững bản chất cốt lõi mà không bị quá tải bởi các tham số phức tạp ngoài chuẩn, MathLab thiết kế thuật toán **Cắt đôi hình cầu (Hemisphere Slicing & Dynamic Separation)**:
 
-Hệ thống lập trình thuật toán phân loại và hiển thị tương tác theo 4 trường hợp toán học:
-- **Trường hợp 1 ($|h_c| > R$):** $R^2 - h_c^2 < 0$, mặt phẳng không cắt mặt cầu. MathLab hiển thị thông báo: *"Mặt phẳng không cắt khối cầu"*.
-- **Trường hợp 2 ($|h_c| = R$):** $R^2 - h_c^2 = 0$, mặt phẳng tiếp xúc với mặt cầu tại một điểm duy nhất (điểm tiếp xúc / cực của khối cầu).
-- **Trường hợp 3 ($0 < |h_c| < R$):** Giao tuyến là một đường tròn nhỏ (Small Circle) có bán kính $r' = \\sqrt{R^2 - h_c^2} < R$. Diện tích thiết diện là $S_{cắt} = \\pi (R^2 - h_c^2)$.
-- **Trường hợp 4 ($h_c = 0$):** Mặt phẳng đi qua đúng tâm $O$ của quả cầu. Giao tuyến là **đường tròn lớn (Great Circle)** có bán kính lớn nhất $r' = R$, diện tích thiết diện cực đại $S_{max} = \\pi R^2$.
+- **Phương trình giải tích mặt phẳng cắt qua tâm ($Y = 0$):**
+  Thiết diện nhận được là hình tròn lớn thỏa mãn:
+  $$X^2 + Z^2 = R^2 \quad (Y = 0)$$
+  - Bán kính thiết diện: $r = R$.
+  - Chu vi đường tròn lớn: $C = 2\pi R$.
+  - Diện tích mặt cắt tròn lớn: $S_{\text{cắt}} = \pi R^2$.
+  - Thể tích của mỗi nửa bán cầu bằng đúng một nửa thể tích khối cầu:
+    $$V_{\text{bán cầu}} = \frac{1}{2} V_{\text{cầu}} = \frac{1}{2} \cdot \left(\frac{4}{3}\pi R^3\right) = \frac{2}{3}\pi R^3$$
+
+- **Thuật toán phân tách động 3D hai nửa bán cầu theo trục tung:**
+  Với tham số tiến trình phân tách $f \in [0, 1]$ (tương ứng thanh trượt $0\% - 100\%$ trên giao diện), độ dời thẳng đứng $\Delta y$ được tính theo công thức:
+  $$\Delta y = f \cdot 0{,}55 R$$
+  - **Bán cầu trên ($Y \ge 0$):** Tâm dịch chuyển lên vị trí $(0, +\Delta y, 0)$. Hệ tọa độ các điểm trên mặt cầu trên:
+    $$\begin{cases} X(u, v) = R \cos u \cos v \\ Y(u, v) = R \sin u + \Delta y \\ Z(u, v) = R \cos u \sin v \end{cases} \quad \left(u \in \left[0, \frac{\pi}{2}\right], v \in [0, 2\pi]\right)$$
+    Bề mặt đáy của bán cầu trên là hình tròn bán kính $R$ tại cao độ $Y = +\Delta y$.
+  - **Bán cầu dưới ($Y \le 0$):** Tâm dịch chuyển xuống vị trí $(0, -\Delta y, 0)$. Các điểm trên mặt cong có tung độ $Y(u, v) = R \sin u - \Delta y$ với $u \in \left[-\frac{\pi}{2}, 0\right]$.
+  - **Mặt cắt hình tròn lớn (Great Circle Surface):** Được tô màu cam sáng ấm áp với độ trong suốt cao cấp (`rgba(249, 115, 22, 0.42)`), viền nét cam đậm (`#f97316`, độ dày $2.8\text{px}$), hiển thị rõ tâm $O$, điểm $M$ trên vành tròn, đoạn bán kính $OM = R$, đường kính $2R$ và nhãn đo lường tức thời $r = R = \dots\text{ cm}$.
+
+- **Cơ chế điều khiển trực quan 1 chạm:**
+  Giao diện cung cấp thanh trượt tiến trình kèm 3 nút điều khiển:
+  - `[▶ Bổ đôi]`: Chạy hoạt họa mượt mà nhấc nửa bán cầu trên lên, mở rộng khoảng cách để lộ rõ mặt phẳng cắt ở giữa.
+  - `[⏸ Tạm dừng]`: Cố định trạng thái ở góc xoay bất kỳ để giáo viên giảng bài và học sinh quan sát.
+  - `[↺ Khép lại]`: Hoàn nguyên chuyển động, khép hai bán cầu khít lại thành khối cầu hoàn chỉnh.
 
 ##### 4. Thuật toán mô phỏng thí nghiệm thể tích hình cầu của Archimedes và nguyên lý Cavalieri
 
