@@ -152,7 +152,7 @@
           <div id="sphereModeTabs" class="cylinder-mode-tabs" hidden>
             <button type="button" data-sphere-mode="solid" class="active">Quan sát khối</button>
             <button type="button" data-sphere-mode="form">Tạo hình (Quay)</button>
-            <button type="button" data-sphere-mode="slice">🔪 Mặt cắt (hc)</button>
+            <button type="button" data-sphere-mode="slice">🔪 Cắt đôi hình cầu</button>
             <button type="button" data-sphere-mode="ball">🏀 Thực tế: Quả bóng rổ</button>
           </div>
           <div class="stage-hint">↔ Kéo để xoay · Cuộn để phóng to</div>
@@ -182,14 +182,14 @@
             <p id="unfoldDesc">Mở mặt xung quanh và các đáy ra thành một mặt phẳng để thấy rõ nguồn gốc diện tích toàn phần.</p>
           </section>
           <section id="sliceControls" class="formation-controls" hidden>
-            <div class="formation-title"><span>KHOẢNG CÁCH MẶT PHẲNG CẮT (hc)</span><output id="sliceDistanceOut">2.0 cm</output></div>
-            <input id="sliceDistance" type="range" min="-5.0" max="5.0" step="0.1" value="2.0">
-            <div class="formation-actions" style="grid-template-columns: 1fr 1fr 1fr;">
-              <button id="sliceMoveNorth" type="button">⬆ Bắc (+R)</button>
-              <button id="sliceMoveCenter" type="button">⦿ Tâm (0)</button>
-              <button id="sliceMoveSouth" type="button">⬇ Nam (-R)</button>
+            <div class="formation-title"><span>TIẾN TRÌNH CẮT ĐÔI (BÁN CẦU)</span><output id="sliceProgressOut">40%</output></div>
+            <input id="sliceProgress" type="range" min="0" max="100" step="1" value="40">
+            <div class="formation-actions">
+              <button id="sliceStart" type="button">▶ Bổ đôi</button>
+              <button id="slicePause" type="button">Ⅱ Tạm dừng</button>
+              <button id="sliceReset" type="button">↺ Khép lại</button>
             </div>
-            <p id="sliceDesc">Kéo mặt phẳng cắt từ cực Bắc xuống cực Nam để kiểm chứng bán kính giao tuyến: r' = √(R² - hc²).</p>
+            <p id="sliceDesc">Mặt phẳng đi qua tâm O cắt đôi hình cầu thành 2 bán cầu bằng nhau; thiết diện nhận được là <b>hình tròn lớn</b> có bán kính đúng bằng bán kính hình cầu (r = R).</p>
           </section>
           <div class="result-card"><span>KẾT QUẢ</span><div id="results"></div></div>
           <div class="note"><b>Gợi ý quan sát</b><p id="labNote"></p></div>

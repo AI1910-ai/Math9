@@ -7,7 +7,7 @@ const MODELS=[
  {id:'pyramid',name:'Hình chóp tứ giác',desc:'Thay đổi cạnh đáy, chiều cao và kiểm chứng công thức.',colors:['#b33c61','#ee86a7'],formula:'V = ⅓S<sub>đáy</sub>h<br>S<sub>đáy</sub> = a²',note:'Mọi hình chóp đều có thể tích bằng một phần ba tích diện tích đáy và chiều cao.',controls:[['a','Cạnh đáy a',2,8,5],['h','Chiều cao h',2,10,7]]}
 ];
 const $=s=>document.querySelector(s), grid=$('#modelGrid'), dialog=$('#labDialog');
-const state={model:MODELS[0],values:{},unit:'cm',angle:.4,tilt:.18,zoom:1,auto:true,drag:false,lastX:0,lastY:0,cylinderMode:'solid',coneMode:'solid',sphereMode:'solid',formAngle:0,formPlaying:false,unfoldProgress:0,unfoldPlaying:false,sliceHc:2.0};
+const state={model:MODELS[0],values:{},unit:'cm',angle:.4,tilt:.18,zoom:1,auto:true,drag:false,lastX:0,lastY:0,cylinderMode:'solid',coneMode:'solid',sphereMode:'solid',formAngle:0,formPlaying:false,unfoldProgress:0,unfoldPlaying:false,sliceProgress:40,slicePlaying:false};
 
 function makeCanvas(canvas,model,preview=false){const ctx=canvas.getContext('2d');let angle=Math.random()*TAU;function fit(){const r=canvas.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);canvas.width=r.width*d;canvas.height=r.height*d;ctx.setTransform(d,0,0,d,0,0)}fit();new ResizeObserver(fit).observe(canvas);function frame(){
     const activeModel = preview ? model : state.model;
@@ -52,6 +52,17 @@ function makeCanvas(canvas,model,preview=false){const ctx=canvas.getContext('2d'
       if(uOut) uOut.textContent = Math.round(state.unfoldProgress) + '%';
     }
 
+    if(isSlice && state.slicePlaying){
+      state.sliceProgress += 1.2;
+      if(state.sliceProgress >= 100){
+        state.sliceProgress = 100;
+        state.slicePlaying = false;
+      }
+      const sSl = $('#sliceProgress'), sOut = $('#sliceProgressOut');
+      if(sSl) sSl.value = Math.round(state.sliceProgress);
+      if(sOut) sOut.textContent = Math.round(state.sliceProgress) + '%';
+    }
+
     if(!preview && activeModel.id === 'cylinder' && state.cylinderMode === 'form')
       drawCylinderFormation(ctx, canvas, state.values, state.angle, state.tilt, state.zoom);
     else if(!preview && activeModel.id === 'cylinder' && state.cylinderMode === 'unfold')
@@ -63,7 +74,7 @@ function makeCanvas(canvas,model,preview=false){const ctx=canvas.getContext('2d'
     else if(!preview && activeModel.id === 'sphere' && state.sphereMode === 'form')
       drawSphereFormation(ctx, canvas, state.values, state.angle, state.tilt, state.zoom);
     else if(!preview && activeModel.id === 'sphere' && state.sphereMode === 'slice')
-      drawSphereSlice(ctx, canvas, state.values, state.angle, state.tilt, state.zoom, state.sliceHc);
+      drawSphereSlice(ctx, canvas, state.values, state.angle, state.tilt, state.zoom, state.sliceProgress);
     else 
       drawScene(ctx, canvas, activeModel, preview ? demoValues(model) : state.values, preview ? angle : state.angle, preview ? .15 : state.tilt, preview ? 1 : state.zoom);
     requestAnimationFrame(frame);
@@ -466,180 +477,184 @@ function drawBasketball(ctx, P, r, a, t, s, cx, cy){
 // ==========================================================================
 // 1. BƯỚC 1: THUẬT TOÁN MÔ PHỎNG MẶT CẮT HÌNH CẦU BỞI MẶT PHẲNG (BÀI 32)
 // ==========================================================================
-function drawSphereSlice(ctx, canvas, v, a, t, z, hc){
+// THUẬT TOÁN MÔ PHỎNG CẮT ĐÔI HÌNH CẦU THÀNH 2 BÁN CẦU (BÀI 32 - TOÁN 9)
+// ==========================================================================
+function drawSphereSlice(ctx, canvas, v, a, t, z, progress){
   const W = canvas.clientWidth, H = canvas.clientHeight;
   ctx.clearRect(0, 0, W, H);
   const cx = W / 2, cy = H / 2 + 10, s = Math.min(W, H) / 14 * z;
   const P = (x, y, z) => project(x, y, z, a, t, s, cx, cy);
   const R = v.r;
-  const curHc = (typeof hc === 'number') ? hc : 2.0;
+  const prog = (typeof progress === 'number') ? Math.max(0, Math.min(100, progress)) : 40;
+  const f = prog / 100;
+  // Khoảng cách nhấc rời 2 nửa bán cầu
+  const dy = f * R * 0.55; 
   const u = state.unit || 'cm';
+  const N = 48;
 
-  // 1. Bóng đổ dưới mặt sàn
+  // 1. Bóng đổ dưới đáy
   ctx.save();
   ctx.fillStyle = 'rgba(18, 76, 65, 0.16)';
   ctx.filter = 'blur(10px)';
   ctx.beginPath();
-  ctx.ellipse(cx, cy + R * s + 14, R * s * 0.75, 18, 0, 0, TAU);
+  ctx.ellipse(cx, cy + (R + dy) * s + 14, R * s * 0.75, 18, 0, 0, TAU);
   ctx.fill();
   ctx.restore();
 
-  // 2. Vẽ khối cầu bán trong suốt (Spherical body)
-  const N = 56;
-  for(let lat = -6; lat <= 6; lat++){
+  // 2. Trục thẳng đứng nối tâm 2 bán cầu khi tách
+  const centerBottom = P(0, -dy, 0);
+  const centerTop = P(0, dy, 0);
+  if(dy > 0.05){
+    line(ctx, [centerBottom, centerTop], 'rgba(255, 255, 255, 0.45)', 1.5, [4, 4]);
+  }
+
+  // 3. VẼ BÁN CẦU DƯỚI (y <= 0, dịch tâm xuống -dy)
+  // Các đường vĩ tuyến của bán cầu dưới (lat từ -6 đến 0)
+  for(let lat = -6; lat <= 0; lat++){
     const q = lat * Math.PI / 12;
     const pts = [];
+    const rad = R * Math.cos(q);
+    const yVal = R * Math.sin(q) - dy;
     for(let i = 0; i <= N; i++){
       const ang = i / N * TAU;
-      pts.push(P(R * Math.cos(q) * Math.cos(ang), R * Math.sin(q), R * Math.cos(q) * Math.sin(ang)));
+      pts.push(P(rad * Math.cos(ang), yVal, rad * Math.sin(ang)));
     }
-    line(ctx, pts, lat === 0 ? 'rgba(167, 139, 250, 0.9)' : 'rgba(167, 139, 250, 0.22)', lat === 0 ? 1.6 : 1);
+    line(ctx, pts, lat === 0 ? 'rgba(249, 115, 22, 0.9)' : 'rgba(167, 139, 250, 0.22)', lat === 0 ? 2.0 : 0.9);
   }
+
+  // Các đường kinh tuyến của bán cầu dưới
   for(let lon = 0; lon < 10; lon++){
     const ang = lon / 10 * TAU;
     const pts = [];
-    for(let i = 0; i <= N; i++){
-      const q = -Math.PI / 2 + i / N * Math.PI;
-      pts.push(P(R * Math.cos(q) * Math.cos(ang), R * Math.sin(q), R * Math.cos(q) * Math.sin(ang)));
+    for(let i = 0; i <= N/2; i++){
+      const q = -Math.PI / 2 + (i / (N/2)) * (Math.PI / 2); // từ -pi/2 đến 0
+      pts.push(P(R * Math.cos(q) * Math.cos(ang), R * Math.sin(q) - dy, R * Math.cos(q) * Math.sin(ang)));
     }
     line(ctx, pts, 'rgba(167, 139, 250, 0.2)');
   }
 
-  // Khối cầu nền mờ gradient
+  // Nền gradient bán cầu dưới
   ctx.save();
   ctx.globalCompositeOperation = 'destination-over';
-  let g = ctx.createRadialGradient(cx - W * 0.08, cy - H * 0.1, 4, cx, cy, R * s);
-  g.addColorStop(0, 'rgba(196, 181, 253, 0.55)');
-  g.addColorStop(0.7, 'rgba(124, 58, 237, 0.35)');
-  g.addColorStop(1, 'rgba(91, 33, 182, 0.2)');
-  ctx.fillStyle = g;
+  let gBot = ctx.createRadialGradient(cx, cy + dy * s * 0.5, 4, cx, cy + dy * s * 0.5, R * s);
+  gBot.addColorStop(0, 'rgba(196, 181, 253, 0.45)');
+  gBot.addColorStop(0.8, 'rgba(124, 58, 237, 0.3)');
+  gBot.addColorStop(1, 'rgba(91, 33, 182, 0.18)');
+  ctx.fillStyle = gBot;
   ctx.beginPath();
-  ctx.arc(cx, cy, R * s, 0, TAU);
+  ctx.arc(cx, cy + dy * s, R * s, 0, TAU);
   ctx.fill();
   ctx.restore();
 
-  // 3. Trục thẳng đứng đi qua tâm O và 2 cực Bắc - Nam
-  const northPole = P(0, R, 0);
-  const southPole = P(0, -R, 0);
-  const centerO = P(0, 0, 0);
-  line(ctx, [southPole, northPole], 'rgba(255, 255, 255, 0.35)', 1.2, [4, 4]);
+  // 4. MẶT PHẲNG CẮT HÌNH TRÒN LỚN (Great Circle Cut Surface) ở mặt trên của Bán cầu dưới
+  const cutCircle = [];
+  for(let i = 0; i <= N; i++){
+    const ang = i / N * TAU;
+    cutCircle.push(P(R * Math.cos(ang), -dy, R * Math.sin(ang)));
+  }
+  // Đổ màu mặt cắt hình tròn lớn (Màu cam sáng rực rỡ, bề mặt phẳng)
+  face(ctx, cutCircle, 'rgba(249, 115, 22, 0.42)', '#f97316');
+  line(ctx, cutCircle, '#f97316', 2.8);
 
-  // 4. Mặt phẳng cắt (y = curHc)
-  const L = R * 1.35;
-  const p1 = P(-L, curHc, -L);
-  const p2 = P(L, curHc, -L);
-  const p3 = P(L, curHc, L);
-  const p4 = P(-L, curHc, L);
-  face(ctx, [p1, p2, p3, p4], 'rgba(56, 189, 248, 0.22)', 'rgba(56, 189, 248, 0.85)');
+  // Vạch nan quạt / đường kính trên mặt cắt tròn lớn
+  for(let spoke = 0; spoke < 4; spoke++){
+    const sAng = spoke * Math.PI / 4 + a;
+    const pA = P(R * Math.cos(sAng), -dy, R * Math.sin(sAng));
+    const pB = P(-R * Math.cos(sAng), -dy, -R * Math.sin(sAng));
+    line(ctx, [pA, pB], 'rgba(254, 215, 170, 0.45)', 1.0, [3, 3]);
+  }
 
-  // Nhãn mặt phẳng cắt
+  // Bán kính mặt cắt r = R trên mặt cắt
+  const rAng = a + 0.65;
+  const rimPt = P(R * Math.cos(rAng), -dy, R * Math.sin(rAng));
+  line(ctx, [centerBottom, rimPt], '#ffffff', 2.4);
+
+  // Điểm tâm O trên mặt cắt
+  ctx.beginPath();
+  ctx.arc(centerBottom[0], centerBottom[1], 5, 0, TAU);
+  ctx.fillStyle = '#ffffff';
+  ctx.fill();
+  ctx.strokeStyle = '#f97316';
+  ctx.lineWidth = 2.2;
+  ctx.stroke();
+
+  // Điểm M trên mép đường tròn lớn
+  ctx.beginPath();
+  ctx.arc(rimPt[0], rimPt[1], 4.5, 0, TAU);
+  ctx.fillStyle = '#f97316';
+  ctx.fill();
+  ctx.strokeStyle = '#ffffff';
+  ctx.lineWidth = 2;
+  ctx.stroke();
+
+  // Nhãn O và M
   ctx.save();
-  ctx.font = '600 12px Inter, sans-serif';
-  ctx.fillStyle = '#38bdf8';
-  ctx.fillText('Mặt phẳng cắt (y = hc)', p1[0] - 10, p1[1] - 8);
+  ctx.font = '800 14px Inter, sans-serif';
+  ctx.fillStyle = '#ffffff';
+  ctx.shadowColor = 'rgba(0,0,0,0.85)';
+  ctx.shadowBlur = 4;
+  ctx.fillText('O', centerBottom[0] - 18, centerBottom[1] + 16);
+  ctx.fillStyle = '#fed7aa';
+  ctx.fillText('M', rimPt[0] + 12, rimPt[1] + 6);
+
+  // Nhãn bán kính r = R trên mặt cắt
+  ctx.font = '700 12.5px Inter, sans-serif';
+  ctx.fillStyle = '#fef08a';
+  const midR_x = (centerBottom[0] + rimPt[0]) / 2;
+  const midR_y = (centerBottom[1] + rimPt[1]) / 2 - 12;
+  ctx.fillText(`r = R = ${R.toFixed(1)} ${u}`, midR_x, midR_y);
   ctx.restore();
 
-  // 5. Kiểm tra trường hợp cắt & Vẽ đường tròn giao tuyến
-  const diff = R * R - curHc * curHc;
-  if(diff > 0.0001){
-    const rPrime = Math.sqrt(diff);
-    const cutCircle = [];
+  // 5. VẼ BÁN CẦU TRÊN (y >= 0, dịch tâm lên +dy)
+  // Mặt đáy của bán cầu trên
+  const topCutCircle = [];
+  for(let i = 0; i <= N; i++){
+    const ang = i / N * TAU;
+    topCutCircle.push(P(R * Math.cos(ang), dy, R * Math.sin(ang)));
+  }
+  face(ctx, topCutCircle, 'rgba(168, 85, 247, 0.28)', 'rgba(196, 181, 253, 0.85)');
+  line(ctx, topCutCircle, 'rgba(196, 181, 253, 0.85)', 1.8);
+
+  // Các đường vĩ tuyến của bán cầu trên (lat từ 0 đến 6)
+  for(let lat = 0; lat <= 6; lat++){
+    const q = lat * Math.PI / 12;
+    const pts = [];
+    const rad = R * Math.cos(q);
+    const yVal = R * Math.sin(q) + dy;
     for(let i = 0; i <= N; i++){
       const ang = i / N * TAU;
-      cutCircle.push(P(rPrime * Math.cos(ang), curHc, rPrime * Math.sin(ang)));
+      pts.push(P(rad * Math.cos(ang), yVal, rad * Math.sin(ang)));
     }
-    // Tô màu thiết diện cam rực rỡ
-    face(ctx, cutCircle, 'rgba(249, 115, 22, 0.45)', '#f97316');
-    line(ctx, cutCircle, '#f97316', 2.6);
+    line(ctx, pts, lat === 0 ? 'rgba(196, 181, 253, 0.9)' : 'rgba(167, 139, 250, 0.22)', lat === 0 ? 1.6 : 0.9);
+  }
 
-    // Điểm tâm thiết diện H
-    const centerH = P(0, curHc, 0);
-    // Điểm M trên đường tròn thiết diện (chọn góc rõ nhất cho camera)
-    const mAngle = a + 0.55;
-    const pointM = P(rPrime * Math.cos(mAngle), curHc, rPrime * Math.sin(mAngle));
-
-    // Tam giác vuông OHM:
-    // Cạnh OH (khoảng cách tâm |hc|)
-    line(ctx, [centerO, centerH], '#fbbf24', 2.4, [5, 3]);
-    // Cạnh HM (bán kính thiết diện r')
-    line(ctx, [centerH, pointM], '#f97316', 2.6);
-    // Cạnh huyền OM (bán kính hình cầu R)
-    line(ctx, [centerO, pointM], '#ffffff', 2.2);
-
-    // Ký hiệu góc vuông tại H
-    const dirHM_x = (pointM[0] - centerH[0]), dirHM_y = (pointM[1] - centerH[1]);
-    const lenHM = Math.hypot(dirHM_x, dirHM_y) || 1;
-    const uHM_x = dirHM_x / lenHM * 10, uHM_y = dirHM_y / lenHM * 10;
-    const dirOH_x = (centerO[0] - centerH[0]), dirOH_y = (centerO[1] - centerH[1]);
-    const lenOH = Math.hypot(dirOH_x, dirOH_y) || 1;
-    const uOH_x = dirOH_x / lenOH * 10, uOH_y = dirOH_y / lenOH * 10;
-    if(lenOH > 12 && lenHM > 12){
-      ctx.beginPath();
-      ctx.moveTo(centerH[0] + uHM_x, centerH[1] + uHM_y);
-      ctx.lineTo(centerH[0] + uHM_x + uOH_x, centerH[1] + uHM_y + uOH_y);
-      ctx.lineTo(centerH[0] + uOH_x, centerH[1] + uOH_y);
-      ctx.strokeStyle = '#fef08a';
-      ctx.lineWidth = 1.4;
-      ctx.stroke();
+  // Các đường kinh tuyến của bán cầu trên
+  for(let lon = 0; lon < 10; lon++){
+    const ang = lon / 10 * TAU;
+    const pts = [];
+    for(let i = 0; i <= N/2; i++){
+      const q = (i / (N/2)) * (Math.PI / 2); // từ 0 đến pi/2
+      pts.push(P(R * Math.cos(q) * Math.cos(ang), R * Math.sin(q) + dy, R * Math.cos(q) * Math.sin(ang)));
     }
+    line(ctx, pts, 'rgba(167, 139, 250, 0.2)');
+  }
 
-    // Các điểm đỉnh O, H, M
-    [
-      { pt: centerO, fill: '#ffffff', stroke: '#1e1b4b', label: 'O', lx: -18, ly: 16 },
-      { pt: centerH, fill: '#fbbf24', stroke: '#1e1b4b', label: 'H', lx: -18, ly: -10 },
-      { pt: pointM, fill: '#f97316', stroke: '#ffffff', label: 'M', lx: 14, ly: 6 }
-    ].forEach(d => {
-      ctx.beginPath();
-      ctx.arc(d.pt[0], d.pt[1], 4.5, 0, TAU);
-      ctx.fillStyle = d.fill;
-      ctx.fill();
-      ctx.strokeStyle = d.stroke;
-      ctx.lineWidth = 2;
-      ctx.stroke();
-
-      ctx.save();
-      ctx.font = '800 14px Inter, sans-serif';
-      ctx.fillStyle = d.fill;
-      ctx.shadowColor = 'rgba(0,0,0,0.85)';
-      ctx.shadowBlur = 4;
-      ctx.fillText(d.label, d.pt[0] + d.lx, d.pt[1] + d.ly);
-      ctx.restore();
-    });
-
-    // Nhãn kích thước trên các cạnh
+  // Nhãn chỉ định bán cầu trên & dưới
+  if(dy > R * 0.15){
+    const northPt = P(0, R + dy, 0);
+    const southPt = P(0, -R - dy, 0);
     ctx.save();
     ctx.font = '700 12px Inter, sans-serif';
-    ctx.fillStyle = '#fbbf24';
-    ctx.shadowColor = 'rgba(0,0,0,0.8)';
+    ctx.shadowColor = 'rgba(0,0,0,0.85)';
     ctx.shadowBlur = 4;
-    ctx.fillText(`|hc| = ${Math.abs(curHc).toFixed(1)} ${u}`, (centerO[0] + centerH[0]) / 2 + 10, (centerO[1] + centerH[1]) / 2);
-    ctx.fillStyle = '#f97316';
-    ctx.fillText(`r' = ${rPrime.toFixed(2)} ${u}`, (centerH[0] + pointM[0]) / 2, (centerH[1] + pointM[1]) / 2 - 12);
-    ctx.fillStyle = '#ffffff';
-    ctx.fillText(`R = ${R.toFixed(1)} ${u}`, (centerO[0] + pointM[0]) / 2 - 20, (centerO[1] + pointM[1]) / 2 + 14);
-    ctx.restore();
-
-  } else if(Math.abs(diff) <= 0.0001){
-    // Tiếp xúc tại 1 điểm
-    const contactPt = P(0, curHc, 0);
-    ctx.beginPath();
-    ctx.arc(contactPt[0], contactPt[1], 6, 0, TAU);
-    ctx.fillStyle = '#fbbf24';
-    ctx.fill();
-    ctx.strokeStyle = '#ffffff';
-    ctx.lineWidth = 2.5;
-    ctx.stroke();
-
-    ctx.save();
-    ctx.font = '700 13px Inter, sans-serif';
-    ctx.fillStyle = '#fef08a';
-    ctx.shadowColor = 'rgba(0,0,0,0.9)';
-    ctx.shadowBlur = 4;
-    ctx.fillText('Tiếp điểm (Cực khối cầu)', contactPt[0] + 12, contactPt[1] + 5);
+    ctx.fillStyle = '#c4b5fd';
+    ctx.fillText('Bán cầu trên', northPt[0] + 16, northPt[1] + 10);
+    ctx.fillStyle = '#fdba74';
+    ctx.fillText('Bán cầu dưới', southPt[0] + 16, southPt[1] - 8);
     ctx.restore();
   }
 
-  // 6. HUD Box thông tin định lý Pythagore tự động căn chỉnh dưới thanh tabs (không bị che khuất)
+  // 6. HUD Box thông số cắt đôi (hình tròn lớn)
   ctx.save();
   let tabBottom = 72;
   const tabsElem = document.querySelector('#sphereModeTabs');
@@ -648,9 +663,9 @@ function drawSphereSlice(ctx, canvas, v, a, t, z, hc){
     const cRect = canvas.getBoundingClientRect();
     if(cRect.height > 0) tabBottom = Math.max(70, Math.round(r.bottom - cRect.top + 10));
   }
-  const hudX = 16, hudY = tabBottom, hudW = Math.min(260, W - 32), hudH = 94;
+  const hudX = 16, hudY = tabBottom, hudW = Math.min(270, W - 32), hudH = 92;
   ctx.fillStyle = 'rgba(15, 23, 42, 0.88)';
-  ctx.strokeStyle = '#38bdf8';
+  ctx.strokeStyle = '#f97316';
   ctx.lineWidth = 1.2;
   if(ctx.roundRect){
     ctx.beginPath();
@@ -662,37 +677,26 @@ function drawSphereSlice(ctx, canvas, v, a, t, z, hc){
     ctx.strokeRect(hudX, hudY, hudW, hudH);
   }
 
-  ctx.fillStyle = '#38bdf8';
+  ctx.fillStyle = '#f97316';
   ctx.font = '800 11px Inter, sans-serif';
-  ctx.fillText('THIẾT DIỆN CẮT MẶT CẦU (BÀI 32)', hudX + 12, hudY + 22);
+  ctx.fillText('MẶT CẮT QUA TÂM O (CẮT ĐÔI HÌNH CẦU)', hudX + 12, hudY + 20);
 
   ctx.font = '600 12px Inter, sans-serif';
   ctx.fillStyle = '#ffffff';
-  ctx.fillText(`ΔOHM vuông tại H: OM² = OH² + HM²`, hudX + 12, hudY + 44);
+  ctx.fillText(`Mặt cắt là hình tròn lớn: r = R = ${R.toFixed(1)} ${u}`, hudX + 12, hudY + 40);
 
-  if(diff > 0.0001){
-    const rP = Math.sqrt(diff);
-    ctx.fillStyle = '#f97316';
-    ctx.font = '700 13px Inter, sans-serif';
-    ctx.fillText(`r' = √(R² - hc²) = ${rP.toFixed(2)} ${u}`, hudX + 12, hudY + 66);
-    ctx.fillStyle = '#4ade80';
-    ctx.font = '600 11.5px Inter, sans-serif';
-    ctx.fillText(`Scắt = π(r')² = ${(Math.PI * rP * rP).toFixed(2)} ${u}²`, hudX + 12, hudY + 84);
-  } else if(Math.abs(diff) <= 0.0001){
-    ctx.fillStyle = '#fbbf24';
-    ctx.font = '700 12px Inter, sans-serif';
-    ctx.fillText(`|hc| = R ⟹ Tiếp xúc tại 1 điểm`, hudX + 12, hudY + 68);
-  } else {
-    ctx.fillStyle = '#ef4444';
-    ctx.font = '700 12px Inter, sans-serif';
-    ctx.fillText(`|hc| > R ⟹ Mặt phẳng không cắt cầu!`, hudX + 12, hudY + 68);
-  }
+  ctx.fillStyle = '#fef08a';
+  ctx.font = '700 12.5px Inter, sans-serif';
+  const areaCircle = Math.PI * R * R;
+  ctx.fillText(`Diện tích mặt cắt: S = πR² = ${areaCircle.toFixed(2)} ${u}²`, hudX + 12, hudY + 60);
+
+  ctx.fillStyle = '#c4b5fd';
+  ctx.font = '600 11.5px Inter, sans-serif';
+  const vHemi = (2/3) * Math.PI * (R**3);
+  ctx.fillText(`Thể tích mỗi bán cầu: V = ⅔πR³ = ${vHemi.toFixed(2)} ${u}³`, hudX + 12, hudY + 79);
   ctx.restore();
 }
 
-// ==========================================================================
-// 2. BƯỚC 2A: THUẬT TOÁN TRẢI PHẲNG (KHAI TRIỂN) HÌNH TRỤ (BÀI 30)
-// ==========================================================================
 function drawCylinderUnfold(ctx, canvas, v, a, t, z, progress){
   const W = canvas.clientWidth, H = canvas.clientHeight;
   ctx.clearRect(0, 0, W, H);
@@ -1052,7 +1056,8 @@ function openLab(m){
   state.formPlaying=false;
   state.unfoldProgress=0;
   state.unfoldPlaying=false;
-  state.sliceHc=2.0;
+  state.sliceProgress=40;
+  state.slicePlaying=false;
   
   $('#labTitle').textContent=m.name;
   $('#formula').innerHTML=m.formula;
@@ -1483,17 +1488,14 @@ document.querySelectorAll('#sphereModeTabs button').forEach(button=>button.oncli
     $('.stage-hint').textContent='Nửa hình tròn quay quanh đường kính để tạo hình cầu';
   } else if(isSlice){
     state.formPlaying = false;
-    state.sliceHc = Math.min(state.values.r * 0.5, 2.0);
-    const slDist = $('#sliceDistance'), distOut = $('#sliceDistanceOut');
-    if(slDist){
-      slDist.min = (-state.values.r * 1.2).toFixed(1);
-      slDist.max = (state.values.r * 1.2).toFixed(1);
-      slDist.value = state.sliceHc.toFixed(1);
-    }
-    if(distOut) distOut.textContent = `${state.sliceHc.toFixed(1)} ${state.unit||'cm'}`;
-    $('#formula').innerHTML="r' = √(R² - h<sub>c</sub>²)<br>S<sub>cắt</sub> = π(r')²";
-    $('#labNote').textContent="Mặt phẳng cắt mặt cầu tâm O bán kính R tại vị trí cách tâm khoảng hc. Áp dụng định lý Pythagore trong tam giác vuông OHM: OM² = OH² + HM² ⟹ R² = hc² + (r')² ⟹ r' = √(R² - hc²).";
-    $('.stage-hint').textContent='🔪 Mặt phẳng cắt di động: Kéo thanh trượt hc để kiểm chứng bán kính thiết diện';
+    state.slicePlaying = false;
+    state.sliceProgress = 40;
+    const slProg = $('#sliceProgress'), slOut = $('#sliceProgressOut');
+    if(slProg) slProg.value = 40;
+    if(slOut) slOut.textContent = '40%';
+    $('#formula').innerHTML="r = R<br>S<sub>cắt</sub> = πR²<br>V<sub>bán cầu</sub> = &frac23;πR³";
+    $('#labNote').textContent="Khi cắt đôi hình cầu tâm O bán kính R bởi một mặt phẳng đi qua tâm, mặt cắt thu được là hình tròn lớn có bán kính r = R và diện tích S = πR². Khối cầu được chia thành hai bán cầu bằng nhau có thể tích mỗi nửa là V = ⅔πR³.";
+    $('.stage-hint').textContent='🔪 Cắt đôi hình cầu: Nhấn [▶ Bổ đôi] hoặc kéo thanh trượt để quan sát 2 nửa bán cầu tách rời';
   } else if(state.sphereMode==='ball'){
     state.formPlaying = false;
     state.values.r=3.5;
@@ -1577,44 +1579,37 @@ if(uReset){
   };
 }
 
-// Slice controls listeners
-const sSlider = $('#sliceDistance');
-if(sSlider){
-  sSlider.oninput = e => {
-    state.sliceHc = +e.target.value;
-    const out = $('#sliceDistanceOut');
-    if(out) out.textContent = `${state.sliceHc.toFixed(1)} ${state.unit||'cm'}`;
-    updateResults();
+// Slice (Hemisphere cut) controls listeners
+const slProg = $('#sliceProgress');
+if(slProg){
+  slProg.oninput = e => {
+    state.sliceProgress = +e.target.value;
+    state.slicePlaying = false;
+    const out = $('#sliceProgressOut');
+    if(out) out.textContent = `${Math.round(state.sliceProgress)}%`;
   };
 }
-const sNorth = $('#sliceMoveNorth');
-if(sNorth){
-  sNorth.onclick = () => {
-    state.sliceHc = state.values.r;
-    if(sSlider) sSlider.value = state.sliceHc.toFixed(1);
-    const out = $('#sliceDistanceOut');
-    if(out) out.textContent = `${state.sliceHc.toFixed(1)} ${state.unit||'cm'}`;
-    updateResults();
+const slStart = $('#sliceStart');
+if(slStart){
+  slStart.onclick = () => {
+    if(state.sliceProgress >= 100) state.sliceProgress = 0;
+    state.slicePlaying = true;
   };
 }
-const sCenter = $('#sliceMoveCenter');
-if(sCenter){
-  sCenter.onclick = () => {
-    state.sliceHc = 0;
-    if(sSlider) sSlider.value = '0.0';
-    const out = $('#sliceDistanceOut');
-    if(out) out.textContent = `0.0 ${state.unit||'cm'}`;
-    updateResults();
+const slPause = $('#slicePause');
+if(slPause){
+  slPause.onclick = () => {
+    state.slicePlaying = false;
   };
 }
-const sSouth = $('#sliceMoveSouth');
-if(sSouth){
-  sSouth.onclick = () => {
-    state.sliceHc = -state.values.r;
-    if(sSlider) sSlider.value = state.sliceHc.toFixed(1);
-    const out = $('#sliceDistanceOut');
-    if(out) out.textContent = `${state.sliceHc.toFixed(1)} ${state.unit||'cm'}`;
-    updateResults();
+const slReset = $('#sliceReset');
+if(slReset){
+  slReset.onclick = () => {
+    state.slicePlaying = false;
+    state.sliceProgress = 0;
+    if(slProg) slProg.value = 0;
+    const out = $('#sliceProgressOut');
+    if(out) out.textContent = '0%';
   };
 }
 
