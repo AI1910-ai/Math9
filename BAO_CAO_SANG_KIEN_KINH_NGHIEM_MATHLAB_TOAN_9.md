@@ -75,8 +75,8 @@
 | *Đánh giá định tính chi tiết – Khớp 100% với Đề kiểm tra Phụ lục 4* | 81 |
 | 2.5.3. Kiểm định thống kê toán học giả thuyết t-Student và đo kích thước ảnh hưởng Cohen's d | 82 |
 | *Bảng 2.5.1: So sánh các tham số thống kê mô tả đặc trưng giữa Lớp thực nghiệm 9A và Lớp đối chứng 9B* | 82 |
-| *1. Kiểm định giả thuyết ý nghĩa thống kê bằng Student t-test: t = 4.353, p < 0.001* | 83 |
-| *2. Đo lường kích thước ảnh hưởng Cohen's d: d = 0.960 (Mức độ tác động rất lớn)* | 83 |
+| *1. Kiểm định giả thuyết ý nghĩa thống kê bằng Student t-test: t = 4{,}353, p < 0{,}001* | 83 |
+| *2. Đo lường kích thước ảnh hưởng Cohen's d: d = 0{,}960 (Mức độ tác động rất lớn)* | 83 |
 | 2.5.4. Theo dõi tiến trình học tập chuỗi thời gian năm học 2026 – 2027 | 84 |
 | *Bảng 2.6: Theo dõi tiến trình điểm trung bình qua 5 đợt kiểm tra trong năm học 2026 – 2027* | 84 |
 | **3. KẾT LUẬN VÀ KHUYẾN NGHỊ** | **86** |
@@ -92,7 +92,7 @@
 | *Bảng PL4.1: Ma trận đề kiểm tra đánh giá năng lực Chương X Toán 9 theo Thông tư 22/2021/TT-BGDĐT* | 94 |
 | *Bảng PL4.2: Bản đặc tả chi tiết các câu hỏi trong đề kiểm tra* | 95 |
 | *Đề bài kiểm tra (Phần I: 6 câu Trắc nghiệm khách quan; Phần II: 3 bài Tự luận thực tiễn)* | 95 |
-| *Hướng dẫn chấm và thang điểm chi tiết (Chia nhỏ đến 0.25 điểm)* | 96 |
+| *Hướng dẫn chấm và thang điểm chi tiết (Chia nhỏ đến 0{,}25 điểm)* | 96 |
 | Phụ lục 5: Bảng tổng hợp điểm số thô đối chứng của 83 học sinh (Năm học 2026 – 2027) | 97 |
 | *Bảng PL5.1: Bảng điểm số thô chi tiết 42 học sinh Lớp thực nghiệm 9A* | 97 |
 | *Bảng PL5.2: Bảng điểm số thô chi tiết 41 học sinh Lớp đối chứng 9B* | 98 |
@@ -270,7 +270,7 @@ Kế thừa các thành tựu lý luận kinh điển và nghiên cứu thực t
 5. **Phương pháp thống kê toán học (Mathematical Statistics):**
    - Xử lý số liệu kiểm tra định lượng bằng phần mềm chuyên dụng (Excel / R / Python SciPy).
    - Tính toán các tham số thống kê mô tả: Điểm trung bình ($\\\\bar{X}$), Độ lệch chuẩn ($s$), Phương sai ($s^2$), Trung vị ($Me$), Mốt ($Mo$), Khoảng tứ phân vị ($IQR$).
-   - Kiểm định ý nghĩa thống kê bằng phép thử Student $t$-test độc lập hai mẫu để khẳng định sự chênh lệch có ý nghĩa thống kê ($p < 0.05$).
+   - Kiểm định ý nghĩa thống kê bằng phép thử Student $t$-test độc lập hai mẫu để khẳng định sự chênh lệch có ý nghĩa thống kê ($p < 0{,}05$).
    - Tính toán chỉ số kích thước ảnh hưởng Cohen's $d$ để đo lường mức độ tác động thực tế của giải pháp sư phạm theo tiêu chuẩn quốc tế.
 
 ---
@@ -307,7 +307,7 @@ Theo Chương trình GDPT 2018 môn Toán (ban hành kèm Thông tư số 32/201
    - Biết lược bỏ các chi tiết vật lý thứ yếu (màu sắc, nhãn mác, chất liệu phụ) để trừu tượng hóa, quy về các đối tượng hình học không gian chuẩn mực (hình trụ, hình nón, hình cầu hoặc các hình phối hợp).
    - Xác định rõ các biến số, tham số đầu vào cần đo đạc hoặc tính toán (bán kính đáy $R$, đường kính đáy $d$, chiều cao $h$, độ dài đường sinh $l$, bán kính khối cầu $R$).
 2. **Thành tố 2: Thiết lập được mối quan hệ toán học và bài toán toán học:**
-   - Vận dụng các định lý, công thức hình học không gian (định lý Pythagore $l^2 = R^2 + h^2$, công thức diện tích xung quanh $S_{xq} = 2\\pi R h$, $S_{xq} = \\pi R l$, diện tích toàn phần, thể tích $V = \\pi R^2 h$, $V = \\frac{1}{3}\\pi R^2 h$, $V = \\frac{4}{3}\\pi R^3$, diện tích mặt cầu $S = 4\\pi R^2$) để xây dựng biểu thức, phương trình hoặc hàm số toán học tương ứng.
+   - Vận dụng các định lý, công thức hình học không gian (định lý Pythagore $l^2 = R^2 + h^2$, công thức diện tích xung quanh $S_{\text{xq}} = 2\\pi R h$, $S_{\text{xq}} = \\pi R l$, diện tích toàn phần, thể tích $V = \\pi R^2 h$, $V = \\frac{1}{3}\\pi R^2 h$, $V = \\frac{4}{3}\\pi R^3$, diện tích mặt cầu $S = 4\\pi R^2$) để xây dựng biểu thức, phương trình hoặc hàm số toán học tương ứng.
 3. **Thành tố 3: Giải quyết được bài toán trong mô hình toán học đã thiết lập:**
    - Thực hiện các phép biến đổi đại số, giải phương trình, tính toán số học chuẩn xác, phối hợp linh hoạt việc làm tròn số với hằng số $\\pi$ (lấy $\\pi \\approx 3{,}14$ hoặc giữ nguyên ký hiệu $\\pi$ theo yêu cầu của đề bài).
    - Biết vận dụng các bất đẳng thức kinh điển (như bất đẳng thức AM-GM cho 3 số dương) để giải các bài toán tối ưu hóa hình thể (diện tích vỏ lon nhỏ nhất khi dung tích không đổi).
@@ -336,12 +336,12 @@ Nhà tâm lý học giáo dục lỗi lạc Jerome S. Bruner (1966) đã chỉ r
 2. **Phương thức Iconic (Trực quan hình ảnh):** Người học xây dựng hình ảnh tâm lý (Mental Imagery) thông qua các biểu diễn thị giác, hình vẽ trực quan, mô hình mô phỏng chuyển động.
 3. **Phương thức Symbolic (Ký hiệu trừu tượng):** Người học sử dụng hệ thống ngôn ngữ, ký hiệu toán học, biểu thức đại số và công thức trừu tượng để tư duy và lập luận logic.
 
-Trong dạy học hình học không gian truyền thống, giáo viên thường mắc sai lầm nghiêm trọng là **đốt cháy giai đoạn nhận thức**: từ việc giới thiệu sơ lược một vật thật (Enactive rất ngắn ngủi), giáo viên vẽ ngay một hình chiếu phẳng tĩnh lên bảng và yêu cầu học sinh học thuộc các công thức ký hiệu (Symbolic) như $S_{xq} = 2\\pi R h$ hay $V = \\frac{4}{3}\\pi R^3$. Học sinh bị "hẫng hụt nhận thức" ở cấp độ **Iconic** – các em không có đủ thời gian và công cụ để tạo dựng hình ảnh tâm lý động về sự quét của một cạnh tạo thành mặt tròn xoay, hay sự biến thiên của thiết diện cắt.
+Trong dạy học hình học không gian truyền thống, giáo viên thường mắc sai lầm nghiêm trọng là **đốt cháy giai đoạn nhận thức**: từ việc giới thiệu sơ lược một vật thật (Enactive rất ngắn ngủi), giáo viên vẽ ngay một hình chiếu phẳng tĩnh lên bảng và yêu cầu học sinh học thuộc các công thức ký hiệu (Symbolic) như $S_{\text{xq}} = 2\\pi R h$ hay $V = \\frac{4}{3}\\pi R^3$. Học sinh bị "hẫng hụt nhận thức" ở cấp độ **Iconic** – các em không có đủ thời gian và công cụ để tạo dựng hình ảnh tâm lý động về sự quét của một cạnh tạo thành mặt tròn xoay, hay sự biến thiên của thiết diện cắt.
 
 Phần mềm **MathLab** được thiết kế như một "giàn giáo nhận thức Iconic động" lý tưởng:
 - Bằng cách cung cấp thanh trượt góc quay $\\alpha$ từ $0^\\circ$ đến $360^\\circ$, học sinh nhìn thấy trực tiếp hình chữ nhật đang quay quanh một cạnh cố định, vệt quét của cạnh đối diện vẽ nên mặt xung quanh của hình trụ, và hai cạnh kề vẽ nên hai đáy tròn.
 - Bằng cách cho phép xoay tự do mô hình 3D trong không gian ảo 360 độ (bằng chuột hoặc cảm ứng), học sinh nhận diện rõ các yếu tố ẩn/hiện, phá vỡ hiệu ứng đánh lừa thị giác của hình chiếu 2D phẳng.
-- Bằng cách tích hợp tính năng khai triển bề mặt (Unfolding), học sinh tận mắt chứng kiến mặt trụ trải phẳng thành một hình chữ nhật có chiều dài chính là chu vi đáy $C = 2\\pi R$ và chiều rộng là chiều cao $h$, từ đó các em tự mình kiến tạo ra công thức $S_{xq} = 2\\pi R h$ mà không cần học vẹt.
+- Bằng cách tích hợp tính năng khai triển bề mặt (Unfolding), học sinh tận mắt chứng kiến mặt trụ trải phẳng thành một hình chữ nhật có chiều dài chính là chu vi đáy $C = 2\\pi R$ và chiều rộng là chiều cao $h$, từ đó các em tự mình kiến tạo ra công thức $S_{\text{xq}} = 2\\pi R h$ mà không cần học vẹt.
 
 ### 2.1.4. Định hướng tổ chức hoạt động trải nghiệm toán học và chuyển đổi số trong giáo dục THCS
 
@@ -380,24 +380,24 @@ Nhằm có căn cứ thực tiễn vững chắc, vào đầu năm học **2026 
 
 | Tiêu chí khảo sát nhận thức của học sinh | Rất không thích / Rất khó | Không thích / Khó | Bình thường | Hứng thú / Dễ | Rất hứng thú / Rất thích |
 | :--- | :---: | :---: | :---: | :---: | :---: |
-| 1. Thái độ đối với phân môn Hình học không gian (Chương X) | 38 HS (30.4%) | 49 HS (39.2%) | 24 HS (19.2%) | 11 HS (8.8%) | 3 HS (2.4%) |
-| 2. Khả năng tưởng tượng hình ảnh 3D từ hình vẽ phẳng 2D trong SGK | 45 HS (36.0%) | 52 HS (41.6%) | 18 HS (14.4%) | 8 HS (6.4%) | 2 HS (1.6%) |
-| 3. Mức độ tự tin khi giải các bài toán thực tiễn có lời văn | 41 HS (32.8%) | 50 HS (40.0%) | 22 HS (17.6%) | 9 HS (7.2%) | 3 HS (2.4%) |
-| 4. Mong muốn được học tập với phần mềm mô phỏng 3D trực quan | 2 HS (1.6%) | 5 HS (4.0%) | 14 HS (11.2%) | 46 HS (36.8%) | 58 HS (46.4%) |
+| 1. Thái độ đối với phân môn Hình học không gian (Chương X) | 38 HS (30,4%) | 49 HS (39,2%) | 24 HS (19,2%) | 11 HS (8,8%) | 3 HS (2,4%) |
+| 2. Khả năng tưởng tượng hình ảnh 3D từ hình vẽ phẳng 2D trong SGK | 45 HS (36,0%) | 52 HS (41,6%) | 18 HS (14,4%) | 8 HS (6,4%) | 2 HS (1,6%) |
+| 3. Mức độ tự tin khi giải các bài toán thực tiễn có lời văn | 41 HS (32,8%) | 50 HS (40,0%) | 22 HS (17,6%) | 9 HS (7,2%) | 3 HS (2,4%) |
+| 4. Mong muốn được học tập với phần mềm mô phỏng 3D trực quan | 2 HS (1,6%) | 5 HS (4,0%) | 14 HS (11,2%) | 46 HS (36,8%) | 58 HS (46,4%) |
 
-Số liệu tại Bảng 2.1 cho thấy một thực trạng đáng báo động: có tới **69.6%** học sinh cảm thấy không thích hoặc rất sợ phân môn Hình học không gian; **77.6%** học sinh gặp khó khăn nghiêm trọng trong việc tưởng tượng hình ảnh ba chiều từ hình vẽ hai chiều phẳng trong SGK; và **72.8%** học sinh thiếu tự tin khi giải quyết các bài toán thực tiễn. Đáng chú ý, có tới **83.2%** học sinh bày tỏ mong muốn cháy bỏng được tiếp cận bài học thông qua các phần mềm mô phỏng 3D tương tác trực quan.
+Số liệu tại Bảng 2.1 cho thấy một thực trạng đáng báo động: có tới **69,6%** học sinh cảm thấy không thích hoặc rất sợ phân môn Hình học không gian; **77,6%** học sinh gặp khó khăn nghiêm trọng trong việc tưởng tượng hình ảnh ba chiều từ hình vẽ hai chiều phẳng trong SGK; và **72,8%** học sinh thiếu tự tin khi giải quyết các bài toán thực tiễn. Đáng chú ý, có tới **83,2%** học sinh bày tỏ mong muốn cháy bỏng được tiếp cận bài học thông qua các phần mềm mô phỏng 3D tương tác trực quan.
 
 #### Bảng 2.2: Khảo sát nhận thức và thực trạng của giáo viên môn Toán (Khảo sát 16 GV)
 
 | Nội dung khảo sát ý kiến giáo viên môn Toán THCS | Hoàn toàn đồng ý | Đồng ý | Phân vân | Không đồng ý |
 | :--- | :---: | :---: | :---: | :---: |
-| 1. Hình khối thực tiễn (Chương X) là nội dung khó truyền đạt trực quan nhất | 13 GV (81.3%) | 3 GV (18.7%) | 0 GV (0.0%) | 0 GV (0.0%) |
-| 2. Phương tiện trực quan hiện có tại trường (mô hình nhựa, tranh vẽ) chưa đáp ứng yêu cầu | 11 GV (68.8%) | 4 GV (25.0%) | 1 GV (6.2%) | 0 GV (0.0%) |
-| 3. Ngại sử dụng GeoGebra 3D vì giao diện phức tạp và tốn nhiều thời gian chuẩn bị | 10 GV (62.5%) | 5 GV (31.3%) | 1 GV (6.2%) | 0 GV (0.0%) |
-| 4. Phòng máy tính thường xuyên nghẽn mạng Internet hoặc không có Internet ổn định | 12 GV (75.0%) | 3 GV (18.7%) | 1 GV (6.2%) | 0 GV (0.0%) |
-| 5. Cần một phần mềm chuyên biệt, chạy mượt trên mạng LAN, hỗ trợ xuất hình vẽ chuẩn | 14 GV (87.5%) | 2 GV (12.5%) | 0 GV (0.0%) | 0 GV (0.0%) |
+| 1. Hình khối thực tiễn (Chương X) là nội dung khó truyền đạt trực quan nhất | 13 GV (81,3%) | 3 GV (18,7%) | 0 GV (0,0%) | 0 GV (0,0%) |
+| 2. Phương tiện trực quan hiện có tại trường (mô hình nhựa, tranh vẽ) chưa đáp ứng yêu cầu | 11 GV (68,8%) | 4 GV (25,0%) | 1 GV (6,2%) | 0 GV (0,0%) |
+| 3. Ngại sử dụng GeoGebra 3D vì giao diện phức tạp và tốn nhiều thời gian chuẩn bị | 10 GV (62,5%) | 5 GV (31,3%) | 1 GV (6,2%) | 0 GV (0,0%) |
+| 4. Phòng máy tính thường xuyên nghẽn mạng Internet hoặc không có Internet ổn định | 12 GV (75,0%) | 3 GV (18,7%) | 1 GV (6,2%) | 0 GV (0,0%) |
+| 5. Cần một phần mềm chuyên biệt, chạy mượt trên mạng LAN, hỗ trợ xuất hình vẽ chuẩn | 14 GV (87,5%) | 2 GV (12,5%) | 0 GV (0,0%) | 0 GV (0,0%) |
 
-Kết quả Bảng 2.2 xác nhận: 100% giáo viên thừa nhận Chương X là nội dung khó dạy trực quan nhất; 93.8% giáo viên nhận định đồ dùng dạy học truyền thống không đáp ứng được yêu cầu đổi mới; 93.8% giáo viên e ngại GeoGebra 3D vì độ phức tạp; và 93.7% phản ánh tình trạng đường truyền Internet tại phòng máy trường học là rào cản lớn nhất đối với việc ứng dụng công nghệ.
+Kết quả Bảng 2.2 xác nhận: 100% giáo viên thừa nhận Chương X là nội dung khó dạy trực quan nhất; 93,8% giáo viên nhận định đồ dùng dạy học truyền thống không đáp ứng được yêu cầu đổi mới; 93,8% giáo viên e ngại GeoGebra 3D vì độ phức tạp; và 93,7% phản ánh tình trạng đường truyền Internet tại phòng máy trường học là rào cản lớn nhất đối với việc ứng dụng công nghệ.
 
 ### 2.2.2. Phân tích chi tiết 6 dạng lỗi sai điển hình (Misconceptions) của học sinh khi học khối tròn xoay
 
@@ -407,10 +407,10 @@ Thông qua chấm bài khảo sát chất lượng đầu năm học 2026 – 20
 
 | STT | Tên dạng lỗi sai điển hình | Biểu hiện cụ thể của học sinh trong bài làm | Nguyên nhân nhận thức và rào cản thị giác | Biện pháp khắc phục bằng trực quan MathLab |
 | :---: | :--- | :--- | :--- | :--- |
-| **Lỗi 1** | Nhầm lẫn giữa đường sinh ($l$) và chiều cao ($h$) của hình nón | Khi tính diện tích xung quanh hình nón, HS áp dụng $S_{xq} = \\pi R h$ thay vì $\\pi R l$. Khi tính thể tích lại lấy $V = \\frac{1}{3}\\pi R^2 l$. | Do hình vẽ 2D trong SGK chiếu thẳng đứng, học sinh quen với công thức hình trụ ($S_{xq} = 2\\pi R h$) nên áp dụng máy móc sang hình nón; không phân biệt được đoạn vuông góc và đoạn xiên. | MathLab hiển thị tam giác vuông quay quanh trục, tô màu đỏ rực cho chiều cao $h$ (trục quay) và màu xanh lá cho đường sinh $l$ (cạnh huyền), hiển thị công thức Pythagore $l^2 = R^2 + h^2$ biến đổi động. |
+| **Lỗi 1** | Nhầm lẫn giữa đường sinh ($l$) và chiều cao ($h$) của hình nón | Khi tính diện tích xung quanh hình nón, HS áp dụng $S_{\text{xq}} = \\pi R h$ thay vì $\\pi R l$. Khi tính thể tích lại lấy $V = \\frac{1}{3}\\pi R^2 l$. | Do hình vẽ 2D trong SGK chiếu thẳng đứng, học sinh quen với công thức hình trụ ($S_{\text{xq}} = 2\\pi R h$) nên áp dụng máy móc sang hình nón; không phân biệt được đoạn vuông góc và đoạn xiên. | MathLab hiển thị tam giác vuông quay quanh trục, tô màu đỏ rực cho chiều cao $h$ (trục quay) và màu xanh lá cho đường sinh $l$ (cạnh huyền), hiển thị công thức Pythagore $l^2 = R^2 + h^2$ biến đổi động. |
 | **Lỗi 2** | Nhầm lẫn cấu trúc bán cầu và mặt phẳng cắt đôi hình cầu qua tâm | Khi cắt đôi hình cầu thành 2 bán cầu, HS lúng túng không hình dung được hình tròn giao tuyến có bán kính đúng bằng bán kính hình cầu, nhầm lẫn diện tích mặt cắt với diện tích mặt cầu. | Ảo giác quang học từ hình elip vẽ trên mặt giấy tĩnh; học sinh khó tưởng tượng việc tách rời một khối cầu thành hai nửa bán cầu đối xứng. | MathLab cung cấp chế độ "Cắt đôi hình cầu" cho phép bấm nút "Bổ đôi" để 2 nửa bán cầu tách rời theo trục đứng, làm lộ rõ thiết diện phẳng là hình tròn lớn có tâm $O$ bán kính $r = R$, diện tích $S = \\pi R^2$, thể tích mỗi bán cầu $V = \\frac{2}{3}\\pi R^3$. |
-| **Lỗi 3** | Nhầm lẫn công thức diện tích toàn phần vật thể có nắp và không có nắp | Bài toán yêu cầu tính lượng tôn làm thùng hình trụ không có nắp (hoặc sơn bể nước không nắp), HS vẫn áp dụng máy móc $S_{tp} = 2\\pi R h + 2\\pi R^2$. | Học sinh chỉ học thuộc lòng công thức giải tích $S_{tp} = S_{xq} + 2S_đ$ mà không phân tích cấu tạo thực tế của vật thể đời sống; thiếu năng lực mô hình hóa thực tiễn. | Tính năng Khai triển hình học (Net Unfolding) trên MathLab cho phép học sinh tích chọn: "Có nắp trên", "Có nắp dưới" hoặc "Không nắp", hình ảnh mở bung các đáy giúp HS thấy rõ số lượng đáy cần tính diện tích. |
-| **Lỗi 4** | Sai sót nghiêm trọng về chuyển đổi đơn vị đo lường thể tích thực tế | Tính ra thể tích $V = 150000\\text{ cm}^3$, HS đổi thành $150\\text{ lít}$ hoặc $15\\text{ lít}$; không biết $1\\text{ lít} = 1\\text{ dm}^3 = 1000\\text{ cm}^3 = 0.001\\text{ m}^3$. | Học sinh mất gốc về thang đo đơn vị khối, không gắn kết được số học trừu tượng với dung tích thực tế của đời sống hàng ngày (bình nước 20L, bể nước 1 khối). | Trợ lý Socrate tích hợp bảng chuyển đổi đơn vị tự động và đặt câu hỏi phản biện: *"1 dm khối chứa được bao nhiêu lít nước? Em hãy đổi từ cm khối ra dm khối trước!"* |
+| **Lỗi 3** | Nhầm lẫn công thức diện tích toàn phần vật thể có nắp và không có nắp | Bài toán yêu cầu tính lượng tôn làm thùng hình trụ không có nắp (hoặc sơn bể nước không nắp), HS vẫn áp dụng máy móc $S_{\text{tp}} = 2\\pi R h + 2\\pi R^2$. | Học sinh chỉ học thuộc lòng công thức giải tích $S_{\text{tp}} = S_{\text{xq}} + 2S_{\text{đáy}}$ mà không phân tích cấu tạo thực tế của vật thể đời sống; thiếu năng lực mô hình hóa thực tiễn. | Tính năng Khai triển hình học (Net Unfolding) trên MathLab cho phép học sinh tích chọn: "Có nắp trên", "Có nắp dưới" hoặc "Không nắp", hình ảnh mở bung các đáy giúp HS thấy rõ số lượng đáy cần tính diện tích. |
+| **Lỗi 4** | Sai sót nghiêm trọng về chuyển đổi đơn vị đo lường thể tích thực tế | Tính ra thể tích $V = 150\,000\\text{ cm}^3$, HS đổi thành $150\\text{ lít}$ hoặc $15\\text{ lít}$; không biết $1\\text{ lít} = 1\\text{ dm}^3 = 1\,000\\text{ cm}^3 = 0{,}001\\text{ m}^3$. | Học sinh mất gốc về thang đo đơn vị khối, không gắn kết được số học trừu tượng với dung tích thực tế của đời sống hàng ngày (bình nước 20L, bể nước 1 khối). | Trợ lý Socrate tích hợp bảng chuyển đổi đơn vị tự động và đặt câu hỏi phản biện: *"1 dm khối chứa được bao nhiêu lít nước? Em hãy đổi từ cm khối ra dm khối trước!"* |
 | **Lỗi 5** | Nhầm lẫn giữa diện tích mặt cầu ($4\\pi R^2$) và thể tích hình cầu ($\\frac{4}{3}\\pi R^3$) | Khi yêu cầu tính thể tích quả bóng thì HS ghi $V = 4\\pi R^3$ hoặc $V = \\frac{4}{3}\\pi R^2$; nhầm lẫn bậc của đơn vị ($cm^2$ và $cm^3$). | Ghi nhớ máy móc các con số $4$ và $3$; không hiểu bản chất thứ nguyên (diện tích là bậc 2 của bán kính $R^2$, thể tích là bậc 3 của bán kính $R^3$). | MathLab phân tách rõ ràng hai mô hình: mô hình dán vỏ mặt cầu (2D cong) và mô hình cắt lớp vi phân/thí nghiệm Archimedes chìm trong nước (3D khối). |
 | **Lỗi 6** | Sai lầm khi khai triển mặt xung quanh hình nón | Cho rằng mặt xung quanh hình nón khi trải phẳng ra là một hình tam giác cân, dẫn đến tính diện tích bằng $\\frac{1}{2} \\text{đáy} \\times \\text{cao}$. | Lấy hình ảnh thiết diện qua trục (là tam giác cân) gán ghép sai lầm cho hình khai triển của toàn bộ mặt xung quanh; không hiểu độ cong của mặt nón. | MathLab cung cấp nút bấm "Trải phẳng mặt nón", mặt nón lập tức cuộn mở từ từ thành một hình quạt tròn tâm $S$, bán kính quạt đúng bằng đường sinh $l$, cung quạt có độ dài $2\\pi R$. |
 
@@ -456,11 +456,11 @@ Từ việc nhận diện sắc bén các rào cản trên, chúng tôi xác đ�
 
 ##### 1. Phép chiếu phối cảnh 3D Wireframe (Perspective 3D Projection)
 
-Để biểu diễn một điểm $P(X, Y, Z)$ trong không gian ba chiều lên mặt phẳng màn hình hai chiều $(x', y')$, hệ thống áp dụng ma trận biến đổi phối cảnh quang học chuẩn. Giả sử điểm quan sát (Camera / Mắt người nhìn) đặt tại gốc tọa độ hướng dọc theo trục $Z$, khoảng cách từ mắt đến mặt phẳng chiếu là $d_{cam}$. Tọa độ chiếu phẳng $(x', y')$ được tính theo công thức tỉ lệ đồng dạng tam giác:
+Để biểu diễn một điểm $P(X, Y, Z)$ trong không gian ba chiều lên mặt phẳng màn hình hai chiều $(x', y')$, hệ thống áp dụng ma trận biến đổi phối cảnh quang học chuẩn. Giả sử điểm quan sát (Camera / Mắt người nhìn) đặt tại gốc tọa độ hướng dọc theo trục $Z$, khoảng cách từ mắt đến mặt phẳng chiếu là $d_{\text{cam}}$. Tọa độ chiếu phẳng $(x', y')$ được tính theo công thức tỉ lệ đồng dạng tam giác:
 
-$$x' = \\frac{X \\cdot d_{cam}}{Z + d_{cam}} \\cdot S_x + x_{center}, \\quad y' = -\\frac{Y \\cdot d_{cam}}{Z + d_{cam}} \\cdot S_y + y_{center}$$
+$$x' = \\frac{X \\cdot d_{\text{cam}}}{Z + d_{\text{cam}}} \\cdot S_x + x_{\text{center}}, \\quad y' = -\\frac{Y \\cdot d_{\text{cam}}}{Z + d_{\text{cam}}} \\cdot S_y + y_{\text{center}}$$
 
-Trong đó $S_x, S_y$ là hệ số tỉ lệ thu phóng màn hình (Zoom factor), và $(x_{center}, y_{center})$ là tọa độ tâm của khung vẽ đồ họa (Canvas). Để mô phỏng góc nhìn linh hoạt khi người dùng kéo chuột xoay khối hình, hệ tọa độ thế giới được nhân với ma trận quay Euler theo góc nghiêng $\\alpha$ (trục $X$) và góc xoay $\\beta$ (trục $Y$):
+Trong đó $S_x, S_y$ là hệ số tỉ lệ thu phóng màn hình (Zoom factor), và $(x_{\text{center}}, y_{\text{center}})$ là tọa độ tâm của khung vẽ đồ họa (Canvas). Để mô phỏng góc nhìn linh hoạt khi người dùng kéo chuột xoay khối hình, hệ tọa độ thế giới được nhân với ma trận quay Euler theo góc nghiêng $\\alpha$ (trục $X$) và góc xoay $\\beta$ (trục $Y$):
 
 $$\\begin{pmatrix} X' \\\\ Y' \\\\ Z' \\end{pmatrix} = \\begin{pmatrix} \\cos\\beta & 0 & \\sin\\beta \\\\ 0 & 1 & 0 \\\\ -\\sin\\beta & 0 & \\cos\\beta \\end{pmatrix} \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & \\cos\\alpha & -\\sin\\alpha \\\\ 0 & \\sin\\alpha & \\cos\\alpha \\end{pmatrix} \\begin{pmatrix} X \\\\ Y \\\\ Z \\end{pmatrix}$$
 
@@ -498,7 +498,7 @@ Nhằm đáp ứng yêu cầu sư phạm tinh gọn, giúp học sinh nắm vữ
     $$\begin{cases} X(u, v) = R \cos u \cos v \\ Y(u, v) = R \sin u + \Delta y \\ Z(u, v) = R \cos u \sin v \end{cases} \quad \left(u \in \left[0, \frac{\pi}{2}\right], v \in [0, 2\pi]\right)$$
     Bề mặt đáy của bán cầu trên là hình tròn bán kính $R$ tại cao độ $Y = +\Delta y$.
   - **Bán cầu dưới ($Y \le 0$):** Tâm dịch chuyển xuống vị trí $(0, -\Delta y, 0)$. Các điểm trên mặt cong có tung độ $Y(u, v) = R \sin u - \Delta y$ với $u \in \left[-\frac{\pi}{2}, 0\right]$.
-  - **Mặt cắt hình tròn lớn (Great Circle Surface):** Được tô màu cam sáng ấm áp với độ trong suốt cao cấp (`rgba(249, 115, 22, 0.42)`), viền nét cam đậm (`#f97316`, độ dày $2.8\text{px}$), hiển thị rõ tâm $O$, điểm $M$ trên vành tròn, đoạn bán kính $OM = R$, đường kính $2R$ và nhãn đo lường tức thời $r = R = \dots\text{ cm}$.
+  - **Mặt cắt hình tròn lớn (Great Circle Surface):** Được tô màu cam sáng ấm áp với độ trong suốt cao cấp (`rgba(249, 115, 22, 0.42)`), viền nét cam đậm (`#f97316`, độ dày 2,8px), hiển thị rõ tâm $O$, điểm $M$ trên vành tròn, đoạn bán kính $OM = R$, đường kính $2R$ và nhãn đo lường tức thời $r = R = \dots\text{ cm}$.
 
 - **Cơ chế điều khiển trực quan 1 chạm:**
   Giao diện cung cấp thanh trượt tiến trình kèm 3 nút điều khiển:
@@ -516,8 +516,8 @@ Một trong những đóng góp đồ họa đột phá nhất của MathLab là
 - **Xét thiết diện cắt ngang bởi mặt phẳng song song hai đáy ở độ cao $h_c$ tính từ tâm ($|h_c| \\le R$):**
   - Đối với khối cầu: Thiết diện cắt ngang là một hình tròn có bán kính $r' = \\sqrt{R^2 - h_c^2}$. Diện tích thiết diện là:
     $$S_1(h_c) = \\pi (r')^2 = \\pi (R^2 - h_c^2)$$
-  - Đối với vật thể đối chứng $T$: Thiết diện cắt ngang là một hình vành khăn (nằm giữa vỏ trụ và mặt nón). Bán kính ngoài cố định là $R$. Tại độ cao $h_c$, mặt nón cắt mặt phẳng tạo thành đường tròn có bán kính trong đúng bằng $r_{nón} = h_c$ (do hình nón có chiều cao $R$ bằng đúng bán kính đáy $R$, tỉ lệ đồng dạng $1:1$). Diện tích hình vành khăn là:
-    $$S_2(h_c) = \\pi R^2 - \\pi (r_{nón})^2 = \\pi R^2 - \\pi h_c^2 = \\pi (R^2 - h_c^2)$$
+  - Đối với vật thể đối chứng $T$: Thiết diện cắt ngang là một hình vành khăn (nằm giữa vỏ trụ và mặt nón). Bán kính ngoài cố định là $R$. Tại độ cao $h_c$, mặt nón cắt mặt phẳng tạo thành đường tròn có bán kính trong đúng bằng $r_{\text{nón}} = h_c$ (do hình nón có chiều cao $R$ bằng đúng bán kính đáy $R$, tỉ lệ đồng dạng $1:1$). Diện tích hình vành khăn là:
+    $$S_2(h_c) = \\pi R^2 - \\pi (r_{\text{nón}})^2 = \\pi R^2 - \\pi h_c^2 = \\pi (R^2 - h_c^2)$$
 - **Kết luận theo Nguyên lý Cavalieri:** Vì $S_1(h_c) = S_2(h_c)$ tại **mọi** độ cao $h_c$ thuộc đoạn $[-R, R]$, nên theo nguyên lý Cavalieri, thể tích của khối cầu bằng đúng thể tích của vật thể đối chứng $T$:
   $$V_{\\text{cầu}} = V_{\\text{trụ}} - 2 \\times V_{\\text{nón}} = \\pi R^2 (2R) - 2 \\left( \\frac{1}{3} \\pi R^2 R \\right) = 2\\pi R^3 - \\frac{2}{3}\\pi R^3 = \\frac{4}{3}\\pi R^3$$
 
@@ -530,14 +530,14 @@ Phần mềm MathLab được tái cấu trúc triệt để, loại bỏ toàn 
 - **Phân hệ 1: Mô phỏng động sự tạo thành khối tròn xoay (Bài 31 & 32):**
   - Chức năng: Cho phép chọn hình phẳng ban đầu (hình chữ nhật, tam giác vuông, nửa hình tròn).
   - Tương tác: Kéo thanh trượt góc quay $\\alpha$ từ $0^\\circ$ đến $360^\\circ$. Quỹ đạo quét hiển thị vệt màu trong suốt, từ từ hình thành khối trụ, khối nón và khối cầu hoàn chỉnh.
-  - Tích hợp thước đo ảo: Cho phép thay đổi bán kính $R$ và chiều cao $h$, các đại lượng $S_{xq}, S_{tp}, V$ tự động cập nhật công thức và kết quả số tương ứng.
+  - Tích hợp thước đo ảo: Cho phép thay đổi bán kính $R$ và chiều cao $h$, các đại lượng $S_{\text{xq}}, S_{\text{tp}}, V$ tự động cập nhật công thức và kết quả số tương ứng.
 - **Phân hệ 2: Khám phá tương tác mặt cắt hình cầu và thí nghiệm thể tích Archimedes (Bài 32):**
   - Chức năng: Mô phỏng mặt phẳng cắt di động qua khối cầu. Hiển thị tam giác vuông liên hệ giữa bán kính cầu $R$, khoảng cách tâm $h_c$ và bán kính thiết diện $r' = \\sqrt{R^2 - h_c^2}$.
   - Chế độ thí nghiệm Archimedes: Mô phỏng cốc nước hình trụ chứa quả cầu. Khi nhấn nút "Nhấc quả cầu ra", mực nước rút xuống còn $\\frac{1}{3}$ thể tích cốc, chứng minh trực quan thể tích khối cầu chiếm đúng $\\frac{2}{3}$ thể tích cốc trụ ngoại tiếp.
 - **Phân hệ 3: Trải nghiệm hình khai triển (Net Unfolding) và Bài toán tối ưu vỏ lon (Bài 31):**
   - Chức năng: Mô phỏng quá trình "bóc vỏ" bề mặt xung quanh hình trụ và hình nón.
   - Trực quan: Mặt trụ mở phẳng thành hình chữ nhật kích thước $2\\pi R \\times h$; Mặt nón mở phẳng thành hình quạt tròn bán kính $l$ với góc ở tâm $\\alpha = \\frac{R}{l} \\times 360^\\circ$.
-  - Chế độ "Tối ưu hóa kinh tế vỏ lon nước ngọt": Cho phép giữ cố định thể tích $V = 500\\text{ cm}^3$ (liên kết ràng buộc $h = \\frac{500}{\\pi R^2}$). Khi kéo trượt bán kính $R$, phần mềm vẽ đồ thị hàm diện tích toàn phần $S_{tp}(R)$, giúp học sinh nhận ra điểm cực tiểu tại vị trí $h = 2R$.
+  - Chế độ "Tối ưu hóa kinh tế vỏ lon nước ngọt": Cho phép giữ cố định thể tích $V = 500\\text{ cm}^3$ (liên kết ràng buộc $h = \\frac{500}{\\pi R^2}$). Khi kéo trượt bán kính $R$, phần mềm vẽ đồ thị hàm diện tích toàn phần $S_{\text{tp}}(R)$, giúp học sinh nhận ra điểm cực tiểu tại vị trí $h = 2R$.
 - **Phân hệ 4: Trợ lý sư phạm Socrate gợi mở và Xưởng xuất mã TikZ chuyên nghiệp:**
   - Khung chat Socratic: Tích hợp kho tri thức SGK Kết nối tri thức. Khi học sinh đặt câu hỏi hoặc gửi ảnh bài tập, trợ lý đưa ra 3 bước gợi mở tư duy, dẫn xuất số trang SGK, kiên quyết không đưa lời giải sẵn.
   - Xưởng dựng hình TikZ: Chỉ dành cho giáo viên (có mật mã bảo vệ). Khi giáo viên xoay góc nhìn ưng ý trên màn hình 3D, bấm "Xuất mã TikZ", hệ thống tự động sinh mã LaTeX TikZ chuẩn nét đứt (hidden lines) để GV chèn vào Word hoặc LaTeX soạn đề thi.
@@ -556,11 +556,11 @@ Máy chủ GV khởi chạy dịch vụ HTTP thông qua một kịch bản siêu
 
 | Kịch bản kiểm thử tải | Số thiết bị gửi request đồng thời (Concurrency) | Tổng số request hoàn thành | Tỉ lệ lỗi truyền tải (Failed requests) | Băng thông xử lý trung bình (Requests/sec) | Thời gian phản hồi trung bình (Latency / Response Time) | Trải nghiệm tương tác của học sinh |
 | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **Kịch bản 1** | 10 máy trạm | 1000 requests | **0%** (0 lỗi) | 845.2 req/s | **11.8 ms** | Cực kỳ mượt mà, tức thời |
-| **Kịch bản 2** | 20 máy trạm | 2000 requests | **0%** (0 lỗi) | 812.6 req/s | **14.2 ms** | Rất mượt mà, không giật lag |
-| **Kịch bản 3** | 30 máy trạm | 3000 requests | **0%** (0 lỗi) | 780.4 req/s | **18.5 ms** | Rất mượt mà, ổn định tuyệt đối |
-| **Kịch bản 4 (Thực tế lớp học)** | **45 máy trạm** | **5000 requests** | **0%** (0 lỗi) | **724.8 req/s** | **23.1 ms** | **Hoàn toàn mượt mà, đáp ứng chuẩn sư phạm** |
-| **Kịch bản 5 (Quá tải)** | 60 máy trạm | 6000 requests | **0%** (0 lỗi) | 650.1 req/s | **32.4 ms** | Mượt mà, độ trễ không đáng kể |
+| **Kịch bản 1** | 10 máy trạm | 1000 requests | **0%** (0 lỗi) | 845,2 req/s | **11,8 ms** | Cực kỳ mượt mà, tức thời |
+| **Kịch bản 2** | 20 máy trạm | 2000 requests | **0%** (0 lỗi) | 812,6 req/s | **14,2 ms** | Rất mượt mà, không giật lag |
+| **Kịch bản 3** | 30 máy trạm | 3000 requests | **0%** (0 lỗi) | 780,4 req/s | **18,5 ms** | Rất mượt mà, ổn định tuyệt đối |
+| **Kịch bản 4 (Thực tế lớp học)** | **45 máy trạm** | **5000 requests** | **0%** (0 lỗi) | **724,8 req/s** | **23,1 ms** | **Hoàn toàn mượt mà, đáp ứng chuẩn sư phạm** |
+| **Kịch bản 5 (Quá tải)** | 60 máy trạm | 6000 requests | **0%** (0 lỗi) | 650,1 req/s | **32,4 ms** | Mượt mà, độ trễ không đáng kể |
 
 Dữ liệu thực nghiệm tại Bảng 2.2.1 chứng minh đanh thép: ngay cả khi chịu tải tối đa 45 máy trạm gửi liên tục 5000 yêu cầu tải tài nguyên đồ họa và dữ liệu bài học, thời gian phản hồi trung bình của MathLab chỉ là **23.1 mili-giây (ms)**, nhanh hơn gấp 10 lần so với độ trễ thông thường của mạng Internet công cộng (200 – 500 ms), và tỉ lệ lỗi hoàn toàn bằng 0%. Điều này đập tan hoàn toàn định kiến cho rằng phần mềm 3D sẽ gây nghẽn mạng phòng máy trường học!
 
@@ -615,7 +615,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 
 #### Bảng 2.4.0A: Thang tiêu chí Rubric 1 – Đánh giá Năng lực Mô hình hóa Toán học (NLMHH)
 
-| Tiêu chí thành phần | Mức 1: Chưa đạt (Dưới 5.0) | Mức 2: Đạt (5.0 – 6.4) | Mức 3: Khá (6.5 – 7.9) | Mức 4: Tốt (8.0 – 10.0) |
+| Tiêu chí thành phần | Mức 1: Chưa đạt (Dưới 5,0) | Mức 2: Đạt (5,0 – 6,4) | Mức 3: Khá (6,5 – 7,9) | Mức 4: Tốt (8,0 – 10,0) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Tiêu chí 1: Nhận diện mô hình toán từ thực tiễn** | Không nhận diện được dạng hình khối tương ứng từ vật thể thực, hoặc nhầm lẫn giữa hình trụ, hình nón và hình cầu. | Nhận diện được dạng hình khối cơ bản nhưng còn lúng túng khi xác định các đại lượng biên ($R, h, l$). | Nhận diện chính xác hình khối; xác định đúng các yếu tố cơ bản ($R, h, l$); chỉ ra được trục quay và đáy. | Trừu tượng hóa xuất sắc; nhận diện nhanh chóng hình khối phức tạp hoặc hình khối phối hợp; xác định đầy đủ các yếu tố ẩn/hiện. |
 | **Tiêu chí 2: Thiết lập mối quan hệ và công thức** | Không nhớ công thức hoặc áp dụng sai hoàn toàn công thức diện tích, thể tích khối tròn xoay. | Viết được công thức cơ bản nhưng áp dụng máy móc, nhầm lẫn giữa $l$ và $h$ ở hình nón, hoặc quên tính đáy ở vật không nắp. | Thiết lập đúng công thức toán học; biết vận dụng định lý Pythagore $l^2 = R^2 + h^2$ hoặc $r' = \\sqrt{R^2 - h_c^2}$ chuẩn xác. | Thiết lập hoàn hảo hệ thức toán học; biết lập hàm số biểu diễn mối quan hệ giữa các biến; vận dụng linh hoạt bất đẳng thức tối ưu. |
@@ -668,7 +668,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
    - Mô tả được sự tạo thành hình trụ khi quay một hình chữ nhật một vòng quanh một cạnh cố định làm trục.
    - Nhận biết và chỉ rõ được các yếu tố của hình trụ: hai đáy (hai hình tròn bằng nhau và song song), mặt xung quanh, đường sinh, chiều cao, bán kính đáy, trục của hình trụ.
    - Hiểu được hình khai triển mặt xung quanh của hình trụ là một hình chữ nhật có kích thước là chu vi đáy $2\\pi R$ và chiều cao $h$.
-   - Ghi nhớ và vận dụng thành thạo công thức tính diện tích xung quanh $S_{xq} = 2\\pi R h$, diện tích toàn phần $S_{tp} = 2\\pi R h + 2\\pi R^2$, và thể tích hình trụ $V = \\pi R^2 h$.
+   - Ghi nhớ và vận dụng thành thạo công thức tính diện tích xung quanh $S_{\text{xq}} = 2\\pi R h$, diện tích toàn phần $S_{\text{tp}} = 2\\pi R h + 2\\pi R^2$, và thể tích hình trụ $V = \\pi R^2 h$.
 2. **Về năng lực:**
    - *Năng lực mô hình hóa toán học:* Biết trừu tượng hóa các vật thể quen thuộc trong đời sống (lon sữa đặc, ống nước, thùng phi, cột bê tông) thành mô hình hình trụ toán học; thiết lập công thức tính diện tích vật liệu và dung tích chứa.
    - *Năng lực sử dụng công cụ, phương tiện học toán:* Thao tác thành thạo trên phần mềm MathLab: điều khiển góc xoay 3D, kéo thanh trượt góc quay để quan sát sự tạo thành hình trụ, thực hiện chức năng bóc phẳng bề mặt hình học.
@@ -695,7 +695,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 - **Nội dung:** GV đưa ra một vỏ lon sữa đặc Ông Thọ thật và đặt bài toán đời sống: *"Một nhà máy sản xuất sữa muốn làm 1 triệu vỏ lon hình trụ như thế này. Làm thế nào để các kỹ sư tính toán được chính xác diện tích tôn thép cần mua và lượng sữa tối đa lon có thể chứa được?"*
 - **Tổ chức thực hiện:**
   - *Bước 1 (Giao nhiệm vụ):* GV phát cho mỗi nhóm bàn 01 vỏ lon sữa và thước dây. Yêu cầu HS quan sát hình dạng và dùng tay sờ, cảm nhận bề mặt lon.
-  - *Bước 2 (HS thực hiện):* HS trao đổi nhanh: Đáy lon là hình tròn, thân lon cong tròn đều. Đo nhanh đường kính đáy lon ($d \\approx 7.4\\text{ cm} \\implies R \\approx 3.7\\text{ cm}$) và chiều cao lon ($h \\approx 8.0\\text{ cm}$).
+  - *Bước 2 (HS thực hiện):* HS trao đổi nhanh: Đáy lon là hình tròn, thân lon cong tròn đều. Đo nhanh đường kính đáy lon ($d \\approx 7{,}4\\text{ cm} \\implies R \\approx 3{,}7\\text{ cm}$) và chiều cao lon ($h \\approx 8{,}0\\text{ cm}$).
   - *Bước 3 (Báo cáo, tranh luận):* GV hỏi: *"Mặt xung quanh của lon sữa có dạng hình gì khi bóc ra? Liệu có thể tính diện tích của nó như một hình chữ nhật hay không?"* Đa số HS trả lời băn khoăn: *"Mặt lon bị cong tròn, làm sao tính như hình chữ nhật được?"*
   - *Bước 4 (Kết luận dẫn dắt):* GV dẫn dắt: *"Để trả lời chính xác câu hỏi này và tìm ra công thức tính toán khoa học, chúng ta cùng bước vào Phòng thí nghiệm hình học ảo MathLab để khám phá Bài 31: Hình trụ."*
 
@@ -721,35 +721,35 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
     - GV: *"Tuyệt vời! Chu vi hình tròn đáy bán kính $R$ được tính bằng công thức nào ở lớp dưới?"*
     - HS: *"Dạ là $C = 2\\pi R$!"*
     - GV: *"Vậy diện tích của hình chữ nhật khai triển – tức diện tích xung quanh của hình trụ – sẽ bằng gì?"*
-    - HS đồng thanh: *"Bằng dài nhân rộng, tức là $S_{xq} = 2\\pi R \\times h$!"*
+    - HS đồng thanh: *"Bằng dài nhân rộng, tức là $S_{\text{xq}} = 2\\pi R \\times h$!"*
 - GV khen ngợi cả lớp đã tự mình tìm ra công thức diện tích xung quanh!
 - GV phân tích tiếp: Diện tích toàn phần của hình trụ có nắp gồm diện tích xung quanh cộng với diện tích cả hai đáy:
-  $$S_{tp} = S_{xq} + 2 S_đ = 2\\pi R h + 2\\pi R^2 = 2\\pi R (h + R)$$
+  $$S_{\text{tp}} = S_{\text{xq}} + 2 S_{\text{đáy}} = 2\\pi R h + 2\\pi R^2 = 2\\pi R (h + R)$$
 - GV lưu ý lỗi sai số 3: *"Nếu đề bài yêu cầu tính diện tích tôn làm thùng không có nắp (như xô nước) thì ta chỉ cộng 1 đáy: $S = 2\\pi R h + \\pi R^2$."*
 
 **Nội dung 3: Thiết lập công thức thể tích hình trụ (7 phút)**
-- GV gợi lại kiến thức lớp 7: Thể tích hình lăng trụ đứng đáy là đa giác bằng diện tích đáy nhân chiều cao: $V = S_đ \\cdot h$.
+- GV gợi lại kiến thức lớp 7: Thể tích hình lăng trụ đứng đáy là đa giác bằng diện tích đáy nhân chiều cao: $V = S_{\text{đáy}} \\cdot h$.
 - Hình trụ có thể coi như một hình lăng trụ đứng có đáy là đa giác đều vô số cạnh.
-- Do đáy hình trụ là hình tròn diện tích $S_đ = \\pi R^2$, nên thể tích hình trụ được tính bằng:
+- Do đáy hình trụ là hình tròn diện tích $S_{\text{đáy}} = \\pi R^2$, nên thể tích hình trụ được tính bằng:
   $$V = \\pi R^2 h$$
-- HS nhập trực tiếp bán kính $R = 3.7\\text{ cm}$ và $h = 8.0\\text{ cm}$ của lon sữa Ông Thọ vào MathLab để kiểm chứng:
-  $$V = 3.14 \\times 3.7^2 \\times 8.0 \\approx 344\\text{ cm}^3 = 0.344\\text{ lít} = 344\\text{ ml}$$
-  Học sinh đối chiếu với dung tích ghi trên vỏ hộp thực tế ($380\\text{ g}$ sữa đặc có khối lượng riêng $1.1\\text{ g/ml} \\implies V \\approx 345\\text{ ml}$). Cả lớp vô cùng hào hứng khi thấy số học toán học khớp hoàn toàn với thực tế đời sống!
+- HS nhập trực tiếp bán kính $R = 3{,}7\\text{ cm}$ và $h = 8{,}0\\text{ cm}$ của lon sữa Ông Thọ vào MathLab để kiểm chứng:
+  $$V = 3{,}14 \\times 3{,}7^2 \\times 8{,}0 \\approx 344\\text{ cm}^3 = 0{,}344\\text{ lít} = 344\\text{ ml}$$
+  Học sinh đối chiếu với dung tích ghi trên vỏ hộp thực tế ($380\\text{ g}$ sữa đặc có khối lượng riêng $1{,}1\\text{ g/ml} \\implies V \\approx 345\\text{ ml}$). Cả lớp vô cùng hào hứng khi thấy số học toán học khớp hoàn toàn với thực tế đời sống!
 
 ###### 3. HOẠT ĐỘNG 3: LUYỆN TẬP CÓ GIÀN GIÁO HỖ TRỢ (10 phút)
 
 - **Mục tiêu:** Vận dụng công thức giải bài tập có lời văn, rèn luyện kỹ năng tính toán và chuyển đổi đơn vị đo lường.
 - **Nội dung:** Bài tập trong Phiếu học tập số 1 (Bài 1):
-  > *"Một bể chứa nước sinh hoạt của một hộ gia đình tại TP. Thủ Đức có dạng hình trụ bằng inox, đường kính đáy trong là $d = 1.2\\text{ m}$, chiều cao là $h = 1.8\\text{ m}$. Bể có nắp đậy kín.*
+  > *"Một bể chứa nước sinh hoạt của một hộ gia đình tại TP. Thủ Đức có dạng hình trụ bằng inox, đường kính đáy trong là $d = 1{,}2\\text{ m}$, chiều cao là $h = 1{,}8\\text{ m}$. Bể có nắp đậy kín.*
   > *a) Tính diện tích inox cần dùng để làm chiếc bể nước trên (coi mép gấp mối hàn không đáng kể, lấy $\\pi \\approx 3{,}14$ và làm tròn kết quả đến chữ số thập phân thứ hai).*
   > *b) Bể nước này có thể chứa tối đa được bao nhiêu mét khối nước ($m^3$) và bao nhiêu lít nước?"*
 - **Tổ chức thực hiện:**
   - HS làm việc cá nhân vào Phiếu học tập số 1.
   - Những học sinh gặp khó khăn trong việc xác định bán kính hoặc đổi mét khối sang lít được GV hướng dẫn mở khung chat **Trợ lý Socrate** trên MathLab.
   - *Hộp thoại sư phạm mẫu giữa HS Dũng và Trợ lý Socrate:*
-    - HS Dũng gõ: *"Em tính thể tích ra 2.035 m3 thì đổi ra lít thế nào?"*
+    - HS Dũng gõ: *"Em tính thể tích ra 2{,}035\text{ m}^3 thì đổi ra lít thế nào?"*
     - Trợ lý Socrate phản hồi: *"Chào Dũng! Em đã tính đúng thể tích bể rồi đấy. Em hãy nhớ lại kiến thức lớp dưới trong Bài 31 SGK trang 96: $1\\text{ m}^3$ bằng bao nhiêu đề-xi-mét khối ($dm^3$)? Và $1\\text{ dm}^3$ nước chính là mấy lít nước nào?"*
-    - HS Dũng gõ: *"1 m3 = 1000 dm3, vậy bằng 1000 lít đúng không ạ?"*
+    - HS Dũng gõ: *"1\text{ m}^3 = 1000 dm3, vậy bằng 1000 lít đúng không ạ?"*
     - Trợ lý Socrate: *"Chính xác! Vậy với thể tích $2{,}035\\text{ m}^3$, em hãy nhân với 1000 để tìm ra số lít nước nhé!"*
   - HS Dũng tự tin ghi đáp số vào phiếu: $2035\\text{ lít}$ nước mà không cần GV phải trực tiếp nhắc nhở.
 
@@ -769,7 +769,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
    - Mô tả được sự tạo thành hình nón khi quay một hình tam giác vuông một vòng quanh một cạnh góc vuông cố định.
    - Phân biệt rõ ràng ba yếu tố hình học: bán kính đáy $R$, chiều cao $h$, và độ dài đường sinh $l$; thiết lập được mối quan hệ Pythagore: $l^2 = R^2 + h^2$.
    - Hiểu được hình khai triển mặt xung quanh của hình nón là một hình quạt tròn bán kính $l$ có độ dài cung đúng bằng chu vi đáy $2\\pi R$.
-   - Vận dụng thành thạo công thức: $S_{xq} = \\pi R l$, $S_{tp} = \\pi R l + \\pi R^2$, và $V = \\frac{1}{3}\\pi R^2 h$.
+   - Vận dụng thành thạo công thức: $S_{\text{xq}} = \\pi R l$, $S_{\text{tp}} = \\pi R l + \\pi R^2$, và $V = \\frac{1}{3}\\pi R^2 h$.
 2. **Về năng lực:**
    - *Năng lực mô hình hóa toán học:* Mô hình hóa được chiếc nón lá truyền thống Việt Nam, tính toán lượng lá cần may nón, tính góc quạt khai triển để cắt bìa làm nón sinh nhật.
    - *Năng lực tư duy và lập luận toán học:* Chứng minh được công thức diện tích xung quanh hình nón thông qua tỉ lệ diện tích hình quạt tròn.
@@ -804,11 +804,11 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
   - Cung quạt có độ dài $2\\pi R$, do đó tỉ lệ độ dài cung trên toàn bộ chu vi hình tròn là:
     $$\\text{Tỉ lệ} = \\frac{2\\pi R}{2\\pi l} = \\frac{R}{l}$$
   - Vì diện tích hình quạt tròn tỉ lệ thuận với độ dài cung của nó, nên diện tích hình quạt (chính là diện tích xung quanh của hình nón) là:
-    $$S_{xq} = \\pi l^2 \\times \\left( \\frac{R}{l} \\right) = \\pi R l$$
+    $$S_{\text{xq}} = \\pi l^2 \\times \\left( \\frac{R}{l} \\right) = \\pi R l$$
   - Góc ở tâm của hình quạt tròn khai triển được tính bằng:
     $$\\alpha = \\frac{R}{l} \\times 360^\\circ$$
-- Học sinh reo lên thích thú vì hiểu rõ tận gốc rễ tại sao lại có công thức $S_{xq} = \\pi R l$ mà không phải học thuộc lòng một cách vô hồn!
-- Diện tích toàn phần của hình nón (có đáy): $S_{tp} = S_{xq} + S_đ = \\pi R l + \\pi R^2 = \\pi R (l + R)$.
+- Học sinh reo lên thích thú vì hiểu rõ tận gốc rễ tại sao lại có công thức $S_{\text{xq}} = \\pi R l$ mà không phải học thuộc lòng một cách vô hồn!
+- Diện tích toàn phần của hình nón (có đáy): $S_{\text{tp}} = S_{\text{xq}} + S_{\text{đáy}} = \\pi R l + \\pi R^2 = \\pi R (l + R)$.
 
 **Nội dung 3: Thể tích hình nón (7 phút)**
 - GV cho HS quan sát mô phỏng so sánh hình trụ và hình nón có cùng bán kính đáy $R$ và cùng chiều cao $h$:
@@ -884,7 +884,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
     - GV giải thích và chuẩn hóa: *"Khi cắt hình cầu bởi một mặt phẳng đi qua tâm, mặt phẳng đó chia hình cầu và khối cầu thành hai phần bằng nhau gọi là hai bán cầu. Mặt cắt thu được là một hình tròn lớn có bán kính đúng bằng bán kính hình cầu $R$."*
     - Bảng thông số HUD trên MathLab tự động hiển thị:
       $$S_{\\text{cắt}} = \\pi R^2 = 3{,}14 \\times 10^2 = 314\\text{ cm}^2$$
-      $$V_{\\text{bán cầu}} = \\frac{2}{3}\\pi R^3 = \\frac{2}{3} \\times 3{,}14 \\times 1000 \\approx 2094{,}4\\text{ cm}^3$$
+      $$V_{\\text{bán cầu}} = \\frac{2}{3}\\pi R^3 = \\frac{2}{3} \\times 3{,}14 \\times 1\,000 \\approx 2094{,}4\\text{ cm}^3$$
   - HS nhấn nút **`[↺ Khép lại]`**: Hai nửa bán cầu lập tức khép khít lại thành khối cầu hoàn chỉnh $V = \\frac{4}{3}\\pi R^3 \\approx 4188{,}8\\text{ cm}^3$, chứng minh trực quan $V_{\\text{cầu}} = 2 \\times V_{\\text{bán cầu}}$.
 - Cả lớp ghi chép kiến thức trọng tâm vào vở, hào hứng và thấu hiểu sâu sắc bản chất hình học của bán cầu và mặt cắt đường tròn lớn!
 
@@ -926,7 +926,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 **Nội dung 1: Diện tích mặt cầu (8 phút)**
 - GV giới thiệu: Bằng thực nghiệm quấn sợi dây vừa khít quanh nửa mặt cầu rồi đem quấn phẳng lên một hình tròn có cùng bán kính $R$, diện tích phủ kín đúng bằng 2 lần diện tích hình tròn đáy. Do đó, toàn bộ diện tích mặt cầu gấp 4 lần diện tích hình tròn lớn:
   $$S = 4\\pi R^2 = \\pi d^2$$
-- HS tính nhanh: Với quả bóng chuyền thi đấu chuẩn có đường kính $d = 21\\text{ cm} \\implies R = 10.5\\text{ cm}$:
+- HS tính nhanh: Với quả bóng chuyền thi đấu chuẩn có đường kính $d = 21\\text{ cm} \\implies R = 10{,}5\\text{ cm}$:
   $$S = 4 \\times 3{,}14 \\times 10{,}5^2 \\approx 1385\\text{ cm}^2$$
 
 **Nội dung 2: Khám phá công thức thể tích hình cầu qua mô phỏng thí nghiệm Archimedes (14 phút)**
@@ -938,11 +938,11 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
     - HS bấm nút **"Nhấc quả cầu ra khỏi cốc"**:
     - Trên màn hình 3D, quả cầu từ từ được nhấc lên khỏi cốc. Mực nước trong cốc lập tức tụt xuống. Thước đo mực nước hiển thị vạch: Chiều cao cột nước còn lại trong cốc đúng bằng $\\frac{2}{3}R$, tức là bằng $\\frac{1}{3}$ chiều cao của cốc!
     - GV hỏi: *"Mực nước còn lại trong cốc chiếm bao nhiêu phần chiều cao ban đầu?"*
-    - HS: *"Thưa thầy, còn lại đúng một phần ba ($1/3$) ạ!"*
+    - HS: *"Thưa thầy, còn lại đúng một phần ba ($\frac{1}{3}$) ạ!"*
     - GV: *"Vậy lượng nước bị quả cầu chiếm chỗ (tức thể tích quả cầu) bằng bao nhiêu phần thể tích của cốc hình trụ?"*
-    - HS (Em Tuấn): *"Dạ, bằng hai phần ba ($2/3$) thể tích của chiếc cốc hình trụ ngoại tiếp ạ!"*
+    - HS (Em Tuấn): *"Dạ, bằng hai phần ba ($\frac{2}{3}$) thể tích của chiếc cốc hình trụ ngoại tiếp ạ!"*
     - GV hướng dẫn HS tính toán đại số:
-      $$V_{\\text{trụ}} = S_đ \\times h = (\\pi R^2) \\times (2R) = 2\\pi R^3$$
+      $$V_{\\text{trụ}} = S_{\text{đáy}} \\times h = (\\pi R^2) \\times (2R) = 2\\pi R^3$$
       $$V_{\\text{cầu}} = \\frac{2}{3} \\times V_{\\text{trụ}} = \\frac{2}{3} \\times (2\\pi R^3) = \\frac{4}{3}\\pi R^3$$
 - *Mô phỏng 2 (Chứng minh toán học bằng Nguyên lý Cavalieri):*
   - MathLab hiển thị khối cầu bên cạnh khối trụ khoét hai hình nón đối đỉnh. Khi kéo mặt cắt ở độ cao $h_c$, học sinh thấy diện tích hình tròn đỏ luôn bằng diện tích hình vành khăn xanh:
@@ -962,7 +962,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
   - Tổng thể tích 3 quả bóng: $V_{\\text{bóng}} = 3 \\times \\left( \\frac{4}{3}\\pi R^3 \\right) = 4\\pi \\times 2^3 = 32\\pi\\text{ cm}^3$.
   - Tỉ số phần trăm:
     $$T = \\frac{V_{\\text{bóng}}}{V_{\\text{hộp}}} = \\frac{32\\pi}{48\\pi} = \\frac{2}{3} \\approx 66{,}67\\%$$
-  - Học sinh nhận ra một kết quả toán học vô cùng kỳ diệu: Bất kể kích thước quả bóng là bao nhiêu, 3 quả bóng nằm vừa khít trong hộp trụ luôn chiếm đúng $\\frac{2}{3}$ (khoảng 66.67%) thể tích chiếc hộp!
+  - Học sinh nhận ra một kết quả toán học vô cùng kỳ diệu: Bất kể kích thước quả bóng là bao nhiêu, 3 quả bóng nằm vừa khít trong hộp trụ luôn chiếm đúng $\\frac{2}{3}$ (khoảng 66,67%) thể tích chiếc hộp!
 
 ###### 4. HOẠT ĐỘNG 4: VẬN DỤNG & DỰ ÁN STEAM LIÊN MÔN (7 phút)
 
@@ -989,7 +989,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
   - Chiều cao thân lon đo được: $h = ...............\\text{ cm}$.
 - Nhập thông số $R$ và $h$ vào phần mềm MathLab (Phân hệ 1), bấm "Bóc vỏ lon" để quan sát hình khai triển.
 - Chu vi đáy tính bằng công thức: $C = 2\\pi R = .....................................................\\text{ cm}$.
-- Diện tích thân lon (xung quanh) tính được: $S_{xq} = 2\\pi R h = .................................\\text{ cm}^2$.
+- Diện tích thân lon (xung quanh) tính được: $S_{\text{xq}} = 2\\pi R h = .................................\\text{ cm}^2$.
 - Thể tích chứa tối đa của lon sữa: $V = \\pi R^2 h = ...............................................\\text{ cm}^3$.
 
 **Nhiệm vụ 2: Giải quyết bài toán thực tế (Bài toán bể nước inox)**
@@ -1007,7 +1007,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 
 **Nhiệm vụ 3: Bài toán mở rộng (Cột bê tông trụ cầu)**
 *Đề bài:* Một trụ cầu vượt đường sắt đô thị có dạng hình trụ tròn xoay bằng bê tông cốt thép, đường kính trụ $d = 1{,}6\\text{ m}$, chiều cao thân trụ $h = 8{,}5\\text{ m}$.
-- Tính chi phí sơn phủ lớp chống thấm xung quanh thân trụ cầu biết giá nhân công và sơn chống thấm là $85.000\\text{ đồng/m}^2$.
+- Tính chi phí sơn phủ lớp chống thấm xung quanh thân trụ cầu biết giá nhân công và sơn chống thấm là $85\,000\\text{ đồng/m}^2$.
 
 ---
 
@@ -1098,7 +1098,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
    - Bán kính đáy của ống hộp: $R_{\\text{hộp}} = ....................\\text{ cm}$.
    - Chiều cao của ống hộp: $h_{\\text{hộp}} = 3 \\times d = ....................\\text{ cm}$.
 2. **Tính toán đại số diện tích và thể tích:**
-   - Diện tích nhựa màng mỏng làm thân và nắp hộp (toàn phần): $S_{tp} = .............................\\text{ cm}^2$.
+   - Diện tích nhựa màng mỏng làm thân và nắp hộp (toàn phần): $S_{\text{tp}} = .............................\\text{ cm}^2$.
    - Thể tích chứa của chiếc hộp hình trụ: $V_{\\text{hộp}} = \\pi R_{\\text{hộp}}^2 h_{\\text{hộp}} = .........................\\text{ cm}^3$.
    - Tổng thể tích của cả 3 quả bóng tennis: $V_{3\\text{ bóng}} = 3 \\times \\left( \\frac{4}{3}\\pi R^3 \\right) = ...................\\text{ cm}^3$.
 3. **Phân tích hiệu quả sử dụng không gian và bài toán kinh tế:**
@@ -1114,27 +1114,27 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 **CHỦ ĐỀ: BÀI TOÁN TỐI ƯU HÓA DIỆN TÍCH VỎ LON NƯỚC NGỌT DUNG TÍCH 500ML BẰNG BẤT ĐẲNG THỨC AM-GM**
 - Tên nhóm: ............................................................................ Lớp: 9A...
 
-**Bối cảnh thực tiễn:** Một tập đoàn giải khát đa quốc gia muốn sản xuất một dòng sản phẩm nước ngọt cao cấp đóng trong lon nhôm hình trụ có dung tích cố định là $V = 500\\text{ cm}^3$ ($0{,}5\\text{ lít}$). Bộ phận kinh tế yêu cầu các kỹ sư thiết kế kích thước bán kính đáy $R$ và chiều cao $h$ của chiếc lon sao cho **diện tích toàn phần $S_{tp}$ của vỏ nhôm là nhỏ nhất**, nhằm tiết kiệm tối đa chi phí nguyên vật liệu sản xuất hàng trăm triệu lon mỗi năm.
+**Bối cảnh thực tiễn:** Một tập đoàn giải khát đa quốc gia muốn sản xuất một dòng sản phẩm nước ngọt cao cấp đóng trong lon nhôm hình trụ có dung tích cố định là $V = 500\\text{ cm}^3$ ($0{,}5\\text{ lít}$). Bộ phận kinh tế yêu cầu các kỹ sư thiết kế kích thước bán kính đáy $R$ và chiều cao $h$ của chiếc lon sao cho **diện tích toàn phần $S_{\text{tp}}$ của vỏ nhôm là nhỏ nhất**, nhằm tiết kiệm tối đa chi phí nguyên vật liệu sản xuất hàng trăm triệu lon mỗi năm.
 
 **Nhiệm vụ nghiên cứu và giải bài toán tối ưu:**
 1. **Thiết lập phương trình ràng buộc thể tích:**
    - Thể tích cố định: $V = \\pi R^2 h = 500\\text{ cm}^3 \\implies h = \\frac{500}{\\pi R^2}$.
 2. **Thiết lập hàm diện tích toàn phần theo một biến số $R$:**
-   $$S_{tp}(R) = 2\\pi R^2 + 2\\pi R h = 2\\pi R^2 + 2\\pi R \\left( \\frac{500}{\\pi R^2} \\right) = 2\\pi R^2 + \\frac{1000}{R}$$
+   $$S_{\text{tp}}(R) = 2\\pi R^2 + 2\\pi R h = 2\\pi R^2 + 2\\pi R \\left( \\frac{500}{\\pi R^2} \\right) = 2\\pi R^2 + \\frac{1\,000}{R}$$
 3. **Thao tác khám phá thực nghiệm trên MathLab (Phân hệ 3 - Chế độ tối ưu hóa):**
-   - Trên phần mềm, học sinh kéo thanh trượt $R$ từ $2\\text{ cm}$ đến $7\\text{ cm}$. Đồ thị đường cong diện tích $S_{tp}(R)$ hiển thị trên màn hình.
+   - Trên phần mềm, học sinh kéo thanh trượt $R$ từ $2\\text{ cm}$ đến $7\\text{ cm}$. Đồ thị đường cong diện tích $S_{\text{tp}}(R)$ hiển thị trên màn hình.
    - Nhóm ghi lại các giá trị:
-     - Khi $R = 2\\text{ cm} \\implies h = 39{,}8\\text{ cm} \\implies S_{tp} \\approx 525\\text{ cm}^2$ (lon quá dài và gầy).
-     - Khi $R = 6\\text{ cm} \\implies h = 4{,}4\\text{ cm} \\implies S_{tp} \\approx 393\\text{ cm}^2$ (lon quá dẹt và lùn).
-     - Khi $R \\approx 4{,}3\\text{ cm} \\implies h \\approx 8{,}6\\text{ cm} \\implies S_{tp} \\approx 348\\text{ cm}^2$ (vị trí đáy lõm thấp nhất của đồ thị!).
+     - Khi $R = 2\\text{ cm} \\implies h = 39{,}8\\text{ cm} \\implies S_{\text{tp}} \\approx 525\\text{ cm}^2$ (lon quá dài và gầy).
+     - Khi $R = 6\\text{ cm} \\implies h = 4{,}4\\text{ cm} \\implies S_{\text{tp}} \\approx 393\\text{ cm}^2$ (lon quá dẹt và lùn).
+     - Khi $R \\approx 4{,}3\\text{ cm} \\implies h \\approx 8{,}6\\text{ cm} \\implies S_{\text{tp}} \\approx 348\\text{ cm}^2$ (vị trí đáy lõm thấp nhất của đồ thị!).
    - Nhận xét mối quan hệ giữa $h$ và $R$ tại vị trí diện tích nhỏ nhất: $h \\approx 2R$!
 4. **Chứng minh toán học chặt chẽ bằng Bất đẳng thức AM-GM (Cauchy cho 3 số dương):**
-   - Ta tách đại số: $\\frac{1000}{R} = \\frac{500}{R} + \\frac{500}{R}$.
+   - Ta tách đại số: $\\frac{1\,000}{R} = \\frac{500}{R} + \\frac{500}{R}$.
    - Biểu thức diện tích trở thành tổng của 3 số dương:
-     $$S_{tp}(R) = 2\\pi R^2 + \\frac{500}{R} + \\frac{500}{R}$$
+     $$S_{\text{tp}}(R) = 2\\pi R^2 + \\frac{500}{R} + \\frac{500}{R}$$
    - Áp dụng bất đẳng thức AM-GM cho 3 số dương $A = 2\\pi R^2$, $B = \\frac{500}{R}$, $C = \\frac{500}{R}$:
      $$A + B + C \\ge 3 \\sqrt[3]{A \\cdot B \\cdot C}$$
-     $$S_{tp}(R) \\ge 3 \\sqrt[3]{2\\pi R^2 \\cdot \\frac{500}{R} \\cdot \\frac{500}{R}} = 3 \\sqrt[3]{500.000\\pi} \\approx 348{,}73\\text{ cm}^2$$
+     $$S_{\text{tp}}(R) \\ge 3 \\sqrt[3]{2\\pi R^2 \\cdot \\frac{500}{R} \\cdot \\frac{500}{R}} = 3 \\sqrt[3]{500\,000\\pi} \\approx 348{,}73\\text{ cm}^2$$
    - Dấu đẳng thức xảy ra khi và chỉ khi 3 số hạng bằng nhau ($A = B = C$):
      $$2\\pi R^2 = \\frac{500}{R} \\implies 2\\pi R^3 = 500$$
    - Mặt khác, vì $V = \\pi R^2 h = 500$, nên ta thay vào:
@@ -1178,9 +1178,9 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 - **Bài 19 (Hạt cà phê / Phễu lọc hình nón):** Một phễu lọc cà phê hình nón có góc ở đỉnh là $60^\\circ$ (thiết diện qua trục là tam giác đều). Biết chiều cao của phễu là $h = 12\\text{ cm}$. Người ta đổ nước sôi vào phễu đến độ cao bằng $\\frac{2}{3}$ chiều cao phễu. Tính thể tích nước đang có trong phễu.
 - **Bài 20 (Tháp nước hình cầu ngoại ô):** Một tháp chứa nước sinh hoạt đô thị gồm một bồn chứa hình cầu đặt trên đỉnh một cột trụ hình trụ cao $25\\text{ m}$. Bồn cầu có đường kính $10\\text{ m}$. Hỏi tháp nước này cung cấp nước đủ cho một khu dân cư gồm 200 hộ gia đình (mỗi hộ dùng trung bình $1{,}5\\text{ m}^3$/ngày) trong thời gian bao lâu nếu không được bơm bổ sung?
 - **Bài 21 (Hộp bóng tennis ITF - Bài toán tỷ lệ vàng):** Chứng minh rằng với bất kỳ số lượng $n$ quả bóng hình cầu xếp vừa khít trong một hình trụ có đường kính đáy bằng đường kính quả bóng và chiều cao $h = n \\times (2R)$, tỉ số thể tích giữa $n$ quả bóng và thể tích hình trụ luôn bằng một hằng số không đổi là $\\frac{2}{3}$ (không phụ thuộc vào $n$ và $R$).
-- **Bài 22 (Tối ưu hóa kinh tế bồn chứa xăng dầu 1000m3):** Một trạm xăng dầu muốn xây một bể ngầm hình trụ dung tích $V = 1000\\text{ m}^3$. Đáy bể bằng bê tông cốt thép giá $1.200.000\\text{ đ/m}^2$, thành bể bằng thép chống ăn mòn giá $800.000\\text{ đ/m}^2$, nắp bể bằng thép giá $600.000\\text{ đ/m}^2$. Tìm tỉ lệ giữa chiều cao $h$ và bán kính $R$ để tổng chi phí vật liệu xây bể là nhỏ nhất.
+- **Bài 22 (Tối ưu hóa kinh tế bồn chứa xăng dầu 1\,000\text{ m}^3):** Một trạm xăng dầu muốn xây một bể ngầm hình trụ dung tích $V = 1\,000\\text{ m}^3$. Đáy bể bằng bê tông cốt thép giá $1\,200\,000\\text{ đ/m}^2$, thành bể bằng thép chống ăn mòn giá $800\,000\\text{ đ/m}^2$, nắp bể bằng thép giá $600\,000\\text{ đ/m}^2$. Tìm tỉ lệ giữa chiều cao $h$ và bán kính $R$ để tổng chi phí vật liệu xây bể là nhỏ nhất.
 - **Bài 23 (Vương miện Archimedes và bài toán tỉ trọng liên môn Vật lý):** Một chiếc vương miện đúc bằng vàng pha bạc có khối lượng $m = 10\\text{ kg}$. Khi thả chìm hoàn toàn vào một cốc hình trụ có diện tích đáy $S = 200\\text{ cm}^2$, mực nước trong cốc dâng thêm một đoạn $\\Delta h = 3{,}2\\text{ cm}$. Biết khối lượng riêng của vàng nguyên chất là $D_1 = 19{,}3\\text{ g/cm}^3$ và của bạc là $D_2 = 10{,}5\\text{ g/cm}^3$. Tính tỉ lệ phần trăm khối lượng vàng thực tế có trong vương miện.
-- **Bài 24 (Mô hình Trái Đất và vệ tinh viễn thông):** Một vệ tinh địa tĩnh bay quanh Trái Đất ở độ cao $35.786\\text{ km}$ so với mặt đất (Trái Đất có bán kính $R = 6371\\text{ km}$). Giả sử tín hiệu truyền thẳng từ vệ tinh tiếp xúc với mặt cầu Trái Đất. Tính diện tích vùng bề mặt Trái Đất (dạng chỏm cầu $S = 2\\pi R h_c$) mà vệ tinh đó có thể phủ sóng tới.
+- **Bài 24 (Mô hình Trái Đất và vệ tinh viễn thông):** Một vệ tinh địa tĩnh bay quanh Trái Đất ở độ cao $35\,786\\text{ km}$ so với mặt đất (Trái Đất có bán kính $R = 6371\\text{ km}$). Giả sử tín hiệu truyền thẳng từ vệ tinh tiếp xúc với mặt cầu Trái Đất. Tính diện tích vùng bề mặt Trái Đất (dạng chỏm cầu $S = 2\\pi R h_c$) mà vệ tinh đó có thể phủ sóng tới.
 
 ---
 
@@ -1198,19 +1198,19 @@ Hai lớp có điều kiện học tập, thời khóa biểu và nền tảng k
 
 | Mức độ thái độ đối với Hình học không gian | Lớp thực nghiệm 9A (Sĩ số 42 HS) | Lớp đối chứng 9B (Sĩ số 41 HS) |
 | :--- | :---: | :---: |
-| 1. Rất sợ / Hoàn toàn không thích | 13 HS (31.0%) | 12 HS (29.3%) |
-| 2. Ngại học / Cảm thấy khó tưởng tượng | 17 HS (40.5%) | 16 HS (39.0%) |
-| 3. Bình thường / Học theo nghĩa vụ | 8 HS (19.0%) | 9 HS (22.0%) |
-| 4. Hứng thú / Tự tin làm bài | 4 HS (9.5%) | 4 HS (9.7%) |
+| 1. Rất sợ / Hoàn toàn không thích | 13 HS (31,0%) | 12 HS (29,3%) |
+| 2. Ngại học / Cảm thấy khó tưởng tượng | 17 HS (40,5%) | 16 HS (39,0%) |
+| 3. Bình thường / Học theo nghĩa vụ | 8 HS (19,0%) | 9 HS (22,0%) |
+| 4. Hứng thú / Tự tin làm bài | 4 HS (9,5%) | 4 HS (9,7%) |
 
 #### Bảng 2.4: Kết quả bài kiểm tra khảo sát chất lượng đầu năm học 2026 – 2027 (KTTX 1)
 
-| Nhóm đối tượng khảo sát | Sĩ số | Điểm TB ($\\bar{X}$) | Độ lệch chuẩn ($s$) | Mức Chưa đạt (< 5.0) | Mức Đạt (5.0 – 6.4) | Mức Khá (6.5 – 7.9) | Mức Tốt (8.0 – 10.0) |
+| Nhóm đối tượng khảo sát | Sĩ số | Điểm TB ($\\bar{X}$) | Độ lệch chuẩn ($s$) | Mức Chưa đạt (< 5.0) | Mức Đạt (5,0 – 6,4) | Mức Khá (6,5 – 7,9) | Mức Tốt (8,0 – 10,0) |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| **Lớp thực nghiệm 9A** | 42 | **6.48** | 1.45 | 6 HS (14.3%) | 16 HS (38.1%) | 15 HS (35.7%) | 5 HS (11.9%) |
-| **Lớp đối chứng 9B** | 41 | **6.52** | 1.48 | 6 HS (14.6%) | 15 HS (36.6%) | 15 HS (36.6%) | 5 HS (12.2%) |
+| **Lớp thực nghiệm 9A** | 42 | **6,48** | 1,45 | 6 HS (14,3%) | 16 HS (38,1%) | 15 HS (35,7%) | 5 HS (11,9%) |
+| **Lớp đối chứng 9B** | 41 | **6,52** | 1,48 | 6 HS (14,6%) | 15 HS (36,6%) | 15 HS (36,6%) | 5 HS (12,2%) |
 
-Phân tích kiểm định $t$-test cho dữ liệu ban đầu cho thấy: giá trị $t = -0.124$, giá trị $p = 0.902 > 0.05$. Điều này chứng minh rằng **trước khi tác động thực nghiệm, trình độ học lực môn Toán và thái độ học tập của hai lớp 9A và 9B là hoàn toàn tương đương nhau**, không có sự khác biệt có ý nghĩa thống kê. Mọi sự khác biệt vượt trội sau này (nếu có) hoàn toàn là kết quả của giải pháp sư phạm mới đem lại.
+Phân tích kiểm định $t$-test cho dữ liệu ban đầu cho thấy: giá trị $t = -0{,}124$, giá trị $p = 0{,}902 > 0{,}05$. Điều này chứng minh rằng **trước khi tác động thực nghiệm, trình độ học lực môn Toán và thái độ học tập của hai lớp 9A và 9B là hoàn toàn tương đương nhau**, không có sự khác biệt có ý nghĩa thống kê. Mọi sự khác biệt vượt trội sau này (nếu có) hoàn toàn là kết quả của giải pháp sư phạm mới đem lại.
 
 ---
 
@@ -1224,12 +1224,12 @@ Bài kiểm tra được tổ chức nghiêm túc, rọc phách và chấm ẩn 
 
 | Xếp loại năng lực theo Thông tư 22/2021/TT-BGDĐT | Thang điểm tương ứng | Lớp đối chứng 9B (Sĩ số 41 HS) | Lớp thực nghiệm 9A (Sĩ số 42 HS) | Mức độ chênh lệch tỉ lệ (9A so với 9B) |
 | :--- | :---: | :---: | :---: | :---: |
-| **MỨC TỐT** | 8.0 – 10.0 điểm | **5 HS (12.2%)** | **18 HS (42.9%)** | **+ 30.7% (Tăng gấp 3.5 lần)** |
-| **MỨC KHÁ** | 6.5 – 7.9 điểm | **14 HS (34.1%)** | **16 HS (38.1%)** | **+ 4.0%** |
-| **MỨC ĐẠT** | 5.0 – 6.4 điểm | **15 HS (36.6%)** | **7 HS (16.7%)** | **- 19.9%** |
-| **MỨC CHƯA ĐẠT** | Dưới 5.0 điểm | **7 HS (17.1%)** | **1 HS (2.4%)** | **- 14.7% (Giảm gần 7 lần)** |
+| **MỨC TỐT** | 8,0 – 10,0 điểm | **5 HS (12,2%)** | **18 HS (42,9%)** | **+ 30,7% (Tăng gấp 3.5 lần)** |
+| **MỨC KHÁ** | 6,5 – 7,9 điểm | **14 HS (34,1%)** | **16 HS (38,1%)** | **+ 4,0%** |
+| **MỨC ĐẠT** | 5,0 – 6,4 điểm | **15 HS (36,6%)** | **7 HS (16,7%)** | **- 19,9%** |
+| **MỨC CHƯA ĐẠT** | Dưới 5,0 điểm | **7 HS (17,1%)** | **1 HS (2,4%)** | **- 14,7% (Giảm gần 7 lần)** |
 | **TỔNG CỘNG** | | **41 HS (100%)** | **42 HS (100%)** | |
-| **Điểm trung bình ($\\bar{X}$)** | | **6.88** | **8.21** | **+ 1.33 điểm** |
+| **Điểm trung bình ($\\bar{X}$)** | | **6,88** | **8,21** | **+ 1,33 điểm** |
 | **Độ lệch chuẩn ($s$)** | | **1.62** | **1.12** | **Đồng đều hơn rất nhiều** |
 
 #### Đánh giá định tính chi tiết – Khớp 100% với Đề kiểm tra Phụ lục 4:
@@ -1237,19 +1237,19 @@ Bài kiểm tra được tổ chức nghiêm túc, rọc phách và chấm ẩn 
 Kết quả bài kiểm tra phản ánh sự khác biệt sâu sắc về mặt chất lượng tư duy giữa hai lớp trên từng câu hỏi cụ thể của đề bài:
 
 1. **Phần Trắc nghiệm khách quan (6 câu):**
-   - *Câu 1 (Nhận biết sự tạo thành hình trụ từ phép quay hình chữ nhật):* Lớp 9A đạt **100%** (42/42 HS) trả lời đúng. Lớp 9B chỉ đạt **85.4%** (35/41 HS), có 6 HS chọn nhầm quay hình tam giác.
-   - *Câu 2 (Mối quan hệ bán kính và thể tích hình nón: gấp 3 lần bán kính thì thể tích gấp 9 lần):* Lớp 9A có **92.8%** (39/42 HS) trả lời đúng nhờ đã được thao tác thanh trượt $R$ trên MathLab; Lớp 9B chỉ có **63.4%** (26/41 HS) đúng, có 11 HS trả lời sai thành "gấp 3 lần" do suy luận tuyến tính máy móc.
-   - *Câu 3 (Diện tích hình tròn lớn và thể tích bán cầu khi cắt đôi hình cầu $R = 5\\text{ cm}$ qua tâm):* Lớp 9A có **97.6%** (41/42 HS) tính đúng diện tích mặt cắt lớn $S = \\pi R^2 = 25\\pi\\text{ cm}^2$ và thể tích bán cầu $V = \\frac{2}{3}\\pi R^3$. Lớp 9B chỉ có **63.4%** (26/41 HS) đúng, có tới 11 học sinh lúng túng nhầm lẫn sang diện tích toàn bộ mặt cầu $4\\pi R^2$ hoặc chia sai thể tích bán cầu.
+   - *Câu 1 (Nhận biết sự tạo thành hình trụ từ phép quay hình chữ nhật):* Lớp 9A đạt **100%** (42/42 HS) trả lời đúng. Lớp 9B chỉ đạt **85,4%** (35/41 HS), có 6 HS chọn nhầm quay hình tam giác.
+   - *Câu 2 (Mối quan hệ bán kính và thể tích hình nón: gấp 3 lần bán kính thì thể tích gấp 9 lần):* Lớp 9A có **92,8%** (39/42 HS) trả lời đúng nhờ đã được thao tác thanh trượt $R$ trên MathLab; Lớp 9B chỉ có **63,4%** (26/41 HS) đúng, có 11 HS trả lời sai thành "gấp 3 lần" do suy luận tuyến tính máy móc.
+   - *Câu 3 (Diện tích hình tròn lớn và thể tích bán cầu khi cắt đôi hình cầu $R = 5\\text{ cm}$ qua tâm):* Lớp 9A có **97,6%** (41/42 HS) tính đúng diện tích mặt cắt lớn $S = \\pi R^2 = 25\\pi\\text{ cm}^2$ và thể tích bán cầu $V = \\frac{2}{3}\\pi R^3$. Lớp 9B chỉ có **63,4%** (26/41 HS) đúng, có tới 11 học sinh lúng túng nhầm lẫn sang diện tích toàn bộ mặt cầu $4\\pi R^2$ hoặc chia sai thể tích bán cầu.
 2. **Phần Tự luận thực tiễn (3 câu):**
    - *Câu Tự luận 1 (Tính diện tích inox làm bể nước hình trụ KHÔNG CÓ NẮP và thể tích nước):*
-     - Lớp 9A: **88.1%** (37/42 HS) đạt điểm tối đa. Học sinh nhớ rất rõ thao tác bóc vỏ lon không nắp trên MathLab nên chỉ cộng 1 đáy ($S = 2\\pi R h + \\pi R^2$). Chỉ có đúng 1 HS nhầm lẫn cộng 2 đáy.
-     - Lớp 9B: Có tới **39.0%** (16/41 HS) mắc nghiêm trọng Lỗi sai số 3, áp dụng máy móc công thức $S_{tp} = 2\\pi R h + 2\\pi R^2$, dẫn đến mất trọn 1.0 điểm.
+     - Lớp 9A: **88,1%** (37/42 HS) đạt điểm tối đa. Học sinh nhớ rất rõ thao tác bóc vỏ lon không nắp trên MathLab nên chỉ cộng 1 đáy ($S = 2\\pi R h + \\pi R^2$). Chỉ có đúng 1 HS nhầm lẫn cộng 2 đáy.
+     - Lớp 9B: Có tới **39,0%** (16/41 HS) mắc nghiêm trọng Lỗi sai số 3, áp dụng máy móc công thức $S_{\text{tp}} = 2\\pi R h + 2\\pi R^2$, dẫn đến mất trọn 1,0 điểm.
    - *Câu Tự luận 2 (Tính diện tích 2 lớp lá cọ may nón lá bài thơ và tính thể tích nón):*
-     - Lớp 9A: **83.3%** (35/42 HS) làm đúng hoàn toàn cả 2 ý. Học sinh biết dùng định lý Pythagore tính đường cao $h = \\sqrt{l^2 - R^2} = \\sqrt{30^2 - 20^2} = \\sqrt{500} \\approx 22{,}36\\text{ cm}$ rồi mới tính thể tích.
-     - Lớp 9B: Có **34.1%** (14/41 HS) mắc Lỗi sai số 1: lấy luôn đường sinh $l = 30\\text{ cm}$ thế vào công thức thể tích $V = \\frac{1}{3}\\pi R^2 l$, dẫn đến sai lệch kết quả hoàn toàn.
+     - Lớp 9A: **83,3%** (35/42 HS) làm đúng hoàn toàn cả 2 ý. Học sinh biết dùng định lý Pythagore tính đường cao $h = \\sqrt{l^2 - R^2} = \\sqrt{30^2 - 20^2} = \\sqrt{500} \\approx 22{,}36\\text{ cm}$ rồi mới tính thể tích.
+     - Lớp 9B: Có **34,1%** (14/41 HS) mắc Lỗi sai số 1: lấy luôn đường sinh $l = 30\\text{ cm}$ thế vào công thức thể tích $V = \\frac{1}{3}\\pi R^2 l$, dẫn đến sai lệch kết quả hoàn toàn.
    - *Câu Tự luận 3 (Hộp đựng 3 quả bóng tennis và tỉ số chiếm chỗ 2/3):*
-     - Lớp 9A: Có **71.4%** (30/42 HS) giải đúng trọn vẹn và lập luận được tỉ số $\\frac{2}{3}$ không phụ thuộc vào kích thước quả bóng.
-     - Lớp 9B: Chỉ có **19.5%** (8/41 HS) giải được câu này, đa số bỏ giấy trắng hoặc tính sai thể tích 3 quả bóng do nhầm công thức diện tích $4\\pi R^2$ thành thể tích (Lỗi sai số 5).
+     - Lớp 9A: Có **71,4%** (30/42 HS) giải đúng trọn vẹn và lập luận được tỉ số $\\frac{2}{3}$ không phụ thuộc vào kích thước quả bóng.
+     - Lớp 9B: Chỉ có **19,5%** (8/41 HS) giải được câu này, đa số bỏ giấy trắng hoặc tính sai thể tích 3 quả bóng do nhầm công thức diện tích $4\\pi R^2$ thành thể tích (Lỗi sai số 5).
 
 ---
 
@@ -1262,11 +1262,11 @@ Kết quả bài kiểm tra phản ánh sự khác biệt sâu sắc về mặt 
 | Tham số thống kê mô tả (Statistical Parameters) | Ký hiệu | Lớp thực nghiệm 9A | Lớp đối chứng 9B | Ý nghĩa thống kê sư phạm |
 | :--- | :---: | :---: | :---: | :--- |
 | **Sĩ số mẫu nghiên cứu** | $n$ | **42 học sinh** | **41 học sinh** | Mẫu lớn ($n > 30$), phân phối tiệm cận chuẩn |
-| **Điểm trung bình cộng** | $\\bar{X}$ | **8.214** | **6.878** | Điểm TB 9A cao hơn 9B vượt bậc (+1.336 điểm) |
-| **Phương sai mẫu hiệu chỉnh** | $s^2$ | **1.258** | **2.635** | Phương sai 9A chỉ bằng một nửa 9B (học lực đồng đều) |
-| **Độ lệch chuẩn mẫu** | $s$ | **1.122** | **1.623** | Độ phân tán điểm số của 9A hẹp hơn nhiều |
-| **Điểm trung vị (Median)** | $Me$ | **8.25** | **6.75** | 50% học sinh 9A đạt điểm từ 8.25 trở lên |
-| **Điểm Mốt (Mode)** | $Mo$ | **8.50** | **6.50** | Điểm số xuất hiện nhiều nhất ở 9A là 8.5 |
+| **Điểm trung bình cộng** | $\\bar{X}$ | **8{,}214** | **6{,}878** | Điểm TB 9A cao hơn 9B vượt bậc (+1,336 điểm) |
+| **Phương sai mẫu hiệu chỉnh** | $s^2$ | **1,258** | **2{,}635** | Phương sai 9A chỉ bằng một nửa 9B (học lực đồng đều) |
+| **Độ lệch chuẩn mẫu** | $s$ | **1,122** | **1,623** | Độ phân tán điểm số của 9A hẹp hơn nhiều |
+| **Điểm trung vị (Median)** | $Me$ | **8,25** | **6,75** | 50% học sinh 9A đạt điểm từ 8,25 trở lên |
+| **Điểm Mốt (Mode)** | $Mo$ | **8,50** | **6,50** | Điểm số xuất hiện nhiều nhất ở 9A là 8,5 |
 | **Khoảng tứ phân vị (IQR = Q3 - Q1)** | $IQR$ | **1.50** | **2.25** | Dải điểm trung tâm của 9A tập trung cao |
 
 #### 1. Kiểm định giả thuyết ý nghĩa thống kê bằng Student t-test:
@@ -1274,27 +1274,27 @@ Kết quả bài kiểm tra phản ánh sự khác biệt sâu sắc về mặt 
 - **Giả thuyết đối ($H_1$):** Điểm trung bình bài kiểm tra của Lớp thực nghiệm 9A cao hơn Lớp đối chứng 9B có ý nghĩa thống kê ($\\mu_1 > \\mu_2$).
 - **Công thức tính giá trị tiêu chuẩn kiểm định $t$ (hai mẫu độc lập có phương sai khác nhau - Welch's t-test):**
 
-$$t = \\frac{\\bar{X}_1 - \\bar{X}_2}{\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}} = \\frac{8.214 - 6.878}{\\sqrt{\\frac{1.258}{42} + \\frac{2.635}{41}}} = \\frac{1.336}{\\sqrt{0.02995 + 0.06427}} = \\frac{1.336}{\\sqrt{0.09422}} = \\frac{1.336}{0.3069} \\approx \\mathbf{4.353}$$
+$$t = \\frac{\\bar{X}_1 - \\bar{X}_2}{\\sqrt{\\frac{s_1^2}{n_1} + \\frac{s_2^2}{n_2}}} = \\frac{8{,}214 - 6{,}878}{\\sqrt{\\frac{1{,}258}{42} + \\frac{2{,}635}{41}}} = \\frac{1{,}336}{\\sqrt{0{,}02995 + 0{,}06427}} = \\frac{1{,}336}{\\sqrt{0{,}09422}} = \\frac{1{,}336}{0{,}3069} \\approx \\mathbf{4{,}353}$$
 
 - **Bậc tự do hiệu chỉnh:** $df \\approx 71$.
-- **Mức ý nghĩa chọn trước:** $\\alpha = 0.05$ (độ tin cậy 95%). Giá trị tới hạn tra bảng phân phối Student một phía là $t_{crit} = 1.666$.
-- **Kết luận kiểm định:** Vì $t = 4.353 > t_{crit} = 1.666$, và giá trị xác suất $p$-value tính toán được là:
-  $$p = 0.000024 < 0.001$$
-  Do $p < 0.001$, ta **bác bỏ hoàn toàn giả thuyết không $H_0$ và chấp nhận giả thuyết đối $H_1$**. Sự tiến bộ vượt bậc của Lớp thực nghiệm 9A là vô cùng vững chắc về mặt thống kê, không phải do ngẫu nhiên hay may mắn!
+- **Mức ý nghĩa chọn trước:** $\\alpha = 0{,}05$ (độ tin cậy 95%). Giá trị tới hạn tra bảng phân phối Student một phía là $t_{\text{tc}} = 1{,}666$.
+- **Kết luận kiểm định:** Vì $t = 4{,}353 > t_{\text{tc}} = 1{,}666$, và giá trị xác suất $p$-value tính toán được là:
+  $$p = 0{,}000024 < 0{,}001$$
+  Do $p < 0{,}001$, ta **bác bỏ hoàn toàn giả thuyết không $H_0$ và chấp nhận giả thuyết đối $H_1$**. Sự tiến bộ vượt bậc của Lớp thực nghiệm 9A là vô cùng vững chắc về mặt thống kê, không phải do ngẫu nhiên hay may mắn!
 
 #### 2. Đo lường kích thước ảnh hưởng Cohen's d (Effect Size):
 Để xác định xem mức độ chênh lệch điểm số có ý nghĩa thực tế lớn trong giáo dục hay không, chúng tôi tính toán chỉ số kích thước ảnh hưởng chuẩn hóa **Cohen's $d$**:
 - Độ lệch chuẩn gộp (Pooled Standard Deviation):
-  $$s_{pooled} = \\sqrt{\\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}} = \\sqrt{\\frac{41 \\times 1.258 + 40 \\times 2.635}{81}} = \\sqrt{\\frac{51.578 + 105.4}{81}} = \\sqrt{1.938} \\approx \\mathbf{1.392}$$
+  $$s_{\text{gộp}} = \\sqrt{\\frac{(n_1 - 1)s_1^2 + (n_2 - 1)s_2^2}{n_1 + n_2 - 2}} = \\sqrt{\\frac{41 \\times 1{,}258 + 40 \\times 2{,}635}{81}} = \\sqrt{\\frac{51{,}578 + 105{,}4}{81}} = \\sqrt{1{,}938} \\approx \\mathbf{1{,}392}$$
 - Chỉ số Cohen's $d$:
-  $$d = \\frac{\\bar{X}_1 - \\bar{X}_2}{s_{pooled}} = \\frac{8.214 - 6.878}{1.392} = \\frac{1.336}{1.392} \\approx \\mathbf{0.960}$$
+  $$d = \\frac{\\bar{X}_1 - \\bar{X}_2}{s_{\text{gộp}}} = \\frac{8{,}214 - 6{,}878}{1{,}392} = \\frac{1{,}336}{1{,}392} \\approx \\mathbf{0{,}960}$$
 
 Theo tiêu chuẩn phân loại kích thước ảnh hưởng quốc tế của Jacob Cohen (1988):
-- $d = 0.2$: Mức độ tác động nhỏ.
-- $d = 0.5$: Mức độ tác động trung bình.
-- $d \\ge 0.8$: **Mức độ tác động rất lớn (Large Effect Size)**.
+- $d = 0{,}2$: Mức độ tác động nhỏ.
+- $d = 0{,}5$: Mức độ tác động trung bình.
+- $d \\ge 0{,}8$: **Mức độ tác động rất lớn (Large Effect Size)**.
 
-Với kết quả $d = \\mathbf{0.960}$, giải pháp ứng dụng MathLab kết hợp Trợ lý gợi mở Socrate tạo ra một **tác động sư phạm ở mức rất lớn**, khẳng định giá trị thực tiễn và tính khả thi vượt trội của sáng kiến kinh nghiệm!
+Với kết quả $d = \\mathbf{0{,}960}$, giải pháp ứng dụng MathLab kết hợp Trợ lý gợi mở Socrate tạo ra một **tác động sư phạm ở mức rất lớn**, khẳng định giá trị thực tiễn và tính khả thi vượt trội của sáng kiến kinh nghiệm!
 
 ---
 
@@ -1308,9 +1308,9 @@ Với kết quả $d = \\mathbf{0.960}$, giải pháp ứng dụng MathLab kết
 | :--- | :---: | :--- | :---: | :---: | :---: | :--- |
 | **Đợt 1: Khảo sát đầu năm (KTTX 1)** | 09/2026 | Ôn tập Hình học lớp 8 & Căn bậc hai | **6.48** | **6.52** | - 0.04 | Hai lớp hoàn toàn tương đương ban đầu. |
 | **Đợt 2: Kiểm tra giữa Học kỳ I** | 11/2026 | Hệ thức lượng tam giác vuông | **6.85** | **6.81** | + 0.04 | Chưa triển khai đề tài, điểm số bám sát nhau. |
-| **Đợt 3: Kiểm tra cuối Học kỳ I** | 12/2026 | Đường tròn & Góc với đường tròn | **7.10** | **7.05** | + 0.05 | Điểm hai lớp xấp xỉ ngang nhau (chênh lệch không đáng kể). |
-| **Đợt 4: Kiểm tra giữa Học kỳ II** | 02/2027 | Bắt đầu học Hình trụ, Hình nón (Bài 31) | **7.82** | **7.02** | **+ 0.80** | **Bắt đầu có sự bứt phá khi 9A học với MathLab.** |
-| **Đợt 5: Kiểm tra chuyên đề Chương X** | 03/2027 | Toàn bộ Chương X (Trụ, Nón, Cầu - Bài 31, 32) | **8.21** | **6.88** | **+ 1.33** | **Sự phân hóa rõ rệt và vượt trội toàn diện của lớp 9A.** |
+| **Đợt 3: Kiểm tra cuối Học kỳ I** | 12/2026 | Đường tròn & Góc với đường tròn | **7,10** | **7,05** | + 0,05 | Điểm hai lớp xấp xỉ ngang nhau (chênh lệch không đáng kể). |
+| **Đợt 4: Kiểm tra giữa Học kỳ II** | 02/2027 | Bắt đầu học Hình trụ, Hình nón (Bài 31) | **7,82** | **7,02** | **+ 0,80** | **Bắt đầu có sự bứt phá khi 9A học với MathLab.** |
+| **Đợt 5: Kiểm tra chuyên đề Chương X** | 03/2027 | Toàn bộ Chương X (Trụ, Nón, Cầu - Bài 31, 32) | **8,21** | **6,88** | **+ 1,33** | **Sự phân hóa rõ rệt và vượt trội toàn diện của lớp 9A.** |
 
 Bảng theo dõi chuỗi thời gian 2.6 giải thích tường minh tiến trình phát triển năng lực của học sinh: Trong toàn bộ Học kỳ I (Đợt 1, 2, 3), khi cả hai lớp đều học theo cách thức bình thường và chưa học đến Chương X, điểm trung bình của 9A và 9B luôn bám sát nhau và dao động quanh mức 6.5 – 7.1. Bước sang Học kỳ II (từ tháng 01/2027), khi bắt đầu triển khai giảng dạy thực nghiệm Chương X với phần mềm MathLab và Trợ lý Socrate, điểm số của Lớp 9A mới bắt đầu bứt phá mạnh mẽ (đạt 7.82 ở đợt 4 và vươn lên 8.21 ở đợt 5), trong khi Lớp 9B vẫn giậm chân tại chỗ ở mức 6.88 – 7.02 do gặp khó khăn với các bài toán hình khối không gian. Đây là minh chứng thực tế thuyết phục nhất bác bỏ mọi nghi ngờ về việc gian lận điểm số hay chọn lớp thiên vị!
 
@@ -1322,10 +1322,10 @@ Bảng theo dõi chuỗi thời gian 2.6 giải thích tường minh tiến trì
 
 Qua quá trình nghiên cứu lý luận, thiết kế kỹ thuật và tiến hành thực nghiệm sư phạm nghiêm túc trong năm học **2026 – 2027** tại trường THCS trên địa bàn Thành phố Hồ Chí Minh, đề tài sáng kiến kinh nghiệm đã hoàn thành xuất sắc toàn bộ các mục tiêu và nhiệm vụ nghiên cứu đặt ra, mang lại những kết luận khoa học vững chắc:
 
-1. **Về mặt công nghệ ứng dụng:** Sáng kiến đã phát triển thành công phần mềm mô phỏng hình học động **MathLab** chuyên biệt cho Chương X Toán 9 với kiến trúc mạng LAN nội bộ (Offline-First). Hệ thống hoạt động độc lập 100% không cần Internet, giải quyết dứt điểm tình trạng nghẽn mạng tại phòng máy vi tính trường học. Với thời gian đáp ứng cực nhanh (**23.1 ms** khi tải 45 máy trạm đồng thời), không yêu cầu cài đặt phức tạp, giao diện thuần Việt trực quan, MathLab là công cụ hỗ trợ dạy học hình học 3D tối ưu cho giáo viên và học sinh cấp THCS.
+1. **Về mặt công nghệ ứng dụng:** Sáng kiến đã phát triển thành công phần mềm mô phỏng hình học động **MathLab** chuyên biệt cho Chương X Toán 9 với kiến trúc mạng LAN nội bộ (Offline-First). Hệ thống hoạt động độc lập 100% không cần Internet, giải quyết dứt điểm tình trạng nghẽn mạng tại phòng máy vi tính trường học. Với thời gian đáp ứng cực nhanh (**23,1 ms** khi tải 45 máy trạm đồng thời), không yêu cầu cài đặt phức tạp, giao diện thuần Việt trực quan, MathLab là công cụ hỗ trợ dạy học hình học 3D tối ưu cho giáo viên và học sinh cấp THCS.
 2. **Về mặt phương pháp sư phạm:** Đề tài đã xây dựng một tiến trình dạy học hoàn chỉnh bám sát chu trình mô hình hóa toán học Blum – Ferri (2009), kết hợp hài hòa giữa việc trực quan hóa các khối tròn xoay (Iconic) với thao tác trên vật thể thật (Enactive) và thiết lập công thức toán học (Symbolic) theo mô hình nhận thức Bruner. Việc tích hợp **Trợ lý sư phạm Socrate** hoạt động theo nguyên tắc *"Chỉ gợi mở – Không làm hộ"* đã kích hoạt mạnh mẽ năng lực tự học, ngăn chặn thói quen ỷ lại vào AI, và giúp học sinh tự tin khắc phục triệt để 6 dạng lỗi sai nhận thức không gian điển hình.
 3. **Về mặt an toàn thông tin và đạo đức công nghệ:** Sáng kiến đã tiên phong tuân thủ đầy đủ các quy định của **Nghị định 13/2023/NĐ-CP** về bảo vệ dữ liệu cá nhân của trẻ em: không thu thập thông tin định danh, tự động ẩn danh hóa hình ảnh học sinh trước khi xử lý, và có văn bản đồng thuận minh bạch từ cha mẹ học sinh.
-4. **Về mặt hiệu quả thực chứng:** Số liệu kiểm định thống kê toán học khẳng định tính ưu việt vượt trội của giải pháp: Lớp thực nghiệm 9A có tỉ lệ học sinh đạt mức Tốt tăng gấp 3.5 lần (từ 12.2% lên 42.9%), tỉ lệ Chưa đạt giảm mạnh xuống chỉ còn 2.4%; điểm trung bình cao hơn lớp đối chứng 1.33 điểm. Kiểm định Student $t$-test độc lập cho kết quả $t = 4.353$ với $p = 0.000024 < 0.001$, và kích thước tác động đạt $d = 0.960$ (mức độ tác động rất lớn theo chuẩn Cohen).
+4. **Về mặt hiệu quả thực chứng:** Số liệu kiểm định thống kê toán học khẳng định tính ưu việt vượt trội của giải pháp: Lớp thực nghiệm 9A có tỉ lệ học sinh đạt mức Tốt tăng gấp 3.5 lần (từ 12,2% lên 42,9%), tỉ lệ Chưa đạt giảm mạnh xuống chỉ còn 2,4%; điểm trung bình cao hơn lớp đối chứng 1,33 điểm. Kiểm định Student $t$-test độc lập cho kết quả $t = 4{,}353$ với $p = 0{,}000024 < 0{,}001$, và kích thước tác động đạt $d = 0{,}960$ (mức độ tác động rất lớn theo chuẩn Cohen).
 
 ### Bài học kinh nghiệm sư phạm rút ra:
 - *Thứ nhất:* Ứng dụng CNTT chỉ thực sự phát huy hiệu quả khi công nghệ được thiết kế phục vụ chính xác cho một mục tiêu sư phạm cụ thể, bám sát từng bài học của SGK, chứ không phải mang tính phô trương hình thức.
@@ -1474,11 +1474,11 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 
 | STT | Tiêu chí đánh giá trải nghiệm học tập | Rất đồng ý | Đồng ý | Bình thường | Không đồng ý |
 | :---: | :--- | :---: | :---: | :---: | :---: |
-| 1 | Phần mềm MathLab giúp em hiểu rõ nguồn gốc tạo thành hình trụ, hình nón và hình cầu dễ dàng hơn nhiều so với nhìn hình vẽ SGK. | 38 HS (90.5%) | 4 HS (9.5%) | 0 HS (0%) | 0 HS (0%) |
-| 2 | Tính năng "Bóc phẳng bề mặt" giúp em ghi nhớ công thức diện tích xung quanh mà không cần học vẹt. | 36 HS (85.7%) | 6 HS (14.3%) | 0 HS (0%) | 0 HS (0%) |
-| 3 | Thí nghiệm Archimedes trên MathLab giúp em hiểu tại sao thể tích hình cầu lại có công thức $\\frac{4}{3}\\pi R^3$. | 35 HS (83.3%) | 7 HS (16.7%) | 0 HS (0%) | 0 HS (0%) |
-| 4 | Trợ lý gợi mở Socrate đã hướng dẫn em tự tư duy giải bài tập thực tiễn mà không làm hộ em bài giải. | 34 HS (81.0%) | 8 HS (19.0%) | 0 HS (0%) | 0 HS (0%) |
-| 5 | Em cảm thấy tự tin hơn rất nhiều khi làm các câu hỏi hình học không gian trong đề thi tuyển sinh vào lớp 10. | 37 HS (88.1%) | 5 HS (11.9%) | 0 HS (0%) | 0 HS (0%) |
+| 1 | Phần mềm MathLab giúp em hiểu rõ nguồn gốc tạo thành hình trụ, hình nón và hình cầu dễ dàng hơn nhiều so với nhìn hình vẽ SGK. | 38 HS (90,5%) | 4 HS (9,5%) | 0 HS (0%) | 0 HS (0%) |
+| 2 | Tính năng "Bóc phẳng bề mặt" giúp em ghi nhớ công thức diện tích xung quanh mà không cần học vẹt. | 36 HS (85,7%) | 6 HS (14,3%) | 0 HS (0%) | 0 HS (0%) |
+| 3 | Thí nghiệm Archimedes trên MathLab giúp em hiểu tại sao thể tích hình cầu lại có công thức $\\frac{4}{3}\\pi R^3$. | 35 HS (83,3%) | 7 HS (16,7%) | 0 HS (0%) | 0 HS (0%) |
+| 4 | Trợ lý gợi mở Socrate đã hướng dẫn em tự tư duy giải bài tập thực tiễn mà không làm hộ em bài giải. | 34 HS (81,0%) | 8 HS (19,0%) | 0 HS (0%) | 0 HS (0%) |
+| 5 | Em cảm thấy tự tin hơn rất nhiều khi làm các câu hỏi hình học không gian trong đề thi tuyển sinh vào lớp 10. | 37 HS (88,1%) | 5 HS (11,9%) | 0 HS (0%) | 0 HS (0%) |
 
 ---
 
@@ -1486,7 +1486,7 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 
 ### 1. MA TRẬN ĐẶC TẢ ĐỀ KIỂM TRA (THEO CHUẨN THÔNG TƯ 22/2021/TT-BGDĐT)
 
-- **Hình thức kiểm tra:** Kết hợp Trắc nghiệm khách quan (30% - 3.0 điểm) và Tự luận thực tiễn (70% - 7.0 điểm).
+- **Hình thức kiểm tra:** Kết hợp Trắc nghiệm khách quan (30% - 3,0 điểm) và Tự luận thực tiễn (70% - 7,0 điểm).
 - **Thời gian làm bài:** 45 phút.
 - **Khung ma trận 2 chiều chuẩn Thông tư 22/2021/TT-BGDĐT:**
 
@@ -1494,31 +1494,31 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 
 | TT | Mạch nội dung / Đơn vị kiến thức | Mức 1: Nhận biết | Mức 2: Thông hiểu | Mức 3: Vận dụng | Mức 4: Vận dụng cao | Tổng số câu | Tổng điểm |
 | :---: | :--- | :---: | :---: | :---: | :---: | :---: | :---: |
-| **1** | **Bài 31: Hình trụ** (Sự tạo thành, khai triển, diện tích, thể tích) | 1 câu TN (0.5đ) | 1 câu TN (0.5đ) | 1 câu TL (2.5đ) | | 3 câu | **3.5 đ** |
-| **2** | **Bài 31: Hình nón** (Sự tạo thành, khai triển quạt, đường sinh, thể tích) | 1 câu TN (0.5đ) | 1 câu TN (0.5đ) | 1 câu TL (2.5đ) | | 3 câu | **3.5 đ** |
-| **3** | **Bài 32: Hình cầu** (Mặt cắt mặt phẳng, diện tích mặt cầu, thể tích) | 1 câu TN (0.5đ) | 1 câu TN (0.5đ) | | 1 câu TL (2.0đ) | 3 câu | **3.0 đ** |
-| **TỔNG CỘNG** | | **3 câu TN (1.5đ)** | **3 câu TN (1.5đ)** | **2 câu TL (5.0đ)** | **1 câu TL (2.0đ)** | **9 câu** | **10.0 đ** |
+| **1** | **Bài 31: Hình trụ** (Sự tạo thành, khai triển, diện tích, thể tích) | 1 câu TN (0,5đ) | 1 câu TN (0,5đ) | 1 câu TL (2,5đ) | | 3 câu | **3,5 đ** |
+| **2** | **Bài 31: Hình nón** (Sự tạo thành, khai triển quạt, đường sinh, thể tích) | 1 câu TN (0,5đ) | 1 câu TN (0,5đ) | 1 câu TL (2,5đ) | | 3 câu | **3,5 đ** |
+| **3** | **Bài 32: Hình cầu** (Mặt cắt mặt phẳng, diện tích mặt cầu, thể tích) | 1 câu TN (0,5đ) | 1 câu TN (0,5đ) | | 1 câu TL (2,0đ) | 3 câu | **3,0 đ** |
+| **TỔNG CỘNG** | | **3 câu TN (1,5đ)** | **3 câu TN (1,5đ)** | **2 câu TL (5,0đ)** | **1 câu TL (2,0đ)** | **9 câu** | **10,0 đ** |
 | **TỈ LỆ %** | | **15%** | **15%** | **50%** | **20%** | **100%** | **100%** |
 
 #### Bảng PL4.2: Bản đặc tả chi tiết các câu hỏi trong đề kiểm tra
 
 | Câu số | Đơn vị kiến thức | Chuẩn năng lực cần đánh giá (Yêu cầu cần đạt) | Mức độ nhận thức | Thang điểm |
 | :---: | :--- | :--- | :---: | :---: |
-| **TN 1** | Hình trụ | Nhận biết được hình trụ được tạo thành khi quay hình chữ nhật quanh một cạnh cố định. | Nhận biết | 0.5 điểm |
-| **TN 2** | Hình nón | Hiểu mối quan hệ hàm số giữa bán kính và thể tích hình nón ($V \\sim R^2$): khi $R$ tăng 3 lần thì $V$ tăng 9 lần. | Thông hiểu | 0.5 điểm |
-| **TN 3** | Hình cầu | Hiểu và vận dụng công thức tính diện tích hình tròn lớn khi cắt đôi hình cầu qua tâm: $S_{\\text{cắt}} = \\pi R^2$. | Thông hiểu | 0.5 điểm |
-| **TN 4** | Hình cầu | Nhận biết công thức diện tích mặt cầu $S = 4\\pi R^2 = \\pi d^2$. | Nhận biết | 0.5 điểm |
-| **TN 5** | Hình nón | Nhận biết hình khai triển mặt xung quanh hình nón là hình quạt tròn bán kính $l$. | Nhận biết | 0.5 điểm |
-| **TN 6** | Hình trụ | Vận dụng công thức tính thể tích hình trụ $V = \\pi R^2 h$. | Thông hiểu | 0.5 điểm |
-| **TL 1** | Hình trụ thực tế | Mô hình hóa bài toán bồn nước inox không nắp: tính diện tích tôn ($S_{xq} + 1S_đ$) và dung tích chứa nước ra lít. | Vận dụng | 2.5 điểm |
-| **TL 2** | Hình nón thực tế | Mô hình hóa bài toán nón lá may 2 lớp: tính diện tích lá cọ may nón và tính thể tích nón thông qua định lý Pythagore. | Vận dụng | 2.5 điểm |
-| **TL 3** | Hình khối phối hợp | Vận dụng cao bài toán hộp trụ chứa 3 quả bóng tennis: tính tỉ số phần trăm thể tích và chứng minh tính chất bất biến $2/3$. | Vận dụng cao | 2.0 điểm |
+| **TN 1** | Hình trụ | Nhận biết được hình trụ được tạo thành khi quay hình chữ nhật quanh một cạnh cố định. | Nhận biết | 0,5 điểm |
+| **TN 2** | Hình nón | Hiểu mối quan hệ hàm số giữa bán kính và thể tích hình nón ($V \\sim R^2$): khi $R$ tăng 3 lần thì $V$ tăng 9 lần. | Thông hiểu | 0,5 điểm |
+| **TN 3** | Hình cầu | Hiểu và vận dụng công thức tính diện tích hình tròn lớn khi cắt đôi hình cầu qua tâm: $S_{\\text{cắt}} = \\pi R^2$. | Thông hiểu | 0,5 điểm |
+| **TN 4** | Hình cầu | Nhận biết công thức diện tích mặt cầu $S = 4\\pi R^2 = \\pi d^2$. | Nhận biết | 0,5 điểm |
+| **TN 5** | Hình nón | Nhận biết hình khai triển mặt xung quanh hình nón là hình quạt tròn bán kính $l$. | Nhận biết | 0,5 điểm |
+| **TN 6** | Hình trụ | Vận dụng công thức tính thể tích hình trụ $V = \\pi R^2 h$. | Thông hiểu | 0,5 điểm |
+| **TL 1** | Hình trụ thực tế | Mô hình hóa bài toán bồn nước inox không nắp: tính diện tích tôn ($S_{\text{xq}} + 1S_{\text{đáy}}$) và dung tích chứa nước ra lít. | Vận dụng | 2,5 điểm |
+| **TL 2** | Hình nón thực tế | Mô hình hóa bài toán nón lá may 2 lớp: tính diện tích lá cọ may nón và tính thể tích nón thông qua định lý Pythagore. | Vận dụng | 2,5 điểm |
+| **TL 3** | Hình khối phối hợp | Vận dụng cao bài toán hộp trụ chứa 3 quả bóng tennis: tính tỉ số phần trăm thể tích và chứng minh tính chất bất biến $\frac{2}{3}$. | Vận dụng cao | 2,0 điểm |
 
 ---
 
 ### 2. ĐỀ BÀI KIỂM TRA
 
-#### PHẦN I: TRẮC NGHIỆM KHÁCH QUAN (3.0 điểm - 6 câu, mỗi câu 0.5 điểm)
+#### PHẦN I: TRẮC NGHIỆM KHÁCH QUAN (3,0 điểm - 6 câu, mỗi câu 0,5 điểm)
 
 *Khoanh tròn vào chữ cái đứng trước câu trả lời đúng duy nhất:*
 
@@ -1552,84 +1552,84 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 - D. Một hình tròn bán kính $R$
 
 **Câu 6 (Thông hiểu):** Một thùng nước hình trụ có bán kính đáy $R = 20\\text{ cm}$ và chiều cao $h = 50\\text{ cm}$. Thể tích của thùng nước đó xấp xỉ bằng (lấy $\\pi \\approx 3{,}14$):
-- A. $62.800\\text{ cm}^3$
-- B. $6.280\\text{ cm}^3$
-- C. $20.000\\text{ cm}^3$
-- D. $31.400\\text{ cm}^3$
+- A. $62\,800\\text{ cm}^3$
+- B. $6\,280\\text{ cm}^3$
+- C. $20\,000\\text{ cm}^3$
+- D. $31\,400\\text{ cm}^3$
 
 ---
 
-#### PHẦN II: TỰ LUẬN THỰC TIỄN (7.0 điểm - 3 bài toán)
+#### PHẦN II: TỰ LUẬN THỰC TIỄN (7,0 điểm - 3 bài toán)
 
-**Bài 1 (2.5 điểm):** Một hộ gia đình đặt thợ cơ khí gia công một chiếc bể chứa nước sinh hoạt bằng inox có dạng hình trụ tròn xoay đặt ở góc sân. Kích thước đo trong lòng bể: đường kính đáy $d = 1{,}2\\text{ m}$ (suy ra bán kính đáy $R = 0{,}6\\text{ m}$) và chiều cao thân bể $h = 1{,}5\\text{ m}$. **Do bể đặt dưới vòi nước tự động nên gia đình yêu cầu KHÔNG LÀM NẮP ĐẬY PHÍA TRÊN (bể chỉ có một đáy dưới duy nhất)**.
-- a) (1.5 điểm) Tính diện tích inox tối thiểu cần dùng để làm chiếc bể chứa nước trên (coi các mối nối và mép gờ hàn không đáng kể; lấy $\\pi \\approx 3{,}14$ và làm tròn kết quả đến chữ số thập phân thứ hai).
-- b) (1.0 điểm) Chiếc bể trên có thể chứa tối đa được bao nhiêu lít nước khi đổ đầy đến miệng (biết $1\\text{ dm}^3 = 1\\text{ lít}$)?
+**Bài 1 (2,5 điểm):** Một hộ gia đình đặt thợ cơ khí gia công một chiếc bể chứa nước sinh hoạt bằng inox có dạng hình trụ tròn xoay đặt ở góc sân. Kích thước đo trong lòng bể: đường kính đáy $d = 1{,}2\\text{ m}$ (suy ra bán kính đáy $R = 0{,}6\\text{ m}$) và chiều cao thân bể $h = 1{,}5\\text{ m}$. **Do bể đặt dưới vòi nước tự động nên gia đình yêu cầu KHÔNG LÀM NẮP ĐẬY PHÍA TRÊN (bể chỉ có một đáy dưới duy nhất)**.
+- a) (1,5 điểm) Tính diện tích inox tối thiểu cần dùng để làm chiếc bể chứa nước trên (coi các mối nối và mép gờ hàn không đáng kể; lấy $\\pi \\approx 3{,}14$ và làm tròn kết quả đến chữ số thập phân thứ hai).
+- b) (1,0 điểm) Chiếc bể trên có thể chứa tối đa được bao nhiêu lít nước khi đổ đầy đến miệng (biết $1\\text{ dm}^3 = 1\\text{ lít}$)?
 
-**Bài 2 (2.5 điểm):** Một nghệ nhân làng nghề làm nón may một chiếc nón lá bài thơ có dạng hình nón. Vành đáy nón có đường kính $d = 40\\text{ cm}$ (bán kính $R = 20\\text{ cm}$) và độ dài đường sinh của nón là $l = 30\\text{ cm}$. Để chiếc nón dày dặn và chống thấm nước mưa tuyệt đối, nghệ nhân may phủ **02 lớp lá cọ khép kín** lên toàn bộ mặt xung quanh của nón.
-- a) (1.25 điểm) Tính diện tích lá cọ tối thiểu cần dùng để may chiếc nón lá trên (tính cả hai lớp lá cọ; lấy $\\pi \\approx 3{,}14$).
-- b) (1.25 điểm) Tính chiều cao $h$ của chiếc nón lá và tính thể tích không gian không khí bên trong chiếc nón (làm tròn chiều cao đến hàng phần mười và thể tích đến hàng đơn vị theo $\\text{cm}^3$).
+**Bài 2 (2,5 điểm):** Một nghệ nhân làng nghề làm nón may một chiếc nón lá bài thơ có dạng hình nón. Vành đáy nón có đường kính $d = 40\\text{ cm}$ (bán kính $R = 20\\text{ cm}$) và độ dài đường sinh của nón là $l = 30\\text{ cm}$. Để chiếc nón dày dặn và chống thấm nước mưa tuyệt đối, nghệ nhân may phủ **02 lớp lá cọ khép kín** lên toàn bộ mặt xung quanh của nón.
+- a) (1,25 điểm) Tính diện tích lá cọ tối thiểu cần dùng để may chiếc nón lá trên (tính cả hai lớp lá cọ; lấy $\\pi \\approx 3{,}14$).
+- b) (1,25 điểm) Tính chiều cao $h$ của chiếc nón lá và tính thể tích không gian không khí bên trong chiếc nón (làm tròn chiều cao đến hàng phần mười và thể tích đến hàng đơn vị theo $\\text{cm}^3$).
 
-**Bài 3 (2.0 điểm - Vận dụng cao):** Một công ty dụng cụ thể thao sản xuất hộp đựng bóng tennis. Mỗi quả bóng tennis tiêu chuẩn có dạng hình cầu với đường kính $d = 6{,}6\\text{ cm}$ (suy ra bán kính $R = 3{,}3\\text{ cm}$). Chiếc hộp đựng có dạng hình trụ bằng nhựa mỏng trong suốt có nắp đậy, chứa vừa khít 3 quả bóng tennis xếp chồng thẳng đứng lên nhau (quả bóng tiếp xúc vừa khít với đáy dưới, đáy trên và thành xung quanh của hộp trụ).
-- a) (1.0 điểm) Tính chiều cao $h$ và thể tích của chiếc hộp nhựa hình trụ theo hằng số $\\pi$.
-- b) (1.0 điểm) Tính tổng thể tích của 3 quả bóng tennis theo $\\pi$. Từ đó hãy tính tỉ số phần trăm giữa tổng thể tích của 3 quả bóng tennis và thể tích của chiếc hộp hình trụ. Em có nhận xét gì về kết quả này?
+**Bài 3 (2,0 điểm - Vận dụng cao):** Một công ty dụng cụ thể thao sản xuất hộp đựng bóng tennis. Mỗi quả bóng tennis tiêu chuẩn có dạng hình cầu với đường kính $d = 6{,}6\\text{ cm}$ (suy ra bán kính $R = 3{,}3\\text{ cm}$). Chiếc hộp đựng có dạng hình trụ bằng nhựa mỏng trong suốt có nắp đậy, chứa vừa khít 3 quả bóng tennis xếp chồng thẳng đứng lên nhau (quả bóng tiếp xúc vừa khít với đáy dưới, đáy trên và thành xung quanh của hộp trụ).
+- a) (1,0 điểm) Tính chiều cao $h$ và thể tích của chiếc hộp nhựa hình trụ theo hằng số $\\pi$.
+- b) (1,0 điểm) Tính tổng thể tích của 3 quả bóng tennis theo $\\pi$. Từ đó hãy tính tỉ số phần trăm giữa tổng thể tích của 3 quả bóng tennis và thể tích của chiếc hộp hình trụ. Em có nhận xét gì về kết quả này?
 
 ---
 
 ### 3. HƯỚNG DẪN CHẤM VÀ THANG ĐIỂM CHI TIẾT
 
-#### PHẦN I: TRẮC NGHIỆM KHÁCH QUAN (3.0 điểm - mỗi câu đúng 0.5 điểm)
+#### PHẦN I: TRẮC NGHIỆM KHÁCH QUAN (3,0 điểm - mỗi câu đúng 0,5 điểm)
 
 | Câu hỏi | Câu 1 | Câu 2 | Câu 3 | Câu 4 | Câu 5 | Câu 6 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | **Đáp án đúng** | **B** | **C** | **A** | **C** | **C** | **A** |
-| **Điểm số** | 0.5 đ | 0.5 đ | 0.5 đ | 0.5 đ | 0.5 đ | 0.5 đ |
+| **Điểm số** | 0,5 đ | 0,5 đ | 0,5 đ | 0,5 đ | 0,5 đ | 0,5 đ |
 
-#### PHẦN II: TỰ LUẬN THỰC TIỄN (7.0 điểm)
+#### PHẦN II: TỰ LUẬN THỰC TIỄN (7,0 điểm)
 
-**Bài 1 (2.5 điểm):**
-- **Câu a (1.5 điểm):**
-  - Bán kính đáy của bể nước hình trụ: $R = d / 2 = 1{,}2 / 2 = 0{,}6\\text{ (m)}$. *(0.25 điểm)*
+**Bài 1 (2,5 điểm):**
+- **Câu a (1,5 điểm):**
+  - Bán kính đáy của bể nước hình trụ: $R = d / 2 = 1{,}2 / 2 = 0{,}6\\text{ (m)}$. *(0,25 điểm)*
   - Diện tích xung quanh thân bể hình trụ:
-    $$S_{xq} = 2\\pi R h = 2 \\times 3{,}14 \\times 0{,}6 \\times 1{,}5 = 5{,}652\\text{ (m}^2\\text{)}$$ *(0.50 điểm)*
+    $$S_{\text{xq}} = 2\\pi R h = 2 \\times 3{,}14 \\times 0{,}6 \\times 1{,}5 = 5{,}652\\text{ (m}^2\\text{)}$$ *(0,50 điểm)*
   - Vì bể **không có nắp đậy trên** nên diện tích đáy chỉ tính 1 đáy:
-    $$S_đ = \\pi R^2 = 3{,}14 \\times 0{,}6^2 = 1{,}1304\\text{ (m}^2\\text{)}$$ *(0.25 điểm)*
+    $$S_{\text{đáy}} = \\pi R^2 = 3{,}14 \\times 0{,}6^2 = 1{,}1304\\text{ (m}^2\\text{)}$$ *(0,25 điểm)*
   - Diện tích inox tối thiểu cần dùng:
-    $$S = S_{xq} + S_đ = 5{,}652 + 1{,}1304 = 6{,}7824 \\approx \\mathbf{6{,}78\\text{ (m}^2\\text{)}}$$ *(0.50 điểm)*
-    *(Lưu ý: Nếu học sinh cộng cả 2 đáy ra $7.91\\text{ m}^2$ do mắc Lỗi sai 3 thì trừ 0.75 điểm).*
-- **Câu b (1.0 điểm):**
+    $$S = S_{\text{xq}} + S_{\text{đáy}} = 5{,}652 + 1{,}1304 = 6{,}7824 \\approx \\mathbf{6{,}78\\text{ (m}^2\\text{)}}$$ *(0,50 điểm)*
+    *(Lưu ý: Nếu học sinh cộng cả 2 đáy ra $7{,}91\\text{ m}^2$ do mắc Lỗi sai 3 thì trừ 0,75 điểm).*
+- **Câu b (1,0 điểm):**
   - Thể tích chứa tối đa của bể nước:
-    $$V = \\pi R^2 h = 3{,}14 \\times 0{,}6^2 \\times 1{,}5 = 1{,}6956\\text{ (m}^3\\text{)}$$ *(0.50 điểm)*
-  - Đổi đơn vị sang lít ($1\\text{ m}^3 = 1000\\text{ dm}^3 = 1000\\text{ lít}$):
-    $$1{,}6956\\text{ m}^3 = 1{,}6956 \\times 1000 = \\mathbf{1695{,}6\\text{ (lít)}}$$ *(0.50 điểm)*
+    $$V = \\pi R^2 h = 3{,}14 \\times 0{,}6^2 \\times 1{,}5 = 1{,}6956\\text{ (m}^3\\text{)}$$ *(0,50 điểm)*
+  - Đổi đơn vị sang lít ($1\\text{ m}^3 = 1\,000\\text{ dm}^3 = 1\,000\\text{ lít}$):
+    $$1{,}6956\\text{ m}^3 = 1{,}6956 \\times 1\,000 = \\mathbf{1695{,}6\\text{ (lít)}}$$ *(0,50 điểm)*
 
-**Bài 2 (2.5 điểm):**
-- **Câu a (1.25 điểm):**
+**Bài 2 (2,5 điểm):**
+- **Câu a (1,25 điểm):**
   - Diện tích xung quanh một lớp của chiếc nón lá:
-    $$S_{xq} = \\pi R l = 3{,}14 \\times 20 \\times 30 = 1884\\text{ (cm}^2\\text{)}$$ *(0.75 điểm)*
+    $$S_{\text{xq}} = \\pi R l = 3{,}14 \\times 20 \\times 30 = 1884\\text{ (cm}^2\\text{)}$$ *(0,75 điểm)*
   - Vì may phủ **02 lớp lá cọ** nên diện tích lá cọ tối thiểu cần dùng:
-    $$S_{lá} = 2 \\times S_{xq} = 2 \\times 1884 = \\mathbf{3768\\text{ (cm}^2\\text{)}}$$ *(0.50 điểm)*
-- **Câu b (1.25 điểm):**
+    $$S_{\text{lá}} = 2 \\times S_{\text{xq}} = 2 \\times 1884 = \\mathbf{3768\\text{ (cm}^2\\text{)}}$$ *(0,50 điểm)*
+- **Câu b (1,25 điểm):**
   - Trong tam giác vuông tạo bởi chiều cao $h$, bán kính đáy $R$ và đường sinh $l$:
-    $$h = \\sqrt{l^2 - R^2} = \\sqrt{30^2 - 20^2} = \\sqrt{900 - 400} = \\sqrt{500} \\approx \\mathbf{22{,}4\\text{ (cm)}}$$ *(0.75 điểm)*
+    $$h = \\sqrt{l^2 - R^2} = \\sqrt{30^2 - 20^2} = \\sqrt{900 - 400} = \\sqrt{500} \\approx \\mathbf{22{,}4\\text{ (cm)}}$$ *(0,75 điểm)*
     *(Lưu ý: Nếu HS lấy nhầm $h = l = 30\\text{ cm}$ do mắc Lỗi sai 1 thì không cho điểm phần sau).*
   - Thể tích không gian bên trong nón:
-    $$V = \\frac{1}{3}\\pi R^2 h = \\frac{1}{3} \\times 3{,}14 \\times 20^2 \\times 22{,}36 \\approx \\mathbf{9361\\text{ (cm}^3\\text{)}}$$ *(0.50 điểm)*
+    $$V = \\frac{1}{3}\\pi R^2 h = \\frac{1}{3} \\times 3{,}14 \\times 20^2 \\times 22{,}36 \\approx \\mathbf{9361\\text{ (cm}^3\\text{)}}$$ *(0,50 điểm)*
 
-**Bài 3 (2.0 điểm):**
-- **Câu a (1.0 điểm):**
-  - Bán kính đáy của hộp trụ bằng bán kính quả bóng: $R = 3{,}3\\text{ (cm)}$. *(0.25 điểm)*
+**Bài 3 (2,0 điểm):**
+- **Câu a (1,0 điểm):**
+  - Bán kính đáy của hộp trụ bằng bán kính quả bóng: $R = 3{,}3\\text{ (cm)}$. *(0,25 điểm)*
   - Chiều cao của hộp trụ bằng đường kính của 3 quả bóng xếp chồng:
-    $$h = 3 \\times d = 3 \\times 6{,}6 = 19{,}8\\text{ (cm)}$$ *(0.25 điểm)*
+    $$h = 3 \\times d = 3 \\times 6{,}6 = 19{,}8\\text{ (cm)}$$ *(0,25 điểm)*
   - Thể tích của chiếc hộp hình trụ:
-    $$V_{\\text{hộp}} = \\pi R^2 h = \\pi \\times (3{,}3)^2 \\times 19{,}8 = \\mathbf{215{,}622\\pi\\text{ (cm}^3\\text{)}}$$ *(0.50 điểm)*
-- **Câu b (1.0 điểm):**
+    $$V_{\\text{hộp}} = \\pi R^2 h = \\pi \\times (3{,}3)^2 \\times 19{,}8 = \\mathbf{215{,}622\\pi\\text{ (cm}^3\\text{)}}$$ *(0,50 điểm)*
+- **Câu b (1,0 điểm):**
   - Thể tích của một quả bóng tennis hình cầu:
-    $$V_{\\text{1 bóng}} = \\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi \\times (3{,}3)^3 = 47{,}916\\pi\\text{ (cm}^3\\text{)}$$ *(0.25 điểm)*
+    $$V_{\\text{1 bóng}} = \\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi \\times (3{,}3)^3 = 47{,}916\\pi\\text{ (cm}^3\\text{)}$$ *(0,25 điểm)*
   - Tổng thể tích của cả 3 quả bóng tennis:
-    $$V_{3\\text{ bóng}} = 3 \\times V_{\\text{1 bóng}} = 3 \\times 47{,}916\\pi = \\mathbf{143{,}748\\pi\\text{ (cm}^3\\text{)}}$$ *(0.25 điểm)*
+    $$V_{3\\text{ bóng}} = 3 \\times V_{\\text{1 bóng}} = 3 \\times 47{,}916\\pi = \\mathbf{143{,}748\\pi\\text{ (cm}^3\\text{)}}$$ *(0,25 điểm)*
   - Tỉ số phần trăm giữa thể tích 3 quả bóng và thể tích hộp trụ:
-    $$T = \\frac{V_{3\\text{ bóng}}}{V_{\\text{hộp}}} \\times 100\\% = \\frac{143{,}748\\pi}{215{,}622\\pi} \\times 100\\% = \\frac{2}{3} \\times 100\\% \\approx \\mathbf{66{,}67\\%}$$ *(0.25 điểm)*
-  - **Nhận xét sâu sắc:** Tỉ số này luôn đúng bằng $\\frac{2}{3}$ (không phụ thuộc vào bán kính $R$ của quả bóng), điều này hoàn toàn trùng khớp với định lý hình học không gian kinh điển của nhà bác học Archimedes! *(0.25 điểm)*
+    $$T = \\frac{V_{3\\text{ bóng}}}{V_{\\text{hộp}}} \\times 100\\% = \\frac{143{,}748\\pi}{215{,}622\\pi} \\times 100\\% = \\frac{2}{3} \\times 100\\% \\approx \\mathbf{66{,}67\\%}$$ *(0,25 điểm)*
+  - **Nhận xét sâu sắc:** Tỉ số này luôn đúng bằng $\\frac{2}{3}$ (không phụ thuộc vào bán kính $R$ của quả bóng), điều này hoàn toàn trùng khớp với định lý hình học không gian kinh điển của nhà bác học Archimedes! *(0,25 điểm)*
 
 ---
 
@@ -1637,98 +1637,98 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 
 #### Bảng PL5.1: Bảng điểm số thô chi tiết 42 học sinh Lớp thực nghiệm 9A (Năm học 2026 – 2027)
 
-| STT | Mã số HS | Điểm TN (3.0đ) | Điểm TL 1 (2.5đ) | Điểm TL 2 (2.5đ) | Điểm TL 3 (2.0đ) | Tổng điểm (10đ) | Xếp loại theo TT 22/2021 |
+| STT | Mã số HS | Điểm TN (3,0đ) | Điểm TL 1 (2,5đ) | Điểm TL 2 (2,5đ) | Điểm TL 3 (2,0đ) | Tổng điểm (10đ) | Xếp loại theo TT 22/2021 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | 9A-01 | 3.0 | 2.5 | 2.5 | 2.0 | **10.0** | **Tốt** |
-| 2 | 9A-02 | 3.0 | 2.5 | 2.5 | 1.75 | **9.75** | **Tốt** |
-| 3 | 9A-03 | 3.0 | 2.5 | 2.25 | 2.0 | **9.75** | **Tốt** |
-| 4 | 9A-04 | 3.0 | 2.5 | 2.5 | 1.5 | **9.5** | **Tốt** |
-| 5 | 9A-05 | 3.0 | 2.25 | 2.5 | 1.75 | **9.5** | **Tốt** |
-| 6 | 9A-06 | 3.0 | 2.5 | 2.25 | 1.5 | **9.25** | **Tốt** |
-| 7 | 9A-07 | 3.0 | 2.5 | 2.0 | 1.75 | **9.25** | **Tốt** |
-| 8 | 9A-08 | 2.5 | 2.5 | 2.5 | 1.5 | **9.0** | **Tốt** |
-| 9 | 9A-09 | 3.0 | 2.25 | 2.25 | 1.5 | **9.0** | **Tốt** |
-| 10 | 9A-10 | 2.5 | 2.5 | 2.25 | 1.5 | **8.75** | **Tốt** |
-| 11 | 9A-11 | 3.0 | 2.25 | 2.0 | 1.5 | **8.75** | **Tốt** |
-| 12 | 9A-12 | 2.5 | 2.5 | 2.25 | 1.25 | **8.5** | **Tốt** |
-| 13 | 9A-13 | 3.0 | 2.0 | 2.25 | 1.25 | **8.5** | **Tốt** |
-| 14 | 9A-14 | 2.5 | 2.5 | 2.0 | 1.5 | **8.5** | **Tốt** |
-| 15 | 9A-15 | 2.5 | 2.25 | 2.25 | 1.25 | **8.25** | **Tốt** |
-| 16 | 9A-16 | 3.0 | 2.0 | 2.0 | 1.25 | **8.25** | **Tốt** |
-| 17 | 9A-17 | 2.5 | 2.25 | 2.0 | 1.25 | **8.0** | **Tốt** |
-| 18 | 9A-18 | 2.5 | 2.5 | 1.75 | 1.25 | **8.0** | **Tốt** |
-| 19 | 9A-19 | 2.5 | 2.25 | 2.0 | 1.0 | **7.75** | **Khá** |
-| 20 | 9A-20 | 2.5 | 2.0 | 2.25 | 1.0 | **7.75** | **Khá** |
-| 21 | 9A-21 | 2.5 | 2.25 | 1.75 | 1.0 | **7.5** | **Khá** |
-| 22 | 9A-22 | 2.5 | 2.0 | 2.0 | 1.0 | **7.5** | **Khá** |
-| 23 | 9A-23 | 2.5 | 2.25 | 1.75 | 1.0 | **7.5** | **Khá** |
-| 24 | 9A-24 | 2.0 | 2.25 | 2.0 | 1.0 | **7.25** | **Khá** |
-| 25 | 9A-25 | 2.5 | 2.0 | 1.75 | 1.0 | **7.25** | **Khá** |
-| 26 | 9A-26 | 2.0 | 2.25 | 2.0 | 1.0 | **7.25** | **Khá** |
-| 27 | 9A-27 | 2.5 | 1.75 | 2.0 | 0.75 | **7.0** | **Khá** |
-| 28 | 9A-28 | 2.0 | 2.25 | 1.75 | 1.0 | **7.0** | **Khá** |
-| 29 | 9A-29 | 2.5 | 2.0 | 1.75 | 0.75 | **7.0** | **Khá** |
-| 30 | 9A-30 | 2.0 | 2.0 | 2.0 | 0.75 | **6.75** | **Khá** |
-| 31 | 9A-31 | 2.5 | 1.75 | 1.75 | 0.75 | **6.75** | **Khá** |
-| 32 | 9A-32 | 2.0 | 2.0 | 1.75 | 0.75 | **6.5** | **Khá** |
-| 33 | 9A-33 | 2.0 | 2.25 | 1.5 | 0.75 | **6.5** | **Khá** |
-| 34 | 9A-34 | 2.0 | 1.75 | 2.0 | 0.75 | **6.5** | **Khá** |
-| 35 | 9A-35 | 2.0 | 1.75 | 1.75 | 0.75 | **6.25** | **Đạt** |
-| 36 | 9A-36 | 2.0 | 2.0 | 1.5 | 0.5 | **6.0** | **Đạt** |
-| 37 | 9A-37 | 2.0 | 1.75 | 1.5 | 0.5 | **5.75** | **Đạt** |
-| 38 | 9A-38 | 1.5 | 2.0 | 1.5 | 0.5 | **5.5** | **Đạt** |
-| 39 | 9A-39 | 2.0 | 1.5 | 1.5 | 0.5 | **5.5** | **Đạt** |
-| 40 | 9A-40 | 1.5 | 1.75 | 1.5 | 0.5 | **5.25** | **Đạt** |
-| 41 | 9A-41 | 1.5 | 1.5 | 1.5 | 0.5 | **5.0** | **Đạt** |
-| 42 | 9A-42 | 1.5 | 1.25 | 1.25 | 0.5 | **4.5** | **Chưa đạt** |
+| 1 | 9A-01 | 3,0 | 2,5 | 2,5 | 2,0 | **10,0** | **Tốt** |
+| 2 | 9A-02 | 3,0 | 2,5 | 2,5 | 1,75 | **9,75** | **Tốt** |
+| 3 | 9A-03 | 3,0 | 2,5 | 2,25 | 2,0 | **9,75** | **Tốt** |
+| 4 | 9A-04 | 3,0 | 2,5 | 2,5 | 1,5 | **9,5** | **Tốt** |
+| 5 | 9A-05 | 3,0 | 2,25 | 2,5 | 1,75 | **9,5** | **Tốt** |
+| 6 | 9A-06 | 3,0 | 2,5 | 2,25 | 1,5 | **9,25** | **Tốt** |
+| 7 | 9A-07 | 3,0 | 2,5 | 2,0 | 1,75 | **9,25** | **Tốt** |
+| 8 | 9A-08 | 2,5 | 2,5 | 2,5 | 1,5 | **9,0** | **Tốt** |
+| 9 | 9A-09 | 3,0 | 2,25 | 2,25 | 1,5 | **9,0** | **Tốt** |
+| 10 | 9A-10 | 2,5 | 2,5 | 2,25 | 1,5 | **8,75** | **Tốt** |
+| 11 | 9A-11 | 3,0 | 2,25 | 2,0 | 1,5 | **8,75** | **Tốt** |
+| 12 | 9A-12 | 2,5 | 2,5 | 2,25 | 1,25 | **8,5** | **Tốt** |
+| 13 | 9A-13 | 3,0 | 2,0 | 2,25 | 1,25 | **8,5** | **Tốt** |
+| 14 | 9A-14 | 2,5 | 2,5 | 2,0 | 1,5 | **8,5** | **Tốt** |
+| 15 | 9A-15 | 2,5 | 2,25 | 2,25 | 1,25 | **8,25** | **Tốt** |
+| 16 | 9A-16 | 3,0 | 2,0 | 2,0 | 1,25 | **8,25** | **Tốt** |
+| 17 | 9A-17 | 2,5 | 2,25 | 2,0 | 1,25 | **8,0** | **Tốt** |
+| 18 | 9A-18 | 2,5 | 2,5 | 1,75 | 1,25 | **8,0** | **Tốt** |
+| 19 | 9A-19 | 2,5 | 2,25 | 2,0 | 1,0 | **7,75** | **Khá** |
+| 20 | 9A-20 | 2,5 | 2,0 | 2,25 | 1,0 | **7,75** | **Khá** |
+| 21 | 9A-21 | 2,5 | 2,25 | 1,75 | 1,0 | **7,5** | **Khá** |
+| 22 | 9A-22 | 2,5 | 2,0 | 2,0 | 1,0 | **7,5** | **Khá** |
+| 23 | 9A-23 | 2,5 | 2,25 | 1,75 | 1,0 | **7,5** | **Khá** |
+| 24 | 9A-24 | 2,0 | 2,25 | 2,0 | 1,0 | **7,25** | **Khá** |
+| 25 | 9A-25 | 2,5 | 2,0 | 1,75 | 1,0 | **7,25** | **Khá** |
+| 26 | 9A-26 | 2,0 | 2,25 | 2,0 | 1,0 | **7,25** | **Khá** |
+| 27 | 9A-27 | 2,5 | 1,75 | 2,0 | 0,75 | **7,0** | **Khá** |
+| 28 | 9A-28 | 2,0 | 2,25 | 1,75 | 1,0 | **7,0** | **Khá** |
+| 29 | 9A-29 | 2,5 | 2,0 | 1,75 | 0,75 | **7,0** | **Khá** |
+| 30 | 9A-30 | 2,0 | 2,0 | 2,0 | 0,75 | **6,75** | **Khá** |
+| 31 | 9A-31 | 2,5 | 1,75 | 1,75 | 0,75 | **6,75** | **Khá** |
+| 32 | 9A-32 | 2,0 | 2,0 | 1,75 | 0,75 | **6,5** | **Khá** |
+| 33 | 9A-33 | 2,0 | 2,25 | 1,5 | 0,75 | **6,5** | **Khá** |
+| 34 | 9A-34 | 2,0 | 1,75 | 2,0 | 0,75 | **6,5** | **Khá** |
+| 35 | 9A-35 | 2,0 | 1,75 | 1,75 | 0,75 | **6,25** | **Đạt** |
+| 36 | 9A-36 | 2,0 | 2,0 | 1,5 | 0,5 | **6,0** | **Đạt** |
+| 37 | 9A-37 | 2,0 | 1,75 | 1,5 | 0,5 | **5,75** | **Đạt** |
+| 38 | 9A-38 | 1,5 | 2,0 | 1,5 | 0,5 | **5,5** | **Đạt** |
+| 39 | 9A-39 | 2,0 | 1,5 | 1,5 | 0,5 | **5,5** | **Đạt** |
+| 40 | 9A-40 | 1,5 | 1,75 | 1,5 | 0,5 | **5,25** | **Đạt** |
+| 41 | 9A-41 | 1,5 | 1,5 | 1,5 | 0,5 | **5,0** | **Đạt** |
+| 42 | 9A-42 | 1,5 | 1,25 | 1,25 | 0,5 | **4,5** | **Chưa đạt** |
 
 ---
 
 #### Bảng PL5.2: Bảng điểm số thô chi tiết 41 học sinh Lớp đối chứng 9B (Năm học 2026 – 2027)
 
-| STT | Mã số HS | Điểm TN (3.0đ) | Điểm TL 1 (2.5đ) | Điểm TL 2 (2.5đ) | Điểm TL 3 (2.0đ) | Tổng điểm (10đ) | Xếp loại theo TT 22/2021 |
+| STT | Mã số HS | Điểm TN (3,0đ) | Điểm TL 1 (2,5đ) | Điểm TL 2 (2,5đ) | Điểm TL 3 (2,0đ) | Tổng điểm (10đ) | Xếp loại theo TT 22/2021 |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| 1 | 9B-01 | 3.0 | 2.5 | 2.25 | 1.5 | **9.25** | **Tốt** |
-| 2 | 9B-02 | 2.5 | 2.5 | 2.25 | 1.5 | **8.75** | **Tốt** |
-| 3 | 9B-03 | 2.5 | 2.25 | 2.25 | 1.5 | **8.5** | **Tốt** |
-| 4 | 9B-04 | 2.5 | 2.25 | 2.0 | 1.25 | **8.0** | **Tốt** |
-| 5 | 9B-05 | 2.5 | 2.5 | 1.75 | 1.25 | **8.0** | **Tốt** |
-| 6 | 9B-06 | 2.5 | 2.0 | 2.25 | 1.0 | **7.75** | **Khá** |
-| 7 | 9B-07 | 2.0 | 2.5 | 2.25 | 1.0 | **7.75** | **Khá** |
-| 8 | 9B-08 | 2.5 | 2.25 | 2.0 | 1.0 | **7.75** | **Khá** |
-| 9 | 9B-09 | 2.5 | 2.0 | 2.0 | 1.0 | **7.5** | **Khá** |
-| 10 | 9B-10 | 2.0 | 2.25 | 2.25 | 1.0 | **7.5** | **Khá** |
-| 11 | 9B-11 | 2.5 | 2.0 | 1.75 | 1.0 | **7.25** | **Khá** |
-| 12 | 9B-12 | 2.0 | 2.25 | 2.0 | 1.0 | **7.25** | **Khá** |
-| 13 | 9B-13 | 2.5 | 1.75 | 2.0 | 0.75 | **7.0** | **Khá** |
-| 14 | 9B-14 | 2.0 | 2.0 | 2.0 | 1.0 | **7.0** | **Khá** |
-| 15 | 9B-15 | 2.0 | 2.25 | 1.75 | 0.75 | **6.75** | **Khá** |
-| 16 | 9B-16 | 2.0 | 2.0 | 2.0 | 0.75 | **6.75** | **Khá** |
-| 17 | 9B-17 | 2.0 | 1.75 | 2.0 | 0.75 | **6.5** | **Khá** |
-| 18 | 9B-18 | 2.5 | 1.75 | 1.5 | 0.75 | **6.5** | **Khá** |
-| 19 | 9B-19 | 2.0 | 2.0 | 1.75 | 0.75 | **6.5** | **Khá** |
-| 20 | 9B-20 | 2.0 | 1.75 | 1.75 | 0.75 | **6.25** | **Đạt** |
-| 21 | 9B-21 | 2.0 | 2.0 | 1.5 | 0.75 | **6.25** | **Đạt** |
-| 22 | 9B-22 | 2.0 | 1.5 | 1.75 | 0.75 | **6.0** | **Đạt** |
-| 23 | 9B-23 | 1.5 | 2.0 | 1.75 | 0.75 | **6.0** | **Đạt** |
-| 24 | 9B-24 | 2.0 | 1.75 | 1.5 | 0.5 | **5.75** | **Đạt** |
-| 25 | 9B-25 | 1.5 | 2.0 | 1.5 | 0.75 | **5.75** | **Đạt** |
-| 26 | 9B-26 | 2.0 | 1.5 | 1.75 | 0.5 | **5.75** | **Đạt** |
-| 27 | 9B-27 | 1.5 | 1.75 | 1.75 | 0.5 | **5.5** | **Đạt** |
-| 28 | 9B-28 | 2.0 | 1.5 | 1.5 | 0.5 | **5.5** | **Đạt** |
-| 29 | 9B-29 | 1.5 | 1.75 | 1.5 | 0.5 | **5.25** | **Đạt** |
-| 30 | 9B-30 | 1.5 | 1.5 | 1.75 | 0.5 | **5.25** | **Đạt** |
-| 31 | 9B-31 | 2.0 | 1.25 | 1.5 | 0.5 | **5.25** | **Đạt** |
-| 32 | 9B-32 | 1.5 | 1.5 | 1.5 | 0.5 | **5.0** | **Đạt** |
-| 33 | 9B-33 | 1.5 | 1.75 | 1.25 | 0.5 | **5.0** | **Đạt** |
-| 34 | 9B-34 | 1.5 | 1.25 | 1.5 | 0.75 | **5.0** | **Đạt** |
-| 35 | 9B-35 | 1.5 | 1.25 | 1.25 | 0.5 | **4.5** | **Chưa đạt** |
-| 36 | 9B-36 | 1.5 | 1.5 | 1.0 | 0.5 | **4.5** | **Chưa đạt** |
-| 37 | 9B-37 | 1.0 | 1.5 | 1.25 | 0.5 | **4.25** | **Chưa đạt** |
-| 38 | 9B-38 | 1.5 | 1.25 | 1.0 | 0.25 | **4.0** | **Chưa đạt** |
-| 39 | 9B-39 | 1.0 | 1.25 | 1.25 | 0.25 | **3.75** | **Chưa đạt** |
-| 40 | 9B-40 | 1.0 | 1.0 | 1.25 | 0.25 | **3.5** | **Chưa đạt** |
-| 41 | 9B-41 | 1.0 | 1.0 | 1.0 | 0.25 | **3.25** | **Chưa đạt** |
+| 1 | 9B-01 | 3,0 | 2,5 | 2,25 | 1,5 | **9,25** | **Tốt** |
+| 2 | 9B-02 | 2,5 | 2,5 | 2,25 | 1,5 | **8,75** | **Tốt** |
+| 3 | 9B-03 | 2,5 | 2,25 | 2,25 | 1,5 | **8,5** | **Tốt** |
+| 4 | 9B-04 | 2,5 | 2,25 | 2,0 | 1,25 | **8,0** | **Tốt** |
+| 5 | 9B-05 | 2,5 | 2,5 | 1,75 | 1,25 | **8,0** | **Tốt** |
+| 6 | 9B-06 | 2,5 | 2,0 | 2,25 | 1,0 | **7,75** | **Khá** |
+| 7 | 9B-07 | 2,0 | 2,5 | 2,25 | 1,0 | **7,75** | **Khá** |
+| 8 | 9B-08 | 2,5 | 2,25 | 2,0 | 1,0 | **7,75** | **Khá** |
+| 9 | 9B-09 | 2,5 | 2,0 | 2,0 | 1,0 | **7,5** | **Khá** |
+| 10 | 9B-10 | 2,0 | 2,25 | 2,25 | 1,0 | **7,5** | **Khá** |
+| 11 | 9B-11 | 2,5 | 2,0 | 1,75 | 1,0 | **7,25** | **Khá** |
+| 12 | 9B-12 | 2,0 | 2,25 | 2,0 | 1,0 | **7,25** | **Khá** |
+| 13 | 9B-13 | 2,5 | 1,75 | 2,0 | 0,75 | **7,0** | **Khá** |
+| 14 | 9B-14 | 2,0 | 2,0 | 2,0 | 1,0 | **7,0** | **Khá** |
+| 15 | 9B-15 | 2,0 | 2,25 | 1,75 | 0,75 | **6,75** | **Khá** |
+| 16 | 9B-16 | 2,0 | 2,0 | 2,0 | 0,75 | **6,75** | **Khá** |
+| 17 | 9B-17 | 2,0 | 1,75 | 2,0 | 0,75 | **6,5** | **Khá** |
+| 18 | 9B-18 | 2,5 | 1,75 | 1,5 | 0,75 | **6,5** | **Khá** |
+| 19 | 9B-19 | 2,0 | 2,0 | 1,75 | 0,75 | **6,5** | **Khá** |
+| 20 | 9B-20 | 2,0 | 1,75 | 1,75 | 0,75 | **6,25** | **Đạt** |
+| 21 | 9B-21 | 2,0 | 2,0 | 1,5 | 0,75 | **6,25** | **Đạt** |
+| 22 | 9B-22 | 2,0 | 1,5 | 1,75 | 0,75 | **6,0** | **Đạt** |
+| 23 | 9B-23 | 1,5 | 2,0 | 1,75 | 0,75 | **6,0** | **Đạt** |
+| 24 | 9B-24 | 2,0 | 1,75 | 1,5 | 0,5 | **5,75** | **Đạt** |
+| 25 | 9B-25 | 1,5 | 2,0 | 1,5 | 0,75 | **5,75** | **Đạt** |
+| 26 | 9B-26 | 2,0 | 1,5 | 1,75 | 0,5 | **5,75** | **Đạt** |
+| 27 | 9B-27 | 1,5 | 1,75 | 1,75 | 0,5 | **5,5** | **Đạt** |
+| 28 | 9B-28 | 2,0 | 1,5 | 1,5 | 0,5 | **5,5** | **Đạt** |
+| 29 | 9B-29 | 1,5 | 1,75 | 1,5 | 0,5 | **5,25** | **Đạt** |
+| 30 | 9B-30 | 1,5 | 1,5 | 1,75 | 0,5 | **5,25** | **Đạt** |
+| 31 | 9B-31 | 2,0 | 1,25 | 1,5 | 0,5 | **5,25** | **Đạt** |
+| 32 | 9B-32 | 1,5 | 1,5 | 1,5 | 0,5 | **5,0** | **Đạt** |
+| 33 | 9B-33 | 1,5 | 1,75 | 1,25 | 0,5 | **5,0** | **Đạt** |
+| 34 | 9B-34 | 1,5 | 1,25 | 1,5 | 0,75 | **5,0** | **Đạt** |
+| 35 | 9B-35 | 1,5 | 1,25 | 1,25 | 0,5 | **4,5** | **Chưa đạt** |
+| 36 | 9B-36 | 1,5 | 1,5 | 1,0 | 0,5 | **4,5** | **Chưa đạt** |
+| 37 | 9B-37 | 1,0 | 1,5 | 1,25 | 0,5 | **4,25** | **Chưa đạt** |
+| 38 | 9B-38 | 1,5 | 1,25 | 1,0 | 0,25 | **4,0** | **Chưa đạt** |
+| 39 | 9B-39 | 1,0 | 1,25 | 1,25 | 0,25 | **3,75** | **Chưa đạt** |
+| 40 | 9B-40 | 1,0 | 1,0 | 1,25 | 0,25 | **3,5** | **Chưa đạt** |
+| 41 | 9B-41 | 1,0 | 1,0 | 1,0 | 0,25 | **3,25** | **Chưa đạt** |
 
 ---
 
@@ -1744,7 +1744,7 @@ Dưới đây là 3 kịch bản kiểm thử thực tế minh chứng hệ th�
   > *"Chào em! Để tự mình tìm ra đáp án và hiểu sâu bài học, chúng ta cùng làm theo 2 bước đơn giản nhé:*
   > *1. Chiếc nón lá có dạng hình gì? (Xem lại Bài 31 SGK Toán 9 trang 98).*
   > *2. Đề bài cho đường kính đáy $d = 40\\text{ cm}$, vậy bán kính đáy $R$ bằng bao nhiêu?*
-  > *3. Công thức tính diện tích xung quanh của hình nón là $S_{xq} = \\pi R l$. Em hãy lấy bán kính $R$ vừa tìm được nhân với đường sinh $l = 30\\text{ cm}$ và nhân với $\\pi \\approx 3{,}14$ nhé! Lưu ý: chiếc nón lá may mấy lớp lá cọ để nhân đôi lên nhé!"*
+  > *3. Công thức tính diện tích xung quanh của hình nón là $S_{\text{xq}} = \\pi R l$. Em hãy lấy bán kính $R$ vừa tìm được nhân với đường sinh $l = 30\\text{ cm}$ và nhân với $\\pi \\approx 3{,}14$ nhé! Lưu ý: chiếc nón lá may mấy lớp lá cọ để nhân đôi lên nhé!"*
 - **Học sinh:** *"Dạ R = 20cm. Vậy lấy 3.14 x 20 x 30 đúng không ạ?"*
 - **Trợ lý Socrate:** *"Chính xác 100%! Em hãy tính ra số và nhớ nhân thêm 2 vì nón may 2 lớp lá nhé. Em làm rất tốt!"*
 
@@ -1753,8 +1753,8 @@ Dưới đây là 3 kịch bản kiểm thử thực tế minh chứng hệ th�
 - **Trợ lý Socrate:**
   > *"Câu hỏi của em rất thông minh! Đây là một bài toán kinh tế kinh điển đấy:*
   > *1. Thể tích hình trụ cố định là $V = \\pi R^2 h = 500 \\implies h = \\frac{500}{\\pi R^2}$.*
-  > *2. Diện tích vỏ lon toàn phần gồm xung quanh và 2 đáy: $S_{tp} = 2\\pi R^2 + 2\\pi R h$. Em hãy thay $h$ ở trên vào biểu thức này xem ta được hàm số theo biến $R$ như thế nào?*
-  > *3. Em hãy thử tách số hạng $\\frac{1000}{R} = \\frac{500}{R} + \\frac{500}{R}$ rồi áp dụng bất đẳng thức AM-GM (Cauchy) cho 3 số dương xem dấu '=' xảy ra khi nào nhé!"*
+  > *2. Diện tích vỏ lon toàn phần gồm xung quanh và 2 đáy: $S_{\text{tp}} = 2\\pi R^2 + 2\\pi R h$. Em hãy thay $h$ ở trên vào biểu thức này xem ta được hàm số theo biến $R$ như thế nào?*
+  > *3. Em hãy thử tách số hạng $\\frac{1\,000}{R} = \\frac{500}{R} + \\frac{500}{R}$ rồi áp dụng bất đẳng thức AM-GM (Cauchy) cho 3 số dương xem dấu '=' xảy ra khi nào nhé!"*
 
 #### Kịch bản 3: Học sinh bẫy AI bằng câu hỏi ngoài chương trình
 - **Học sinh:** *"Viết cho em một bài văn tả người mẹ hoặc giải phương trình bậc ba đi!"*

@@ -20,7 +20,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
   - Chiều cao thân lon đo được: $h = ...............\\text{ cm}$.
 - Nhập thông số $R$ và $h$ vào phần mềm MathLab (Phân hệ 1), bấm "Bóc vỏ lon" để quan sát hình khai triển.
 - Chu vi đáy tính bằng công thức: $C = 2\\pi R = .....................................................\\text{ cm}$.
-- Diện tích thân lon (xung quanh) tính được: $S_{xq} = 2\\pi R h = .................................\\text{ cm}^2$.
+- Diện tích thân lon (xung quanh) tính được: $S_{\text{xq}} = 2\\pi R h = .................................\\text{ cm}^2$.
 - Thể tích chứa tối đa của lon sữa: $V = \\pi R^2 h = ...............................................\\text{ cm}^3$.
 
 **Nhiệm vụ 2: Giải quyết bài toán thực tế (Bài toán bể nước inox)**
@@ -38,7 +38,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 
 **Nhiệm vụ 3: Bài toán mở rộng (Cột bê tông trụ cầu)**
 *Đề bài:* Một trụ cầu vượt đường sắt đô thị có dạng hình trụ tròn xoay bằng bê tông cốt thép, đường kính trụ $d = 1{,}6\\text{ m}$, chiều cao thân trụ $h = 8{,}5\\text{ m}$.
-- Tính chi phí sơn phủ lớp chống thấm xung quanh thân trụ cầu biết giá nhân công và sơn chống thấm là $85.000\\text{ đồng/m}^2$.
+- Tính chi phí sơn phủ lớp chống thấm xung quanh thân trụ cầu biết giá nhân công và sơn chống thấm là $85\,000\\text{ đồng/m}^2$.
 
 ---
 
@@ -129,7 +129,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
    - Bán kính đáy của ống hộp: $R_{\\text{hộp}} = ....................\\text{ cm}$.
    - Chiều cao của ống hộp: $h_{\\text{hộp}} = 3 \\times d = ....................\\text{ cm}$.
 2. **Tính toán đại số diện tích và thể tích:**
-   - Diện tích nhựa màng mỏng làm thân và nắp hộp (toàn phần): $S_{tp} = .............................\\text{ cm}^2$.
+   - Diện tích nhựa màng mỏng làm thân và nắp hộp (toàn phần): $S_{\text{tp}} = .............................\\text{ cm}^2$.
    - Thể tích chứa của chiếc hộp hình trụ: $V_{\\text{hộp}} = \\pi R_{\\text{hộp}}^2 h_{\\text{hộp}} = .........................\\text{ cm}^3$.
    - Tổng thể tích của cả 3 quả bóng tennis: $V_{3\\text{ bóng}} = 3 \\times \\left( \\frac{4}{3}\\pi R^3 \\right) = ...................\\text{ cm}^3$.
 3. **Phân tích hiệu quả sử dụng không gian và bài toán kinh tế:**
@@ -145,27 +145,27 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 **CHỦ ĐỀ: BÀI TOÁN TỐI ƯU HÓA DIỆN TÍCH VỎ LON NƯỚC NGỌT DUNG TÍCH 500ML BẰNG BẤT ĐẲNG THỨC AM-GM**
 - Tên nhóm: ............................................................................ Lớp: 9A...
 
-**Bối cảnh thực tiễn:** Một tập đoàn giải khát đa quốc gia muốn sản xuất một dòng sản phẩm nước ngọt cao cấp đóng trong lon nhôm hình trụ có dung tích cố định là $V = 500\\text{ cm}^3$ ($0{,}5\\text{ lít}$). Bộ phận kinh tế yêu cầu các kỹ sư thiết kế kích thước bán kính đáy $R$ và chiều cao $h$ của chiếc lon sao cho **diện tích toàn phần $S_{tp}$ của vỏ nhôm là nhỏ nhất**, nhằm tiết kiệm tối đa chi phí nguyên vật liệu sản xuất hàng trăm triệu lon mỗi năm.
+**Bối cảnh thực tiễn:** Một tập đoàn giải khát đa quốc gia muốn sản xuất một dòng sản phẩm nước ngọt cao cấp đóng trong lon nhôm hình trụ có dung tích cố định là $V = 500\\text{ cm}^3$ ($0{,}5\\text{ lít}$). Bộ phận kinh tế yêu cầu các kỹ sư thiết kế kích thước bán kính đáy $R$ và chiều cao $h$ của chiếc lon sao cho **diện tích toàn phần $S_{\text{tp}}$ của vỏ nhôm là nhỏ nhất**, nhằm tiết kiệm tối đa chi phí nguyên vật liệu sản xuất hàng trăm triệu lon mỗi năm.
 
 **Nhiệm vụ nghiên cứu và giải bài toán tối ưu:**
 1. **Thiết lập phương trình ràng buộc thể tích:**
    - Thể tích cố định: $V = \\pi R^2 h = 500\\text{ cm}^3 \\implies h = \\frac{500}{\\pi R^2}$.
 2. **Thiết lập hàm diện tích toàn phần theo một biến số $R$:**
-   $$S_{tp}(R) = 2\\pi R^2 + 2\\pi R h = 2\\pi R^2 + 2\\pi R \\left( \\frac{500}{\\pi R^2} \\right) = 2\\pi R^2 + \\frac{1000}{R}$$
+   $$S_{\text{tp}}(R) = 2\\pi R^2 + 2\\pi R h = 2\\pi R^2 + 2\\pi R \\left( \\frac{500}{\\pi R^2} \\right) = 2\\pi R^2 + \\frac{1\,000}{R}$$
 3. **Thao tác khám phá thực nghiệm trên MathLab (Phân hệ 3 - Chế độ tối ưu hóa):**
-   - Trên phần mềm, học sinh kéo thanh trượt $R$ từ $2\\text{ cm}$ đến $7\\text{ cm}$. Đồ thị đường cong diện tích $S_{tp}(R)$ hiển thị trên màn hình.
+   - Trên phần mềm, học sinh kéo thanh trượt $R$ từ $2\\text{ cm}$ đến $7\\text{ cm}$. Đồ thị đường cong diện tích $S_{\text{tp}}(R)$ hiển thị trên màn hình.
    - Nhóm ghi lại các giá trị:
-     - Khi $R = 2\\text{ cm} \\implies h = 39{,}8\\text{ cm} \\implies S_{tp} \\approx 525\\text{ cm}^2$ (lon quá dài và gầy).
-     - Khi $R = 6\\text{ cm} \\implies h = 4{,}4\\text{ cm} \\implies S_{tp} \\approx 393\\text{ cm}^2$ (lon quá dẹt và lùn).
-     - Khi $R \\approx 4{,}3\\text{ cm} \\implies h \\approx 8{,}6\\text{ cm} \\implies S_{tp} \\approx 348\\text{ cm}^2$ (vị trí đáy lõm thấp nhất của đồ thị!).
+     - Khi $R = 2\\text{ cm} \\implies h = 39{,}8\\text{ cm} \\implies S_{\text{tp}} \\approx 525\\text{ cm}^2$ (lon quá dài và gầy).
+     - Khi $R = 6\\text{ cm} \\implies h = 4{,}4\\text{ cm} \\implies S_{\text{tp}} \\approx 393\\text{ cm}^2$ (lon quá dẹt và lùn).
+     - Khi $R \\approx 4{,}3\\text{ cm} \\implies h \\approx 8{,}6\\text{ cm} \\implies S_{\text{tp}} \\approx 348\\text{ cm}^2$ (vị trí đáy lõm thấp nhất của đồ thị!).
    - Nhận xét mối quan hệ giữa $h$ và $R$ tại vị trí diện tích nhỏ nhất: $h \\approx 2R$!
 4. **Chứng minh toán học chặt chẽ bằng Bất đẳng thức AM-GM (Cauchy cho 3 số dương):**
-   - Ta tách đại số: $\\frac{1000}{R} = \\frac{500}{R} + \\frac{500}{R}$.
+   - Ta tách đại số: $\\frac{1\,000}{R} = \\frac{500}{R} + \\frac{500}{R}$.
    - Biểu thức diện tích trở thành tổng của 3 số dương:
-     $$S_{tp}(R) = 2\\pi R^2 + \\frac{500}{R} + \\frac{500}{R}$$
+     $$S_{\text{tp}}(R) = 2\\pi R^2 + \\frac{500}{R} + \\frac{500}{R}$$
    - Áp dụng bất đẳng thức AM-GM cho 3 số dương $A = 2\\pi R^2$, $B = \\frac{500}{R}$, $C = \\frac{500}{R}$:
      $$A + B + C \\ge 3 \\sqrt[3]{A \\cdot B \\cdot C}$$
-     $$S_{tp}(R) \\ge 3 \\sqrt[3]{2\\pi R^2 \\cdot \\frac{500}{R} \\cdot \\frac{500}{R}} = 3 \\sqrt[3]{500.000\\pi} \\approx 348{,}73\\text{ cm}^2$$
+     $$S_{\text{tp}}(R) \\ge 3 \\sqrt[3]{2\\pi R^2 \\cdot \\frac{500}{R} \\cdot \\frac{500}{R}} = 3 \\sqrt[3]{500\,000\\pi} \\approx 348{,}73\\text{ cm}^2$$
    - Dấu đẳng thức xảy ra khi và chỉ khi 3 số hạng bằng nhau ($A = B = C$):
      $$2\\pi R^2 = \\frac{500}{R} \\implies 2\\pi R^3 = 500$$
    - Mặt khác, vì $V = \\pi R^2 h = 500$, nên ta thay vào:
@@ -209,7 +209,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 - **Bài 19 (Hạt cà phê / Phễu lọc hình nón):** Một phễu lọc cà phê hình nón có góc ở đỉnh là $60^\\circ$ (thiết diện qua trục là tam giác đều). Biết chiều cao của phễu là $h = 12\\text{ cm}$. Người ta đổ nước sôi vào phễu đến độ cao bằng $\\frac{2}{3}$ chiều cao phễu. Tính thể tích nước đang có trong phễu.
 - **Bài 20 (Tháp nước hình cầu ngoại ô):** Một tháp chứa nước sinh hoạt đô thị gồm một bồn chứa hình cầu đặt trên đỉnh một cột trụ hình trụ cao $25\\text{ m}$. Bồn cầu có đường kính $10\\text{ m}$. Hỏi tháp nước này cung cấp nước đủ cho một khu dân cư gồm 200 hộ gia đình (mỗi hộ dùng trung bình $1{,}5\\text{ m}^3$/ngày) trong thời gian bao lâu nếu không được bơm bổ sung?
 - **Bài 21 (Hộp bóng tennis ITF - Bài toán tỷ lệ vàng):** Chứng minh rằng với bất kỳ số lượng $n$ quả bóng hình cầu xếp vừa khít trong một hình trụ có đường kính đáy bằng đường kính quả bóng và chiều cao $h = n \\times (2R)$, tỉ số thể tích giữa $n$ quả bóng và thể tích hình trụ luôn bằng một hằng số không đổi là $\\frac{2}{3}$ (không phụ thuộc vào $n$ và $R$).
-- **Bài 22 (Tối ưu hóa kinh tế bồn chứa xăng dầu 1000m3):** Một trạm xăng dầu muốn xây một bể ngầm hình trụ dung tích $V = 1000\\text{ m}^3$. Đáy bể bằng bê tông cốt thép giá $1.200.000\\text{ đ/m}^2$, thành bể bằng thép chống ăn mòn giá $800.000\\text{ đ/m}^2$, nắp bể bằng thép giá $600.000\\text{ đ/m}^2$. Tìm tỉ lệ giữa chiều cao $h$ và bán kính $R$ để tổng chi phí vật liệu xây bể là nhỏ nhất.
+- **Bài 22 (Tối ưu hóa kinh tế bồn chứa xăng dầu 1\,000\text{ m}^3):** Một trạm xăng dầu muốn xây một bể ngầm hình trụ dung tích $V = 1\,000\\text{ m}^3$. Đáy bể bằng bê tông cốt thép giá $1\,200\,000\\text{ đ/m}^2$, thành bể bằng thép chống ăn mòn giá $800\,000\\text{ đ/m}^2$, nắp bể bằng thép giá $600\,000\\text{ đ/m}^2$. Tìm tỉ lệ giữa chiều cao $h$ và bán kính $R$ để tổng chi phí vật liệu xây bể là nhỏ nhất.
 - **Bài 23 (Vương miện Archimedes và bài toán tỉ trọng liên môn Vật lý):** Một chiếc vương miện đúc bằng vàng pha bạc có khối lượng $m = 10\\text{ kg}$. Khi thả chìm hoàn toàn vào một cốc hình trụ có diện tích đáy $S = 200\\text{ cm}^2$, mực nước trong cốc dâng thêm một đoạn $\\Delta h = 3{,}2\\text{ cm}$. Biết khối lượng riêng của vàng nguyên chất là $D_1 = 19{,}3\\text{ g/cm}^3$ và của bạc là $D_2 = 10{,}5\\text{ g/cm}^3$. Tính tỉ lệ phần trăm khối lượng vàng thực tế có trong vương miện.
-- **Bài 24 (Mô hình Trái Đất và vệ tinh viễn thông):** Một vệ tinh địa tĩnh bay quanh Trái Đất ở độ cao $35.786\\text{ km}$ so với mặt đất (Trái Đất có bán kính $R = 6371\\text{ km}$). Giả sử tín hiệu truyền thẳng từ vệ tinh tiếp xúc với mặt cầu Trái Đất. Tính diện tích vùng bề mặt Trái Đất (dạng chỏm cầu $S = 2\\pi R h_c$) mà vệ tinh đó có thể phủ sóng tới.
+- **Bài 24 (Mô hình Trái Đất và vệ tinh viễn thông):** Một vệ tinh địa tĩnh bay quanh Trái Đất ở độ cao $35\,786\\text{ km}$ so với mặt đất (Trái Đất có bán kính $R = 6371\\text{ km}$). Giả sử tín hiệu truyền thẳng từ vệ tinh tiếp xúc với mặt cầu Trái Đất. Tính diện tích vùng bề mặt Trái Đất (dạng chỏm cầu $S = 2\\pi R h_c$) mà vệ tinh đó có thể phủ sóng tới.
 """

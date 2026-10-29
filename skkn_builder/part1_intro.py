@@ -80,8 +80,8 @@ PART1_CONTENT = r"""# Mục lục
 | *Đánh giá định tính chi tiết – Khớp 100% với Đề kiểm tra Phụ lục 4* | 81 |
 | 2.5.3. Kiểm định thống kê toán học giả thuyết t-Student và đo kích thước ảnh hưởng Cohen's d | 82 |
 | *Bảng 2.5.1: So sánh các tham số thống kê mô tả đặc trưng giữa Lớp thực nghiệm 9A và Lớp đối chứng 9B* | 82 |
-| *1. Kiểm định giả thuyết ý nghĩa thống kê bằng Student t-test: t = 4.353, p < 0.001* | 83 |
-| *2. Đo lường kích thước ảnh hưởng Cohen's d: d = 0.960 (Mức độ tác động rất lớn)* | 83 |
+| *1. Kiểm định giả thuyết ý nghĩa thống kê bằng Student t-test: t = 4{,}353, p < 0{,}001* | 83 |
+| *2. Đo lường kích thước ảnh hưởng Cohen's d: d = 0{,}960 (Mức độ tác động rất lớn)* | 83 |
 | 2.5.4. Theo dõi tiến trình học tập chuỗi thời gian năm học 2026 – 2027 | 84 |
 | *Bảng 2.6: Theo dõi tiến trình điểm trung bình qua 5 đợt kiểm tra trong năm học 2026 – 2027* | 84 |
 | **3. KẾT LUẬN VÀ KHUYẾN NGHỊ** | **86** |
@@ -97,7 +97,7 @@ PART1_CONTENT = r"""# Mục lục
 | *Bảng PL4.1: Ma trận đề kiểm tra đánh giá năng lực Chương X Toán 9 theo Thông tư 22/2021/TT-BGDĐT* | 94 |
 | *Bảng PL4.2: Bản đặc tả chi tiết các câu hỏi trong đề kiểm tra* | 95 |
 | *Đề bài kiểm tra (Phần I: 6 câu Trắc nghiệm khách quan; Phần II: 3 bài Tự luận thực tiễn)* | 95 |
-| *Hướng dẫn chấm và thang điểm chi tiết (Chia nhỏ đến 0.25 điểm)* | 96 |
+| *Hướng dẫn chấm và thang điểm chi tiết (Chia nhỏ đến 0{,}25 điểm)* | 96 |
 | Phụ lục 5: Bảng tổng hợp điểm số thô đối chứng của 83 học sinh (Năm học 2026 – 2027) | 97 |
 | *Bảng PL5.1: Bảng điểm số thô chi tiết 42 học sinh Lớp thực nghiệm 9A* | 97 |
 | *Bảng PL5.2: Bảng điểm số thô chi tiết 41 học sinh Lớp đối chứng 9B* | 98 |
@@ -275,7 +275,7 @@ Kế thừa các thành tựu lý luận kinh điển và nghiên cứu thực t
 5. **Phương pháp thống kê toán học (Mathematical Statistics):**
    - Xử lý số liệu kiểm tra định lượng bằng phần mềm chuyên dụng (Excel / R / Python SciPy).
    - Tính toán các tham số thống kê mô tả: Điểm trung bình ($\\\\bar{X}$), Độ lệch chuẩn ($s$), Phương sai ($s^2$), Trung vị ($Me$), Mốt ($Mo$), Khoảng tứ phân vị ($IQR$).
-   - Kiểm định ý nghĩa thống kê bằng phép thử Student $t$-test độc lập hai mẫu để khẳng định sự chênh lệch có ý nghĩa thống kê ($p < 0.05$).
+   - Kiểm định ý nghĩa thống kê bằng phép thử Student $t$-test độc lập hai mẫu để khẳng định sự chênh lệch có ý nghĩa thống kê ($p < 0{,}05$).
    - Tính toán chỉ số kích thước ảnh hưởng Cohen's $d$ để đo lường mức độ tác động thực tế của giải pháp sư phạm theo tiêu chuẩn quốc tế.
 
 ---

@@ -27,11 +27,11 @@ PART3_CONTENT = r"""## 2.3. Quy trình thiết kế, xây dựng phần mềm Ma
 
 ##### 1. Phép chiếu phối cảnh 3D Wireframe (Perspective 3D Projection)
 
-Để biểu diễn một điểm $P(X, Y, Z)$ trong không gian ba chiều lên mặt phẳng màn hình hai chiều $(x', y')$, hệ thống áp dụng ma trận biến đổi phối cảnh quang học chuẩn. Giả sử điểm quan sát (Camera / Mắt người nhìn) đặt tại gốc tọa độ hướng dọc theo trục $Z$, khoảng cách từ mắt đến mặt phẳng chiếu là $d_{cam}$. Tọa độ chiếu phẳng $(x', y')$ được tính theo công thức tỉ lệ đồng dạng tam giác:
+Để biểu diễn một điểm $P(X, Y, Z)$ trong không gian ba chiều lên mặt phẳng màn hình hai chiều $(x', y')$, hệ thống áp dụng ma trận biến đổi phối cảnh quang học chuẩn. Giả sử điểm quan sát (Camera / Mắt người nhìn) đặt tại gốc tọa độ hướng dọc theo trục $Z$, khoảng cách từ mắt đến mặt phẳng chiếu là $d_{\text{cam}}$. Tọa độ chiếu phẳng $(x', y')$ được tính theo công thức tỉ lệ đồng dạng tam giác:
 
-$$x' = \\frac{X \\cdot d_{cam}}{Z + d_{cam}} \\cdot S_x + x_{center}, \\quad y' = -\\frac{Y \\cdot d_{cam}}{Z + d_{cam}} \\cdot S_y + y_{center}$$
+$$x' = \\frac{X \\cdot d_{\text{cam}}}{Z + d_{\text{cam}}} \\cdot S_x + x_{\text{center}}, \\quad y' = -\\frac{Y \\cdot d_{\text{cam}}}{Z + d_{\text{cam}}} \\cdot S_y + y_{\text{center}}$$
 
-Trong đó $S_x, S_y$ là hệ số tỉ lệ thu phóng màn hình (Zoom factor), và $(x_{center}, y_{center})$ là tọa độ tâm của khung vẽ đồ họa (Canvas). Để mô phỏng góc nhìn linh hoạt khi người dùng kéo chuột xoay khối hình, hệ tọa độ thế giới được nhân với ma trận quay Euler theo góc nghiêng $\\alpha$ (trục $X$) và góc xoay $\\beta$ (trục $Y$):
+Trong đó $S_x, S_y$ là hệ số tỉ lệ thu phóng màn hình (Zoom factor), và $(x_{\text{center}}, y_{\text{center}})$ là tọa độ tâm của khung vẽ đồ họa (Canvas). Để mô phỏng góc nhìn linh hoạt khi người dùng kéo chuột xoay khối hình, hệ tọa độ thế giới được nhân với ma trận quay Euler theo góc nghiêng $\\alpha$ (trục $X$) và góc xoay $\\beta$ (trục $Y$):
 
 $$\\begin{pmatrix} X' \\\\ Y' \\\\ Z' \\end{pmatrix} = \\begin{pmatrix} \\cos\\beta & 0 & \\sin\\beta \\\\ 0 & 1 & 0 \\\\ -\\sin\\beta & 0 & \\cos\\beta \\end{pmatrix} \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & \\cos\\alpha & -\\sin\\alpha \\\\ 0 & \\sin\\alpha & \\cos\\alpha \\end{pmatrix} \\begin{pmatrix} X \\\\ Y \\\\ Z \\end{pmatrix}$$
 
@@ -69,7 +69,7 @@ Nhằm đáp ứng yêu cầu sư phạm tinh gọn, giúp học sinh nắm vữ
     $$\begin{cases} X(u, v) = R \cos u \cos v \\ Y(u, v) = R \sin u + \Delta y \\ Z(u, v) = R \cos u \sin v \end{cases} \quad \left(u \in \left[0, \frac{\pi}{2}\right], v \in [0, 2\pi]\right)$$
     Bề mặt đáy của bán cầu trên là hình tròn bán kính $R$ tại cao độ $Y = +\Delta y$.
   - **Bán cầu dưới ($Y \le 0$):** Tâm dịch chuyển xuống vị trí $(0, -\Delta y, 0)$. Các điểm trên mặt cong có tung độ $Y(u, v) = R \sin u - \Delta y$ với $u \in \left[-\frac{\pi}{2}, 0\right]$.
-  - **Mặt cắt hình tròn lớn (Great Circle Surface):** Được tô màu cam sáng ấm áp với độ trong suốt cao cấp (`rgba(249, 115, 22, 0.42)`), viền nét cam đậm (`#f97316`, độ dày $2.8\text{px}$), hiển thị rõ tâm $O$, điểm $M$ trên vành tròn, đoạn bán kính $OM = R$, đường kính $2R$ và nhãn đo lường tức thời $r = R = \dots\text{ cm}$.
+  - **Mặt cắt hình tròn lớn (Great Circle Surface):** Được tô màu cam sáng ấm áp với độ trong suốt cao cấp (`rgba(249, 115, 22, 0.42)`), viền nét cam đậm (`#f97316`, độ dày 2,8px), hiển thị rõ tâm $O$, điểm $M$ trên vành tròn, đoạn bán kính $OM = R$, đường kính $2R$ và nhãn đo lường tức thời $r = R = \dots\text{ cm}$.
 
 - **Cơ chế điều khiển trực quan 1 chạm:**
   Giao diện cung cấp thanh trượt tiến trình kèm 3 nút điều khiển:
@@ -87,8 +87,8 @@ Một trong những đóng góp đồ họa đột phá nhất của MathLab là
 - **Xét thiết diện cắt ngang bởi mặt phẳng song song hai đáy ở độ cao $h_c$ tính từ tâm ($|h_c| \\le R$):**
   - Đối với khối cầu: Thiết diện cắt ngang là một hình tròn có bán kính $r' = \\sqrt{R^2 - h_c^2}$. Diện tích thiết diện là:
     $$S_1(h_c) = \\pi (r')^2 = \\pi (R^2 - h_c^2)$$
-  - Đối với vật thể đối chứng $T$: Thiết diện cắt ngang là một hình vành khăn (nằm giữa vỏ trụ và mặt nón). Bán kính ngoài cố định là $R$. Tại độ cao $h_c$, mặt nón cắt mặt phẳng tạo thành đường tròn có bán kính trong đúng bằng $r_{nón} = h_c$ (do hình nón có chiều cao $R$ bằng đúng bán kính đáy $R$, tỉ lệ đồng dạng $1:1$). Diện tích hình vành khăn là:
-    $$S_2(h_c) = \\pi R^2 - \\pi (r_{nón})^2 = \\pi R^2 - \\pi h_c^2 = \\pi (R^2 - h_c^2)$$
+  - Đối với vật thể đối chứng $T$: Thiết diện cắt ngang là một hình vành khăn (nằm giữa vỏ trụ và mặt nón). Bán kính ngoài cố định là $R$. Tại độ cao $h_c$, mặt nón cắt mặt phẳng tạo thành đường tròn có bán kính trong đúng bằng $r_{\text{nón}} = h_c$ (do hình nón có chiều cao $R$ bằng đúng bán kính đáy $R$, tỉ lệ đồng dạng $1:1$). Diện tích hình vành khăn là:
+    $$S_2(h_c) = \\pi R^2 - \\pi (r_{\text{nón}})^2 = \\pi R^2 - \\pi h_c^2 = \\pi (R^2 - h_c^2)$$
 - **Kết luận theo Nguyên lý Cavalieri:** Vì $S_1(h_c) = S_2(h_c)$ tại **mọi** độ cao $h_c$ thuộc đoạn $[-R, R]$, nên theo nguyên lý Cavalieri, thể tích của khối cầu bằng đúng thể tích của vật thể đối chứng $T$:
   $$V_{\\text{cầu}} = V_{\\text{trụ}} - 2 \\times V_{\\text{nón}} = \\pi R^2 (2R) - 2 \\left( \\frac{1}{3} \\pi R^2 R \\right) = 2\\pi R^3 - \\frac{2}{3}\\pi R^3 = \\frac{4}{3}\\pi R^3$$
 
@@ -101,14 +101,14 @@ Phần mềm MathLab được tái cấu trúc triệt để, loại bỏ toàn 
 - **Phân hệ 1: Mô phỏng động sự tạo thành khối tròn xoay (Bài 31 & 32):**
   - Chức năng: Cho phép chọn hình phẳng ban đầu (hình chữ nhật, tam giác vuông, nửa hình tròn).
   - Tương tác: Kéo thanh trượt góc quay $\\alpha$ từ $0^\\circ$ đến $360^\\circ$. Quỹ đạo quét hiển thị vệt màu trong suốt, từ từ hình thành khối trụ, khối nón và khối cầu hoàn chỉnh.
-  - Tích hợp thước đo ảo: Cho phép thay đổi bán kính $R$ và chiều cao $h$, các đại lượng $S_{xq}, S_{tp}, V$ tự động cập nhật công thức và kết quả số tương ứng.
+  - Tích hợp thước đo ảo: Cho phép thay đổi bán kính $R$ và chiều cao $h$, các đại lượng $S_{\text{xq}}, S_{\text{tp}}, V$ tự động cập nhật công thức và kết quả số tương ứng.
 - **Phân hệ 2: Khám phá tương tác mặt cắt hình cầu và thí nghiệm thể tích Archimedes (Bài 32):**
   - Chức năng: Mô phỏng mặt phẳng cắt di động qua khối cầu. Hiển thị tam giác vuông liên hệ giữa bán kính cầu $R$, khoảng cách tâm $h_c$ và bán kính thiết diện $r' = \\sqrt{R^2 - h_c^2}$.
   - Chế độ thí nghiệm Archimedes: Mô phỏng cốc nước hình trụ chứa quả cầu. Khi nhấn nút "Nhấc quả cầu ra", mực nước rút xuống còn $\\frac{1}{3}$ thể tích cốc, chứng minh trực quan thể tích khối cầu chiếm đúng $\\frac{2}{3}$ thể tích cốc trụ ngoại tiếp.
 - **Phân hệ 3: Trải nghiệm hình khai triển (Net Unfolding) và Bài toán tối ưu vỏ lon (Bài 31):**
   - Chức năng: Mô phỏng quá trình "bóc vỏ" bề mặt xung quanh hình trụ và hình nón.
   - Trực quan: Mặt trụ mở phẳng thành hình chữ nhật kích thước $2\\pi R \\times h$; Mặt nón mở phẳng thành hình quạt tròn bán kính $l$ với góc ở tâm $\\alpha = \\frac{R}{l} \\times 360^\\circ$.
-  - Chế độ "Tối ưu hóa kinh tế vỏ lon nước ngọt": Cho phép giữ cố định thể tích $V = 500\\text{ cm}^3$ (liên kết ràng buộc $h = \\frac{500}{\\pi R^2}$). Khi kéo trượt bán kính $R$, phần mềm vẽ đồ thị hàm diện tích toàn phần $S_{tp}(R)$, giúp học sinh nhận ra điểm cực tiểu tại vị trí $h = 2R$.
+  - Chế độ "Tối ưu hóa kinh tế vỏ lon nước ngọt": Cho phép giữ cố định thể tích $V = 500\\text{ cm}^3$ (liên kết ràng buộc $h = \\frac{500}{\\pi R^2}$). Khi kéo trượt bán kính $R$, phần mềm vẽ đồ thị hàm diện tích toàn phần $S_{\text{tp}}(R)$, giúp học sinh nhận ra điểm cực tiểu tại vị trí $h = 2R$.
 - **Phân hệ 4: Trợ lý sư phạm Socrate gợi mở và Xưởng xuất mã TikZ chuyên nghiệp:**
   - Khung chat Socratic: Tích hợp kho tri thức SGK Kết nối tri thức. Khi học sinh đặt câu hỏi hoặc gửi ảnh bài tập, trợ lý đưa ra 3 bước gợi mở tư duy, dẫn xuất số trang SGK, kiên quyết không đưa lời giải sẵn.
   - Xưởng dựng hình TikZ: Chỉ dành cho giáo viên (có mật mã bảo vệ). Khi giáo viên xoay góc nhìn ưng ý trên màn hình 3D, bấm "Xuất mã TikZ", hệ thống tự động sinh mã LaTeX TikZ chuẩn nét đứt (hidden lines) để GV chèn vào Word hoặc LaTeX soạn đề thi.
@@ -127,11 +127,11 @@ Máy chủ GV khởi chạy dịch vụ HTTP thông qua một kịch bản siêu
 
 | Kịch bản kiểm thử tải | Số thiết bị gửi request đồng thời (Concurrency) | Tổng số request hoàn thành | Tỉ lệ lỗi truyền tải (Failed requests) | Băng thông xử lý trung bình (Requests/sec) | Thời gian phản hồi trung bình (Latency / Response Time) | Trải nghiệm tương tác của học sinh |
 | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **Kịch bản 1** | 10 máy trạm | 1000 requests | **0%** (0 lỗi) | 845.2 req/s | **11.8 ms** | Cực kỳ mượt mà, tức thời |
-| **Kịch bản 2** | 20 máy trạm | 2000 requests | **0%** (0 lỗi) | 812.6 req/s | **14.2 ms** | Rất mượt mà, không giật lag |
-| **Kịch bản 3** | 30 máy trạm | 3000 requests | **0%** (0 lỗi) | 780.4 req/s | **18.5 ms** | Rất mượt mà, ổn định tuyệt đối |
-| **Kịch bản 4 (Thực tế lớp học)** | **45 máy trạm** | **5000 requests** | **0%** (0 lỗi) | **724.8 req/s** | **23.1 ms** | **Hoàn toàn mượt mà, đáp ứng chuẩn sư phạm** |
-| **Kịch bản 5 (Quá tải)** | 60 máy trạm | 6000 requests | **0%** (0 lỗi) | 650.1 req/s | **32.4 ms** | Mượt mà, độ trễ không đáng kể |
+| **Kịch bản 1** | 10 máy trạm | 1000 requests | **0%** (0 lỗi) | 845,2 req/s | **11,8 ms** | Cực kỳ mượt mà, tức thời |
+| **Kịch bản 2** | 20 máy trạm | 2000 requests | **0%** (0 lỗi) | 812,6 req/s | **14,2 ms** | Rất mượt mà, không giật lag |
+| **Kịch bản 3** | 30 máy trạm | 3000 requests | **0%** (0 lỗi) | 780,4 req/s | **18,5 ms** | Rất mượt mà, ổn định tuyệt đối |
+| **Kịch bản 4 (Thực tế lớp học)** | **45 máy trạm** | **5000 requests** | **0%** (0 lỗi) | **724,8 req/s** | **23,1 ms** | **Hoàn toàn mượt mà, đáp ứng chuẩn sư phạm** |
+| **Kịch bản 5 (Quá tải)** | 60 máy trạm | 6000 requests | **0%** (0 lỗi) | 650,1 req/s | **32,4 ms** | Mượt mà, độ trễ không đáng kể |
 
 Dữ liệu thực nghiệm tại Bảng 2.2.1 chứng minh đanh thép: ngay cả khi chịu tải tối đa 45 máy trạm gửi liên tục 5000 yêu cầu tải tài nguyên đồ họa và dữ liệu bài học, thời gian phản hồi trung bình của MathLab chỉ là **23.1 mili-giây (ms)**, nhanh hơn gấp 10 lần so với độ trễ thông thường của mạng Internet công cộng (200 – 500 ms), và tỉ lệ lỗi hoàn toàn bằng 0%. Điều này đập tan hoàn toàn định kiến cho rằng phần mềm 3D sẽ gây nghẽn mạng phòng máy trường học!
 
