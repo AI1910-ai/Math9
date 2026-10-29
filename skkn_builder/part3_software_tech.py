@@ -29,23 +29,23 @@ PART3_CONTENT = r"""## 2.3. Quy trình thiết kế, xây dựng phần mềm Ma
 
 Để biểu diễn một điểm $P(X, Y, Z)$ trong không gian ba chiều lên mặt phẳng màn hình hai chiều $(x', y')$, hệ thống áp dụng ma trận biến đổi phối cảnh quang học chuẩn. Giả sử điểm quan sát (Camera / Mắt người nhìn) đặt tại gốc tọa độ hướng dọc theo trục $Z$, khoảng cách từ mắt đến mặt phẳng chiếu là $d_{\text{cam}}$. Tọa độ chiếu phẳng $(x', y')$ được tính theo công thức tỉ lệ đồng dạng tam giác:
 
-$$x' = \\frac{X \\cdot d_{\text{cam}}}{Z + d_{\text{cam}}} \\cdot S_x + x_{\text{center}}, \\quad y' = -\\frac{Y \\cdot d_{\text{cam}}}{Z + d_{\text{cam}}} \\cdot S_y + y_{\text{center}}$$
+$$x' = \frac{X \cdot d_{\text{cam}}}{Z + d_{\text{cam}}} \cdot S_x + x_{\text{center}}, \quad y' = -\frac{Y \cdot d_{\text{cam}}}{Z + d_{\text{cam}}} \cdot S_y + y_{\text{center}}$$
 
-Trong đó $S_x, S_y$ là hệ số tỉ lệ thu phóng màn hình (Zoom factor), và $(x_{\text{center}}, y_{\text{center}})$ là tọa độ tâm của khung vẽ đồ họa (Canvas). Để mô phỏng góc nhìn linh hoạt khi người dùng kéo chuột xoay khối hình, hệ tọa độ thế giới được nhân với ma trận quay Euler theo góc nghiêng $\\alpha$ (trục $X$) và góc xoay $\\beta$ (trục $Y$):
+Trong đó $S_x, S_y$ là hệ số tỉ lệ thu phóng màn hình (Zoom factor), và $(x_{\text{center}}, y_{\text{center}})$ là tọa độ tâm của khung vẽ đồ họa (Canvas). Để mô phỏng góc nhìn linh hoạt khi người dùng kéo chuột xoay khối hình, hệ tọa độ thế giới được nhân với ma trận quay Euler theo góc nghiêng $\alpha$ (trục $X$) và góc xoay $\beta$ (trục $Y$):
 
-$$\\begin{pmatrix} X' \\\\ Y' \\\\ Z' \\end{pmatrix} = \\begin{pmatrix} \\cos\\beta & 0 & \\sin\\beta \\\\ 0 & 1 & 0 \\\\ -\\sin\\beta & 0 & \\cos\\beta \\end{pmatrix} \\begin{pmatrix} 1 & 0 & 0 \\\\ 0 & \\cos\\alpha & -\\sin\\alpha \\\\ 0 & \\sin\\alpha & \\cos\\alpha \\end{pmatrix} \\begin{pmatrix} X \\\\ Y \\\\ Z \\end{pmatrix}$$
+$$\begin{pmatrix} X' \\\\ Y' \\\\ Z' \end{pmatrix} = \begin{pmatrix} \cos\beta & 0 & \sin\beta \\\\ 0 & 1 & 0 \\\\ -\sin\beta & 0 & \cos\beta \end{pmatrix} \begin{pmatrix} 1 & 0 & 0 \\\\ 0 & \cos\alpha & -\sin\alpha \\\\ 0 & \sin\alpha & \cos\alpha \end{pmatrix} \begin{pmatrix} X \\\\ Y \\\\ Z \end{pmatrix}$$
 
 ##### 2. Phương trình giải tích tham số các mặt cong tròn xoay (Chương X Toán 9)
 
 Hệ thống đồ họa của MathLab dựng nên các khối tròn xoay thông qua lưới tọa độ tham số giải tích liên tục (Parametric Mesh), đảm bảo độ trơn nhẵn và độ chính xác hình học tuyệt đối:
 
-- **Mặt trụ tròn xoay (Cylinder):** Tạo thành khi quay hình chữ nhật quanh một cạnh cố định làm trục. Phương trình tham số với góc quét $u \\in [0, 2\\pi]$ và chiều cao $v \\in [0, h]$:
-  $$\\begin{cases} X(u, v) = R \\cos u \\\\ Y(u, v) = v - \\frac{h}{2} \\\\ Z(u, v) = R \\sin u \\end{cases}$$
-- **Mặt nón tròn xoay (Cone):** Tạo thành khi quay tam giác vuông quanh một cạnh góc vuông làm trục. Phương trình tham số với góc quét $u \\in [0, 2\\pi]$ và chiều cao dọc trục $v \\in [0, h]$:
-  $$\\begin{cases} X(u, v) = \\frac{R(h - v)}{h} \\cos u \\\\ Y(u, v) = v - \\frac{h}{2} \\\\ Z(u, v) = \\frac{R(h - v)}{h} \\sin u \\end{cases}$$
-  Độ dài đường sinh $l$ thỏa mãn hệ thức định lý Pythagore: $l = \\sqrt{R^2 + h^2}$.
-- **Mặt cầu (Sphere):** Tạo thành khi quay nửa hình tròn bán kính $R$ quanh đường kính của nó. Phương trình tham số với góc vĩ độ $u \\in [-\\frac{\\pi}{2}, \\frac{\\pi}{2}]$ và kinh độ $v \\in [0, 2\\pi]$:
-  $$\\begin{cases} X(u, v) = R \\cos u \\cos v \\\\ Y(u, v) = R \\sin u \\\\ Z(u, v) = R \\cos u \\sin v \\end{cases}$$
+- **Mặt trụ tròn xoay (Cylinder):** Tạo thành khi quay hình chữ nhật quanh một cạnh cố định làm trục. Phương trình tham số với góc quét $u \in [0, 2\pi]$ và chiều cao $v \in [0, h]$:
+  $$\begin{cases} X(u, v) = R \cos u \\\\ Y(u, v) = v - \frac{h}{2} \\\\ Z(u, v) = R \sin u \end{cases}$$
+- **Mặt nón tròn xoay (Cone):** Tạo thành khi quay tam giác vuông quanh một cạnh góc vuông làm trục. Phương trình tham số với góc quét $u \in [0, 2\pi]$ và chiều cao dọc trục $v \in [0, h]$:
+  $$\begin{cases} X(u, v) = \frac{R(h - v)}{h} \cos u \\\\ Y(u, v) = v - \frac{h}{2} \\\\ Z(u, v) = \frac{R(h - v)}{h} \sin u \end{cases}$$
+  Độ dài đường sinh $l$ thỏa mãn hệ thức định lý Pythagore: $l = \sqrt{R^2 + h^2}$.
+- **Mặt cầu (Sphere):** Tạo thành khi quay nửa hình tròn bán kính $R$ quanh đường kính của nó. Phương trình tham số với góc vĩ độ $u \in [-\frac{\pi}{2}, \frac{\pi}{2}]$ và kinh độ $v \in [0, 2\pi]$:
+  $$\begin{cases} X(u, v) = R \cos u \cos v \\\\ Y(u, v) = R \sin u \\\\ Z(u, v) = R \cos u \sin v \end{cases}$$
 
 ##### 3. Thuật toán mô phỏng cắt đôi hình cầu qua tâm và trực quan hóa hai bán cầu
 
@@ -84,15 +84,15 @@ Một trong những đóng góp đồ họa đột phá nhất của MathLab là
 - **Thiết lập mô hình hình học so sánh:**
   - Khối thứ nhất là **Khối cầu** tâm $O$, bán kính $R$.
   - Khối thứ hai là một **Khối trụ** có bán kính đáy $R$ và chiều cao $2R$. Bên trong khối trụ, Archimedes khoét bỏ đi hai hình nón có chung đỉnh tại tâm khối trụ, hai đáy hình nón chính là hai đáy của khối trụ (mỗi hình nón có bán kính đáy $R$ và chiều cao $R$). Phần còn lại của khối trụ sau khi khoét gọi là "Vật thể đối chứng $T$".
-- **Xét thiết diện cắt ngang bởi mặt phẳng song song hai đáy ở độ cao $h_c$ tính từ tâm ($|h_c| \\le R$):**
-  - Đối với khối cầu: Thiết diện cắt ngang là một hình tròn có bán kính $r' = \\sqrt{R^2 - h_c^2}$. Diện tích thiết diện là:
-    $$S_1(h_c) = \\pi (r')^2 = \\pi (R^2 - h_c^2)$$
+- **Xét thiết diện cắt ngang bởi mặt phẳng song song hai đáy ở độ cao $h_c$ tính từ tâm ($|h_c| \le R$):**
+  - Đối với khối cầu: Thiết diện cắt ngang là một hình tròn có bán kính $r' = \sqrt{R^2 - h_c^2}$. Diện tích thiết diện là:
+    $$S_1(h_c) = \pi (r')^2 = \pi (R^2 - h_c^2)$$
   - Đối với vật thể đối chứng $T$: Thiết diện cắt ngang là một hình vành khăn (nằm giữa vỏ trụ và mặt nón). Bán kính ngoài cố định là $R$. Tại độ cao $h_c$, mặt nón cắt mặt phẳng tạo thành đường tròn có bán kính trong đúng bằng $r_{\text{nón}} = h_c$ (do hình nón có chiều cao $R$ bằng đúng bán kính đáy $R$, tỉ lệ đồng dạng $1:1$). Diện tích hình vành khăn là:
-    $$S_2(h_c) = \\pi R^2 - \\pi (r_{\text{nón}})^2 = \\pi R^2 - \\pi h_c^2 = \\pi (R^2 - h_c^2)$$
+    $$S_2(h_c) = \pi R^2 - \pi (r_{\text{nón}})^2 = \pi R^2 - \pi h_c^2 = \pi (R^2 - h_c^2)$$
 - **Kết luận theo Nguyên lý Cavalieri:** Vì $S_1(h_c) = S_2(h_c)$ tại **mọi** độ cao $h_c$ thuộc đoạn $[-R, R]$, nên theo nguyên lý Cavalieri, thể tích của khối cầu bằng đúng thể tích của vật thể đối chứng $T$:
-  $$V_{\\text{cầu}} = V_{\\text{trụ}} - 2 \\times V_{\\text{nón}} = \\pi R^2 (2R) - 2 \\left( \\frac{1}{3} \\pi R^2 R \\right) = 2\\pi R^3 - \\frac{2}{3}\\pi R^3 = \\frac{4}{3}\\pi R^3$$
+  $$V_{\text{cầu}} = V_{\text{trụ}} - 2 \times V_{\text{nón}} = \pi R^2 (2R) - 2 \left( \frac{1}{3} \pi R^2 R \right) = 2\pi R^3 - \frac{2}{3}\pi R^3 = \frac{4}{3}\pi R^3$$
 
-Thuật toán mô phỏng trên MathLab hiển thị trực quan hai khối hình đặt cạnh nhau, cho phép học sinh di chuyển thanh trượt mặt phẳng cắt để tận mắt nhìn thấy diện tích hình tròn đỏ (trên khối cầu) luôn bằng diện tích hình vành khăn xanh (trên khối trụ khoét nón). Đây là minh chứng trực quan thuyết phục nhất giúp học sinh lớp 9 thấu hiểu sâu sắc nguồn gốc con số $\\frac{4}{3}\\pi R^3$ mà không một trang sách tĩnh nào có thể làm được!
+Thuật toán mô phỏng trên MathLab hiển thị trực quan hai khối hình đặt cạnh nhau, cho phép học sinh di chuyển thanh trượt mặt phẳng cắt để tận mắt nhìn thấy diện tích hình tròn đỏ (trên khối cầu) luôn bằng diện tích hình vành khăn xanh (trên khối trụ khoét nón). Đây là minh chứng trực quan thuyết phục nhất giúp học sinh lớp 9 thấu hiểu sâu sắc nguồn gốc con số $\frac{4}{3}\pi R^3$ mà không một trang sách tĩnh nào có thể làm được!
 
 #### 2.3.2.3. Cấu trúc 4 phân hệ chuyên biệt của phần mềm MathLab (Chỉ tập trung Chương X)
 
@@ -100,15 +100,15 @@ Phần mềm MathLab được tái cấu trúc triệt để, loại bỏ toàn 
 
 - **Phân hệ 1: Mô phỏng động sự tạo thành khối tròn xoay (Bài 31 & 32):**
   - Chức năng: Cho phép chọn hình phẳng ban đầu (hình chữ nhật, tam giác vuông, nửa hình tròn).
-  - Tương tác: Kéo thanh trượt góc quay $\\alpha$ từ $0^\\circ$ đến $360^\\circ$. Quỹ đạo quét hiển thị vệt màu trong suốt, từ từ hình thành khối trụ, khối nón và khối cầu hoàn chỉnh.
+  - Tương tác: Kéo thanh trượt góc quay $\alpha$ từ $0^\circ$ đến $360^\circ$. Quỹ đạo quét hiển thị vệt màu trong suốt, từ từ hình thành khối trụ, khối nón và khối cầu hoàn chỉnh.
   - Tích hợp thước đo ảo: Cho phép thay đổi bán kính $R$ và chiều cao $h$, các đại lượng $S_{\text{xq}}, S_{\text{tp}}, V$ tự động cập nhật công thức và kết quả số tương ứng.
 - **Phân hệ 2: Khám phá tương tác mặt cắt hình cầu và thí nghiệm thể tích Archimedes (Bài 32):**
-  - Chức năng: Mô phỏng mặt phẳng cắt di động qua khối cầu. Hiển thị tam giác vuông liên hệ giữa bán kính cầu $R$, khoảng cách tâm $h_c$ và bán kính thiết diện $r' = \\sqrt{R^2 - h_c^2}$.
-  - Chế độ thí nghiệm Archimedes: Mô phỏng cốc nước hình trụ chứa quả cầu. Khi nhấn nút "Nhấc quả cầu ra", mực nước rút xuống còn $\\frac{1}{3}$ thể tích cốc, chứng minh trực quan thể tích khối cầu chiếm đúng $\\frac{2}{3}$ thể tích cốc trụ ngoại tiếp.
+  - Chức năng: Mô phỏng mặt phẳng cắt di động qua khối cầu. Hiển thị tam giác vuông liên hệ giữa bán kính cầu $R$, khoảng cách tâm $h_c$ và bán kính thiết diện $r' = \sqrt{R^2 - h_c^2}$.
+  - Chế độ thí nghiệm Archimedes: Mô phỏng cốc nước hình trụ chứa quả cầu. Khi nhấn nút "Nhấc quả cầu ra", mực nước rút xuống còn $\frac{1}{3}$ thể tích cốc, chứng minh trực quan thể tích khối cầu chiếm đúng $\frac{2}{3}$ thể tích cốc trụ ngoại tiếp.
 - **Phân hệ 3: Trải nghiệm hình khai triển (Net Unfolding) và Bài toán tối ưu vỏ lon (Bài 31):**
   - Chức năng: Mô phỏng quá trình "bóc vỏ" bề mặt xung quanh hình trụ và hình nón.
-  - Trực quan: Mặt trụ mở phẳng thành hình chữ nhật kích thước $2\\pi R \\times h$; Mặt nón mở phẳng thành hình quạt tròn bán kính $l$ với góc ở tâm $\\alpha = \\frac{R}{l} \\times 360^\\circ$.
-  - Chế độ "Tối ưu hóa kinh tế vỏ lon nước ngọt": Cho phép giữ cố định thể tích $V = 500\\text{ cm}^3$ (liên kết ràng buộc $h = \\frac{500}{\\pi R^2}$). Khi kéo trượt bán kính $R$, phần mềm vẽ đồ thị hàm diện tích toàn phần $S_{\text{tp}}(R)$, giúp học sinh nhận ra điểm cực tiểu tại vị trí $h = 2R$.
+  - Trực quan: Mặt trụ mở phẳng thành hình chữ nhật kích thước $2\pi R \times h$; Mặt nón mở phẳng thành hình quạt tròn bán kính $l$ với góc ở tâm $\alpha = \frac{R}{l} \times 360^\circ$.
+  - Chế độ "Tối ưu hóa kinh tế vỏ lon nước ngọt": Cho phép giữ cố định thể tích $V = 500\text{ cm}^3$ (liên kết ràng buộc $h = \frac{500}{\pi R^2}$). Khi kéo trượt bán kính $R$, phần mềm vẽ đồ thị hàm diện tích toàn phần $S_{\text{tp}}(R)$, giúp học sinh nhận ra điểm cực tiểu tại vị trí $h = 2R$.
 - **Phân hệ 4: Trợ lý sư phạm Socrate gợi mở và Xưởng xuất mã TikZ chuyên nghiệp:**
   - Khung chat Socratic: Tích hợp kho tri thức SGK Kết nối tri thức. Khi học sinh đặt câu hỏi hoặc gửi ảnh bài tập, trợ lý đưa ra 3 bước gợi mở tư duy, dẫn xuất số trang SGK, kiên quyết không đưa lời giải sẵn.
   - Xưởng dựng hình TikZ: Chỉ dành cho giáo viên (có mật mã bảo vệ). Khi giáo viên xoay góc nhìn ưng ý trên màn hình 3D, bấm "Xuất mã TikZ", hệ thống tự động sinh mã LaTeX TikZ chuẩn nét đứt (hidden lines) để GV chèn vào Word hoặc LaTeX soạn đề thi.
@@ -172,7 +172,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 | **Giao diện & Đường cong học tập** | Giao diện phức tạp với hàng trăm thanh công cụ đại số, giải tích, vector 3D; đòi hỏi học sinh mất nhiều thời gian học cách dựng hình. | **Giao diện tối giản, trực quan thuần Việt (Zero-learning curve).** Các bài học hiển thị rõ ràng, tương tác tức thì bằng nút bấm và thanh trượt. | Học sinh vào bài học là thao tác được ngay trong 30 giây đầu tiên, không tốn thời gian học lệnh. |
 | **Phụ thuộc Internet & Cài đặt** | Bản web cần Internet cáp quang mạnh; Bản cài đặt máy tính nặng (~150MB), cần quyền Administrator để cài đặt. | **100% Offline mạng LAN nội bộ.** Phía máy học sinh không cài đặt bất cứ thứ gì, chạy trên trình duyệt web có sẵn. | Triển khai được trên mọi phòng máy trường học nghèo nàn, không lo mất mạng hay đứt cáp quang. |
 | **Tính năng bóc tách & Trải phẳng (Net Unfolding)** | Phải viết lệnh phức tạp hoặc lập trình Slider bằng tay rất tốn công của giáo viên. | **Tích hợp sẵn nút bấm "Trải phẳng hình học"** tự động cho hình trụ và hình nón, hiển thị kích thước chu vi đáy và độ dài sinh. | Khắc phục triệt để lỗi sai số 3 và số 6 của học sinh trong việc hình dung diện tích xung quanh. |
-| **Thí nghiệm thể tích Archimedes** | Không có sẵn mô hình thí nghiệm cốc nước Archimedes và nguyên lý Cavalieri. | **Tích hợp sẵn mô hình thí nghiệm tương tác mực nước Archimedes** và so sánh thiết diện vi phân Cavalieri. | Trực quan hóa sinh động nguồn gốc công thức thể tích hình cầu $V = \\frac{4}{3}\\pi R^3$. |
+| **Thí nghiệm thể tích Archimedes** | Không có sẵn mô hình thí nghiệm cốc nước Archimedes và nguyên lý Cavalieri. | **Tích hợp sẵn mô hình thí nghiệm tương tác mực nước Archimedes** và so sánh thiết diện vi phân Cavalieri. | Trực quan hóa sinh động nguồn gốc công thức thể tích hình cầu $V = \frac{4}{3}\pi R^3$. |
 | **Hỗ trợ tự học bằng AI có giàn giáo** | Hoàn toàn không có tính năng trợ lý đối thoại sư phạm. | **Tích hợp Trợ lý Socrate** chỉ gợi ý theo phương pháp dẫn dắt từng bước, bám sát số trang SGK, không giải hộ. | Ngăn chặn thói quen ỷ lại, phát triển tư duy phản biện và năng lực tự học của học sinh. |
 | **Hỗ trợ Giáo viên soạn đề (LaTeX TikZ)** | Xuất ảnh PNG hoặc mã TikZ thô rất nặng, nét khuất nét liền không tối ưu cho tài liệu in ấn. | **Tích hợp Xưởng trích xuất mã TikZ chuyên dụng**, tự động nhận diện góc quay và sinh mã LaTeX chuẩn nét đứt mượt mà. | Tiết kiệm hàng chục giờ vẽ hình cho giáo viên khi biên soạn đề kiểm tra và giáo án. |
 """

@@ -15,7 +15,7 @@ PART8_CONTENT = r"""# PHỤ LỤC
 Các em học sinh thân mến! Để giúp các thầy cô hiểu rõ những thuận lợi, khó khăn của các em khi học tập phân môn Hình học không gian, từ đó đổi mới phương pháp giảng dạy và ứng dụng phần mềm học tập phù hợp, các em vui lòng trả lời trung thực các câu hỏi dưới đây. Phiếu này hoàn toàn không dùng để chấm điểm hay đánh giá xếp loại học tập.
 
 - Trường: THCS ............................................................................ Lớp: 9A...
-- Em hãy đánh dấu $(\\mathbf{X})$ vào ô lựa chọn phù hợp nhất với suy nghĩ của em:
+- Em hãy đánh dấu $(\mathbf{X})$ vào ô lựa chọn phù hợp nhất với suy nghĩ của em:
 
 **Câu 1: Em cảm thấy thế nào khi học phân môn Hình học không gian (các hình khối 3D)?**
 - [ ] Rất không thích và cảm thấy rất sợ
@@ -57,7 +57,7 @@ Các em học sinh thân mến! Để giúp các thầy cô hiểu rõ những t
 **PHIẾU KHẢO SÁT GIÁO VIÊN MÔN TOÁN CẤP TRUNG HỌC CƠ SỞ**
 *(Khảo sát 16 giáo viên Toán THCS tại TP. Hồ Chí Minh đầu năm học 2026 – 2027)*
 
-Kính gửi Quý Thầy/Cô giáo! Nhằm phục vụ công tác nghiên cứu sư phạm và nâng cao hiệu quả dạy học môn Toán 9 theo Chương trình GDPT 2018, xin Quý Thầy/Cô vui lòng cho biết ý kiến về các nhận định dưới đây bằng cách đánh dấu $(\\mathbf{X})$ vào cột tương ứng:
+Kính gửi Quý Thầy/Cô giáo! Nhằm phục vụ công tác nghiên cứu sư phạm và nâng cao hiệu quả dạy học môn Toán 9 theo Chương trình GDPT 2018, xin Quý Thầy/Cô vui lòng cho biết ý kiến về các nhận định dưới đây bằng cách đánh dấu $(\mathbf{X})$ vào cột tương ứng:
 
 | STT | Nội dung khảo sát ý kiến giáo viên | Hoàn toàn đồng ý | Đồng ý | Phân vân | Không đồng ý |
 | :---: | :--- | :---: | :---: | :---: | :---: |
@@ -81,7 +81,7 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 | :---: | :--- | :---: | :---: | :---: | :---: |
 | 1 | Phần mềm MathLab giúp em hiểu rõ nguồn gốc tạo thành hình trụ, hình nón và hình cầu dễ dàng hơn nhiều so với nhìn hình vẽ SGK. | 38 HS (90,5%) | 4 HS (9,5%) | 0 HS (0%) | 0 HS (0%) |
 | 2 | Tính năng "Bóc phẳng bề mặt" giúp em ghi nhớ công thức diện tích xung quanh mà không cần học vẹt. | 36 HS (85,7%) | 6 HS (14,3%) | 0 HS (0%) | 0 HS (0%) |
-| 3 | Thí nghiệm Archimedes trên MathLab giúp em hiểu tại sao thể tích hình cầu lại có công thức $\\frac{4}{3}\\pi R^3$. | 35 HS (83,3%) | 7 HS (16,7%) | 0 HS (0%) | 0 HS (0%) |
+| 3 | Thí nghiệm Archimedes trên MathLab giúp em hiểu tại sao thể tích hình cầu lại có công thức $\frac{4}{3}\pi R^3$. | 35 HS (83,3%) | 7 HS (16,7%) | 0 HS (0%) | 0 HS (0%) |
 | 4 | Trợ lý gợi mở Socrate đã hướng dẫn em tự tư duy giải bài tập thực tiễn mà không làm hộ em bài giải. | 34 HS (81,0%) | 8 HS (19,0%) | 0 HS (0%) | 0 HS (0%) |
 | 5 | Em cảm thấy tự tin hơn rất nhiều khi làm các câu hỏi hình học không gian trong đề thi tuyển sinh vào lớp 10. | 37 HS (88,1%) | 5 HS (11,9%) | 0 HS (0%) | 0 HS (0%) |
 
@@ -110,11 +110,11 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 | Câu số | Đơn vị kiến thức | Chuẩn năng lực cần đánh giá (Yêu cầu cần đạt) | Mức độ nhận thức | Thang điểm |
 | :---: | :--- | :--- | :---: | :---: |
 | **TN 1** | Hình trụ | Nhận biết được hình trụ được tạo thành khi quay hình chữ nhật quanh một cạnh cố định. | Nhận biết | 0,5 điểm |
-| **TN 2** | Hình nón | Hiểu mối quan hệ hàm số giữa bán kính và thể tích hình nón ($V \\sim R^2$): khi $R$ tăng 3 lần thì $V$ tăng 9 lần. | Thông hiểu | 0,5 điểm |
-| **TN 3** | Hình cầu | Hiểu và vận dụng công thức tính diện tích hình tròn lớn khi cắt đôi hình cầu qua tâm: $S_{\\text{cắt}} = \\pi R^2$. | Thông hiểu | 0,5 điểm |
-| **TN 4** | Hình cầu | Nhận biết công thức diện tích mặt cầu $S = 4\\pi R^2 = \\pi d^2$. | Nhận biết | 0,5 điểm |
+| **TN 2** | Hình nón | Hiểu mối quan hệ hàm số giữa bán kính và thể tích hình nón ($V \sim R^2$): khi $R$ tăng 3 lần thì $V$ tăng 9 lần. | Thông hiểu | 0,5 điểm |
+| **TN 3** | Hình cầu | Hiểu và vận dụng công thức tính diện tích hình tròn lớn khi cắt đôi hình cầu qua tâm: $S_{\text{cắt}} = \pi R^2$. | Thông hiểu | 0,5 điểm |
+| **TN 4** | Hình cầu | Nhận biết công thức diện tích mặt cầu $S = 4\pi R^2 = \pi d^2$. | Nhận biết | 0,5 điểm |
 | **TN 5** | Hình nón | Nhận biết hình khai triển mặt xung quanh hình nón là hình quạt tròn bán kính $l$. | Nhận biết | 0,5 điểm |
-| **TN 6** | Hình trụ | Vận dụng công thức tính thể tích hình trụ $V = \\pi R^2 h$. | Thông hiểu | 0,5 điểm |
+| **TN 6** | Hình trụ | Vận dụng công thức tính thể tích hình trụ $V = \pi R^2 h$. | Thông hiểu | 0,5 điểm |
 | **TL 1** | Hình trụ thực tế | Mô hình hóa bài toán bồn nước inox không nắp: tính diện tích tôn ($S_{\text{xq}} + 1S_{\text{đáy}}$) và dung tích chứa nước ra lít. | Vận dụng | 2,5 điểm |
 | **TL 2** | Hình nón thực tế | Mô hình hóa bài toán nón lá may 2 lớp: tính diện tích lá cọ may nón và tính thể tích nón thông qua định lý Pythagore. | Vận dụng | 2,5 điểm |
 | **TL 3** | Hình khối phối hợp | Vận dụng cao bài toán hộp trụ chứa 3 quả bóng tennis: tính tỉ số phần trăm thể tích và chứng minh tính chất bất biến $\frac{2}{3}$. | Vận dụng cao | 2,0 điểm |
@@ -139,16 +139,16 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 - C. Gấp 9 lần
 - D. Gấp 27 lần
 
-**Câu 3 (Thông hiểu):** Cắt đôi một khối cầu tâm $O$ bán kính $R = 5\\text{ cm}$ bởi một mặt phẳng đi qua tâm $O$. Diện tích của hình tròn thiết diện thu được là:
-- A. $S = 25\\pi\\text{ cm}^2$
-- B. $S = 10\\pi\\text{ cm}^2$
-- C. $S = 50\\pi\\text{ cm}^2$
-- D. $S = 100\\pi\\text{ cm}^2$
+**Câu 3 (Thông hiểu):** Cắt đôi một khối cầu tâm $O$ bán kính $R = 5\text{ cm}$ bởi một mặt phẳng đi qua tâm $O$. Diện tích của hình tròn thiết diện thu được là:
+- A. $S = 25\pi\text{ cm}^2$
+- B. $S = 10\pi\text{ cm}^2$
+- C. $S = 50\pi\text{ cm}^2$
+- D. $S = 100\pi\text{ cm}^2$
 **Câu 4 (Nhận biết):** Công thức tính diện tích của một mặt cầu bán kính $R$ (đường kính $d = 2R$) là:
-- A. $S = \\frac{4}{3}\\pi R^3$
-- B. $S = 2\\pi R^2$
-- C. $S = 4\\pi R^2$
-- D. $S = 4\\pi R$
+- A. $S = \frac{4}{3}\pi R^3$
+- B. $S = 2\pi R^2$
+- C. $S = 4\pi R^2$
+- D. $S = 4\pi R$
 
 **Câu 5 (Nhận biết):** Khi trải phẳng mặt xung quanh của một hình nón có độ dài đường sinh $l$ và bán kính đáy $R$, ta thu được một hình gì?
 - A. Một hình chữ nhật
@@ -156,27 +156,27 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 - C. Một hình quạt tròn bán kính $l$
 - D. Một hình tròn bán kính $R$
 
-**Câu 6 (Thông hiểu):** Một thùng nước hình trụ có bán kính đáy $R = 20\\text{ cm}$ và chiều cao $h = 50\\text{ cm}$. Thể tích của thùng nước đó xấp xỉ bằng (lấy $\\pi \\approx 3{,}14$):
-- A. $62\,800\\text{ cm}^3$
-- B. $6\,280\\text{ cm}^3$
-- C. $20\,000\\text{ cm}^3$
-- D. $31\,400\\text{ cm}^3$
+**Câu 6 (Thông hiểu):** Một thùng nước hình trụ có bán kính đáy $R = 20\text{ cm}$ và chiều cao $h = 50\text{ cm}$. Thể tích của thùng nước đó xấp xỉ bằng (lấy $\pi \approx 3{,}14$):
+- A. $62\,800\text{ cm}^3$
+- B. $6\,280\text{ cm}^3$
+- C. $20\,000\text{ cm}^3$
+- D. $31\,400\text{ cm}^3$
 
 ---
 
 #### PHẦN II: TỰ LUẬN THỰC TIỄN (7,0 điểm - 3 bài toán)
 
-**Bài 1 (2,5 điểm):** Một hộ gia đình đặt thợ cơ khí gia công một chiếc bể chứa nước sinh hoạt bằng inox có dạng hình trụ tròn xoay đặt ở góc sân. Kích thước đo trong lòng bể: đường kính đáy $d = 1{,}2\\text{ m}$ (suy ra bán kính đáy $R = 0{,}6\\text{ m}$) và chiều cao thân bể $h = 1{,}5\\text{ m}$. **Do bể đặt dưới vòi nước tự động nên gia đình yêu cầu KHÔNG LÀM NẮP ĐẬY PHÍA TRÊN (bể chỉ có một đáy dưới duy nhất)**.
-- a) (1,5 điểm) Tính diện tích inox tối thiểu cần dùng để làm chiếc bể chứa nước trên (coi các mối nối và mép gờ hàn không đáng kể; lấy $\\pi \\approx 3{,}14$ và làm tròn kết quả đến chữ số thập phân thứ hai).
-- b) (1,0 điểm) Chiếc bể trên có thể chứa tối đa được bao nhiêu lít nước khi đổ đầy đến miệng (biết $1\\text{ dm}^3 = 1\\text{ lít}$)?
+**Bài 1 (2,5 điểm):** Một hộ gia đình đặt thợ cơ khí gia công một chiếc bể chứa nước sinh hoạt bằng inox có dạng hình trụ tròn xoay đặt ở góc sân. Kích thước đo trong lòng bể: đường kính đáy $d = 1{,}2\text{ m}$ (suy ra bán kính đáy $R = 0{,}6\text{ m}$) và chiều cao thân bể $h = 1{,}5\text{ m}$. **Do bể đặt dưới vòi nước tự động nên gia đình yêu cầu KHÔNG LÀM NẮP ĐẬY PHÍA TRÊN (bể chỉ có một đáy dưới duy nhất)**.
+- a) (1,5 điểm) Tính diện tích inox tối thiểu cần dùng để làm chiếc bể chứa nước trên (coi các mối nối và mép gờ hàn không đáng kể; lấy $\pi \approx 3{,}14$ và làm tròn kết quả đến chữ số thập phân thứ hai).
+- b) (1,0 điểm) Chiếc bể trên có thể chứa tối đa được bao nhiêu lít nước khi đổ đầy đến miệng (biết $1\text{ dm}^3 = 1\text{ lít}$)?
 
-**Bài 2 (2,5 điểm):** Một nghệ nhân làng nghề làm nón may một chiếc nón lá bài thơ có dạng hình nón. Vành đáy nón có đường kính $d = 40\\text{ cm}$ (bán kính $R = 20\\text{ cm}$) và độ dài đường sinh của nón là $l = 30\\text{ cm}$. Để chiếc nón dày dặn và chống thấm nước mưa tuyệt đối, nghệ nhân may phủ **02 lớp lá cọ khép kín** lên toàn bộ mặt xung quanh của nón.
-- a) (1,25 điểm) Tính diện tích lá cọ tối thiểu cần dùng để may chiếc nón lá trên (tính cả hai lớp lá cọ; lấy $\\pi \\approx 3{,}14$).
-- b) (1,25 điểm) Tính chiều cao $h$ của chiếc nón lá và tính thể tích không gian không khí bên trong chiếc nón (làm tròn chiều cao đến hàng phần mười và thể tích đến hàng đơn vị theo $\\text{cm}^3$).
+**Bài 2 (2,5 điểm):** Một nghệ nhân làng nghề làm nón may một chiếc nón lá bài thơ có dạng hình nón. Vành đáy nón có đường kính $d = 40\text{ cm}$ (bán kính $R = 20\text{ cm}$) và độ dài đường sinh của nón là $l = 30\text{ cm}$. Để chiếc nón dày dặn và chống thấm nước mưa tuyệt đối, nghệ nhân may phủ **02 lớp lá cọ khép kín** lên toàn bộ mặt xung quanh của nón.
+- a) (1,25 điểm) Tính diện tích lá cọ tối thiểu cần dùng để may chiếc nón lá trên (tính cả hai lớp lá cọ; lấy $\pi \approx 3{,}14$).
+- b) (1,25 điểm) Tính chiều cao $h$ của chiếc nón lá và tính thể tích không gian không khí bên trong chiếc nón (làm tròn chiều cao đến hàng phần mười và thể tích đến hàng đơn vị theo $\text{cm}^3$).
 
-**Bài 3 (2,0 điểm - Vận dụng cao):** Một công ty dụng cụ thể thao sản xuất hộp đựng bóng tennis. Mỗi quả bóng tennis tiêu chuẩn có dạng hình cầu với đường kính $d = 6{,}6\\text{ cm}$ (suy ra bán kính $R = 3{,}3\\text{ cm}$). Chiếc hộp đựng có dạng hình trụ bằng nhựa mỏng trong suốt có nắp đậy, chứa vừa khít 3 quả bóng tennis xếp chồng thẳng đứng lên nhau (quả bóng tiếp xúc vừa khít với đáy dưới, đáy trên và thành xung quanh của hộp trụ).
-- a) (1,0 điểm) Tính chiều cao $h$ và thể tích của chiếc hộp nhựa hình trụ theo hằng số $\\pi$.
-- b) (1,0 điểm) Tính tổng thể tích của 3 quả bóng tennis theo $\\pi$. Từ đó hãy tính tỉ số phần trăm giữa tổng thể tích của 3 quả bóng tennis và thể tích của chiếc hộp hình trụ. Em có nhận xét gì về kết quả này?
+**Bài 3 (2,0 điểm - Vận dụng cao):** Một công ty dụng cụ thể thao sản xuất hộp đựng bóng tennis. Mỗi quả bóng tennis tiêu chuẩn có dạng hình cầu với đường kính $d = 6{,}6\text{ cm}$ (suy ra bán kính $R = 3{,}3\text{ cm}$). Chiếc hộp đựng có dạng hình trụ bằng nhựa mỏng trong suốt có nắp đậy, chứa vừa khít 3 quả bóng tennis xếp chồng thẳng đứng lên nhau (quả bóng tiếp xúc vừa khít với đáy dưới, đáy trên và thành xung quanh của hộp trụ).
+- a) (1,0 điểm) Tính chiều cao $h$ và thể tích của chiếc hộp nhựa hình trụ theo hằng số $\pi$.
+- b) (1,0 điểm) Tính tổng thể tích của 3 quả bóng tennis theo $\pi$. Từ đó hãy tính tỉ số phần trăm giữa tổng thể tích của 3 quả bóng tennis và thể tích của chiếc hộp hình trụ. Em có nhận xét gì về kết quả này?
 
 ---
 
@@ -193,48 +193,48 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 
 **Bài 1 (2,5 điểm):**
 - **Câu a (1,5 điểm):**
-  - Bán kính đáy của bể nước hình trụ: $R = d / 2 = 1{,}2 / 2 = 0{,}6\\text{ (m)}$. *(0,25 điểm)*
+  - Bán kính đáy của bể nước hình trụ: $R = d / 2 = 1{,}2 / 2 = 0{,}6\text{ (m)}$. *(0,25 điểm)*
   - Diện tích xung quanh thân bể hình trụ:
-    $$S_{\text{xq}} = 2\\pi R h = 2 \\times 3{,}14 \\times 0{,}6 \\times 1{,}5 = 5{,}652\\text{ (m}^2\\text{)}$$ *(0,50 điểm)*
+    $$S_{\text{xq}} = 2\pi R h = 2 \times 3{,}14 \times 0{,}6 \times 1{,}5 = 5{,}652\text{ (m}^2\text{)}$$ *(0,50 điểm)*
   - Vì bể **không có nắp đậy trên** nên diện tích đáy chỉ tính 1 đáy:
-    $$S_{\text{đáy}} = \\pi R^2 = 3{,}14 \\times 0{,}6^2 = 1{,}1304\\text{ (m}^2\\text{)}$$ *(0,25 điểm)*
+    $$S_{\text{đáy}} = \pi R^2 = 3{,}14 \times 0{,}6^2 = 1{,}1304\text{ (m}^2\text{)}$$ *(0,25 điểm)*
   - Diện tích inox tối thiểu cần dùng:
-    $$S = S_{\text{xq}} + S_{\text{đáy}} = 5{,}652 + 1{,}1304 = 6{,}7824 \\approx \\mathbf{6{,}78\\text{ (m}^2\\text{)}}$$ *(0,50 điểm)*
-    *(Lưu ý: Nếu học sinh cộng cả 2 đáy ra $7{,}91\\text{ m}^2$ do mắc Lỗi sai 3 thì trừ 0,75 điểm).*
+    $$S = S_{\text{xq}} + S_{\text{đáy}} = 5{,}652 + 1{,}1304 = 6{,}7824 \approx \mathbf{6{,}78\text{ (m}^2\text{)}}$$ *(0,50 điểm)*
+    *(Lưu ý: Nếu học sinh cộng cả 2 đáy ra $7{,}91\text{ m}^2$ do mắc Lỗi sai 3 thì trừ 0,75 điểm).*
 - **Câu b (1,0 điểm):**
   - Thể tích chứa tối đa của bể nước:
-    $$V = \\pi R^2 h = 3{,}14 \\times 0{,}6^2 \\times 1{,}5 = 1{,}6956\\text{ (m}^3\\text{)}$$ *(0,50 điểm)*
-  - Đổi đơn vị sang lít ($1\\text{ m}^3 = 1\,000\\text{ dm}^3 = 1\,000\\text{ lít}$):
-    $$1{,}6956\\text{ m}^3 = 1{,}6956 \\times 1\,000 = \\mathbf{1695{,}6\\text{ (lít)}}$$ *(0,50 điểm)*
+    $$V = \pi R^2 h = 3{,}14 \times 0{,}6^2 \times 1{,}5 = 1{,}6956\text{ (m}^3\text{)}$$ *(0,50 điểm)*
+  - Đổi đơn vị sang lít ($1\text{ m}^3 = 1\,000\text{ dm}^3 = 1\,000\text{ lít}$):
+    $$1{,}6956\text{ m}^3 = 1{,}6956 \times 1\,000 = \mathbf{1695{,}6\text{ (lít)}}$$ *(0,50 điểm)*
 
 **Bài 2 (2,5 điểm):**
 - **Câu a (1,25 điểm):**
   - Diện tích xung quanh một lớp của chiếc nón lá:
-    $$S_{\text{xq}} = \\pi R l = 3{,}14 \\times 20 \\times 30 = 1884\\text{ (cm}^2\\text{)}$$ *(0,75 điểm)*
+    $$S_{\text{xq}} = \pi R l = 3{,}14 \times 20 \times 30 = 1884\text{ (cm}^2\text{)}$$ *(0,75 điểm)*
   - Vì may phủ **02 lớp lá cọ** nên diện tích lá cọ tối thiểu cần dùng:
-    $$S_{\text{lá}} = 2 \\times S_{\text{xq}} = 2 \\times 1884 = \\mathbf{3768\\text{ (cm}^2\\text{)}}$$ *(0,50 điểm)*
+    $$S_{\text{lá}} = 2 \times S_{\text{xq}} = 2 \times 1884 = \mathbf{3768\text{ (cm}^2\text{)}}$$ *(0,50 điểm)*
 - **Câu b (1,25 điểm):**
   - Trong tam giác vuông tạo bởi chiều cao $h$, bán kính đáy $R$ và đường sinh $l$:
-    $$h = \\sqrt{l^2 - R^2} = \\sqrt{30^2 - 20^2} = \\sqrt{900 - 400} = \\sqrt{500} \\approx \\mathbf{22{,}4\\text{ (cm)}}$$ *(0,75 điểm)*
-    *(Lưu ý: Nếu HS lấy nhầm $h = l = 30\\text{ cm}$ do mắc Lỗi sai 1 thì không cho điểm phần sau).*
+    $$h = \sqrt{l^2 - R^2} = \sqrt{30^2 - 20^2} = \sqrt{900 - 400} = \sqrt{500} \approx \mathbf{22{,}4\text{ (cm)}}$$ *(0,75 điểm)*
+    *(Lưu ý: Nếu HS lấy nhầm $h = l = 30\text{ cm}$ do mắc Lỗi sai 1 thì không cho điểm phần sau).*
   - Thể tích không gian bên trong nón:
-    $$V = \\frac{1}{3}\\pi R^2 h = \\frac{1}{3} \\times 3{,}14 \\times 20^2 \\times 22{,}36 \\approx \\mathbf{9361\\text{ (cm}^3\\text{)}}$$ *(0,50 điểm)*
+    $$V = \frac{1}{3}\pi R^2 h = \frac{1}{3} \times 3{,}14 \times 20^2 \times 22{,}36 \approx \mathbf{9361\text{ (cm}^3\text{)}}$$ *(0,50 điểm)*
 
 **Bài 3 (2,0 điểm):**
 - **Câu a (1,0 điểm):**
-  - Bán kính đáy của hộp trụ bằng bán kính quả bóng: $R = 3{,}3\\text{ (cm)}$. *(0,25 điểm)*
+  - Bán kính đáy của hộp trụ bằng bán kính quả bóng: $R = 3{,}3\text{ (cm)}$. *(0,25 điểm)*
   - Chiều cao của hộp trụ bằng đường kính của 3 quả bóng xếp chồng:
-    $$h = 3 \\times d = 3 \\times 6{,}6 = 19{,}8\\text{ (cm)}$$ *(0,25 điểm)*
+    $$h = 3 \times d = 3 \times 6{,}6 = 19{,}8\text{ (cm)}$$ *(0,25 điểm)*
   - Thể tích của chiếc hộp hình trụ:
-    $$V_{\\text{hộp}} = \\pi R^2 h = \\pi \\times (3{,}3)^2 \\times 19{,}8 = \\mathbf{215{,}622\\pi\\text{ (cm}^3\\text{)}}$$ *(0,50 điểm)*
+    $$V_{\text{hộp}} = \pi R^2 h = \pi \times (3{,}3)^2 \times 19{,}8 = \mathbf{215{,}622\pi\text{ (cm}^3\text{)}}$$ *(0,50 điểm)*
 - **Câu b (1,0 điểm):**
   - Thể tích của một quả bóng tennis hình cầu:
-    $$V_{\\text{1 bóng}} = \\frac{4}{3}\\pi R^3 = \\frac{4}{3}\\pi \\times (3{,}3)^3 = 47{,}916\\pi\\text{ (cm}^3\\text{)}$$ *(0,25 điểm)*
+    $$V_{\text{1 bóng}} = \frac{4}{3}\pi R^3 = \frac{4}{3}\pi \times (3{,}3)^3 = 47{,}916\pi\text{ (cm}^3\text{)}$$ *(0,25 điểm)*
   - Tổng thể tích của cả 3 quả bóng tennis:
-    $$V_{3\\text{ bóng}} = 3 \\times V_{\\text{1 bóng}} = 3 \\times 47{,}916\\pi = \\mathbf{143{,}748\\pi\\text{ (cm}^3\\text{)}}$$ *(0,25 điểm)*
+    $$V_{3\text{ bóng}} = 3 \times V_{\text{1 bóng}} = 3 \times 47{,}916\pi = \mathbf{143{,}748\pi\text{ (cm}^3\text{)}}$$ *(0,25 điểm)*
   - Tỉ số phần trăm giữa thể tích 3 quả bóng và thể tích hộp trụ:
-    $$T = \\frac{V_{3\\text{ bóng}}}{V_{\\text{hộp}}} \\times 100\\% = \\frac{143{,}748\\pi}{215{,}622\\pi} \\times 100\\% = \\frac{2}{3} \\times 100\\% \\approx \\mathbf{66{,}67\\%}$$ *(0,25 điểm)*
-  - **Nhận xét sâu sắc:** Tỉ số này luôn đúng bằng $\\frac{2}{3}$ (không phụ thuộc vào bán kính $R$ của quả bóng), điều này hoàn toàn trùng khớp với định lý hình học không gian kinh điển của nhà bác học Archimedes! *(0,25 điểm)*
+    $$T = \frac{V_{3\text{ bóng}}}{V_{\text{hộp}}} \times 100\% = \frac{143{,}748\pi}{215{,}622\pi} \times 100\% = \frac{2}{3} \times 100\% \approx \mathbf{66{,}67\%}$$ *(0,25 điểm)*
+  - **Nhận xét sâu sắc:** Tỉ số này luôn đúng bằng $\frac{2}{3}$ (không phụ thuộc vào bán kính $R$ của quả bóng), điều này hoàn toàn trùng khớp với định lý hình học không gian kinh điển của nhà bác học Archimedes! *(0,25 điểm)*
 
 ---
 
@@ -348,8 +348,8 @@ Dưới đây là 3 kịch bản kiểm thử thực tế minh chứng hệ th�
 - **Trợ lý Socrate phản hồi:**
   > *"Chào em! Để tự mình tìm ra đáp án và hiểu sâu bài học, chúng ta cùng làm theo 2 bước đơn giản nhé:*
   > *1. Chiếc nón lá có dạng hình gì? (Xem lại Bài 31 SGK Toán 9 trang 98).*
-  > *2. Đề bài cho đường kính đáy $d = 40\\text{ cm}$, vậy bán kính đáy $R$ bằng bao nhiêu?*
-  > *3. Công thức tính diện tích xung quanh của hình nón là $S_{\text{xq}} = \\pi R l$. Em hãy lấy bán kính $R$ vừa tìm được nhân với đường sinh $l = 30\\text{ cm}$ và nhân với $\\pi \\approx 3{,}14$ nhé! Lưu ý: chiếc nón lá may mấy lớp lá cọ để nhân đôi lên nhé!"*
+  > *2. Đề bài cho đường kính đáy $d = 40\text{ cm}$, vậy bán kính đáy $R$ bằng bao nhiêu?*
+  > *3. Công thức tính diện tích xung quanh của hình nón là $S_{\text{xq}} = \pi R l$. Em hãy lấy bán kính $R$ vừa tìm được nhân với đường sinh $l = 30\text{ cm}$ và nhân với $\pi \approx 3{,}14$ nhé! Lưu ý: chiếc nón lá may mấy lớp lá cọ để nhân đôi lên nhé!"*
 - **Học sinh:** *"Dạ R = 20cm. Vậy lấy 3.14 x 20 x 30 đúng không ạ?"*
 - **Trợ lý Socrate:** *"Chính xác 100%! Em hãy tính ra số và nhớ nhân thêm 2 vì nón may 2 lớp lá nhé. Em làm rất tốt!"*
 
@@ -357,9 +357,9 @@ Dưới đây là 3 kịch bản kiểm thử thực tế minh chứng hệ th�
 - **Học sinh:** *"Làm sao biết kích thước vỏ lon hình trụ 500ml tốn ít nhôm nhất là h = 2R?"*
 - **Trợ lý Socrate:**
   > *"Câu hỏi của em rất thông minh! Đây là một bài toán kinh tế kinh điển đấy:*
-  > *1. Thể tích hình trụ cố định là $V = \\pi R^2 h = 500 \\implies h = \\frac{500}{\\pi R^2}$.*
-  > *2. Diện tích vỏ lon toàn phần gồm xung quanh và 2 đáy: $S_{\text{tp}} = 2\\pi R^2 + 2\\pi R h$. Em hãy thay $h$ ở trên vào biểu thức này xem ta được hàm số theo biến $R$ như thế nào?*
-  > *3. Em hãy thử tách số hạng $\\frac{1\,000}{R} = \\frac{500}{R} + \\frac{500}{R}$ rồi áp dụng bất đẳng thức AM-GM (Cauchy) cho 3 số dương xem dấu '=' xảy ra khi nào nhé!"*
+  > *1. Thể tích hình trụ cố định là $V = \pi R^2 h = 500 \implies h = \frac{500}{\pi R^2}$.*
+  > *2. Diện tích vỏ lon toàn phần gồm xung quanh và 2 đáy: $S_{\text{tp}} = 2\pi R^2 + 2\pi R h$. Em hãy thay $h$ ở trên vào biểu thức này xem ta được hàm số theo biến $R$ như thế nào?*
+  > *3. Em hãy thử tách số hạng $\frac{1\,000}{R} = \frac{500}{R} + \frac{500}{R}$ rồi áp dụng bất đẳng thức AM-GM (Cauchy) cho 3 số dương xem dấu '=' xảy ra khi nào nhé!"*
 
 #### Kịch bản 3: Học sinh bẫy AI bằng câu hỏi ngoài chương trình
 - **Học sinh:** *"Viết cho em một bài văn tả người mẹ hoặc giải phương trình bậc ba đi!"*

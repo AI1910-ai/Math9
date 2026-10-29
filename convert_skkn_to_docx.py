@@ -39,6 +39,10 @@ def latex_to_omml(latex_code, is_display=False):
     code = latex_code.strip()
     if not code or not _omml_transform:
         return None
+    # Chuẩn hóa các dấu gạch chéo ngược bị nhân đôi (\\pi -> \pi, \\frac -> \frac, v.v.)
+    code = re.sub(r'\\\\([a-zA-Z]+)', r'\\\1', code)
+    code = re.sub(r'\\\\([,; ])', r'\\\1', code)
+    code = re.sub(r'\\\\([{}])', r'\\\1', code)
     try:
         mml = latex2mathml_convert(code)
         tree = etree.fromstring(mml)
