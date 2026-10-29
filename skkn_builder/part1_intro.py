@@ -41,13 +41,12 @@ PART1_CONTENT = r"""# Mục lục
 | *1. Phép chiếu phối cảnh 3D Wireframe (Perspective 3D Projection)* | 28 |
 | *2. Phương trình giải tích tham số các mặt cong tròn xoay (Chương X Toán 9)* | 28 |
 | *3. Thuật toán mô phỏng cắt đôi hình cầu qua tâm và trực quan hóa hai bán cầu* | 29 |
-| *4. Thuật toán mô phỏng thí nghiệm thể tích hình cầu của Archimedes và Nguyên lý Cavalieri* | 30 |
+| *4. Thuật toán mô phỏng thí nghiệm thể tích hình cầu của Archimedes và trực quan hóa bán cầu* | 30 |
 | 2.3.2.3. Cấu trúc 4 phân hệ chuyên biệt của phần mềm MathLab (Chỉ tập trung Chương X) | 31 |
-| 2.3.2.4. Kiến trúc mạng LAN Offline-First, kết quả kiểm thử đo tải và giải pháp kỹ thuật phòng học | 33 |
-| *Bảng 2.2.1: Kết quả kiểm thử hiệu năng mạng LAN nội bộ MathLab trên các tải lượng thiết bị* | 34 |
+| 2.3.2.4. Kiến trúc mạng LAN Offline-First và giải pháp kỹ thuật phòng học | 33 |
 | 2.3.2.5. Cơ chế Trợ lý sư phạm Socrate, phân quyền truy cập, bảo mật dữ liệu và an toàn thông tin trẻ em | 35 |
 | 2.3.2.6. Bảng so sánh khách quan, toàn diện giữa MathLab và GeoGebra 3D | 36 |
-| *Bảng 2.2.2: So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D* | 36 |
+| *Bảng 2.2.1: So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D* | 36 |
 | **2.4. Áp dụng phần mềm MathLab vào tổ chức hoạt động dạy học thực hành** | **38** |
 | 2.4.0. Khung tiêu chí Rubric đánh giá Năng lực Mô hình hóa Toán học theo Thông tư 22/2021/TT-BGDĐT | 38 |
 | *Bảng 2.4.0A: Thang tiêu chí Rubric 1 – Đánh giá Năng lực Mô hình hóa Toán học (NLMHH)* | 39 |
@@ -59,7 +58,7 @@ PART1_CONTENT = r"""# Mục lục
 | *TIẾT 2: HÌNH NÓN (SỰ TẠO THÀNH, HÌNH QUẠT KHAI TRIỂN, DIỆN TÍCH XUNG QUANH VÀ THỂ TÍCH)* | 48 |
 | 2.4.2. Kế hoạch bài dạy số 2: Bài 32 – Hình cầu (Toán 9, KNTTVCS – 02 tiết) | 53 |
 | *TIẾT 1: MẶT CẦU, HÌNH CẦU VÀ MẶT CẮT BỞI MẶT PHẲNG* | 53 |
-| *TIẾT 2: DIỆN TÍCH MẶT CẦU VÀ THỂ TÍCH HÌNH CẦU (THÍ NGHIỆM ARCHIMEDES & CAVALIERI)* | 58 |
+| *TIẾT 2: DIỆN TÍCH MẶT CẦU VÀ THỂ TÍCH HÌNH CẦU (THÍ NGHIỆM ARCHIMEDES & CẮT ĐÔI BÁN CẦU)* | 58 |
 | 2.4.3. Hệ thống Phiếu học tập và Phiếu hoạt động nhóm dự án thực tế | 63 |
 | *1. Toàn văn Phiếu học tập cá nhân số 1: Khám phá hình trụ và bài toán đời sống* | 63 |
 | *2. Toàn văn Phiếu học tập cá nhân số 2: Khám phá hình nón và chiếc nón lá truyền thống* | 65 |
@@ -101,8 +100,7 @@ PART1_CONTENT = r"""# Mục lục
 | Phụ lục 5: Bảng tổng hợp điểm số thô đối chứng của 83 học sinh (Năm học 2026 – 2027) | 97 |
 | *Bảng PL5.1: Bảng điểm số thô chi tiết 42 học sinh Lớp thực nghiệm 9A* | 97 |
 | *Bảng PL5.2: Bảng điểm số thô chi tiết 41 học sinh Lớp đối chứng 9B* | 98 |
-| Phụ lục 6: Kịch bản kiểm thử Trợ lý Socratic và Mẫu văn bản đồng thuận của phụ huynh học sinh | 98 |
-| *1. Kịch bản mẫu kiểm thử 3 tình huống hộp thoại Trợ lý Socrate (Không làm hộ bài)* | 98 |
+| Phụ lục 6: Mẫu văn bản đồng thuận của phụ huynh học sinh khi tham gia thực nghiệm sư phạm | 98 |
 | *2. Toàn văn Mẫu văn bản đồng thuận của phụ huynh theo Nghị định 13/2023/NĐ-CP và Luật Trẻ em 2016* | 99 |
 
 ---
@@ -139,8 +137,7 @@ PART1_CONTENT = r"""# Mục lục
 | **Bảng 2.1** | Mức độ hứng thú của học sinh đối với phân môn Hình học không gian (Khảo sát 125 HS) | 21 |
 | **Bảng 2.2** | Khảo sát nhận thức và thực trạng của giáo viên môn Toán (Khảo sát 16 GV) | 21 |
 | **Bảng 2.2.0**| Bảng phân loại 6 dạng lỗi sai nhận thức không gian điển hình của học sinh Chương X Toán 9 | 23 |
-| **Bảng 2.2.1**| Kết quả kiểm thử hiệu năng mạng LAN nội bộ MathLab trên các tải lượng thiết bị | 34 |
-| **Bảng 2.2.2**| So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D | 36 |
+| **Bảng 2.2.1**| So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D | 36 |
 | **Bảng 2.4.0A**| Thang tiêu chí Rubric 1: Đánh giá Năng lực Mô hình hóa Toán học theo Thông tư 22/2021/TT-BGDĐT | 39 |
 | **Bảng 2.4.0B**| Thang tiêu chí Rubric 2: Đánh giá Kỹ năng thao tác số và tư duy trực quan không gian MathLab | 40 |
 | **Bảng 2.4.0C**| Thang tiêu chí Rubric 3: Đánh giá Năng lực Tự học, Giao tiếp và Hợp tác nhóm | 41 |
@@ -174,7 +171,7 @@ Tuy nhiên, trong thực tiễn dạy học tại các trường THCS trên đ�
 3. **Thách thức về hạ tầng công nghệ và rào cản kỹ thuật tại nhà trường:** Dù các phần mềm hình học động như GeoGebra 3D hay Cabri 3D đã xuất hiện khá lâu, nhưng việc ứng dụng đại trà trong tiết dạy trên lớp gặp rào cản rất lớn:
    - Phần mềm GeoGebra 3D yêu cầu máy tính có cấu hình đồ họa cao, giao diện phức tạp với hàng trăm công cụ tổng quát, học sinh THCS mất quá nhiều thời gian để dựng được một hình nón hay hình trụ chuẩn xác mà không tập trung vào bản chất toán học.
    - Các công cụ trực tuyến đòi hỏi kết nối Internet băng thông rộng liên tục. Trong thực tế, phòng máy tính của các trường THCS tại TP.HCM (với sĩ số 40 – 45 học sinh/lớp) thường xuyên gặp tình trạng mạng chập chờn, nghẽn đường truyền khi toàn bộ lớp cùng truy cập web, hoặc bị quản lý chặt chẽ bởi hệ thống tường lửa (Firewall) ngăn cấm truy cập mạng bên ngoài.
-   - Nhiều giáo viên e ngại sử dụng phần mềm vì thiếu kịch bản sư phạm tích hợp bám sát từng bài học của sách giáo khoa Kết nối tri thức với cuộc sống.
+   - Nhiều giáo viên e ngại sử dụng phần mềm vì thiếu kế hoạch bài dạy và giải pháp sư phạm trực quan tích hợp bám sát từng bài học của sách giáo khoa Kết nối tri thức với cuộc sống.
 
 4. **Sự bùng nổ của Trí tuệ nhân tạo (AI) và nguy cơ hình thành thói quen ỷ lại, thụ động:** Sự phổ biến của các mô hình AI tạo sinh (như ChatGPT, Gemini) tạo ra một xu hướng đáng lo ngại: học sinh thường sao chép đề bài, dán ảnh chụp vào để AI đưa ra lời giải hoàn chỉnh ngay lập tức ("giải hộ"). Điều này triệt tiêu hoàn toàn quá trình tư duy độc lập, khiến năng lực mô hình hóa toán học của học sinh bị thui chột. Việc thiếu một công cụ hỗ trợ thông minh đóng vai trò "trợ lý sư phạm Socrate" – tuyệt đối không làm thay, chỉ đặt câu hỏi gợi mở, truy xuất chính xác kiến thức bài học trong SGK và hướng dẫn học sinh từng bước tư duy – là một khoảng trống sư phạm lớn cần được khỏa lấp.
 
@@ -287,5 +284,5 @@ Bản báo cáo sáng kiến kinh nghiệm được cấu trúc chặt chẽ g�
 - **Phần 2: Giải quyết vấn đề** (Cơ sở lý luận; Thực trạng và phân tích 6 dạng lỗi sai; Quy trình thiết kế công nghệ và giải pháp mạng LAN; Hệ thống 4 Rubric đánh giá NLMHH chuẩn Thông tư 22; Kế hoạch bài dạy chi tiết Bài 31 và Bài 32; Hệ thống Phiếu học tập và Phiếu hoạt động nhóm; Hệ thống Bài tập phân hóa 3 mức độ; Đánh giá hiệu quả thực nghiệm sư phạm bằng toán thống kê t-test và Cohen's d).
 - **Phần 3: Kết luận và khuyến nghị** (Kết luận khoa học, bài học kinh nghiệm, điều kiện nhân rộng và khuyến nghị đối với các cấp quản lý giáo dục).
 - **Tài liệu tham khảo** (Chuẩn trích dẫn APA 7th).
-- **Hệ thống Phụ lục** (Toàn văn phiếu khảo sát thực trạng; Phiếu sau thực nghiệm; Đề kiểm tra 45 phút kèm ma trận đặc tả và barem điểm chi tiết; Bảng điểm số thô đối chứng 83 học sinh; Kịch bản kiểm thử Socratic prompt và Mẫu cam kết an toàn dữ liệu trẻ em theo Nghị định 13/2023/NĐ-CP).
+- **Hệ thống Phụ lục** (Toàn văn phiếu khảo sát thực trạng; Phiếu sau thực nghiệm; Đề kiểm tra 45 phút kèm ma trận đặc tả và barem điểm chi tiết; Bảng điểm số thô đối chứng 83 học sinh; Mẫu văn bản đồng thuận của phụ huynh và cam kết an toàn dữ liệu trẻ em theo Nghị định 13/2023/NĐ-CP).
 """

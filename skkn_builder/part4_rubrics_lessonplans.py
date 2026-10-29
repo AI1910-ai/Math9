@@ -14,7 +14,7 @@ PART4_CONTENT = r"""## 2.4. Áp dụng phần mềm MathLab vào tổ chức ho�
 | Tiêu chí thành phần | Mức 1: Chưa đạt (Dưới 5,0) | Mức 2: Đạt (5,0 – 6,4) | Mức 3: Khá (6,5 – 7,9) | Mức 4: Tốt (8,0 – 10,0) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Tiêu chí 1: Nhận diện mô hình toán từ thực tiễn** | Không nhận diện được dạng hình khối tương ứng từ vật thể thực, hoặc nhầm lẫn giữa hình trụ, hình nón và hình cầu. | Nhận diện được dạng hình khối cơ bản nhưng còn lúng túng khi xác định các đại lượng biên ($R, h, l$). | Nhận diện chính xác hình khối; xác định đúng các yếu tố cơ bản ($R, h, l$); chỉ ra được trục quay và đáy. | Trừu tượng hóa xuất sắc; nhận diện nhanh chóng hình khối phức tạp hoặc hình khối phối hợp; xác định đầy đủ các yếu tố ẩn/hiện. |
-| **Tiêu chí 2: Thiết lập mối quan hệ và công thức** | Không nhớ công thức hoặc áp dụng sai hoàn toàn công thức diện tích, thể tích khối tròn xoay. | Viết được công thức cơ bản nhưng áp dụng máy móc, nhầm lẫn giữa $l$ và $h$ ở hình nón, hoặc quên tính đáy ở vật không nắp. | Thiết lập đúng công thức toán học; biết vận dụng định lý Pythagore $l^2 = R^2 + h^2$ hoặc $r' = \sqrt{R^2 - h_c^2}$ chuẩn xác. | Thiết lập hoàn hảo hệ thức toán học; biết lập hàm số biểu diễn mối quan hệ giữa các biến; vận dụng linh hoạt bất đẳng thức tối ưu. |
+| **Tiêu chí 2: Thiết lập mối quan hệ và công thức** | Không nhớ công thức hoặc áp dụng sai hoàn toàn công thức diện tích, thể tích khối tròn xoay. | Viết được công thức cơ bản nhưng áp dụng máy móc, nhầm lẫn giữa $l$ và $h$ ở hình nón, hoặc quên tính đáy ở vật không nắp. | Thiết lập đúng công thức toán học; biết vận dụng định lý Pythagore $l^2 = R^2 + h^2$ hoặc công thức cắt đôi bán cầu qua tâm $S_{\text{cắt}} = \pi R^2$ chuẩn xác. | Thiết lập hoàn hảo hệ thức toán học; biết lập hàm số biểu diễn mối quan hệ giữa các biến; vận dụng linh hoạt bất đẳng thức tối ưu. |
 | **Tiêu chí 3: Kỹ năng tính toán và giải toán** | Tính toán sai sót nhiều, không nắm được cách làm tròn số thập phân, thế số sai vào công thức. | Tính toán được các phép tính đơn giản nhưng còn phụ thuộc máy tính cầm tay, đôi khi nhầm lẫn giữa $\pi$ và số gần đúng. | Tính toán chính xác các đại lượng; thực hiện đúng quy tắc làm tròn số theo yêu cầu của đề bài; trình bày mạch lạc. | Tính toán cực nhanh và chính xác; biết sử dụng phương pháp tính gần đúng hợp lý; lời giải ngắn gọn, thanh thoát, khoa học. |
 | **Tiêu chí 4: Phiên giải kết quả và đánh giá thực tế** | Không nêu được ý nghĩa thực tế của con số tìm được; không đổi được đơn vị đo ($cm^3$ sang lít). | Nêu được kết quả nhưng quên đổi đơn vị đo lường, chưa đánh giá được tính hợp lý của kết quả đối với vật thể thực. | Đổi đúng đơn vị đo lường thực tế (lít, $m^3$); giải thích được ý nghĩa kết quả trong ngữ cảnh bài toán đời sống. | Phiên giải xuất sắc kết quả; phân tích sâu sắc sai số do mép gấp, độ dày vật liệu; đề xuất được giải pháp cải tiến tối ưu. |
 
@@ -259,10 +259,10 @@ PART4_CONTENT = r"""## 2.4. Áp dụng phần mềm MathLab vào tổ chức ho�
 
 ###### 1. HOẠT ĐỘNG 1: KHỞI ĐỘNG (6 phút)
 
-- GV mang một Quả địa cầu mini và một quả cam hình cầu vào lớp. Dùng dao cắt một lát quả cam ở gần đỉnh (cắt ngang).
-- GV cho HS quan sát lát cắt: *"Vết cắt trên quả cam có dạng hình gì? Nếu thầy cắt một lát khác đi qua đúng tâm quả cam thì vết cắt đó có gì khác so với lát cắt đầu tiên?"*
-- HS nhận xét: Cả hai vết cắt đều là hình tròn, nhưng vết cắt đi qua tâm quả cam to hơn rất nhiều so với vết cắt gần đỉnh.
-- GV nêu vấn đề: *"Làm thế nào để tính chính xác bán kính của vết cắt khi biết bán kính quả cầu và vị trí dao cắt? Chúng ta cùng khám phá trên MathLab."*
+- GV mang một quả cam hình tròn vào lớp, dùng dao cắt đôi quả cam đi qua đúng tâm để chia thành hai nửa bằng nhau.
+- GV cho HS quan sát vết cắt: *"Vết cắt đi qua tâm quả cam có dạng hình gì? Bán kính của vết cắt có mối quan hệ như thế nào với bán kính của quả cam?"*
+- HS nhận xét: Vết cắt đi qua tâm là một hình tròn lớn có tâm và bán kính đúng bằng bán kính của quả cam ($r = R$).
+- GV chuẩn hóa kiến thức: *"Khi dùng một mặt phẳng đi qua tâm để cắt đôi một hình cầu, khối cầu được chia thành hai phần hoàn toàn bằng nhau gọi là hai bán cầu. Hình tròn vết cắt có tâm và bán kính đúng bằng bán kính hình cầu, được gọi là hình tròn lớn."*
 
 ###### 2. HOẠT ĐỘNG 2: HÌNH THÀNH KIẾN THỨC MỚI (24 phút)
 
@@ -288,9 +288,12 @@ PART4_CONTENT = r"""## 2.4. Áp dụng phần mềm MathLab vào tổ chức ho�
 
 - **Bài toán trong Phiếu học tập số 3:**
   > *"Trái Đất của chúng ta được mô hình hóa xấp xỉ như một khối cầu có bán kính $R \approx 6371\text{ km}$. Thành phố Hà Nội nằm ở khoảng vĩ độ $21^\circ\text{Bắc}$.*
-  > *a) Tính khoảng cách $h_c$ từ tâm Trái Đất đến mặt phẳng chứa vĩ tuyến $21^\circ\text{Bắc}$ ($h_c = R \cdot \sin 21^\circ$).*
-  > *b) Tính bán kính $r'$ của đường vĩ tuyến $21^\circ\text{Bắc}$ và độ dài (chu vi) của đường vĩ tuyến này (lấy $\sin 21^\circ \approx 0{,}3584$, $\cos 21^\circ \approx 0{,}9336$)."*
-- HS vận dụng công thức: $r' = R \cdot \cos 21^\circ = 6371 \times 0{,}9336 \approx 5948\text{ km}$. Chu vi vĩ tuyến: $C = 2\pi r' \approx 37372\text{ km}$ (ngắn hơn chu vi đường Xích đạo $C_0 = 2\pi R \approx 40030\text{ km}$).
+  > *Trái Đất là một khối cầu khổng lồ với bán kính xấp xỉ $R \approx 6\,371\text{ km}$. Mặt phẳng Xích đạo đi qua tâm Trái Đất chia Trái Đất thành hai nửa bằng nhau: Bắc bán cầu và Nam bán cầu:*
+  > *a) Tính diện tích hình tròn mặt cắt Xích đạo đi qua tâm Trái Đất (lấy $\pi \approx 3{,}14$, làm tròn kết quả đến hàng nghìn $\text{km}^2$).*
+  > *b) Tính thể tích của Bắc bán cầu (làm tròn kết quả đến hàng triệu $\text{km}^3$).*
+- HS vận dụng trực tiếp công thức mặt cắt qua tâm và thể tích bán cầu:
+  - Diện tích mặt cắt Xích đạo: $S_{\text{cắt}} = \pi R^2 = 3{,}14 \times 6\,371^2 \approx 127\,454\,000\text{ (km}^2\text{)}$.
+  - Thể tích của Bắc bán cầu: $V_{\text{bán cầu}} = \frac{2}{3}\pi R^3 = \frac{2}{3} \times 3{,}14 \times 6\,371^3 \approx 541\,687\,000\,000\text{ (km}^3\text{)}$.
 
 ###### 4. HOẠT ĐỘNG 4: VẬN DỤNG (5 phút)
 
@@ -304,7 +307,7 @@ PART4_CONTENT = r"""## 2.4. Áp dụng phần mềm MathLab vào tổ chức ho�
 
 1. **Về kiến thức:**
    - Ghi nhớ và vận dụng chính xác công thức diện tích mặt cầu: $S = 4\pi R^2 = \pi d^2$.
-   - Hiểu rõ bản chất hình thành công thức thể tích hình cầu: $V = \frac{4}{3}\pi R^3 = \frac{1}{6}\pi d^3$ thông qua mô phỏng thí nghiệm Archimedes và nguyên lý Cavalieri trên MathLab.
+   - Hiểu rõ bản chất hình thành công thức thể tích hình cầu: $V = \frac{4}{3}\pi R^3 = \frac{1}{6}\pi d^3$ thông qua mô phỏng thí nghiệm Archimedes và mô hình cắt đôi bán cầu trên MathLab.
    - Phân biệt rõ thứ nguyên đơn vị ($R^2$ cho diện tích, $R^3$ cho thể tích), khắc phục dứt điểm Lỗi sai số 5.
 2. **Về năng lực:**
    - *Năng lực mô hình hóa toán học:* Vận dụng tính toán dung tích bồn chứa khí hóa lỏng hình cầu, tính lượng da may quả bóng đá, tính thể tích vật liệu đúc bi thép.
@@ -340,10 +343,11 @@ PART4_CONTENT = r"""## 2.4. Áp dụng phần mềm MathLab vào tổ chức ho�
     - GV hướng dẫn HS tính toán đại số:
       $$V_{\text{trụ}} = S_{\text{đáy}} \times h = (\pi R^2) \times (2R) = 2\pi R^3$$
       $$V_{\text{cầu}} = \frac{2}{3} \times V_{\text{trụ}} = \frac{2}{3} \times (2\pi R^3) = \frac{4}{3}\pi R^3$$
-- *Mô phỏng 2 (Chứng minh toán học bằng Nguyên lý Cavalieri):*
-  - MathLab hiển thị khối cầu bên cạnh khối trụ khoét hai hình nón đối đỉnh. Khi kéo mặt cắt ở độ cao $h_c$, học sinh thấy diện tích hình tròn đỏ luôn bằng diện tích hình vành khăn xanh:
-    $$S_1 = \pi(R^2 - h_c^2) = S_2$$
-  - HS hoàn toàn bị thuyết phục bởi vẻ đẹp của lập luận toán học cổ đại!
+- *Mô phỏng trực quan thể tích hình cầu và bán cầu (Thí nghiệm Archimedes):*
+  - MathLab hiển thị quả cầu bán kính $R$ nằm vừa khít bên trong chiếc cốc hình trụ (chiều cao $h = 2R$, bán kính đáy $R$).
+  - Khi nhấc quả cầu ra khỏi chiếc cốc, thể tích nước tràn ra ngoài đúng bằng $\frac{2}{3}$ thể tích chiếc cốc hình trụ:
+    $$V_{\text{cầu}} = \frac{2}{3} V_{\text{trụ}} = \frac{2}{3} \times (\pi R^2 \times 2R) = \frac{4}{3}\pi R^3$$
+  - Khi nhấn nút `[▶ Bổ đôi]`, khối cầu được cắt đôi thành hai bán cầu bằng nhau, thể tích mỗi bán cầu bằng đúng $\frac{2}{3}\pi R^3$. Học sinh dễ dàng khắc sâu bản chất công thức một cách tự nhiên và sinh động!
 
 ###### 3. HOẠT ĐỘNG 3: LUYỆN TẬP VÀ ĐÁNH GIÁ (11 phút)
 

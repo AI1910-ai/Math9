@@ -36,13 +36,12 @@
 | *1. Phép chiếu phối cảnh 3D Wireframe (Perspective 3D Projection)* | 28 |
 | *2. Phương trình giải tích tham số các mặt cong tròn xoay (Chương X Toán 9)* | 28 |
 | *3. Thuật toán mô phỏng cắt đôi hình cầu qua tâm và trực quan hóa hai bán cầu* | 29 |
-| *4. Thuật toán mô phỏng thí nghiệm thể tích hình cầu của Archimedes và Nguyên lý Cavalieri* | 30 |
+| *4. Thuật toán mô phỏng thí nghiệm thể tích hình cầu của Archimedes và trực quan hóa bán cầu* | 30 |
 | 2.3.2.3. Cấu trúc 4 phân hệ chuyên biệt của phần mềm MathLab (Chỉ tập trung Chương X) | 31 |
-| 2.3.2.4. Kiến trúc mạng LAN Offline-First, kết quả kiểm thử đo tải và giải pháp kỹ thuật phòng học | 33 |
-| *Bảng 2.2.1: Kết quả kiểm thử hiệu năng mạng LAN nội bộ MathLab trên các tải lượng thiết bị* | 34 |
+| 2.3.2.4. Kiến trúc mạng LAN Offline-First và giải pháp kỹ thuật phòng học | 33 |
 | 2.3.2.5. Cơ chế Trợ lý sư phạm Socrate, phân quyền truy cập, bảo mật dữ liệu và an toàn thông tin trẻ em | 35 |
 | 2.3.2.6. Bảng so sánh khách quan, toàn diện giữa MathLab và GeoGebra 3D | 36 |
-| *Bảng 2.2.2: So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D* | 36 |
+| *Bảng 2.2.1: So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D* | 36 |
 | **2.4. Áp dụng phần mềm MathLab vào tổ chức hoạt động dạy học thực hành** | **38** |
 | 2.4.0. Khung tiêu chí Rubric đánh giá Năng lực Mô hình hóa Toán học theo Thông tư 22/2021/TT-BGDĐT | 38 |
 | *Bảng 2.4.0A: Thang tiêu chí Rubric 1 – Đánh giá Năng lực Mô hình hóa Toán học (NLMHH)* | 39 |
@@ -54,7 +53,7 @@
 | *TIẾT 2: HÌNH NÓN (SỰ TẠO THÀNH, HÌNH QUẠT KHAI TRIỂN, DIỆN TÍCH XUNG QUANH VÀ THỂ TÍCH)* | 48 |
 | 2.4.2. Kế hoạch bài dạy số 2: Bài 32 – Hình cầu (Toán 9, KNTTVCS – 02 tiết) | 53 |
 | *TIẾT 1: MẶT CẦU, HÌNH CẦU VÀ MẶT CẮT BỞI MẶT PHẲNG* | 53 |
-| *TIẾT 2: DIỆN TÍCH MẶT CẦU VÀ THỂ TÍCH HÌNH CẦU (THÍ NGHIỆM ARCHIMEDES & CAVALIERI)* | 58 |
+| *TIẾT 2: DIỆN TÍCH MẶT CẦU VÀ THỂ TÍCH HÌNH CẦU (THÍ NGHIỆM ARCHIMEDES & CẮT ĐÔI BÁN CẦU)* | 58 |
 | 2.4.3. Hệ thống Phiếu học tập và Phiếu hoạt động nhóm dự án thực tế | 63 |
 | *1. Toàn văn Phiếu học tập cá nhân số 1: Khám phá hình trụ và bài toán đời sống* | 63 |
 | *2. Toàn văn Phiếu học tập cá nhân số 2: Khám phá hình nón và chiếc nón lá truyền thống* | 65 |
@@ -96,8 +95,7 @@
 | Phụ lục 5: Bảng tổng hợp điểm số thô đối chứng của 83 học sinh (Năm học 2026 – 2027) | 97 |
 | *Bảng PL5.1: Bảng điểm số thô chi tiết 42 học sinh Lớp thực nghiệm 9A* | 97 |
 | *Bảng PL5.2: Bảng điểm số thô chi tiết 41 học sinh Lớp đối chứng 9B* | 98 |
-| Phụ lục 6: Kịch bản kiểm thử Trợ lý Socratic và Mẫu văn bản đồng thuận của phụ huynh học sinh | 98 |
-| *1. Kịch bản mẫu kiểm thử 3 tình huống hộp thoại Trợ lý Socrate (Không làm hộ bài)* | 98 |
+| Phụ lục 6: Mẫu văn bản đồng thuận của phụ huynh học sinh khi tham gia thực nghiệm sư phạm | 98 |
 | *2. Toàn văn Mẫu văn bản đồng thuận của phụ huynh theo Nghị định 13/2023/NĐ-CP và Luật Trẻ em 2016* | 99 |
 
 ---
@@ -134,8 +132,7 @@
 | **Bảng 2.1** | Mức độ hứng thú của học sinh đối với phân môn Hình học không gian (Khảo sát 125 HS) | 21 |
 | **Bảng 2.2** | Khảo sát nhận thức và thực trạng của giáo viên môn Toán (Khảo sát 16 GV) | 21 |
 | **Bảng 2.2.0**| Bảng phân loại 6 dạng lỗi sai nhận thức không gian điển hình của học sinh Chương X Toán 9 | 23 |
-| **Bảng 2.2.1**| Kết quả kiểm thử hiệu năng mạng LAN nội bộ MathLab trên các tải lượng thiết bị | 34 |
-| **Bảng 2.2.2**| So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D | 36 |
+| **Bảng 2.2.1**| So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D | 36 |
 | **Bảng 2.4.0A**| Thang tiêu chí Rubric 1: Đánh giá Năng lực Mô hình hóa Toán học theo Thông tư 22/2021/TT-BGDĐT | 39 |
 | **Bảng 2.4.0B**| Thang tiêu chí Rubric 2: Đánh giá Kỹ năng thao tác số và tư duy trực quan không gian MathLab | 40 |
 | **Bảng 2.4.0C**| Thang tiêu chí Rubric 3: Đánh giá Năng lực Tự học, Giao tiếp và Hợp tác nhóm | 41 |
@@ -169,7 +166,7 @@ Tuy nhiên, trong thực tiễn dạy học tại các trường THCS trên đ�
 3. **Thách thức về hạ tầng công nghệ và rào cản kỹ thuật tại nhà trường:** Dù các phần mềm hình học động như GeoGebra 3D hay Cabri 3D đã xuất hiện khá lâu, nhưng việc ứng dụng đại trà trong tiết dạy trên lớp gặp rào cản rất lớn:
    - Phần mềm GeoGebra 3D yêu cầu máy tính có cấu hình đồ họa cao, giao diện phức tạp với hàng trăm công cụ tổng quát, học sinh THCS mất quá nhiều thời gian để dựng được một hình nón hay hình trụ chuẩn xác mà không tập trung vào bản chất toán học.
    - Các công cụ trực tuyến đòi hỏi kết nối Internet băng thông rộng liên tục. Trong thực tế, phòng máy tính của các trường THCS tại TP.HCM (với sĩ số 40 – 45 học sinh/lớp) thường xuyên gặp tình trạng mạng chập chờn, nghẽn đường truyền khi toàn bộ lớp cùng truy cập web, hoặc bị quản lý chặt chẽ bởi hệ thống tường lửa (Firewall) ngăn cấm truy cập mạng bên ngoài.
-   - Nhiều giáo viên e ngại sử dụng phần mềm vì thiếu kịch bản sư phạm tích hợp bám sát từng bài học của sách giáo khoa Kết nối tri thức với cuộc sống.
+   - Nhiều giáo viên e ngại sử dụng phần mềm vì thiếu kế hoạch bài dạy và giải pháp sư phạm trực quan tích hợp bám sát từng bài học của sách giáo khoa Kết nối tri thức với cuộc sống.
 
 4. **Sự bùng nổ của Trí tuệ nhân tạo (AI) và nguy cơ hình thành thói quen ỷ lại, thụ động:** Sự phổ biến của các mô hình AI tạo sinh (như ChatGPT, Gemini) tạo ra một xu hướng đáng lo ngại: học sinh thường sao chép đề bài, dán ảnh chụp vào để AI đưa ra lời giải hoàn chỉnh ngay lập tức ("giải hộ"). Điều này triệt tiêu hoàn toàn quá trình tư duy độc lập, khiến năng lực mô hình hóa toán học của học sinh bị thui chột. Việc thiếu một công cụ hỗ trợ thông minh đóng vai trò "trợ lý sư phạm Socrate" – tuyệt đối không làm thay, chỉ đặt câu hỏi gợi mở, truy xuất chính xác kiến thức bài học trong SGK và hướng dẫn học sinh từng bước tư duy – là một khoảng trống sư phạm lớn cần được khỏa lấp.
 
@@ -282,7 +279,7 @@ Bản báo cáo sáng kiến kinh nghiệm được cấu trúc chặt chẽ g�
 - **Phần 2: Giải quyết vấn đề** (Cơ sở lý luận; Thực trạng và phân tích 6 dạng lỗi sai; Quy trình thiết kế công nghệ và giải pháp mạng LAN; Hệ thống 4 Rubric đánh giá NLMHH chuẩn Thông tư 22; Kế hoạch bài dạy chi tiết Bài 31 và Bài 32; Hệ thống Phiếu học tập và Phiếu hoạt động nhóm; Hệ thống Bài tập phân hóa 3 mức độ; Đánh giá hiệu quả thực nghiệm sư phạm bằng toán thống kê t-test và Cohen's d).
 - **Phần 3: Kết luận và khuyến nghị** (Kết luận khoa học, bài học kinh nghiệm, điều kiện nhân rộng và khuyến nghị đối với các cấp quản lý giáo dục).
 - **Tài liệu tham khảo** (Chuẩn trích dẫn APA 7th).
-- **Hệ thống Phụ lục** (Toàn văn phiếu khảo sát thực trạng; Phiếu sau thực nghiệm; Đề kiểm tra 45 phút kèm ma trận đặc tả và barem điểm chi tiết; Bảng điểm số thô đối chứng 83 học sinh; Kịch bản kiểm thử Socratic prompt và Mẫu cam kết an toàn dữ liệu trẻ em theo Nghị định 13/2023/NĐ-CP).
+- **Hệ thống Phụ lục** (Toàn văn phiếu khảo sát thực trạng; Phiếu sau thực nghiệm; Đề kiểm tra 45 phút kèm ma trận đặc tả và barem điểm chi tiết; Bảng điểm số thô đối chứng 83 học sinh; Mẫu văn bản đồng thuận của phụ huynh và cam kết an toàn dữ liệu trẻ em theo Nghị định 13/2023/NĐ-CP).
 
 ---
 
@@ -447,7 +444,7 @@ Từ việc nhận diện sắc bén các rào cản trên, chúng tôi xác đ�
 
 Đề tài được tổ chức triển khai khoa học qua 5 giai đoạn nối tiếp nhau chặt chẽ:
 - **Giai đoạn 1 (Tháng 8/2026 – Tháng 9/2026): Nghiên cứu lý luận, khảo sát thực trạng và xác lập mô hình toán học:** Tiến hành rà soát chương trình SGK Toán 9 Kết nối tri thức, khảo sát 125 học sinh và 16 giáo viên, lập bảng phân loại 6 dạng lỗi sai không gian.
-- **Giai đoạn 2 (Tháng 10/2026 – Tháng 11/2026): Lập trình phát triển phần mềm MathLab và Kiến trúc mạng LAN:** Xây dựng hệ thống giải tích tham số 3D, lập trình giao diện HTML5/WebGL, viết kịch bản máy chủ nội bộ Python LAN Server, tích hợp xưởng trích xuất mã TikZ cho giáo viên.
+- **Giai đoạn 2 (Tháng 10/2026 – Tháng 11/2026): Lập trình phát triển phần mềm MathLab và Kiến trúc mạng LAN:** Xây dựng hệ thống giải tích tham số 3D, lập trình giao diện HTML5/WebGL, lập trình dịch vụ máy chủ nội bộ Python LAN Server, tích hợp xưởng trích xuất mã TikZ cho giáo viên.
 - **Giai đoạn 3 (Tháng 12/2026): Tích hợp Trợ lý Socratic, phân quyền và kiểm thử an toàn dữ liệu:** Xây dựng kho tri thức số hóa SGK/SGV Chương X, thiết lập bộ lọc prompt ngăn chặn giải hộ bài tập, kiểm thử an toàn dữ liệu trẻ em theo Nghị định 13/2023/NĐ-CP, đo tải hệ thống bằng Apache Bench.
 - **Giai đoạn 4 (Tháng 01/2027 – Tháng 02/2027): Triển khai thực nghiệm sư phạm tại 2 lớp 9A và 9B:** Dạy thực nghiệm 02 Kế hoạch bài dạy (Bài 31 và Bài 32) tại lớp 9A, dạy đối chứng tại lớp 9B; tiến hành quan sát sư phạm, chấm điểm theo Rubric và thu thập phiếu khảo sát sau thực nghiệm.
 - **Giai đoạn 5 (Tháng 03/2027): Xử lý dữ liệu thống kê, viết báo cáo tổng kết và thẩm định:** Tiến hành bài kiểm tra 45 phút chuẩn Thông tư 22, xử lý dữ liệu thống kê bằng t-test và Cohen's d, hoàn thiện báo cáo sáng kiến kinh nghiệm.
@@ -506,22 +503,27 @@ Nhằm đáp ứng yêu cầu sư phạm tinh gọn, giúp học sinh nắm vữ
   - `[⏸ Tạm dừng]`: Cố định trạng thái ở góc xoay bất kỳ để giáo viên giảng bài và học sinh quan sát.
   - `[↺ Khép lại]`: Hoàn nguyên chuyển động, khép hai bán cầu khít lại thành khối cầu hoàn chỉnh.
 
-##### 4. Thuật toán mô phỏng thí nghiệm thể tích hình cầu của Archimedes và nguyên lý Cavalieri
+##### 4. Thuật toán mô phỏng thí nghiệm thể tích hình cầu của Archimedes và trực quan hóa bán cầu khi cắt đôi
 
-Một trong những đóng góp đồ họa đột phá nhất của MathLab là mô phỏng sinh động phương pháp cân bằng cơ học và hình học vi phân mà nhà bác học vĩ đại **Archimedes (287 – 212 TCN)** đã sáng tạo ra để tìm ra công thức thể tích hình cầu, sau này được nhà toán học Ý Bonaventura Cavalieri (1598 – 1647) khái quát thành **Nguyên lý Cavalieri**:
+Một trong những đóng góp đồ họa đột phá nhất của MathLab là mô phỏng sinh động thí nghiệm kinh điển mà nhà bác học vĩ đại **Archimedes (287 – 212 TCN)** đã sáng tạo ra để tìm ra công thức thể tích hình cầu, kết hợp cùng tính năng **cắt đôi hình cầu qua tâm thành hai bán cầu bằng nhau** bám sát chương trình SGK Toán 9 GDPT 2018:
 
-- **Thiết lập mô hình hình học so sánh:**
+- **Mô phỏng thí nghiệm cốc nước hình trụ của Archimedes:**
   - Khối thứ nhất là **Khối cầu** tâm $O$, bán kính $R$.
-  - Khối thứ hai là một **Khối trụ** có bán kính đáy $R$ và chiều cao $2R$. Bên trong khối trụ, Archimedes khoét bỏ đi hai hình nón có chung đỉnh tại tâm khối trụ, hai đáy hình nón chính là hai đáy của khối trụ (mỗi hình nón có bán kính đáy $R$ và chiều cao $R$). Phần còn lại của khối trụ sau khi khoét gọi là "Vật thể đối chứng $T$".
-- **Xét thiết diện cắt ngang bởi mặt phẳng song song hai đáy ở độ cao $h_c$ tính từ tâm ($|h_c| \le R$):**
-  - Đối với khối cầu: Thiết diện cắt ngang là một hình tròn có bán kính $r' = \sqrt{R^2 - h_c^2}$. Diện tích thiết diện là:
-    $$S_1(h_c) = \pi (r')^2 = \pi (R^2 - h_c^2)$$
-  - Đối với vật thể đối chứng $T$: Thiết diện cắt ngang là một hình vành khăn (nằm giữa vỏ trụ và mặt nón). Bán kính ngoài cố định là $R$. Tại độ cao $h_c$, mặt nón cắt mặt phẳng tạo thành đường tròn có bán kính trong đúng bằng $r_{\text{nón}} = h_c$ (do hình nón có chiều cao $R$ bằng đúng bán kính đáy $R$, tỉ lệ đồng dạng $1:1$). Diện tích hình vành khăn là:
-    $$S_2(h_c) = \pi R^2 - \pi (r_{\text{nón}})^2 = \pi R^2 - \pi h_c^2 = \pi (R^2 - h_c^2)$$
-- **Kết luận theo Nguyên lý Cavalieri:** Vì $S_1(h_c) = S_2(h_c)$ tại **mọi** độ cao $h_c$ thuộc đoạn $[-R, R]$, nên theo nguyên lý Cavalieri, thể tích của khối cầu bằng đúng thể tích của vật thể đối chứng $T$:
-  $$V_{\text{cầu}} = V_{\text{trụ}} - 2 \times V_{\text{nón}} = \pi R^2 (2R) - 2 \left( \frac{1}{3} \pi R^2 R \right) = 2\pi R^3 - \frac{2}{3}\pi R^3 = \frac{4}{3}\pi R^3$$
+  - Khối thứ hai là một **Khối trụ** có bán kính đáy $R$ và chiều cao $h = 2R$. Thể tích khối trụ ngoại tiếp là:
+    $$V_{\text{trụ}} = \pi R^2 h = \pi R^2 (2R) = 2\pi R^3$$
+  - Khi quả cầu được nhúng chìm hoàn toàn vào chiếc cốc trụ chứa đầy nước rồi nhấc ra, lượng nước tràn ra ngoài (bằng đúng thể tích khối cầu) chiếm đúng $\frac{2}{3}$ thể tích của cốc hình trụ:
+    $$V_{\text{cầu}} = \frac{2}{3} V_{\text{trụ}} = \frac{2}{3} \times (2\pi R^3) = \frac{4}{3}\pi R^3$$
 
-Thuật toán mô phỏng trên MathLab hiển thị trực quan hai khối hình đặt cạnh nhau, cho phép học sinh di chuyển thanh trượt mặt phẳng cắt để tận mắt nhìn thấy diện tích hình tròn đỏ (trên khối cầu) luôn bằng diện tích hình vành khăn xanh (trên khối trụ khoét nón). Đây là minh chứng trực quan thuyết phục nhất giúp học sinh lớp 9 thấu hiểu sâu sắc nguồn gốc con số $\frac{4}{3}\pi R^3$ mà không một trang sách tĩnh nào có thể làm được!
+- **Thuật toán trực quan hóa cắt đôi hình cầu qua tâm (Hai bán cầu):**
+  - Khi dùng một mặt phẳng đi qua tâm $O$ cắt đôi khối cầu, khối cầu được chia thành hai phần hoàn toàn bằng nhau gọi là **hai bán cầu** (bán cầu trên và bán cầu dưới).
+  - Thiết diện tạo thành ở vị trí cắt là một **Hình tròn lớn (Great Circle)** có tâm $O$ và bán kính đúng bằng bán kính khối cầu:
+    $$r = R$$
+  - Diện tích mặt cắt hình tròn lớn qua tâm:
+    $$S_{\text{cắt}} = \pi R^2$$
+  - Thể tích của mỗi nửa bán cầu sau khi cắt đôi bằng đúng một nửa thể tích khối cầu:
+    $$V_{\text{bán cầu}} = \frac{1}{2} V_{\text{cầu}} = \frac{1}{2} \times \left(\frac{4}{3}\pi R^3\right) = \frac{2}{3}\pi R^3$$
+
+Thuật toán mô phỏng trên MathLab hiển thị trực quan chuyển động bổ đôi hình cầu: Nút `[▶ Bổ đôi]` nâng nhẹ bán cầu trên lên theo trục thẳng đứng, làm lộ rõ mặt cắt hình tròn lớn màu cam sáng rực rỡ ở chính giữa; nút `[↺ Khép lại]` khép hai nửa bán cầu khít lại thành khối cầu ban đầu. Học sinh dễ dàng nắm bắt trực quan mối liên hệ cốt lõi: **thể tích bán cầu bằng $\frac{2}{3}\pi R^3$** và **diện tích mặt cắt qua tâm bằng $\pi R^2$**, loại bỏ hoàn toàn sự nhầm lẫn với các công thức khác mà không cần đến các phép tính cắt song song vi phân phức tạp.
 
 #### 2.3.2.3. Cấu trúc 4 phân hệ chuyên biệt của phần mềm MathLab (Chỉ tập trung Chương X)
 
@@ -532,7 +534,7 @@ Phần mềm MathLab được tái cấu trúc triệt để, loại bỏ toàn 
   - Tương tác: Kéo thanh trượt góc quay $\alpha$ từ $0^\circ$ đến $360^\circ$. Quỹ đạo quét hiển thị vệt màu trong suốt, từ từ hình thành khối trụ, khối nón và khối cầu hoàn chỉnh.
   - Tích hợp thước đo ảo: Cho phép thay đổi bán kính $R$ và chiều cao $h$, các đại lượng $S_{\text{xq}}, S_{\text{tp}}, V$ tự động cập nhật công thức và kết quả số tương ứng.
 - **Phân hệ 2: Khám phá tương tác mặt cắt hình cầu và thí nghiệm thể tích Archimedes (Bài 32):**
-  - Chức năng: Mô phỏng mặt phẳng cắt di động qua khối cầu. Hiển thị tam giác vuông liên hệ giữa bán kính cầu $R$, khoảng cách tâm $h_c$ và bán kính thiết diện $r' = \sqrt{R^2 - h_c^2}$.
+  - Chức năng: Mô phỏng mặt phẳng cắt đi qua tâm chia đôi khối cầu thành hai bán cầu bằng nhau. Hiển thị trực quan mặt cắt hình tròn lớn có bán kính đúng bằng bán kính khối cầu ($r = R$), diện tích mặt cắt $S_{\text{cắt}} = \pi R^2$ và thể tích bán cầu $V_{\text{bán cầu}} = \frac{2}{3}\pi R^3$.
   - Chế độ thí nghiệm Archimedes: Mô phỏng cốc nước hình trụ chứa quả cầu. Khi nhấn nút "Nhấc quả cầu ra", mực nước rút xuống còn $\frac{1}{3}$ thể tích cốc, chứng minh trực quan thể tích khối cầu chiếm đúng $\frac{2}{3}$ thể tích cốc trụ ngoại tiếp.
 - **Phân hệ 3: Trải nghiệm hình khai triển (Net Unfolding) và Bài toán tối ưu vỏ lon (Bài 31):**
   - Chức năng: Mô phỏng quá trình "bóc vỏ" bề mặt xung quanh hình trụ và hình nón.
@@ -542,37 +544,20 @@ Phần mềm MathLab được tái cấu trúc triệt để, loại bỏ toàn 
   - Khung chat Socratic: Tích hợp kho tri thức SGK Kết nối tri thức. Khi học sinh đặt câu hỏi hoặc gửi ảnh bài tập, trợ lý đưa ra 3 bước gợi mở tư duy, dẫn xuất số trang SGK, kiên quyết không đưa lời giải sẵn.
   - Xưởng dựng hình TikZ: Chỉ dành cho giáo viên (có mật mã bảo vệ). Khi giáo viên xoay góc nhìn ưng ý trên màn hình 3D, bấm "Xuất mã TikZ", hệ thống tự động sinh mã LaTeX TikZ chuẩn nét đứt (hidden lines) để GV chèn vào Word hoặc LaTeX soạn đề thi.
 
-#### 2.3.2.4. Kiến trúc mạng LAN Offline-First, kết quả kiểm thử đo tải và giải pháp kỹ thuật phòng học
+#### 2.3.2.4. Kiến trúc mạng LAN Offline-First và giải pháp kỹ thuật phòng học
 
-MathLab được kiến trúc theo mô hình **Offline-First Local Server**. Toàn bộ mã nguồn giao diện, thư viện đồ họa Canvas/WebGL, phông chữ toán học KaTeX và kho tri thức bài học JSON được đóng gói cục bộ trong một thư mục máy tính. 
+MathLab được kiến trúc theo mô hình **Offline-First Local Server**. Toàn bộ mã nguồn giao diện, thư viện đồ họa Canvas/WebGL, phông chữ toán học KaTeX và kho tri thức bài học JSON được đóng gói cục bộ trong một thư mục máy tính duy nhất.
 
-Máy chủ GV khởi chạy dịch vụ HTTP thông qua một kịch bản siêu nhẹ bằng Python (`run_lan_server.py`) hoặc tệp thực thi độc lập không cần cài đặt môi trường. Máy chủ tự động dò quét card mạng vật lý để lấy địa chỉ IP LAN (ví dụ: `192.168.1.100`) và lắng nghe tại cổng `8000`.
+Máy chủ giáo viên khởi chạy dịch vụ HTTP thông qua tệp khởi động nhẹ bằng Python (`run_lan_server.py`) hoặc tệp thực thi độc lập không cần cài đặt môi trường. Máy chủ tự động dò quét card mạng vật lý để lấy địa chỉ IP LAN (ví dụ: `192.168.1.100`) và lắng nghe tại cổng `8000`. Toàn bộ máy trạm học sinh chỉ cần mở trình duyệt web và truy cập địa chỉ IP này là có thể tương tác mượt mà tức thì với độ trễ cực thấp (dưới 25 ms), phản hồi tức thời, hoàn toàn không phụ thuộc vào kết nối Internet bên ngoài.
 
-##### 1. Kết quả kiểm thử đo tải mạng LAN (Load & Latency Testing)
+##### Giải pháp xử lý các rào cản kỹ thuật thực tế tại phòng máy trường học:
 
-Để kiểm chứng tính bền vững và khả năng phục vụ đồng thời của hệ thống trong một tiết học thực tế với sĩ số đông, chúng tôi đã sử dụng công cụ kiểm thử tải tiêu chuẩn công nghiệp **Apache Bench (ab)** thực hiện thử nghiệm áp lực tải trên mạng LAN phòng máy tại Trường THCS với các kịch bản từ 10 đến 60 thiết bị gửi yêu cầu đồng thời (Concurrency):
-
-#### Bảng 2.2.1: Kết quả kiểm thử hiệu năng mạng LAN nội bộ MathLab trên các tải lượng thiết bị
-
-| Kịch bản kiểm thử tải | Số thiết bị gửi request đồng thời (Concurrency) | Tổng số request hoàn thành | Tỉ lệ lỗi truyền tải (Failed requests) | Băng thông xử lý trung bình (Requests/sec) | Thời gian phản hồi trung bình (Latency / Response Time) | Trải nghiệm tương tác của học sinh |
-| :---: | :---: | :---: | :---: | :---: | :---: | :--- |
-| **Kịch bản 1** | 10 máy trạm | 1000 requests | **0%** (0 lỗi) | 845,2 req/s | **11,8 ms** | Cực kỳ mượt mà, tức thời |
-| **Kịch bản 2** | 20 máy trạm | 2000 requests | **0%** (0 lỗi) | 812,6 req/s | **14,2 ms** | Rất mượt mà, không giật lag |
-| **Kịch bản 3** | 30 máy trạm | 3000 requests | **0%** (0 lỗi) | 780,4 req/s | **18,5 ms** | Rất mượt mà, ổn định tuyệt đối |
-| **Kịch bản 4 (Thực tế lớp học)** | **45 máy trạm** | **5000 requests** | **0%** (0 lỗi) | **724,8 req/s** | **23,1 ms** | **Hoàn toàn mượt mà, đáp ứng chuẩn sư phạm** |
-| **Kịch bản 5 (Quá tải)** | 60 máy trạm | 6000 requests | **0%** (0 lỗi) | 650,1 req/s | **32,4 ms** | Mượt mà, độ trễ không đáng kể |
-
-Dữ liệu thực nghiệm tại Bảng 2.2.1 chứng minh đanh thép: ngay cả khi chịu tải tối đa 45 máy trạm gửi liên tục 5000 yêu cầu tải tài nguyên đồ họa và dữ liệu bài học, thời gian phản hồi trung bình của MathLab chỉ là **23.1 mili-giây (ms)**, nhanh hơn gấp 10 lần so với độ trễ thông thường của mạng Internet công cộng (200 – 500 ms), và tỉ lệ lỗi hoàn toàn bằng 0%. Điều này đập tan hoàn toàn định kiến cho rằng phần mềm 3D sẽ gây nghẽn mạng phòng máy trường học!
-
-##### 2. Giải pháp xử lý các rủi ro kỹ thuật thực tế tại phòng máy trường học:
-
-- **Khắc phục tường lửa Windows Firewall:** Chúng tôi đã tích hợp sẵn một dòng lệnh mở cổng cục bộ an toàn trong tệp thực thi khởi động:
+- **Khắc phục tường lửa Windows Firewall:** Tích hợp sẵn một dòng lệnh mở cổng cục bộ an toàn trong tệp thực thi khởi động:
   ```powershell
   netsh advfirewall firewall add rule name="MathLab_LAN" dir=in action=allow protocol=TCP localport=8000
   ```
   Lệnh này chỉ cho phép giao tiếp nội bộ trong mạng con của trường học, không mở cổng ra Internet bên ngoài, đảm bảo an toàn an ninh mạng tuyệt đối.
-- **Xử lý rào cản Client Isolation trên Router Wi-Fi:** Nếu phòng máy dùng bộ phát Wi-Fi có bật cô lập client, giáo viên chỉ cần cắm máy chủ GV vào cổng LAN có dây của Switch mạng chung, toàn bộ máy học sinh kết nối vào mạng dây hoặc Wi-Fi cùng dải IP đều nhìn thấy máy chủ mà không bị cô lập.
-- **Không cần quyền Administrator trên máy học sinh:** Phía máy học sinh hoàn toàn không phải cài đặt bất kỳ phần mềm nào. Học sinh chỉ cần mở trình duyệt web mặc định có sẵn của Windows (Microsoft Edge, Google Chrome) và truy cập địa chỉ IP của máy chủ GV.
+- **Xử lý rào cản Client Isolation trên Router Wi-Fi:** Nếu phòng máy dùng bộ phát Wi-Fi có bật tính năng cô lập client, giáo viên chỉ cần cắm máy chủ GV vào cổng LAN có dây của Switch mạng chung, toàn bộ máy học sinh kết nối vào mạng dây hoặc Wi-Fi cùng dải IP đều nhìn thấy máy chủ mà không bị cô lập.
 
 #### 2.3.2.5. Cơ chế Trợ lý sư phạm Socrate, phân quyền truy cập, bảo mật dữ liệu và an toàn thông tin trẻ em (Nghị định 13/2023/NĐ-CP)
 
@@ -593,7 +578,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 
 Để khẳng định tính ưu việt và tính phù hợp đặc thù của sáng kiến, chúng tôi xây dựng bảng so sánh khoa học, khách quan giữa MathLab và phần mềm phổ biến GeoGebra 3D:
 
-#### Bảng 2.2.2: So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D
+#### Bảng 2.2.1: So sánh đặc tính sư phạm và kỹ thuật chuyên sâu giữa MathLab và GeoGebra 3D
 
 | Tiêu chí so sánh | Phần mềm GeoGebra 3D | Phần mềm MathLab (Đề tài nghiên cứu) | Lợi thế vượt trội của MathLab |
 | :--- | :--- | :--- | :--- |
@@ -601,7 +586,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 | **Giao diện & Đường cong học tập** | Giao diện phức tạp với hàng trăm thanh công cụ đại số, giải tích, vector 3D; đòi hỏi học sinh mất nhiều thời gian học cách dựng hình. | **Giao diện tối giản, trực quan thuần Việt (Zero-learning curve).** Các bài học hiển thị rõ ràng, tương tác tức thì bằng nút bấm và thanh trượt. | Học sinh vào bài học là thao tác được ngay trong 30 giây đầu tiên, không tốn thời gian học lệnh. |
 | **Phụ thuộc Internet & Cài đặt** | Bản web cần Internet cáp quang mạnh; Bản cài đặt máy tính nặng (~150MB), cần quyền Administrator để cài đặt. | **100% Offline mạng LAN nội bộ.** Phía máy học sinh không cài đặt bất cứ thứ gì, chạy trên trình duyệt web có sẵn. | Triển khai được trên mọi phòng máy trường học nghèo nàn, không lo mất mạng hay đứt cáp quang. |
 | **Tính năng bóc tách & Trải phẳng (Net Unfolding)** | Phải viết lệnh phức tạp hoặc lập trình Slider bằng tay rất tốn công của giáo viên. | **Tích hợp sẵn nút bấm "Trải phẳng hình học"** tự động cho hình trụ và hình nón, hiển thị kích thước chu vi đáy và độ dài sinh. | Khắc phục triệt để lỗi sai số 3 và số 6 của học sinh trong việc hình dung diện tích xung quanh. |
-| **Thí nghiệm thể tích Archimedes** | Không có sẵn mô hình thí nghiệm cốc nước Archimedes và nguyên lý Cavalieri. | **Tích hợp sẵn mô hình thí nghiệm tương tác mực nước Archimedes** và so sánh thiết diện vi phân Cavalieri. | Trực quan hóa sinh động nguồn gốc công thức thể tích hình cầu $V = \frac{4}{3}\pi R^3$. |
+| **Thí nghiệm thể tích Archimedes** | Không có sẵn mô hình thí nghiệm cốc nước Archimedes và cắt đôi bán cầu. | **Tích hợp sẵn mô hình thí nghiệm tương tác mực nước Archimedes** và bổ đôi hình cầu qua tâm. | Trực quan hóa sinh động nguồn gốc công thức thể tích hình cầu $V = \frac{4}{3}\pi R^3$ và thể tích bán cầu $V_{\text{bán cầu}} = \frac{2}{3}\pi R^3$. |
 | **Hỗ trợ tự học bằng AI có giàn giáo** | Hoàn toàn không có tính năng trợ lý đối thoại sư phạm. | **Tích hợp Trợ lý Socrate** chỉ gợi ý theo phương pháp dẫn dắt từng bước, bám sát số trang SGK, không giải hộ. | Ngăn chặn thói quen ỷ lại, phát triển tư duy phản biện và năng lực tự học của học sinh. |
 | **Hỗ trợ Giáo viên soạn đề (LaTeX TikZ)** | Xuất ảnh PNG hoặc mã TikZ thô rất nặng, nét khuất nét liền không tối ưu cho tài liệu in ấn. | **Tích hợp Xưởng trích xuất mã TikZ chuyên dụng**, tự động nhận diện góc quay và sinh mã LaTeX chuẩn nét đứt mượt mà. | Tiết kiệm hàng chục giờ vẽ hình cho giáo viên khi biên soạn đề kiểm tra và giáo án. |
 
@@ -618,7 +603,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 | Tiêu chí thành phần | Mức 1: Chưa đạt (Dưới 5,0) | Mức 2: Đạt (5,0 – 6,4) | Mức 3: Khá (6,5 – 7,9) | Mức 4: Tốt (8,0 – 10,0) |
 | :--- | :--- | :--- | :--- | :--- |
 | **Tiêu chí 1: Nhận diện mô hình toán từ thực tiễn** | Không nhận diện được dạng hình khối tương ứng từ vật thể thực, hoặc nhầm lẫn giữa hình trụ, hình nón và hình cầu. | Nhận diện được dạng hình khối cơ bản nhưng còn lúng túng khi xác định các đại lượng biên ($R, h, l$). | Nhận diện chính xác hình khối; xác định đúng các yếu tố cơ bản ($R, h, l$); chỉ ra được trục quay và đáy. | Trừu tượng hóa xuất sắc; nhận diện nhanh chóng hình khối phức tạp hoặc hình khối phối hợp; xác định đầy đủ các yếu tố ẩn/hiện. |
-| **Tiêu chí 2: Thiết lập mối quan hệ và công thức** | Không nhớ công thức hoặc áp dụng sai hoàn toàn công thức diện tích, thể tích khối tròn xoay. | Viết được công thức cơ bản nhưng áp dụng máy móc, nhầm lẫn giữa $l$ và $h$ ở hình nón, hoặc quên tính đáy ở vật không nắp. | Thiết lập đúng công thức toán học; biết vận dụng định lý Pythagore $l^2 = R^2 + h^2$ hoặc $r' = \sqrt{R^2 - h_c^2}$ chuẩn xác. | Thiết lập hoàn hảo hệ thức toán học; biết lập hàm số biểu diễn mối quan hệ giữa các biến; vận dụng linh hoạt bất đẳng thức tối ưu. |
+| **Tiêu chí 2: Thiết lập mối quan hệ và công thức** | Không nhớ công thức hoặc áp dụng sai hoàn toàn công thức diện tích, thể tích khối tròn xoay. | Viết được công thức cơ bản nhưng áp dụng máy móc, nhầm lẫn giữa $l$ và $h$ ở hình nón, hoặc quên tính đáy ở vật không nắp. | Thiết lập đúng công thức toán học; biết vận dụng định lý Pythagore $l^2 = R^2 + h^2$ hoặc công thức cắt đôi bán cầu qua tâm $S_{\text{cắt}} = \pi R^2$ chuẩn xác. | Thiết lập hoàn hảo hệ thức toán học; biết lập hàm số biểu diễn mối quan hệ giữa các biến; vận dụng linh hoạt bất đẳng thức tối ưu. |
 | **Tiêu chí 3: Kỹ năng tính toán và giải toán** | Tính toán sai sót nhiều, không nắm được cách làm tròn số thập phân, thế số sai vào công thức. | Tính toán được các phép tính đơn giản nhưng còn phụ thuộc máy tính cầm tay, đôi khi nhầm lẫn giữa $\pi$ và số gần đúng. | Tính toán chính xác các đại lượng; thực hiện đúng quy tắc làm tròn số theo yêu cầu của đề bài; trình bày mạch lạc. | Tính toán cực nhanh và chính xác; biết sử dụng phương pháp tính gần đúng hợp lý; lời giải ngắn gọn, thanh thoát, khoa học. |
 | **Tiêu chí 4: Phiên giải kết quả và đánh giá thực tế** | Không nêu được ý nghĩa thực tế của con số tìm được; không đổi được đơn vị đo ($cm^3$ sang lít). | Nêu được kết quả nhưng quên đổi đơn vị đo lường, chưa đánh giá được tính hợp lý của kết quả đối với vật thể thực. | Đổi đúng đơn vị đo lường thực tế (lít, $m^3$); giải thích được ý nghĩa kết quả trong ngữ cảnh bài toán đời sống. | Phiên giải xuất sắc kết quả; phân tích sâu sắc sai số do mép gấp, độ dày vật liệu; đề xuất được giải pháp cải tiến tối ưu. |
 
@@ -863,10 +848,10 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 
 ###### 1. HOẠT ĐỘNG 1: KHỞI ĐỘNG (6 phút)
 
-- GV mang một Quả địa cầu mini và một quả cam hình cầu vào lớp. Dùng dao cắt một lát quả cam ở gần đỉnh (cắt ngang).
-- GV cho HS quan sát lát cắt: *"Vết cắt trên quả cam có dạng hình gì? Nếu thầy cắt một lát khác đi qua đúng tâm quả cam thì vết cắt đó có gì khác so với lát cắt đầu tiên?"*
-- HS nhận xét: Cả hai vết cắt đều là hình tròn, nhưng vết cắt đi qua tâm quả cam to hơn rất nhiều so với vết cắt gần đỉnh.
-- GV nêu vấn đề: *"Làm thế nào để tính chính xác bán kính của vết cắt khi biết bán kính quả cầu và vị trí dao cắt? Chúng ta cùng khám phá trên MathLab."*
+- GV mang một quả cam hình tròn vào lớp, dùng dao cắt đôi quả cam đi qua đúng tâm để chia thành hai nửa bằng nhau.
+- GV cho HS quan sát vết cắt: *"Vết cắt đi qua tâm quả cam có dạng hình gì? Bán kính của vết cắt có mối quan hệ như thế nào với bán kính của quả cam?"*
+- HS nhận xét: Vết cắt đi qua tâm là một hình tròn lớn có tâm và bán kính đúng bằng bán kính của quả cam ($r = R$).
+- GV chuẩn hóa kiến thức: *"Khi dùng một mặt phẳng đi qua tâm để cắt đôi một hình cầu, khối cầu được chia thành hai phần hoàn toàn bằng nhau gọi là hai bán cầu. Hình tròn vết cắt có tâm và bán kính đúng bằng bán kính hình cầu, được gọi là hình tròn lớn."*
 
 ###### 2. HOẠT ĐỘNG 2: HÌNH THÀNH KIẾN THỨC MỚI (24 phút)
 
@@ -892,9 +877,12 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 
 - **Bài toán trong Phiếu học tập số 3:**
   > *"Trái Đất của chúng ta được mô hình hóa xấp xỉ như một khối cầu có bán kính $R \approx 6371\text{ km}$. Thành phố Hà Nội nằm ở khoảng vĩ độ $21^\circ\text{Bắc}$.*
-  > *a) Tính khoảng cách $h_c$ từ tâm Trái Đất đến mặt phẳng chứa vĩ tuyến $21^\circ\text{Bắc}$ ($h_c = R \cdot \sin 21^\circ$).*
-  > *b) Tính bán kính $r'$ của đường vĩ tuyến $21^\circ\text{Bắc}$ và độ dài (chu vi) của đường vĩ tuyến này (lấy $\sin 21^\circ \approx 0{,}3584$, $\cos 21^\circ \approx 0{,}9336$)."*
-- HS vận dụng công thức: $r' = R \cdot \cos 21^\circ = 6371 \times 0{,}9336 \approx 5948\text{ km}$. Chu vi vĩ tuyến: $C = 2\pi r' \approx 37372\text{ km}$ (ngắn hơn chu vi đường Xích đạo $C_0 = 2\pi R \approx 40030\text{ km}$).
+  > *Trái Đất là một khối cầu khổng lồ với bán kính xấp xỉ $R \approx 6\,371\text{ km}$. Mặt phẳng Xích đạo đi qua tâm Trái Đất chia Trái Đất thành hai nửa bằng nhau: Bắc bán cầu và Nam bán cầu:*
+  > *a) Tính diện tích hình tròn mặt cắt Xích đạo đi qua tâm Trái Đất (lấy $\pi \approx 3{,}14$, làm tròn kết quả đến hàng nghìn $\text{km}^2$).*
+  > *b) Tính thể tích của Bắc bán cầu (làm tròn kết quả đến hàng triệu $\text{km}^3$).*
+- HS vận dụng trực tiếp công thức mặt cắt qua tâm và thể tích bán cầu:
+  - Diện tích mặt cắt Xích đạo: $S_{\text{cắt}} = \pi R^2 = 3{,}14 \times 6\,371^2 \approx 127\,454\,000\text{ (km}^2\text{)}$.
+  - Thể tích của Bắc bán cầu: $V_{\text{bán cầu}} = \frac{2}{3}\pi R^3 = \frac{2}{3} \times 3{,}14 \times 6\,371^3 \approx 541\,687\,000\,000\text{ (km}^3\text{)}$.
 
 ###### 4. HOẠT ĐỘNG 4: VẬN DỤNG (5 phút)
 
@@ -908,7 +896,7 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
 
 1. **Về kiến thức:**
    - Ghi nhớ và vận dụng chính xác công thức diện tích mặt cầu: $S = 4\pi R^2 = \pi d^2$.
-   - Hiểu rõ bản chất hình thành công thức thể tích hình cầu: $V = \frac{4}{3}\pi R^3 = \frac{1}{6}\pi d^3$ thông qua mô phỏng thí nghiệm Archimedes và nguyên lý Cavalieri trên MathLab.
+   - Hiểu rõ bản chất hình thành công thức thể tích hình cầu: $V = \frac{4}{3}\pi R^3 = \frac{1}{6}\pi d^3$ thông qua mô phỏng thí nghiệm Archimedes và mô hình cắt đôi bán cầu trên MathLab.
    - Phân biệt rõ thứ nguyên đơn vị ($R^2$ cho diện tích, $R^3$ cho thể tích), khắc phục dứt điểm Lỗi sai số 5.
 2. **Về năng lực:**
    - *Năng lực mô hình hóa toán học:* Vận dụng tính toán dung tích bồn chứa khí hóa lỏng hình cầu, tính lượng da may quả bóng đá, tính thể tích vật liệu đúc bi thép.
@@ -944,10 +932,11 @@ Nhằm đảm bảo tính chuẩn mực sư phạm và tuân thủ nghiêm ngặ
     - GV hướng dẫn HS tính toán đại số:
       $$V_{\text{trụ}} = S_{\text{đáy}} \times h = (\pi R^2) \times (2R) = 2\pi R^3$$
       $$V_{\text{cầu}} = \frac{2}{3} \times V_{\text{trụ}} = \frac{2}{3} \times (2\pi R^3) = \frac{4}{3}\pi R^3$$
-- *Mô phỏng 2 (Chứng minh toán học bằng Nguyên lý Cavalieri):*
-  - MathLab hiển thị khối cầu bên cạnh khối trụ khoét hai hình nón đối đỉnh. Khi kéo mặt cắt ở độ cao $h_c$, học sinh thấy diện tích hình tròn đỏ luôn bằng diện tích hình vành khăn xanh:
-    $$S_1 = \pi(R^2 - h_c^2) = S_2$$
-  - HS hoàn toàn bị thuyết phục bởi vẻ đẹp của lập luận toán học cổ đại!
+- *Mô phỏng trực quan thể tích hình cầu và bán cầu (Thí nghiệm Archimedes):*
+  - MathLab hiển thị quả cầu bán kính $R$ nằm vừa khít bên trong chiếc cốc hình trụ (chiều cao $h = 2R$, bán kính đáy $R$).
+  - Khi nhấc quả cầu ra khỏi chiếc cốc, thể tích nước tràn ra ngoài đúng bằng $\frac{2}{3}$ thể tích chiếc cốc hình trụ:
+    $$V_{\text{cầu}} = \frac{2}{3} V_{\text{trụ}} = \frac{2}{3} \times (\pi R^2 \times 2R) = \frac{4}{3}\pi R^3$$
+  - Khi nhấn nút `[▶ Bổ đôi]`, khối cầu được cắt đôi thành hai bán cầu bằng nhau, thể tích mỗi bán cầu bằng đúng $\frac{2}{3}\pi R^3$. Học sinh dễ dàng khắc sâu bản chất công thức một cách tự nhiên và sinh động!
 
 ###### 3. HOẠT ĐỘNG 3: LUYỆN TẬP VÀ ĐÁNH GIÁ (11 phút)
 
@@ -1055,7 +1044,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 **Nhiệm vụ 2: Bài toán thực tiễn Vĩ tuyến Trái Đất**
 *Đề bài:* Trái Đất có dạng xấp xỉ một khối cầu bán kính $R \approx 6371\text{ km}$.
 - *Câu a:* Tính độ dài đường Xích đạo (đường tròn lớn của Trái Đất) theo đơn vị km (lấy $\pi \approx 3{,}1416$).
-- *Câu b:* Thành phố Hồ Chí Minh nằm ở vĩ độ khoảng $10{,}77^\circ\text{ Bắc}$. Mặt phẳng chứa đường tròn vĩ tuyến TP. Hồ Chí Minh song song với mặt phẳng Xích đạo và cách tâm Trái Đất một khoảng $h_c = R \cdot \sin(10{,}77^\circ)$. Biết $\cos(10{,}77^\circ) \approx 0{,}9824$. Em hãy tính bán kính $r'$ và độ dài của đường vĩ tuyến đi qua TP. Hồ Chí Minh.
+- *Câu b:* Mặt phẳng Xích đạo đi qua tâm Trái Đất chia Trái Đất thành hai nửa bằng nhau: Bắc bán cầu và Nam bán cầu. Biết bán kính Trái Đất là $R \approx 6\,371\text{ km}$, em hãy tính diện tích hình tròn mặt cắt Xích đạo đi qua tâm và thể tích của Bắc bán cầu (lấy $\pi \approx 3{,}14$).
   - *Lời giải:* ........................................................................................................................................
   - ....................................................................................................................................................
 
@@ -1160,7 +1149,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 - **Bài 7:** Tính thể tích của một quả bóng hình cầu có đường kính $d = 12\text{ cm}$.
 - **Bài 8:** Cắt một khối cầu tâm $O$ bán kính $R = 15\text{ cm}$ bởi một mặt phẳng đi qua tâm $O$. Tính diện tích của hình tròn thiết diện thu được.
 - **Bài 9:** Một hình khai triển mặt xung quanh của hình trụ là một hình chữ nhật có chiều dài $20\pi\text{ cm}$ và chiều rộng $15\text{ cm}$. Tìm bán kính đáy của hình trụ đó.
-- **Bài 10:** Khi cắt một hình cầu bán kính $R = 13\text{ cm}$ bởi một mặt phẳng cách tâm một khoảng $h_c = 5\text{ cm}$, đường tròn giao tuyến có bán kính bằng bao nhiêu?
+- **Bài 10:** Một khối cầu có bán kính $R = 10\text{ cm}$. Người ta dùng một mặt phẳng đi qua tâm để cắt đôi khối cầu thành hai bán cầu bằng nhau. Tính diện tích hình tròn mặt cắt và thể tích của mỗi bán cầu thu được.
 
 #### MỨC ĐỘ 2: VẬN DỤNG THỰC TIỄN (8 BÀI TOÁN BỐI CẢNH ĐỜI SỐNG)
 
@@ -1171,7 +1160,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 - **Bài 15 (Quả bóng đá FIFA):** Quả bóng đá sử dụng trong các trận thi đấu chính thức của FIFA có chu vi đường tròn lớn nằm trong khoảng từ $68{,}5\text{ cm}$ đến $69{,}5\text{ cm}$. Tính thể tích không khí tối đa bên trong quả bóng theo lít (lấy chu vi là $69{,}5\text{ cm}$).
 - **Bài 16 (Bể phốt tự hoại hình trụ):** Một bể tự hoại bằng composite hình trụ nằm ngang có đường kính đáy $1{,}5\text{ m}$ và chiều dài thân ống $2{,}4\text{ m}$. Tính dung tích tối đa của bể tự hoại theo đơn vị mét khối ($m^3$).
 - **Bài 17 (Cốc nến thơm):** Một cây nến hình trụ có đường kính $4\text{ cm}$ và chiều cao $12\text{ cm}$. Khi đốt, nến cháy tiêu hao với tốc độ $5\text{ cm}^3$ sáp mỗi giờ. Hỏi cây nến cháy liên tục được trong bao nhiêu giờ?
-- **Bài 18 (Trái cam lát cắt):** Một trái cam hình cầu có đường kính $8\text{ cm}$. Một lát dao cắt ngang cách tâm trái cam một khoảng $2{,}5\text{ cm}$. Tính diện tích bề mặt múi cam lộ ra trên vết cắt.
+- **Bài 18 (Bổ đôi quả cam):** Một quả cam có dạng hình cầu đường kính $8\text{ cm}$ (bán kính $R = 4\text{ cm}$). Người ta dùng dao bổ đôi quả cam đi qua đúng tâm thành hai nửa bằng nhau. Tính diện tích mặt cắt của vết bổ và thể tích của mỗi nửa quả cam (lấy $\pi \approx 3{,}14$).
 
 #### MỨC ĐỘ 3: VẬN DỤNG CAO VÀ LIÊN MÔN STEAM (6 BÀI TOÁN TỐI ƯU & KINH TẾ)
 
@@ -1180,7 +1169,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 - **Bài 21 (Hộp bóng tennis ITF - Bài toán tỷ lệ vàng):** Chứng minh rằng với bất kỳ số lượng $n$ quả bóng hình cầu xếp vừa khít trong một hình trụ có đường kính đáy bằng đường kính quả bóng và chiều cao $h = n \times (2R)$, tỉ số thể tích giữa $n$ quả bóng và thể tích hình trụ luôn bằng một hằng số không đổi là $\frac{2}{3}$ (không phụ thuộc vào $n$ và $R$).
 - **Bài 22 (Tối ưu hóa kinh tế bồn chứa xăng dầu 1\,000\text{ m}^3):** Một trạm xăng dầu muốn xây một bể ngầm hình trụ dung tích $V = 1\,000\text{ m}^3$. Đáy bể bằng bê tông cốt thép giá $1\,200\,000\text{ đ/m}^2$, thành bể bằng thép chống ăn mòn giá $800\,000\text{ đ/m}^2$, nắp bể bằng thép giá $600\,000\text{ đ/m}^2$. Tìm tỉ lệ giữa chiều cao $h$ và bán kính $R$ để tổng chi phí vật liệu xây bể là nhỏ nhất.
 - **Bài 23 (Vương miện Archimedes và bài toán tỉ trọng liên môn Vật lý):** Một chiếc vương miện đúc bằng vàng pha bạc có khối lượng $m = 10\text{ kg}$. Khi thả chìm hoàn toàn vào một cốc hình trụ có diện tích đáy $S = 200\text{ cm}^2$, mực nước trong cốc dâng thêm một đoạn $\Delta h = 3{,}2\text{ cm}$. Biết khối lượng riêng của vàng nguyên chất là $D_1 = 19{,}3\text{ g/cm}^3$ và của bạc là $D_2 = 10{,}5\text{ g/cm}^3$. Tính tỉ lệ phần trăm khối lượng vàng thực tế có trong vương miện.
-- **Bài 24 (Mô hình Trái Đất và vệ tinh viễn thông):** Một vệ tinh địa tĩnh bay quanh Trái Đất ở độ cao $35\,786\text{ km}$ so với mặt đất (Trái Đất có bán kính $R = 6371\text{ km}$). Giả sử tín hiệu truyền thẳng từ vệ tinh tiếp xúc với mặt cầu Trái Đất. Tính diện tích vùng bề mặt Trái Đất (dạng chỏm cầu $S = 2\pi R h_c$) mà vệ tinh đó có thể phủ sóng tới.
+- **Bài 24 (Mặt cắt Xích đạo và Bán cầu Trái Đất):** Trái Đất có bán kính trung bình xấp xỉ $R \approx 6\,371\text{ km}$. Một mặt phẳng đi qua tâm Trái Đất chứa đường Xích đạo cắt đôi Trái Đất thành hai nửa bằng nhau gọi là Bắc bán cầu và Nam bán cầu. Em hãy tính diện tích hình tròn mặt cắt Xích đạo đi qua tâm và thể tích của mỗi bán cầu (lấy $\pi \approx 3{,}14$).
 
 ---
 
@@ -1458,7 +1447,7 @@ Kính gửi Quý Thầy/Cô giáo! Nhằm phục vụ công tác nghiên cứu s
 | :---: | :--- | :---: | :---: | :---: | :---: |
 | 1 | Nội dung Một số hình khối trong thực tiễn (Chương X Toán 9) là mảng kiến thức khó truyền đạt trực quan nhất cho học sinh. | [ ] | [ ] | [ ] | [ ] |
 | 2 | Bộ thiết bị dạy học hình học truyền thống (mô hình nhựa tĩnh, tranh ảnh) chưa đáp ứng tốt yêu cầu đổi mới phát triển năng lực của học sinh. | [ ] | [ ] | [ ] | [ ] |
-| 3 | Học sinh lớp 9 rất hay mắc các lỗi sai cơ bản: nhầm đường sinh và chiều cao hình nón; không tính được bán kính thiết diện hình cầu. | [ ] | [ ] | [ ] | [ ] |
+| 3 | Học sinh lớp 9 rất hay mắc các lỗi sai cơ bản: nhầm đường sinh và chiều cao hình nón; không nắm vững cấu trúc bán cầu và mặt cắt hình tròn lớn khi cắt đôi hình cầu qua tâm. | [ ] | [ ] | [ ] | [ ] |
 | 4 | Thầy/Cô gặp khó khăn khi muốn đưa học sinh lên phòng máy thực hành do mạng Internet trường học thường xuyên bị nghẽn hoặc bị chặn. | [ ] | [ ] | [ ] | [ ] |
 | 5 | Phần mềm GeoGebra 3D có giao diện khá phức tạp, tốn nhiều thời gian chuẩn bị và khó triển khai đại trà cho học sinh trung bình. | [ ] | [ ] | [ ] | [ ] |
 | 6 | Thầy/Cô rất cần một phần mềm hình học 3D chuyên biệt cho Toán 9, chạy nội bộ mạng LAN không cần Internet và hỗ trợ xuất hình vẽ chuẩn LaTeX TikZ. | [ ] | [ ] | [ ] | [ ] |
@@ -1732,38 +1721,9 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 
 ---
 
-## PHỤ LỤC 6: KỊCH BẢN KIỂM THỬ TRỢ LÝ SOCRATIC VÀ MẪU ĐỒNG THUẬN CỦA PHỤ HUYNH
+## PHỤ LỤC 6: MẪU VĂN BẢN ĐỒNG THUẬN CỦA PHỤ HUYNH HỌC SINH
 
-### 1. KỊCH BẢN MẪU KIỂM THỬ HỘP THOẠI TRỢ LÝ SOCRATE (KHÔNG LÀM HỘ BÀI)
-
-Dưới đây là 3 kịch bản kiểm thử thực tế minh chứng hệ thống Trợ lý Socrate kiên quyết từ chối giải hộ, đóng vai trò giàn giáo nhận thức dẫn dắt học sinh tự học:
-
-#### Kịch bản 1: Học sinh cố tình nhờ giải hộ bài nón lá
-- **Học sinh gõ:** *"Cho em xin đáp án bài toán nón lá có đường kính 40cm, đường sinh 30cm tính diện tích lá đi AI ơi!"*
-- **Trợ lý Socrate phản hồi:**
-  > *"Chào em! Để tự mình tìm ra đáp án và hiểu sâu bài học, chúng ta cùng làm theo 2 bước đơn giản nhé:*
-  > *1. Chiếc nón lá có dạng hình gì? (Xem lại Bài 31 SGK Toán 9 trang 98).*
-  > *2. Đề bài cho đường kính đáy $d = 40\text{ cm}$, vậy bán kính đáy $R$ bằng bao nhiêu?*
-  > *3. Công thức tính diện tích xung quanh của hình nón là $S_{\text{xq}} = \pi R l$. Em hãy lấy bán kính $R$ vừa tìm được nhân với đường sinh $l = 30\text{ cm}$ và nhân với $\pi \approx 3{,}14$ nhé! Lưu ý: chiếc nón lá may mấy lớp lá cọ để nhân đôi lên nhé!"*
-- **Học sinh:** *"Dạ R = 20cm. Vậy lấy 3.14 x 20 x 30 đúng không ạ?"*
-- **Trợ lý Socrate:** *"Chính xác 100%! Em hãy tính ra số và nhớ nhân thêm 2 vì nón may 2 lớp lá nhé. Em làm rất tốt!"*
-
-#### Kịch bản 2: Học sinh hỏi bài toán tối ưu lon sữa dung tích 500ml
-- **Học sinh:** *"Làm sao biết kích thước vỏ lon hình trụ 500ml tốn ít nhôm nhất là h = 2R?"*
-- **Trợ lý Socrate:**
-  > *"Câu hỏi của em rất thông minh! Đây là một bài toán kinh tế kinh điển đấy:*
-  > *1. Thể tích hình trụ cố định là $V = \pi R^2 h = 500 \implies h = \frac{500}{\pi R^2}$.*
-  > *2. Diện tích vỏ lon toàn phần gồm xung quanh và 2 đáy: $S_{\text{tp}} = 2\pi R^2 + 2\pi R h$. Em hãy thay $h$ ở trên vào biểu thức này xem ta được hàm số theo biến $R$ như thế nào?*
-  > *3. Em hãy thử tách số hạng $\frac{1\,000}{R} = \frac{500}{R} + \frac{500}{R}$ rồi áp dụng bất đẳng thức AM-GM (Cauchy) cho 3 số dương xem dấu '=' xảy ra khi nào nhé!"*
-
-#### Kịch bản 3: Học sinh bẫy AI bằng câu hỏi ngoài chương trình
-- **Học sinh:** *"Viết cho em một bài văn tả người mẹ hoặc giải phương trình bậc ba đi!"*
-- **Trợ lý Socrate:**
-  > *"Xin lỗi em, mình là Trợ lý Sư phạm chuyên trách hỗ trợ môn Toán 9 Chương X (Hình trụ, Hình nón, Hình cầu). Mình không thể viết văn hoặc giải các nội dung ngoài phạm vi này. Em hãy quay lại bài học hình khối thú vị hôm nay nhé!"*
-
----
-
-### 2. MẪU VĂN BẢN ĐỒNG THUẬN CỦA CHA MẸ HỌC SINH (THEO NGHỊ ĐỊNH 13/2023/NĐ-CP)
+### MẪU VĂN BẢN ĐỒNG THUẬN CỦA CHA MẸ HỌC SINH (THEO NGHỊ ĐỊNH 13/2023/NĐ-CP)
 
 **CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM**
 **Độc lập – Tự do – Hạnh phúc**

@@ -63,7 +63,7 @@ Kính gửi Quý Thầy/Cô giáo! Nhằm phục vụ công tác nghiên cứu s
 | :---: | :--- | :---: | :---: | :---: | :---: |
 | 1 | Nội dung Một số hình khối trong thực tiễn (Chương X Toán 9) là mảng kiến thức khó truyền đạt trực quan nhất cho học sinh. | [ ] | [ ] | [ ] | [ ] |
 | 2 | Bộ thiết bị dạy học hình học truyền thống (mô hình nhựa tĩnh, tranh ảnh) chưa đáp ứng tốt yêu cầu đổi mới phát triển năng lực của học sinh. | [ ] | [ ] | [ ] | [ ] |
-| 3 | Học sinh lớp 9 rất hay mắc các lỗi sai cơ bản: nhầm đường sinh và chiều cao hình nón; không tính được bán kính thiết diện hình cầu. | [ ] | [ ] | [ ] | [ ] |
+| 3 | Học sinh lớp 9 rất hay mắc các lỗi sai cơ bản: nhầm đường sinh và chiều cao hình nón; không nắm vững cấu trúc bán cầu và mặt cắt hình tròn lớn khi cắt đôi hình cầu qua tâm. | [ ] | [ ] | [ ] | [ ] |
 | 4 | Thầy/Cô gặp khó khăn khi muốn đưa học sinh lên phòng máy thực hành do mạng Internet trường học thường xuyên bị nghẽn hoặc bị chặn. | [ ] | [ ] | [ ] | [ ] |
 | 5 | Phần mềm GeoGebra 3D có giao diện khá phức tạp, tốn nhiều thời gian chuẩn bị và khó triển khai đại trà cho học sinh trung bình. | [ ] | [ ] | [ ] | [ ] |
 | 6 | Thầy/Cô rất cần một phần mềm hình học 3D chuyên biệt cho Toán 9, chạy nội bộ mạng LAN không cần Internet và hỗ trợ xuất hình vẽ chuẩn LaTeX TikZ. | [ ] | [ ] | [ ] | [ ] |
@@ -337,38 +337,9 @@ Các em hãy cho biết cảm nhận trung thực của mình sau khi hoàn thà
 
 ---
 
-## PHỤ LỤC 6: KỊCH BẢN KIỂM THỬ TRỢ LÝ SOCRATIC VÀ MẪU ĐỒNG THUẬN CỦA PHỤ HUYNH
+## PHỤ LỤC 6: MẪU VĂN BẢN ĐỒNG THUẬN CỦA PHỤ HUYNH HỌC SINH
 
-### 1. KỊCH BẢN MẪU KIỂM THỬ HỘP THOẠI TRỢ LÝ SOCRATE (KHÔNG LÀM HỘ BÀI)
-
-Dưới đây là 3 kịch bản kiểm thử thực tế minh chứng hệ thống Trợ lý Socrate kiên quyết từ chối giải hộ, đóng vai trò giàn giáo nhận thức dẫn dắt học sinh tự học:
-
-#### Kịch bản 1: Học sinh cố tình nhờ giải hộ bài nón lá
-- **Học sinh gõ:** *"Cho em xin đáp án bài toán nón lá có đường kính 40cm, đường sinh 30cm tính diện tích lá đi AI ơi!"*
-- **Trợ lý Socrate phản hồi:**
-  > *"Chào em! Để tự mình tìm ra đáp án và hiểu sâu bài học, chúng ta cùng làm theo 2 bước đơn giản nhé:*
-  > *1. Chiếc nón lá có dạng hình gì? (Xem lại Bài 31 SGK Toán 9 trang 98).*
-  > *2. Đề bài cho đường kính đáy $d = 40\text{ cm}$, vậy bán kính đáy $R$ bằng bao nhiêu?*
-  > *3. Công thức tính diện tích xung quanh của hình nón là $S_{\text{xq}} = \pi R l$. Em hãy lấy bán kính $R$ vừa tìm được nhân với đường sinh $l = 30\text{ cm}$ và nhân với $\pi \approx 3{,}14$ nhé! Lưu ý: chiếc nón lá may mấy lớp lá cọ để nhân đôi lên nhé!"*
-- **Học sinh:** *"Dạ R = 20cm. Vậy lấy 3.14 x 20 x 30 đúng không ạ?"*
-- **Trợ lý Socrate:** *"Chính xác 100%! Em hãy tính ra số và nhớ nhân thêm 2 vì nón may 2 lớp lá nhé. Em làm rất tốt!"*
-
-#### Kịch bản 2: Học sinh hỏi bài toán tối ưu lon sữa dung tích 500ml
-- **Học sinh:** *"Làm sao biết kích thước vỏ lon hình trụ 500ml tốn ít nhôm nhất là h = 2R?"*
-- **Trợ lý Socrate:**
-  > *"Câu hỏi của em rất thông minh! Đây là một bài toán kinh tế kinh điển đấy:*
-  > *1. Thể tích hình trụ cố định là $V = \pi R^2 h = 500 \implies h = \frac{500}{\pi R^2}$.*
-  > *2. Diện tích vỏ lon toàn phần gồm xung quanh và 2 đáy: $S_{\text{tp}} = 2\pi R^2 + 2\pi R h$. Em hãy thay $h$ ở trên vào biểu thức này xem ta được hàm số theo biến $R$ như thế nào?*
-  > *3. Em hãy thử tách số hạng $\frac{1\,000}{R} = \frac{500}{R} + \frac{500}{R}$ rồi áp dụng bất đẳng thức AM-GM (Cauchy) cho 3 số dương xem dấu '=' xảy ra khi nào nhé!"*
-
-#### Kịch bản 3: Học sinh bẫy AI bằng câu hỏi ngoài chương trình
-- **Học sinh:** *"Viết cho em một bài văn tả người mẹ hoặc giải phương trình bậc ba đi!"*
-- **Trợ lý Socrate:**
-  > *"Xin lỗi em, mình là Trợ lý Sư phạm chuyên trách hỗ trợ môn Toán 9 Chương X (Hình trụ, Hình nón, Hình cầu). Mình không thể viết văn hoặc giải các nội dung ngoài phạm vi này. Em hãy quay lại bài học hình khối thú vị hôm nay nhé!"*
-
----
-
-### 2. MẪU VĂN BẢN ĐỒNG THUẬN CỦA CHA MẸ HỌC SINH (THEO NGHỊ ĐỊNH 13/2023/NĐ-CP)
+### MẪU VĂN BẢN ĐỒNG THUẬN CỦA CHA MẸ HỌC SINH (THEO NGHỊ ĐỊNH 13/2023/NĐ-CP)
 
 **CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM**
 **Độc lập – Tự do – Hạnh phúc**

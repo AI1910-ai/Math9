@@ -86,7 +86,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 **Nhiệm vụ 2: Bài toán thực tiễn Vĩ tuyến Trái Đất**
 *Đề bài:* Trái Đất có dạng xấp xỉ một khối cầu bán kính $R \approx 6371\text{ km}$.
 - *Câu a:* Tính độ dài đường Xích đạo (đường tròn lớn của Trái Đất) theo đơn vị km (lấy $\pi \approx 3{,}1416$).
-- *Câu b:* Thành phố Hồ Chí Minh nằm ở vĩ độ khoảng $10{,}77^\circ\text{ Bắc}$. Mặt phẳng chứa đường tròn vĩ tuyến TP. Hồ Chí Minh song song với mặt phẳng Xích đạo và cách tâm Trái Đất một khoảng $h_c = R \cdot \sin(10{,}77^\circ)$. Biết $\cos(10{,}77^\circ) \approx 0{,}9824$. Em hãy tính bán kính $r'$ và độ dài của đường vĩ tuyến đi qua TP. Hồ Chí Minh.
+- *Câu b:* Mặt phẳng Xích đạo đi qua tâm Trái Đất chia Trái Đất thành hai nửa bằng nhau: Bắc bán cầu và Nam bán cầu. Biết bán kính Trái Đất là $R \approx 6\,371\text{ km}$, em hãy tính diện tích hình tròn mặt cắt Xích đạo đi qua tâm và thể tích của Bắc bán cầu (lấy $\pi \approx 3{,}14$).
   - *Lời giải:* ........................................................................................................................................
   - ....................................................................................................................................................
 
@@ -191,7 +191,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 - **Bài 7:** Tính thể tích của một quả bóng hình cầu có đường kính $d = 12\text{ cm}$.
 - **Bài 8:** Cắt một khối cầu tâm $O$ bán kính $R = 15\text{ cm}$ bởi một mặt phẳng đi qua tâm $O$. Tính diện tích của hình tròn thiết diện thu được.
 - **Bài 9:** Một hình khai triển mặt xung quanh của hình trụ là một hình chữ nhật có chiều dài $20\pi\text{ cm}$ và chiều rộng $15\text{ cm}$. Tìm bán kính đáy của hình trụ đó.
-- **Bài 10:** Khi cắt một hình cầu bán kính $R = 13\text{ cm}$ bởi một mặt phẳng cách tâm một khoảng $h_c = 5\text{ cm}$, đường tròn giao tuyến có bán kính bằng bao nhiêu?
+- **Bài 10:** Một khối cầu có bán kính $R = 10\text{ cm}$. Người ta dùng một mặt phẳng đi qua tâm để cắt đôi khối cầu thành hai bán cầu bằng nhau. Tính diện tích hình tròn mặt cắt và thể tích của mỗi bán cầu thu được.
 
 #### MỨC ĐỘ 2: VẬN DỤNG THỰC TIỄN (8 BÀI TOÁN BỐI CẢNH ĐỜI SỐNG)
 
@@ -202,7 +202,7 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 - **Bài 15 (Quả bóng đá FIFA):** Quả bóng đá sử dụng trong các trận thi đấu chính thức của FIFA có chu vi đường tròn lớn nằm trong khoảng từ $68{,}5\text{ cm}$ đến $69{,}5\text{ cm}$. Tính thể tích không khí tối đa bên trong quả bóng theo lít (lấy chu vi là $69{,}5\text{ cm}$).
 - **Bài 16 (Bể phốt tự hoại hình trụ):** Một bể tự hoại bằng composite hình trụ nằm ngang có đường kính đáy $1{,}5\text{ m}$ và chiều dài thân ống $2{,}4\text{ m}$. Tính dung tích tối đa của bể tự hoại theo đơn vị mét khối ($m^3$).
 - **Bài 17 (Cốc nến thơm):** Một cây nến hình trụ có đường kính $4\text{ cm}$ và chiều cao $12\text{ cm}$. Khi đốt, nến cháy tiêu hao với tốc độ $5\text{ cm}^3$ sáp mỗi giờ. Hỏi cây nến cháy liên tục được trong bao nhiêu giờ?
-- **Bài 18 (Trái cam lát cắt):** Một trái cam hình cầu có đường kính $8\text{ cm}$. Một lát dao cắt ngang cách tâm trái cam một khoảng $2{,}5\text{ cm}$. Tính diện tích bề mặt múi cam lộ ra trên vết cắt.
+- **Bài 18 (Bổ đôi quả cam):** Một quả cam có dạng hình cầu đường kính $8\text{ cm}$ (bán kính $R = 4\text{ cm}$). Người ta dùng dao bổ đôi quả cam đi qua đúng tâm thành hai nửa bằng nhau. Tính diện tích mặt cắt của vết bổ và thể tích của mỗi nửa quả cam (lấy $\pi \approx 3{,}14$).
 
 #### MỨC ĐỘ 3: VẬN DỤNG CAO VÀ LIÊN MÔN STEAM (6 BÀI TOÁN TỐI ƯU & KINH TẾ)
 
@@ -211,5 +211,5 @@ Nhằm cụ thể hóa chu trình mô hình hóa toán học Blum – Ferri vào
 - **Bài 21 (Hộp bóng tennis ITF - Bài toán tỷ lệ vàng):** Chứng minh rằng với bất kỳ số lượng $n$ quả bóng hình cầu xếp vừa khít trong một hình trụ có đường kính đáy bằng đường kính quả bóng và chiều cao $h = n \times (2R)$, tỉ số thể tích giữa $n$ quả bóng và thể tích hình trụ luôn bằng một hằng số không đổi là $\frac{2}{3}$ (không phụ thuộc vào $n$ và $R$).
 - **Bài 22 (Tối ưu hóa kinh tế bồn chứa xăng dầu 1\,000\text{ m}^3):** Một trạm xăng dầu muốn xây một bể ngầm hình trụ dung tích $V = 1\,000\text{ m}^3$. Đáy bể bằng bê tông cốt thép giá $1\,200\,000\text{ đ/m}^2$, thành bể bằng thép chống ăn mòn giá $800\,000\text{ đ/m}^2$, nắp bể bằng thép giá $600\,000\text{ đ/m}^2$. Tìm tỉ lệ giữa chiều cao $h$ và bán kính $R$ để tổng chi phí vật liệu xây bể là nhỏ nhất.
 - **Bài 23 (Vương miện Archimedes và bài toán tỉ trọng liên môn Vật lý):** Một chiếc vương miện đúc bằng vàng pha bạc có khối lượng $m = 10\text{ kg}$. Khi thả chìm hoàn toàn vào một cốc hình trụ có diện tích đáy $S = 200\text{ cm}^2$, mực nước trong cốc dâng thêm một đoạn $\Delta h = 3{,}2\text{ cm}$. Biết khối lượng riêng của vàng nguyên chất là $D_1 = 19{,}3\text{ g/cm}^3$ và của bạc là $D_2 = 10{,}5\text{ g/cm}^3$. Tính tỉ lệ phần trăm khối lượng vàng thực tế có trong vương miện.
-- **Bài 24 (Mô hình Trái Đất và vệ tinh viễn thông):** Một vệ tinh địa tĩnh bay quanh Trái Đất ở độ cao $35\,786\text{ km}$ so với mặt đất (Trái Đất có bán kính $R = 6371\text{ km}$). Giả sử tín hiệu truyền thẳng từ vệ tinh tiếp xúc với mặt cầu Trái Đất. Tính diện tích vùng bề mặt Trái Đất (dạng chỏm cầu $S = 2\pi R h_c$) mà vệ tinh đó có thể phủ sóng tới.
+- **Bài 24 (Mặt cắt Xích đạo và Bán cầu Trái Đất):** Trái Đất có bán kính trung bình xấp xỉ $R \approx 6\,371\text{ km}$. Một mặt phẳng đi qua tâm Trái Đất chứa đường Xích đạo cắt đôi Trái Đất thành hai nửa bằng nhau gọi là Bắc bán cầu và Nam bán cầu. Em hãy tính diện tích hình tròn mặt cắt Xích đạo đi qua tâm và thể tích của mỗi bán cầu (lấy $\pi \approx 3{,}14$).
 """
