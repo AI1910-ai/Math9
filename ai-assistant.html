@@ -9,6 +9,19 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="auth.css?v=20261027_v6" />
+  <script>
+    (function(){
+      try {
+        var s = sessionStorage.getItem("mathlab_auth_session") || localStorage.getItem("mathlab_auth_session");
+        if (s) {
+          var p = JSON.parse(s);
+          if (p && p.expire && p.expire > Date.now()) return;
+        }
+        document.documentElement.classList.add("auth-locked-html");
+      } catch(e) {}
+    })();
+  </script>
   <!-- KaTeX for rendering mathematical formulas (Local & Instant offline support) -->
   <link rel="stylesheet" href="vendor/katex/katex.min.css" />
   <script src="vendor/katex/katex.min.js"></script>
@@ -238,6 +251,7 @@
     <a href="index.html" style="color:var(--green);text-decoration:none;font-weight:700;">← Quay lại Phòng thí nghiệm 3D</a>
   </footer>
 
+  <script src="auth.js?v=20261027_v6"></script>
   <script src="ai-assistant.js"></script>
 </body>
 </html>

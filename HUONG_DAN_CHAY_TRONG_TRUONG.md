@@ -49,7 +49,16 @@ New-NetFirewallRule -DisplayName "Geometry Lab Port 8000" -Direction Inbound -Pr
 - Tắt VPN trên máy chủ và thiết bị học sinh nếu có.
 - Một số Wi-Fi trường học bật chế độ cô lập thiết bị. Khi đó cần nhờ quản trị mạng cho phép các thiết bị trong cùng mạng liên lạc với nhau.
 
-## 5. Dừng website
+## 5. Tài khoản & Quyền kiểm soát của Chủ sở hữu
+
+Hệ thống được tích hợp cổng xác thực để bảo vệ quyền sở hữu của tác giả:
+- **Tài khoản mặc định ban đầu**: `admin`
+- **Mật khẩu mặc định**: `admin123`
+- **Đổi tài khoản & Mật khẩu**: Sau khi đăng nhập, nhấp vào nút **`⚙️ Tài khoản`** trên thanh menu trên cùng để tự đổi Tên đăng nhập và Mật khẩu mới.
+- **Đăng xuất**: Nhấp vào nút **`🚪 Đăng xuất`** để khóa lại trang web ngay lập tức.
+- **Mã khôi phục bí mật (khi quên mật khẩu)**: `MATHLAB@RESET2026`
+
+## 6. Dừng website
 
 - Quay lại cửa sổ màu đen và nhấn `Ctrl + C`.
 - Hoặc đóng cửa sổ đó.
